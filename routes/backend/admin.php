@@ -5,3 +5,16 @@
  */
 Route::redirect('/', '/admin/dashboard', 301);
 Route::get('dashboard', 'DashboardController@index')->name('dashboard');
+
+
+/**
+ *  Page Management
+ */
+Route::group(['namespace' => 'Page'], function () {
+    Route::resource('pages', 'PageController', ['except' =>
+        ['show']]);
+
+    //For DataTables
+    Route::post('pages/get', 'PageTableController')
+        ->name('pages.get');
+});

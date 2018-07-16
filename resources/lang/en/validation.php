@@ -184,6 +184,14 @@ return [
                     'language'                => 'Language',
                 ],
             ],
+
+            'pages' => [
+                'active'                  => 'Active',
+                'name'                    => 'Name',
+                'slug'                    => 'Slug',
+                'content'                 => 'Content',
+                'language'                => 'Language',
+            ],
         ],
 
         'frontend' => [

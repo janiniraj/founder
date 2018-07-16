@@ -174,6 +174,8 @@ return [
         App\Providers\ObserverServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        UniSharp\LaravelFilemanager\LaravelFilemanagerServiceProvider::class,
+
     ],
 
     /*
@@ -229,6 +231,8 @@ return [
         'Active' => HieuLe\Active\Facades\Active::class,
         'Gravatar' => Creativeorange\Gravatar\Facades\Gravatar::class,
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+
+        'Image' => Intervention\Image\Facades\Image::class,
 
     ],
 

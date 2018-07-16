@@ -34,6 +34,12 @@ return [
             'updated'             => 'The user was successfully updated.',
             'updated_password'    => "The user's password was successfully updated.",
         ],
+
+        'pages' => [
+            'created' => 'The Page was successfully created.',
+            'deleted' => 'The Page was successfully deleted.',
+            'updated' => 'The Page was successfully updated.',
+        ],
     ],
 
     'frontend' => [

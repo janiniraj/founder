@@ -105,6 +105,23 @@ return [
                 'view' => 'View User',
             ],
         ],
+        'pages' => [
+            'create'     => 'Create Page',
+            'edit'       => 'Edit Page',
+            'management' => 'Page Management',
+            'title' => 'Page',
+
+            'table' => [
+                'title'          => 'Page',
+                'slug'           => 'Slug',
+                'content'        => 'Content',
+                'createdat'      => 'Created At',
+                'all'            => 'All',
+                'number_of_pages' => 'Number of Pages',
+                'sort'            => 'Sort',
+                'total'           => 'pages total|pages total'
+            ],
+        ],
     ],
 
     'frontend' => [

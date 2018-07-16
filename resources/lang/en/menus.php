@@ -37,6 +37,14 @@ return [
             ],
         ],
 
+        'pages' => [
+            'all'             => 'All Pages',
+            'create'          => 'Create Page',
+            'edit'            => 'Edit Page',
+            'main'            => 'Pages',
+            'view'            => 'View Page',
+        ],
+
         'log-viewer' => [
             'main'      => 'Log Viewer',
             'dashboard' => 'Dashboard',
