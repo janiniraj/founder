@@ -16,7 +16,7 @@ class CreateRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        return $this->user()->hasPermissionTo('Page Management');
     }
 
     /**

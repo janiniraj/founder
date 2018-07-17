@@ -98,4 +98,12 @@ trait UserMethod
     {
         return config('access.users.requires_approval') && $this->confirmed == 0;
     }
+
+    /**
+     * @return mixed
+     */
+    public function hasPermission($permission)
+    {
+        return $this->hasPermissionTo($permission);
+    }
 }

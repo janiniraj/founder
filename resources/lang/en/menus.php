@@ -38,6 +38,7 @@ return [
         ],
 
         'pages' => [
+            'management'      => 'Page Management',
             'all'             => 'All Pages',
             'create'          => 'Create Page',
             'edit'            => 'Edit Page',
