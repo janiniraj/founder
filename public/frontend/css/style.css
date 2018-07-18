@@ -1,0 +1,3476 @@
+/* RESET-GENERAL start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	background-color: #000 !important;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+
+ul, li {
+	list-style-type: none;
+}
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+/* RESET-GENERAL end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* HEADER start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+header{
+    top: 0;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+.mobile_menu{
+	display: none;
+}
+header img{
+	width: 130px;
+    margin: 20px 0;
+}
+header a{
+	color: #8F8F8F;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 2.5vw;
+    padding: 12px 1vw;
+    font-size: 13px;
+    transition: .4s;
+}
+header a:hover{
+	color: #fff;
+}
+header .menu{
+	margin-top: 28px;
+	padding-bottom: 15px;
+}
+.hr_sections2,
+.hr_sections{
+	display: none;
+}
+.mobile_menu .ul_menu {
+  top: 75px;
+  position: fixed;
+  width: 100%;
+  background: #000;
+  list-style: none;
+  margin: 0;
+  height: 100%;
+  left: -1px;
+  z-index: 999;
+  transform-origin: top left;
+  transform: translateX(-100%);
+  transition: transform .3s;
+  transform-style: preserve-3d;
+}
+
+.mobile_menu .inner_menu {
+  position: absolute;
+  top: 12%;
+  width: 100%;
+  left: 0;
+  height: 100%;
+}
+.mobile_menu .inner_menu li{
+	text-transform: uppercase;
+}
+.mobile_menu .inner_menu li{
+	width: 228px;
+    margin: auto;
+}
+.mobile_menu li a {
+	opacity: 1;
+	display: block;
+	color: #8F8F8F;
+	text-decoration: none;
+	transition: all 0.5s linear;
+	text-align: center;
+	padding: 6vw 0 1vw 0;
+	font-size: 24px;
+	margin: 0;
+}
+
+.mobile_menu div.header {
+    background: #000;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    height: 75px;
+    text-align: center;
+}
+
+.mobile_menu h1 {
+  display: inline;
+}
+
+.mobile_menu h1 {
+  margin-left: 30px;
+  color: white;
+}
+
+.mobile_menu .container {
+  cursor: pointer;
+}
+
+.mobile_menu body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+.mobile_menu .open {
+  transform: rotate(360deg);
+  left: 0;
+}
+
+.mobile_menu .nav-icon {
+  height: 35px;
+  width: 35px;
+  position: relative;
+  margin: 0px 10px;
+  float: left;
+  z-index: 1000;
+}
+
+.mobile_menu .nav-icon div {
+  height: 2px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.mobile_menu .nav-icon div::before,
+.mobile_menu .nav-icon div::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  background: white;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.mobile_menu .nav-icon div::before {
+  top: -10px;
+}
+
+.mobile_menu .nav-icon div::after {
+  top: 10px;
+}
+
+.mobile_menu .cross.active .span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.mobile_menu .cross.active .span::after {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.mobile_menu .cross.active .span {
+  background: none;
+}
+.mobile_menu .nav-icon div::before, .mobile_menu .nav-icon div::after{
+	left: 0;
+}
+.menu_active{
+	border-bottom: 4px solid #fff;
+	color: #fff !important;
+}
+/* HEADER end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* FOOTER start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.footer_logo_mobile{
+	display: none;
+}
+.footer_hr{
+	display: none;
+}
+footer{
+	text-align: left;
+	margin-top: 50px;
+}
+footer .col-md-5{
+	padding-left: 16vw;
+}
+footer img{
+	width: 140px;
+	margin-bottom: 34px;
+}
+footer ul{
+	padding-left: 0px;
+}
+footer li{
+	margin-bottom: 20px;
+}
+footer a{
+	color: #909090;
+	font-size: 16px;
+	font-weight: 400;
+	transition: .2s;
+    font-family: 'Montserrat', sans-serif;
+}
+footer a:hover{
+	color: #fff;
+}
+footer .footer_menu_active{
+	color: #fff;
+}
+footer .footer_contact_us h3{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+}
+footer .footer_contact_us p{
+	font-size: 12px;
+	margin-top: 20px;
+	color: #F0F0F0;
+}
+footer .footer_contact_us .footer_email_input{
+	width: 50%;
+	color: #8D8D8D;
+	background: #1C1C24;
+	border: 1px solid #1C1C24;
+    padding: 10px;
+    margin-top: 50px;
+}
+footer .footer_contact_us .footer_submit_input{
+	width: 12%;
+	color: #BECE00;
+	background: #1C1C24;
+	border: 1px solid #BECE00;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+footer .footer_contact_us .footer_submit_input:hover{
+	color: #000;
+}
+footer .footer_copyright{
+	margin-top: 50px;
+}
+footer .footer_copyright .col-md-5,
+footer .footer_copyright .col-md-6{
+	display: flex;
+}
+footer .footer_copyright p{
+	color: #848484;
+	font-size: 10px;
+	margin-top: 5px;
+}
+footer .footer_copyright i{
+	color: #000;
+    background: #848484;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+footer .footer_copyright img{
+	width: 100px;
+	margin-top: -5px;
+	margin-right: 10px;
+}
+footer .footer_copyright .col-md-6 i{
+	margin-left: 20px;
+}
+footer .footer_last{
+	text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+    margin-top: 100px;
+}
+footer .footer_last p{
+	color: #848484;
+	font-size: 9px;
+}
+.footer_mobile_headline{
+  display: none;
+}
+/* FOOTER end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* SECTION STYLES - fullPage.js start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#fullpage section { 
+	text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+/* SECTION STYLES - fullPage.js end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* SECTION'S INDICATOR - fullPage.js start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span{
+	background-color: #fff;
+	opacity: 1;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+	background-color: #fff;
+	margin: -2px 0 0 -3px;
+	width: 6px;
+	height: 6px;
+	opacity: .6;
+}
+#fp-nav.right{
+	left: 24px;
+	width: 30px;
+}
+#fullpage section{
+	background-color: #000 !important;
+}
+/* SECTION'S INDICATOR - fullPage.js end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* SECTION ONE - fullPage.js start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#fullpage section .section_one_bg{
+	height: 100%;
+    margin-top: 294px;
+    background: url(../img/section_one_bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -60px;
+}
+#fullpage header{
+	position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+}
+#fullpage header img{
+	width: 130px;
+    margin: 20px 0;
+}
+#fullpage header a{
+	color: #8F8F8F;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 2.5vw;
+    padding: 12px 1vw;
+    font-size: 13px;
+    transition: .25s;
+}
+#fullpage header a:hover{
+	color: #fff;
+}
+#fullpage header .menu{
+	margin-top: 28px;
+	padding-bottom: 12px;
+}
+.menu_active{
+	border-bottom: 4px solid #fff;
+	color: #fff !important;
+}
+#fullpage .home_title{
+	position: absolute;
+    bottom: 17vh;
+    left: 7vw;
+    text-align: left;
+}
+#fullpage .home_title h1{
+    font-size: 2.6vw;
+    font-weight: 600;
+    line-height: 1.3;
+    font-family: 'Libre Baskerville', serif;
+}
+#fullpage .home_title p{
+	line-height: 1.6;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1vw;
+}
+#fullpage .home_title a{
+	text-transform: uppercase;
+	color: #BECE00;
+	font-size: .8vw;
+	top: 8px;
+    position: relative;
+    transition: .25s;
+}
+#fullpage .home_title a:hover{
+	color: #d3e404;
+}
+#fullpage .home_title i{
+	margin-left: 6px;
+} 
+/* SECTION ONE - fullPage.js end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* SECTION TWO - fullPage.js start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section_two_hr{
+  display: none;
+}
+#fullpage .section_two_bg{
+	height: 100%;
+    background: url(../img/section_two_bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -100px;
+}
+#fullpage .section_two_title{
+	position: absolute;
+    bottom: 33vh;
+    left: 7vw;
+    text-align: left;
+}
+#fullpage .section_two_title h1{
+	font-size: 2.6vw;
+    font-weight: 600;
+    line-height: 1.3;
+    font-family: 'Libre Baskerville', serif;
+}
+#fullpage .section_two_details{
+	height: 250px;
+    background: #000;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+#fullpage .section_two_title p{
+	line-height: 1.6;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1vw;
+}
+#fullpage .section_two_title a{
+	text-transform: uppercase;
+	color: #BECE00;
+	font-size: .8vw;
+	top: 8px;
+    position: relative;
+    transition: .25s;
+}
+#fullpage .section_two_title a:hover{
+	color: #d3e404;
+}
+#fullpage .section_two_title i{
+	margin-left: 6px;
+} 
+#fullpage .section_two_columns{
+	text-align:left;
+	padding: 60px 6vw;
+	overflow: auto;
+}
+#fullpage .section_two_columns .col-md-3 p:nth-child(1){
+	color: #BECE00;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+#fullpage .section_two_columns .col-md-3 p:nth-child(2){
+	font-size: 15px;
+	font-weight: 500;
+}
+#fullpage .section_two_columns .col-md-3 .year{
+	position: relative;
+    bottom: -3vw;
+    color: #B6B7AE !important;
+}
+#fullpage .section_two_columns .year_mobile{
+	position: relative;
+    bottom: -3vw;
+    color: #B6B7AE !important;
+    display: none;
+}
+/* SECTION TWO - fullPage.js end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* SECTION THREE - fullPage.js start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#fullpage .section_three_bg{
+	height: 100%;
+    background: url(../img/section_three_bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -100px;
+}
+#fullpage .section_three_title{
+	position: absolute;
+    bottom: 33vh;
+    left: 7vw;
+    text-align: left;
+}
+#fullpage .section_three_title h1{
+	font-size: 2.6vw;
+    font-weight: 600;
+    line-height: 1.3;
+    font-family: 'Libre Baskerville', serif;
+}
+#fullpage .section_three_details{
+	height: 250px;
+    background: #000;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+#fullpage .section_three_title p{
+	line-height: 1.6;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1vw;
+}
+#fullpage .section_three_title a{
+	text-transform: uppercase;
+	color: #BECE00;
+	font-size: .8vw;
+	top: 8px;
+    position: relative;
+    transition: .25s;
+}
+#fullpage .section_three_title a:hover{
+	color: #d3e404;
+}
+#fullpage .section_three_title i{
+	margin-left: 6px;
+} 
+#fullpage .section_three_columns{
+	text-align:left;
+	padding: 60px 6vw;
+	overflow: auto;
+}
+#fullpage .section_three_columns .col-md-3 p:nth-child(1){
+	color: #BECE00;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+#fullpage .section_three_columns .col-md-3 p:nth-child(2){
+	font-size: 15px;
+	font-weight: 500;
+}
+#fullpage .section_three_columns .col-md-3 p:nth-child(3){
+	position: relative;
+    bottom: -3vw;
+    color: #B6B7AE;
+}
+/* SECTION THREE - fullPage.js end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* SECTION FOUR - fullPage.js start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.small2_twitter{
+  display: none;
+}
+#fullpage .section_four_twitter
+{
+	width: 70%;
+	float: right;
+}
+#fullpage .section_four_news{
+	text-align: left;
+	padding-right: 8vw;
+}
+#fullpage .section_four_news h3{
+	font-weight: 400;
+	margin-top: 0;
+}
+#fullpage .section_four_news a{
+	text-transform: uppercase;
+	float: right;
+	line-height: 4;
+	color: #BECE00;
+	font-size: 14px;
+	top: -16px;
+    position: relative;
+    transition: .25s;
+}
+#fullpage .section_four_news a:hover{
+	color: #d3e404;
+}
+#fullpage .section_four_news i{
+	margin-left: 6px;
+} 
+#fullpage .section_four_news h4{
+	line-height: 1.5;
+	letter-spacing: 1px;
+    font-family: 'Libre Baskerville', serif;
+    margin-top: 20px;
+} 
+#fullpage .section_four_news img{
+	width: 100%;
+}
+#fullpage .section_four_news p{
+	color: #747474;
+} 
+.big_twitter{
+  display: block !important;
+}
+.small_twitter{
+  display: none !important;
+}
+/* SECTION FOUR - fullPage.js end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* SECTION FIVE - fullPage.js start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#fullpage .section_five{
+	text-align: left;
+}
+#fullpage .section_five .col-md-5{
+	padding-left: 16vw;
+}
+#fullpage .section_five img{
+	width: 140px;
+	margin-bottom: 34px;
+}
+#fullpage .section_five ul{
+	padding-left: 0;
+}
+#fullpage .section_five li{
+	margin-bottom: 20px;
+}
+#fullpage .section_five a{
+	color: #909090;
+	font-size: 16px;
+	font-weight: 400;
+	transition: .2s;
+}
+#fullpage .section_five a:hover{
+	color: #fff;
+}
+#fullpage .section_five .footer_menu_active{
+	color: #fff;
+}
+#fullpage .section_five .footer_contact_us h3{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+}
+#fullpage .section_five .footer_contact_us p{
+	font-size: 12px;
+	margin-top: 20px;
+	color: #F0F0F0;
+}
+#fullpage .section_five .footer_contact_us .footer_email_input{
+	width: 50%;
+	color: #8D8D8D;
+	background: #1C1C24;
+	border: 1px solid #1C1C24;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 0;
+}
+#fullpage .section_five .footer_contact_us .footer_submit_input{
+	width: 12%;
+	color: #BECE00;
+	background: #1C1C24;
+	border: 1px solid #BECE00;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 20px;
+    border-radius: 0;
+}
+#fullpage .section_five .footer_contact_us .footer_submit_input:hover{
+	color: #000;
+}
+#fullpage .footer_copyright{
+	margin-top: 50px;
+}
+#fullpage .footer_copyright .col-md-5,
+#fullpage .footer_copyright .col-md-6{
+	display: flex;
+}
+#fullpage .footer_copyright p{
+	color: #848484;
+	font-size: 10px;
+	margin-top: 5px;
+}
+#fullpage .footer_copyright i{
+	color: #000;
+    background: #848484;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+#fullpage .footer_copyright img{
+	width: 100px;
+	margin-top: -5px;
+	margin-right: 10px;
+}
+#fullpage .footer_copyright .col-md-6 i{
+	margin-left: 20px;
+}
+#fullpage .footer_last{
+	text-align: center;
+	position: absolute;
+    bottom: 10px;
+}
+#fullpage .footer_last p{
+	color: #848484;
+	font-size: 9px;
+}
+/* SECTION FIVE - fullPage.js end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* RECOGNITION start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#recognition .headline{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 26px;
+	color: #F0F0F0;
+	font-weight: 700;
+	margin-top: 60px;
+}
+#recognition .see-more{
+	float: right; 
+	color: #BECE00;
+	font-weight: 100;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+#recognition .text-desc{
+	font-size: 21px;
+    text-align: center;
+    color: #F0F0F0;
+    padding: 40px;
+    font-family: 'Libre Baskerville', serif;
+}
+#recognition .section1{
+	margin-top: 60px;
+	margin-bottom: 150px;
+}
+#recognition .name{
+    text-align: center;
+    margin-top: 20px;
+    color: #B6B7AE;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 66px;
+}
+#recognition .text-award{
+	font-size: 18px;
+    color: #F0F0F0;
+    padding-top: 22px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+}
+#recognition .text-year{
+	color: #B6B7AE;
+	font-size: 16px;
+	margin-bottom: 70px;
+}
+#recognition .fa-angle-right{
+	padding-left: 12px;
+}
+#recognition .fa-angle-left{
+	padding-right: 12px;
+}
+#recognition .headline-awards{
+	color: #BECE00;
+	font-weight: 100;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 60px;
+}
+#recognition .headline-awards2{
+	font-size: 36px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	color: #F0F0F0;
+	margin-top: 40px;
+}
+#recognition hr{
+	clear: both;
+	margin-bottom: 50px;
+}
+#recognition .awards-total
+{
+	font-size: 18px;
+    font-style: italic;
+    margin-top: 47px;
+    float: right;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+}
+#recognition .pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #707070 !important;
+    text-decoration: none;
+    background-color: transparent;
+    border:none;
+}
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+    z-index: 2;
+	background-color: transparent;
+	border-color: none;
+    color: #F0F0F0 !important;
+}
+#recognition .pagination-next{
+	padding: 7px 11px;
+    border: 1px solid #7E7E7E;
+    border-radius: 4px;
+    margin-top: -4px;
+}
+#recognition .text-desc-quotes{
+	font-size: 21px;
+	color: #F0F0F0;
+	font-family: 'Libre Baskerville', serif;
+}
+#recognition .name-quotes{
+    margin-top: 20px;
+    color: #B6B7AE;
+    font-family: 'Montserrat', sans-serif;
+}
+#recognition .quotes-full{
+	padding: 0;
+	margin-bottom: 40px;
+}
+
+#recognition .recognition-head-top
+{
+	padding: 0;
+}
+#recognition .rec-dropdwon
+{
+	padding: 0;
+}
+#recognition .select 
+{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+#recognition .select select 
+{
+    font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	display: inline-block;
+	width: 110px;
+	margin-top: 29px;
+	cursor: pointer;
+	padding: 12px 15px;
+	outline: 0;
+	border: 1px solid #707070;
+	border-radius: 5px;
+	background: #000000;
+	color: #b6b7ae;
+	float: right;
+	appearance: none;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+}
+#recognition  .select select::-ms-expand 
+{
+    display: none;
+}
+#recognition .select select:hover,
+#recognition .select select:focus {
+    color: #b6b7ae;
+    background: #000000;
+}
+#recognition .select select:disabled {
+     opacity: 0.5;
+     pointer-events: none;
+}
+#recognition .select_arrow 
+{
+    position: absolute;
+	top: 51px;
+    right: 20px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 5px 4px 0px 4px;
+    border-color: #97C3BC transparent transparent transparent;
+}
+
+#recognition .select select:disabled ~ .select_arrow 
+{
+    border-top-color: #CCCCCC;
+}
+
+#recognition .btn-default {
+    background-color: transparent;
+    border-color: #BECE00;
+    color: #BECE00;
+    border-radius: 0;
+    padding: 10px 42px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+/* RECOGNITION end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* NATION BUILDING start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.nation_building .country_details{
+	width: 0;
+	bottom: -15vw;
+	position: relative;
+	width: 130px;
+	margin-right: -130px;
+}
+.nation_building .country_details img{
+	width: 34px;
+}
+.nation_building .country_details a{
+	font-family: 'Libre Franklin', sans-serif;
+	color: #BECE00;
+	top: 1.7vw;
+	font-size: 14px;
+	position: relative;
+	transition: .2s;
+}
+.nation_building .country_details a:hover{
+	color: #d3e404;
+}
+.nation_building .country_details a i{
+	margin-left: 10px;
+	font-size: 16px;
+}
+
+.nation_building .country_details2{
+	width: 0;
+	bottom: -3.5vw;
+	position: relative;
+	width: 237px;
+	margin-right: -237px;
+}
+.nation_building .country_details2 img{
+	width: 34px;
+}
+.nation_building .country_details2 a{
+	font-family: 'Libre Franklin', sans-serif;
+	color: #BECE00;
+	top: 1.7vw;
+	font-size: 14px;
+	position: relative;
+	transition: .2s;
+}
+.nation_building .country_details2 a:hover{
+	color: #d3e404;
+}
+.nation_building .country_details2 a i{
+	margin-left: 10px;
+	font-size: 16px;
+}
+.nation_building table{
+	width: 100%;
+}
+.nation_building tr{
+	height: 10vw;
+}
+.nation_building td{
+	border: 50px solid #000;
+	padding: 0 20px;
+}
+.nation_building .cards{
+	width: 78%;
+	margin: auto;
+}
+.nation_building .botswana{
+	background: url('../img/botswana_card.png') no-repeat;
+	background-size: cover;
+	height: 46vw;
+}
+.nation_building .cambodia{
+	background: url('../img/cambodia_card.png') no-repeat;
+	background-size: cover;
+	height: 23vw;
+}
+.nation_building .quote_text p{
+	font-size: 0.95vw;
+}
+.nation_building .quote .name{
+	font-size: 12px;
+	color: #B6B7AE;
+	margin-top: 20px;
+	font-family: 'Libre Franklin', sans-serif;
+}
+.nation_building .quote img{
+	width: 30px;
+	margin-top: 10px;
+}
+.nation_building .quote{
+	padding: 0;
+	width: 24.35vw;
+	height: 23vw;
+	text-align: center;
+	line-height: 1.7;
+    letter-spacing: 1.5px;
+    color: #F0F0F0;
+    font-family: 'Libre Baskerville', serif;
+}
+.nation_building .london{
+	background: url('../img/london_card.png') no-repeat;
+	background-size: cover;
+	height: 46vw;
+}
+.nation_building .lesotho{
+	background: url('../img/lesotho_card.png') no-repeat;
+	background-size: cover;
+	height: 23vw;
+}
+.nation_building .swaziland{
+	background: url('../img/swaziland_card.png') no-repeat;
+	background-size: cover;
+	height: 46vw;
+}
+.nation_building .sierra_leone{
+	background: url('../img/sierra_leone_card.png') no-repeat;
+	background-size: cover;
+	height: 23vw;
+}
+.nation_building .south_africa{
+	background: url('../img/south_africa_card.png') no-repeat;
+	background-size: cover;
+	height: 23vw;
+}
+
+.nation_building .home_bg{
+	background: url('../img/section_two_bg.jpg') no-repeat;
+	background-size: cover;
+	height: 40vw;
+	width: 100%;
+	background-position-y: -6vw;
+}
+.nation_building .home_content{
+    position: absolute;
+    top: 31vw;
+    margin-left: 16vw;
+}
+.nation_building .home_content img{
+    width: 38px;1
+}
+.nation_building h1{
+    font-family: 'Libre Baskerville', serif;
+    margin-top: 15px;
+}
+.nation_building .home_content p{
+	line-height: 1.5;
+    letter-spacing: 1px;
+	font-family: 'Libre Franklin', sans-serif;
+	margin-bottom: 26px;
+}
+.nation_building .home_content a{
+	font-family: 'Libre Franklin', sans-serif;
+	color: #BECE00;
+	transition: .2s;
+}
+.nation_building .home_content a:hover{
+	color: #d3e404;
+}
+.nation_building .home_content a i{
+	margin-left: 10px;
+	font-size: 16px;
+}
+/* NATION BUILDING end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* SWAZILAND start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.national-building-swaziland
+{
+	padding: 0 9vw;
+}
+
+.national-building-swaziland .fa-angle-left 
+{
+    padding-right: 12px;
+}
+
+.national-building-swaziland .quotes-all
+{
+	margin-right: 9vw;
+}
+
+.national-building-swaziland .back-countries
+{
+	color: #BECE00;
+	font-weight: 100;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 60px;
+}
+
+.national-building-swaziland .headline-countries
+{
+	font-family: 'Libre Baskerville', serif;
+}
+.national-building-swaziland .quotes-country
+{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 24px;
+    text-align: center;
+    padding: 108px 41px;
+    padding-bottom: 10px;
+}
+
+.national-building-swaziland .name-countries
+{
+	text-align: center;
+    margin-top: 20px;
+    color: #B6B7AE;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 66px;
+}
+.national-building-swaziland .text-countries
+{
+	font-size: 21px;
+   	margin-top: 55px;
+   	font-family: 'Libre Franklin', sans-serif;
+   	padding-right: 6vw;
+}
+
+.national-building-swaziland .text-headline
+{
+	font-size: 36px;
+	font-family: 'Libre Baskerville', serif;
+	margin-top: 33px;
+}
+.national-building-swaziland .img-malaysia
+{
+	margin-top: 50px;
+}
+
+.transform-img-swaziland
+{
+	background: url(../img/transform_swaziland.png) no-repeat;
+	height: 500px;
+	background-size: cover;
+    background-position: center;
+    margin-top: 90px;
+}
+
+.transform-img-swaziland .transform-text
+{
+	position: relative;
+    bottom: -15vh;
+    left: 7.5vw;
+    width: 45%;
+    text-align: left;
+}
+
+.transform-img-swaziland .transform-text h1
+{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 36px;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+.transform-img-swaziland .transform-text p
+{
+	font-size: 19px;
+	font-family: 'Libre Franklin', sans-serif;
+	line-height: 35px;
+	color: #F0F0F0;
+
+}
+
+.transform-img-swaziland .btn-default {
+    background-color: #BECE00;
+    border-color: #ccc;
+    padding: 11px 44px;
+    margin-top: 24px;
+    border-radius: 0;
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+/* SWAZILAND end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* SOUTH AFRICA start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.national-building-south_africa
+{
+	padding: 0 9vw;
+}
+
+.national-building-south_africa .fa-angle-left 
+{
+    padding-right: 12px;
+}
+
+.national-building-south_africa .quotes-all
+{
+	margin-right: 9vw;
+}
+
+.national-building-south_africa .back-countries
+{
+	color: #BECE00;
+	font-weight: 100;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 60px;
+}
+
+.national-building-south_africa .headline-countries
+{
+	font-family: 'Libre Baskerville', serif;
+}
+.national-building-south_africa .quotes-country
+{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 24px;
+    text-align: center;
+    padding: 108px 41px;
+    padding-bottom: 10px;
+}
+
+.national-building-south_africa .name-countries
+{
+	text-align: center;
+    margin-top: 20px;
+    color: #B6B7AE;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 66px;
+}
+.national-building-south_africa .text-countries
+{
+	font-size: 21px;
+   	margin-top: 55px;
+   	font-family: 'Libre Franklin', sans-serif;
+   	padding-right: 6vw;
+}
+
+.national-building-south_africa .text-headline
+{
+	font-size: 36px;
+	font-family: 'Libre Baskerville', serif;
+	margin-top: 33px;
+}
+.national-building-south_africa .img-malaysia
+{
+	margin-top: 50px;
+}
+.transform-img-south-africa
+{
+	background: url(../img/transform_south_africa.png) no-repeat;
+	height: 500px;
+	background-size: cover;
+    background-position: center;
+    margin-top: 90px;
+}
+.transform-img-south-africa .transform-text
+{
+	position: relative;
+    bottom: -15vh;
+    left: 7.5vw;
+    width: 45%;
+    text-align: left;
+}
+
+.transform-img-south-africa .transform-text h1
+{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 36px;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+.transform-img-south-africa .transform-text p
+{
+	font-size: 19px;
+	font-family: 'Libre Franklin', sans-serif;
+	line-height: 35px;
+	color: #F0F0F0;
+
+}
+
+.transform-img-south-africa .btn-default {
+    background-color: #BECE00;
+    border-color: #ccc;
+    padding: 11px 44px;
+    margin-top: 24px;
+    border-radius: 0;
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+/* SOUTH AFRICA end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* SIERRA LEONE start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.national-building-sierra_leone
+{
+	padding: 0 9vw;
+}
+
+.national-building-sierra_leone .fa-angle-left 
+{
+    padding-right: 12px;
+}
+
+.national-building-sierra_leone .quotes-all
+{
+	margin-right: 9vw;
+}
+
+.national-building-sierra_leone .back-countries
+{
+	color: #BECE00;
+	font-weight: 100;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 60px;
+}
+
+.national-building-sierra_leone .headline-countries
+{
+	font-family: 'Libre Baskerville', serif;
+}
+.national-building-sierra_leone .quotes-country
+{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 24px;
+    text-align: center;
+    padding: 108px 41px;
+    padding-bottom: 10px;
+}
+
+.national-building-sierra_leone .name-countries
+{
+	text-align: center;
+    margin-top: 20px;
+    color: #B6B7AE;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 66px;
+}
+.national-building-sierra_leone .text-countries
+{
+	font-size: 21px;
+   	margin-top: 55px;
+   	font-family: 'Libre Franklin', sans-serif;
+   	padding-right: 6vw;
+}
+
+.national-building-sierra_leone .text-headline
+{
+	font-size: 36px;
+	font-family: 'Libre Baskerville', serif;
+	margin-top: 33px;
+}
+.national-building-sierra_leone .img-malaysia
+{
+	margin-top: 50px;
+}
+.transform-img-sierra-leone
+{
+	background: url(../img/transform_sierra_leone.png) no-repeat;
+	height: 500px;
+	background-size: cover;
+    background-position: center;
+    margin-top: 90px;
+}
+.transform-img-sierra-leone .transform-text
+{
+	position: relative;
+    bottom: -15vh;
+    left: 7.5vw;
+    width: 45%;
+    text-align: left;
+}
+
+.transform-img-sierra-leone .transform-text h1
+{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 36px;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+.transform-img-sierra-leone .transform-text p
+{
+	font-size: 19px;
+	font-family: 'Libre Franklin', sans-serif;
+	line-height: 35px;
+	color: #F0F0F0;
+
+}
+
+.transform-img-sierra-leone .btn-default {
+    background-color: #BECE00;
+    border-color: #ccc;
+    padding: 11px 44px;
+    margin-top: 24px;
+    border-radius: 0;
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+/* SIERRA LEONE end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* MALAYSIA start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.national-building-malaysia
+{
+	padding: 0 9vw;
+}
+
+.national-building-malaysia .fa-angle-left 
+{
+    padding-right: 12px;
+}
+
+.national-building-malaysia .quotes-all
+{
+	margin-right: 9vw;
+}
+
+.national-building-malaysia .back-countries
+{
+	color: #BECE00;
+	font-weight: 100;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 60px;
+}
+
+.national-building-malaysia .headline-countries
+{
+	font-family: 'Libre Baskerville', serif;
+}
+.national-building-malaysia .quotes-country
+{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 24px;
+    text-align: center;
+    padding: 108px 41px;
+    padding-bottom: 10px;
+}
+
+.national-building-malaysia .name-countries
+{
+	text-align: center;
+    margin-top: 20px;
+    color: #B6B7AE;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 66px;
+}
+.national-building-malaysia .text-countries
+{
+	font-size: 21px;
+   	margin-top: 55px;
+   	font-family: 'Libre Franklin', sans-serif;
+   	padding-right: 6vw;
+}
+
+.national-building-malaysia .text-headline
+{
+	font-size: 36px;
+	font-family: 'Libre Baskerville', serif;
+	margin-top: 33px;
+}
+.national-building-malaysia .img-malaysia
+{
+	margin-top: 50px;
+}
+.transform-img-malaysia
+{
+	background: url(../img/transform_malaysia.png) no-repeat;
+	height: 500px;
+	background-size: cover;
+    background-position: center;
+    margin-top: 90px;
+}
+
+.transform-img-malaysia .transform-text
+{
+	position: relative;
+    bottom: -15vh;
+    left: 7.5vw;
+    width: 45%;
+    text-align: left;
+}
+
+.transform-img-malaysia .transform-text h1
+{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 36px;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+.transform-img-malaysia .transform-text p
+{
+	font-size: 19px;
+	font-family: 'Libre Franklin', sans-serif;
+	line-height: 35px;
+	color: #F0F0F0;
+
+}
+
+.transform-img-malaysia .btn-default {
+    background-color: #BECE00;
+    border-color: #ccc;
+    padding: 11px 44px;
+    margin-top: 24px;
+    border-radius: 0;
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+/* MALAYSIA end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* LONDON start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.national-building-london
+{
+	padding: 0 9vw;
+}
+
+.national-building-london .fa-angle-left 
+{
+    padding-right: 12px;
+}
+
+.national-building-london .quotes-all
+{
+	margin-right: 9vw;
+}
+
+.national-building-london .back-countries
+{
+	color: #BECE00;
+	font-weight: 100;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 60px;
+}
+
+.national-building-london .headline-countries
+{
+	font-family: 'Libre Baskerville', serif;
+}
+.national-building-london .quotes-country
+{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 24px;
+    text-align: center;
+    padding: 108px 41px;
+    padding-bottom: 10px;
+}
+
+.national-building-london .name-countries
+{
+	text-align: center;
+    margin-top: 20px;
+    color: #B6B7AE;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 66px;
+}
+.national-building-london .text-countries
+{
+	font-size: 21px;
+   	margin-top: 55px;
+   	font-family: 'Libre Franklin', sans-serif;
+   	padding-right: 6vw;
+}
+
+.national-building-london .text-headline
+{
+	font-size: 36px;
+	font-family: 'Libre Baskerville', serif;
+	margin-top: 33px;
+}
+.national-building-london .img-malaysia
+{
+	margin-top: 50px;
+}
+.transform-img-london
+{
+	background: url(../img/transform_london.png) no-repeat;
+	height: 500px;
+	background-size: cover;
+    background-position: center;
+    margin-top: 90px;
+}
+.transform-img-london .transform-text
+{
+	position: relative;
+    bottom: -15vh;
+    left: 7.5vw;
+    width: 45%;
+    text-align: left;
+}
+
+.transform-img-london .transform-text h1
+{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 36px;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+.transform-img-london .transform-text p
+{
+	font-size: 19px;
+	font-family: 'Libre Franklin', sans-serif;
+	line-height: 35px;
+	color: #F0F0F0;
+
+}
+
+.transform-img-london .btn-default {
+    background-color: #BECE00;
+    border-color: #ccc;
+    padding: 11px 44px;
+    margin-top: 24px;
+    border-radius: 0;
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+/* LONDON end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* LESOTHO start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.national-building-lesotho
+{
+	padding: 0 9vw;
+}
+
+.national-building-lesotho .fa-angle-left 
+{
+    padding-right: 12px;
+}
+
+.national-building-lesotho .quotes-all
+{
+	margin-right: 9vw;
+}
+
+.national-building-lesotho .back-countries
+{
+	color: #BECE00;
+	font-weight: 100;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 60px;
+}
+
+.national-building-lesotho .headline-countries
+{
+	font-family: 'Libre Baskerville', serif;
+}
+.national-building-lesotho .quotes-country
+{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 24px;
+    text-align: center;
+    padding: 108px 41px;
+    padding-bottom: 10px;
+}
+
+.national-building-lesotho .name-countries
+{
+	text-align: center;
+    margin-top: 20px;
+    color: #B6B7AE;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 66px;
+}
+.national-building-lesotho .text-countries
+{
+	font-size: 21px;
+   	margin-top: 55px;
+   	font-family: 'Libre Franklin', sans-serif;
+   	padding-right: 6vw;
+}
+
+.national-building-lesotho .text-headline
+{
+	font-size: 36px;
+	font-family: 'Libre Baskerville', serif;
+	margin-top: 33px;
+}
+.national-building-lesotho .img-malaysia
+{
+	margin-top: 50px;
+}
+.transform-img-lesotho
+{
+	background: url(../img/transform_lesotho.png) no-repeat;
+	height: 500px;
+	background-size: cover;
+    background-position: center;
+    margin-top: 90px;
+}
+.transform-img-lesotho .transform-text
+{
+	position: relative;
+    bottom: -15vh;
+    left: 7.5vw;
+    width: 45%;
+    text-align: left;
+}
+
+.transform-img-lesotho .transform-text h1
+{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 36px;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+.transform-img-lesotho .transform-text p
+{
+	font-size: 19px;
+	font-family: 'Libre Franklin', sans-serif;
+	line-height: 35px;
+	color: #F0F0F0;
+
+}
+
+.transform-img-lesotho .btn-default {
+    background-color: #BECE00;
+    border-color: #ccc;
+    padding: 11px 44px;
+    margin-top: 24px;
+    border-radius: 0;
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+/* LESOTHO end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* CAMBODIA start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.national-building-cambodia
+{
+	padding: 0 9vw;
+}
+
+.national-building-cambodia .fa-angle-left 
+{
+    padding-right: 12px;
+}
+
+.national-building-cambodia .quotes-all
+{
+	margin-right: 9vw;
+}
+
+.national-building-cambodia .back-countries
+{
+	color: #BECE00;
+	font-weight: 100;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 60px;
+}
+
+.national-building-cambodia .headline-countries
+{
+	font-family: 'Libre Baskerville', serif;
+}
+.national-building-cambodia .quotes-country
+{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 24px;
+    text-align: center;
+    padding: 108px 41px;
+    padding-bottom: 10px;
+}
+
+.national-building-cambodia .name-countries
+{
+	text-align: center;
+    margin-top: 20px;
+    color: #B6B7AE;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 66px;
+}
+.national-building-cambodia .text-countries
+{
+	font-size: 21px;
+   	margin-top: 55px;
+   	font-family: 'Libre Franklin', sans-serif;
+   	padding-right: 6vw;
+}
+
+.national-building-cambodia .text-headline
+{
+	font-size: 36px;
+	font-family: 'Libre Baskerville', serif;
+	margin-top: 33px;
+}
+.national-building-cambodia .img-malaysia
+{
+	margin-top: 50px;
+}
+.transform-img-cambodia
+{
+	background: url(../img/transform_cambodia.png) no-repeat;
+	height: 500px;
+	background-size: cover;
+    background-position: center;
+    margin-top: 90px;
+}
+.transform-img-cambodia .transform-text
+{
+	position: relative;
+    bottom: -15vh;
+    left: 7.5vw;
+    width: 45%;
+    text-align: left;
+}
+
+.transform-img-cambodia .transform-text h1
+{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 36px;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+.transform-img-cambodia .transform-text p
+{
+	font-size: 19px;
+	font-family: 'Libre Franklin', sans-serif;
+	line-height: 35px;
+	color: #F0F0F0;
+
+}
+
+.transform-img-cambodia .btn-default {
+    background-color: #BECE00;
+    border-color: #ccc;
+    padding: 11px 44px;
+    margin-top: 24px;
+    border-radius: 0;
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+/* CAMBODIA end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* BOTSWANA start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.national-building-botswana
+{
+	padding: 0 9vw;
+}
+
+.national-building-botswana .fa-angle-left 
+{
+    padding-right: 12px;
+}
+
+.national-building-botswana .quotes-all
+{
+	margin-right: 9vw;
+}
+
+.national-building-botswana .back-countries
+{
+	color: #BECE00;
+	font-weight: 100;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 60px;
+}
+
+.national-building-botswana .headline-countries
+{
+	font-family: 'Libre Baskerville', serif;
+}
+.national-building-botswana .quotes-country
+{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 24px;
+    text-align: center;
+    padding: 108px 41px;
+    padding-bottom: 10px;
+}
+
+.national-building-botswana .name-countries
+{
+	text-align: center;
+    margin-top: 20px;
+    color: #B6B7AE;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 66px;
+}
+.national-building-botswana .text-countries
+{
+	font-size: 21px;
+   	margin-top: 55px;
+   	font-family: 'Libre Franklin', sans-serif;
+   	padding-right: 6vw;
+}
+
+.national-building-botswana .text-headline
+{
+	font-size: 36px;
+	font-family: 'Libre Baskerville', serif;
+	margin-top: 33px;
+}
+.national-building-botswana .img-malaysia
+{
+	margin-top: 50px;
+}
+.transform-img-botswana
+{
+	background: url(../img/transform_botswana.png) no-repeat;
+	height: 500px;
+	background-size: cover;
+    background-position: center;
+    margin-top: 90px;
+}
+.transform-img-botswana .transform-text
+{
+	position: relative;
+    bottom: -15vh;
+    left: 7.5vw;
+    width: 45%;
+    text-align: left;
+}
+
+.transform-img-botswana .transform-text h1
+{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 36px;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+.transform-img-botswana .transform-text p
+{
+	font-size: 19px;
+	font-family: 'Libre Franklin', sans-serif;
+	line-height: 35px;
+	color: #F0F0F0;
+
+}
+
+.transform-img-botswana .btn-default {
+    background-color: #BECE00;
+    border-color: #ccc;
+    padding: 11px 44px;
+    margin-top: 24px;
+    border-radius: 0;
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+/* BOTSWANA end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* MEDIA start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#media .top-head
+{
+	padding: 0;
+}
+
+#media .publ-1
+{
+	padding: 0;
+	margin-top: 40px;
+}
+#media .publ-2
+{
+	padding: 0;
+}
+#media .publ-3
+{
+	padding: 0;
+}
+#media .publ-4
+{
+	padding: 0;
+}
+
+#media .publ-5
+{
+	padding: 0;
+	margin-top: 71px;
+}
+
+#media .blog-head-top
+{
+	padding: 0;
+	margin-top: 120px;
+}
+#media .speech-head-top
+{
+	padding: 0;
+	margin-top: 120px;
+}
+#media .blog-1
+{
+	padding: 0;
+	margin-top: 40px;
+}
+#media .blog-2
+{
+	padding: 0;
+}
+#media .blog-3
+{
+	padding: 0;
+}
+#media .blog-4
+{
+	padding: 0;
+}
+ 
+#media .speech-1
+{
+	padding: 0;
+}
+#media .speech-2
+{
+	padding: 0;
+}
+#media .speech-3
+{
+	padding: 0;
+}
+#media .headline-media
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 26px;
+	color: #F0F0F0;
+	font-weight: 700;
+	margin-top: 60px;
+}
+
+#media .see-more-media
+{
+	float: right; 
+	color: #BECE00;
+	font-weight: 100;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#media .fa-angle-right
+{
+	padding-left: 12px;
+}
+
+#media .btn-default 
+{
+    color: #333;
+    background-color: transparent;
+    border-color: #BECE00;
+    color: #BECE00;
+
+}
+
+#media .book-title
+{
+    font-size: 19px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+}
+#media .book-small
+{
+   	font-size: 16px;
+   	font-family: 'Libre Baskerville', serif;
+   	font-weight: bold;
+}
+
+#media .book-year
+ {
+ 	font-size: 16px;
+ 	font-family: 'Montserrat', sans-serif;
+ 	color: #B6B7AE;
+ }
+ #media .book-desc
+ {
+ 	color: #F0F0F0;
+ 	font-family: 'Libre Franklin', sans-serif;
+ 	font-size: 16px;
+ 	padding-right: 1vw;
+ }
+ #media .blog-read
+ {
+ 	color: #BECE00;
+ 	font-size: 16px;
+ 	margin-top: 21px;
+ 	font-family: 'Montserrat', sans-serif;
+ }
+ #media .blog-title
+ {
+ 	font-size: 21px;
+ 	font-family: 'Libre Baskerville', serif;
+ 	font-weight: bold;
+ 	line-height: 30px;
+ 	color: #F0F0F0;
+ }
+
+ #media .blog-small
+ {
+ 	font-size: 18px;
+ 	font-family: 'Libre Baskerville', serif;
+ 	font-weight: bold;
+ 	line-height: 27px;
+ 	color: #F0F0F0;
+ }
+
+ #media .blog-year
+ {
+ 	font-size: 16px;
+ 	font-family: 'Montserrat', sans-serif;
+ 	color: #B6B7AE;
+ 	margin-bottom: 24px;
+ 	margin-top: 16px;
+ }
+
+ #media .blog-desc
+ {
+ 	color: #F0F0F0;
+ 	font-family: 'Libre Franklin', sans-serif;
+ 	font-size: 16px;
+ 	padding-right: 1vw;
+ 	line-height: 30px;
+ }
+
+ #media .speech_big_title
+ {
+ 	font-size: 32px;
+ 	font-weight: bold;
+ 	font-family: 'Libre Baskerville', serif;
+ }
+ #media .speech_name
+ {
+ 	color: #747474;
+ 	font-size: 18px;
+ 	font-weight: bold;
+ 	font-family: 'Libre Franklin', sans-serif;
+ }
+
+
+/* MEDIA end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* PUBLICATION start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#media-publication .headline-media
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 26px;
+	color: #F0F0F0;
+	font-weight: 700;
+	margin-top: 60px;
+}
+#media-publication .main
+{
+	padding: 0 !important;
+}
+#media-publication .headline-media-back{
+ color: #BECE00;
+	font-weight: 100;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 60px;
+}
+
+#media-publication .fa-angle-left{
+	padding-right: 12px;
+}
+
+#media-publication .see-more-media{
+	float: right; 
+	color: #BECE00;
+	font-weight: 100;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#media-publication .fa-angle-right{
+	padding-left: 12px;
+}
+
+#media-publication .btn-default {
+    color: #333;
+    background-color: transparent;
+    border-color: #BECE00;
+    color: #BECE00;
+
+    }
+
+    #media-publication .book-title-media
+    {
+    	font-size: 24px;
+    	font-family: 'Libre Baskerville', serif;
+    	font-weight: bold;
+    	margin-top: 0;
+    	line-height: 34px;
+    }
+    #media-publication .book-small-media
+    {
+    	font-size: 21px;
+    	font-family: 'Libre Baskerville', serif;
+    	font-weight: bold;
+    	line-height: 29px;
+    	padding-right: 1vw;
+    }
+
+    #media-publication .book-year-media
+    {
+    	font-size: 16px;
+    	font-family: 'Montserrat', sans-serif;
+    	color: #737373;
+    	margin: 30px 0px;
+    	margin-bottom: 23px;
+    }
+    #media-publication .book-year-media-small
+    {
+    	font-size: 16px;
+    	font-family: 'Montserrat', sans-serif;
+    	color: #737373;
+    	margin-bottom: 23px;
+    }
+    #media-publication .book-desc-media
+    {
+    	color: #F0F0F0;
+    	font-family: 'Libre Franklin', sans-serif;
+    	font-size: 16px;
+    	padding-right: 15vw;
+    	line-height: 26px;
+    	margin-bottom: 37px;
+ 
+    }
+    #media-publication hr
+    {
+    	border-top: 1px solid #707070;
+    	    margin: 50px 0;
+    }
+
+    #media-publication .all-book
+	{
+	margin-bottom: 40px !important;
+	padding: 0 !important;
+	}
+
+#media .book-space
+{
+	padding: 0 !important;
+}
+
+/* PUBLICATION end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* BLOG start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#media-blog .blog-page-head-top
+{
+	padding: 0;
+}
+#media-blog .blog-page-head
+{
+	padding: 0;
+}
+#media-blog .blog-page-1
+{
+	padding: 0;
+}
+#media-blog .blog-page-2
+{
+	padding: 0;
+}
+#media-blog .blog-page-3
+{
+	padding: 0;
+}
+#media-blog .blog-page-4
+{
+	padding: 0;
+}
+#media-blog .blog-page-5
+{
+	padding: 0;
+}
+#media-blog .blog-page-6
+{
+	padding: 0;
+}
+#media-blog .blog-page-7
+
+{
+	padding: 0;
+}
+#media-blog .blog-page-1
+{
+	padding: 0;
+	margin-top: 40px;
+}
+
+#media-blog .second-part
+{
+	padding: 0;
+	margin-top: 40px;
+}
+
+#media-blog .blog-page-8
+{
+	padding: 0;
+	margin-top: 36px;
+}
+#media-blog .headline-media
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 26px;
+	color: #F0F0F0;
+	font-weight: 700;
+	margin-top: 60px;
+}
+#media-blog .headline-media-back{
+ color: #BECE00;
+	font-weight: 100;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 60px;
+}
+
+#media-blog .fa-angle-left{
+	padding-right: 12px;
+}
+
+#media-blog .see-more-media{
+	float: right; 
+	color: #BECE00;
+	font-weight: 100;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#media-blog .fa-angle-right{
+	padding-left: 12px;
+}
+
+#media-blog .btn-default {
+    color: #333;
+    background-color: transparent;
+    border-color: #BECE00;
+    color: #BECE00;
+
+    }
+
+
+    #media-blog .blog-read
+    {
+    	color: #BECE00;
+    	font-size: 16px;
+    	margin-top: 35px;
+    	font-family: 'Montserrat', sans-serif;
+    }
+    #media-blog .blog-title
+    {
+    	font-size: 21px;
+    	font-family: 'Libre Baskerville', serif;
+    	font-weight: bold;
+    	line-height: 30px;
+    	color: #F0F0F0;s
+    }
+
+    #media-blog .blog-small
+    {
+    	font-size: 18px;
+    	font-family: 'Libre Baskerville', serif;
+    	font-weight: bold;
+    	line-height: 27px;
+    	color: #F0F0F0;
+    }
+
+    #media-blog .blog-year
+    {
+    	font-size: 16px;
+    	font-family: 'Montserrat', sans-serif;
+    	color: #B6B7AE;
+    	margin-bottom: 24px;
+    	margin-top: 16px;
+
+    }
+
+     #media-blog .book-year
+    {
+    	font-size: 16px;
+    	font-family: 'Montserrat', sans-serif;
+    	color: #747474;
+    	 
+ 
+    }
+
+    #media-blog .blog-desc
+    {
+    	color: #F0F0F0;
+    	font-family: 'Libre Franklin', sans-serif;
+    	font-size: 16px;
+    	padding-right: 1vw;
+    	line-height: 30px;
+    }
+
+
+    /* BLOG content*/
+	#media-blog-content .blog-cont-1
+	{
+		padding: 0;
+	}
+	#media-blog-content .blog-cont-2
+	{
+		padding: 0;
+	}
+	#media-blog-content .blog-cont-4
+	{
+		padding: 0;
+	}
+	#media-blog-content .blog-cont-3
+	{
+		padding: 0;
+		padding-right: 2vw;
+	}
+		 #media-blog-content .headline-media
+	{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 26px;
+		color: #F0F0F0;
+		font-weight: 700;
+		margin-top: 60px;
+	}
+	#media-blog-content .headline-media-back
+	{
+	 color: #BECE00;
+		font-weight: 100;
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+		margin-top: 60px;
+	}
+	
+	#media-blog-content .fa-angle-left
+	{
+		padding-right: 12px;
+	}
+	
+	#media-blog-content .blog-year 
+	{
+	    font-size: 16px;
+	    font-family: 'Montserrat', sans-serif;
+	    color: #B6B7AE;
+	    margin-bottom: 24px;
+	    margin-top: 16px;
+	} 
+	
+	#media-blog-content .blog-content-text
+	{
+		font-size: 21px;
+	    line-height: 35px;
+	    color: #F0F0F0;
+	    margin-top: 30px;
+	    font-family: 'Libre Franklin', sans-serif;
+	}
+	
+	#media-blog-content .blog-title
+	{
+		color: #F0F0F0;
+		font-size:21px;
+		font-family: 'Libre Baskerville', serif;
+		line-height: 30px;
+	}
+
+    /* BLOG content end
+
+
+/* BLOG end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+/* SPEECH start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+	#media-speech .speech-page-head-top
+	{
+		padding: 0;
+	}
+	#media-speech .speech-page-1
+	{
+		padding: 0;
+	}
+	#media-speech .speech-page-2
+	{
+		padding: 0;
+	}
+	#media-speech .speech-page-3
+	{
+		padding: 0;
+	}
+	#media-speech .speech-page-4
+	{
+		padding: 0;
+	}
+	#media-speech .speech-page-6{
+		padding: 0;
+	}
+	#media-speech .speech-page-7
+	{
+		padding: 0;
+	}
+	#media-speech .speech-page-8
+	{
+		padding: 0;
+	}
+	#media-speech .speech-page-9
+	{
+		padding: 0;
+	}
+	#media-speech .speech-page-10
+	{
+		padding: 0;
+	}
+	#media-speech .speech-page-5
+	{
+		margin-top: 48px;
+		padding: 0 30px;"
+	}
+	
+	#media-speech .speech_big_title_2 
+	{
+		margin-top: 48px;
+		padding: 0 30px;
+		padding-left: 0;
+	}
+	#media-speech .headline-media
+	{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 26px;
+		color: #F0F0F0;
+		font-weight: 700;
+		margin-top: 60px;
+	}
+	
+	#media-speech .see-more-media{
+		float: right; 
+		color: #BECE00;
+		font-weight: 100;
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+	}
+	
+	#media-speech .fa-angle-right{
+		padding-left: 12px;
+	}
+	
+	#media-speech .btn-default {
+    	color: #333;
+    	background-color: transparent;
+    	border-color: #BECE00;
+    	color: #BECE00;
+
+    }
+
+    #media-speech .book-title
+    {
+    	font-size: 19px;
+    	font-family: 'Libre Baskerville', serif;
+    	font-weight: bold;
+    }
+    #media-speech .book-small
+    {
+    	font-size: 16px;
+    	font-family: 'Libre Baskerville', serif;
+    	font-weight: bold;
+    }
+
+    #media-speech .book-year
+    {
+    	font-size: 16px;
+    	font-family: 'Montserrat', sans-serif;
+    	color: #B6B7AE;
+    }
+    #media-speech .book-desc
+    {
+    	color: #F0F0F0;
+    	font-family: 'Libre Franklin', sans-serif;
+    	font-size: 16px;
+    	padding-right: 1vw;
+ 
+    }
+    #media-speech .blog-read
+    {
+    	color: #BECE00;
+    	font-size: 16px;
+    	margin-top: 35px;
+    	font-family: 'Montserrat', sans-serif;
+    }
+    #media-speech .blog-title
+    {
+    	font-size: 21px;
+    	font-family: 'Libre Baskerville', serif;
+    	font-weight: bold;
+    	line-height: 30px;
+    	color: #F0F0F0;
+    }
+
+    #media-speech .blog-small
+    {
+    	font-size: 18px;
+    	font-family: 'Libre Baskerville', serif;
+    	font-weight: bold;
+    	line-height: 27px;
+    	color: #F0F0F0;
+    }
+
+    #media-speech .blog-year
+    {
+    	font-size: 16px;
+    	font-family: 'Montserrat', sans-serif;
+    	color: #B6B7AE;
+    	margin-bottom: 24px;
+    	margin-top: 16px;
+    }
+
+    #media-speech .blog-desc
+    {
+    	color: #F0F0F0;
+    	font-family: 'Libre Franklin', sans-serif;
+    	font-size: 16px;
+    	padding-right: 1vw;
+    	line-height: 30px;
+    }
+
+    #media-speech .speech_big_title
+    {
+    	font-size: 32px;
+    	font-weight: bold;
+    	font-family: 'Libre Baskerville', serif;
+    }
+    #media-speech .speech_name
+    {
+    	color: #747474;
+    	font-size: 18px;
+    	font-weight: bold;
+    	font-family: 'Libre Franklin', sans-serif;
+
+    }
+
+	 #media-speech .headline-media-back
+	 {
+	 	color: #BECE00;
+		font-weight: 100;
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+		margin-top: 60px;
+	}
+
+	#media-speech .fa-angle-left
+	{
+		padding-right: 12px;
+	}
+
+	/* SPEECH content */
+
+	#media-speech-content .speech-cont-head-top
+	{
+		padding: 0;
+	}
+	#media-speech-content .speech-cont-page-1
+	{
+		padding: 0;
+	}
+	#media-speech-content .speech-cont-page-2
+	{
+		padding: 0;
+		padding-right: 2vw;
+	}
+	#media-speech-content .speech-cont-page-3
+	{
+		padding: 0;
+	}
+	#media-speech-content .speech-cont-page-4
+	{
+		padding: 0;
+	}
+	#media-speech-content .headline-media-back
+	{
+		 color: #BECE00;
+		font-weight: 100;
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+		margin-top: 60px;
+	}
+	
+	#media-speech-content .fa-angle-left
+	{
+		padding-right: 12px;
+	}
+	
+	 #media-speech-content .blog-year
+	 {
+	 	font-size: 16px;
+	 	font-family: 'Montserrat', sans-serif;
+	 	color: #B6B7AE;
+	 	margin-bottom: 24px;
+	 	margin-top: 16px;
+	 }
+	
+	  #media-speech-content .book-year
+	 {
+	 	font-size: 16px;
+	 	font-family: 'Montserrat', sans-serif;
+	 	color: #747474;
+	 }
+	#media-speech-content .speech-headline
+	{
+		font-size: 36px;
+		font-family: 'Libre Baskerville', serif;
+		color: #ffffff;
+	}
+	
+	#media-speech-content .speech-content-text
+	{
+		font-size: 19px;
+	    line-height: 35px;
+	    color: #F0F0F0;
+	    margin-top: 30px;
+	    font-family: 'Libre Franklin', sans-serif;
+	}
+	
+	#media-speech-content .speech-content-title
+	{
+		font-size: 18px;
+		font-family: 'Libre Baskerville', serif;
+	    font-weight: bold;
+	    line-height: 27px;
+	    color: #F0F0F0;
+	}
+	/* SPEECH content  end*/
+
+/* SPEECH end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* MEDIA QUERIES start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media(max-width: 1280px){
+	.nation_building .cards{
+		width: 100%;
+    	margin: auto;
+	}
+	.nation_building .quote_text p{
+		font-size: 11px;
+	}
+	.nation_building .country_details{
+		bottom: -14vw;
+	}
+	.nation_building .country_details2{
+		bottom: -2.5vw;
+	}
+	.nation_building .lesotho_details{
+		bottom: -14vw !important;
+	}
+	.nation_building .quote .name{
+		font-size: 10px;
+	}
+	.nation_building .home_content{
+		margin-left: 8vw;
+	}
+}
+@media(max-width: 1024px){
+	.nation_building .country_details{
+		bottom: -19.5vw;
+	}
+	.nation_building .lesotho_details{
+		bottom: -13.5vw !important;
+	}
+	.nation_building h1{
+		font-size: 30px;
+	}
+	.nation_building .country_details2 a,
+	.nation_building .country_details a{
+		top: 0.7vw;
+	}
+	/* Home Page  start */
+	.big_twitter{
+    display: none !important;
+  }
+  .small_twitter{
+    display: block !important;
+  }
+  #fullpage section .section_one_bg{
+    margin-top: 0;
+    background-position-y: 0;
+        height: 610px;
+  }
+  #fullpage .home_title{
+    position: relative;
+    bottom: -38vw;
+    margin-left: 7vw;
+    left: 0;
+  }
+  #fullpage header{
+    position: relative;
+  }
+  #fullpage .section_two_title{
+    position: relative;
+    left: 0;
+    margin-left: 7vw;
+    bottom: -280px;
+  }
+  #fullpage .section_two_details{
+    position: relative;
+    top: 320px;
+  }
+  #fullpage .section_three_title{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-left: 7vw;
+  }
+  body{
+    overflow: scroll !important;
+  }
+  #fullpage .footer_last{
+    position: relative;
+    bottom: 0;
+    margin-top: 16px;
+  }
+  #fullpage .home_title h1{
+    font-size: 32px;
+  }
+  #fullpage .home_title p,
+  #fullpage .home_title a{
+    font-size: 14px;
+  }
+  #fullpage .section_two_bg{
+    height: 610px;
+  }
+  #fullpage .section_two_title h1{
+    font-size: 32px;
+  }
+  #fullpage .section_two_title p,
+  #fullpage .section_two_title a{
+    font-size: 14px;
+  }
+  #fullpage .section_three_title{
+    bottom: -280px;
+  }
+  #fullpage .section_three_bg{
+    height: 610px;
+    margin-top: 148px;
+  }
+  #fullpage .section_two_columns .col-md-3 .year{
+    bottom: -1vw;
+  }
+  #fullpage .section_two_columns{
+    padding: 50px 6vw;
+  }
+  #fullpage .section_three_title h1{
+    font-size: 32px;
+  }
+  #fullpage .section_three_title p,
+  #fullpage .section_three_title a{
+    font-size: 14px;
+  }
+  #fullpage .section_four{
+    margin-top: 240px;
+  }
+  .section_five .col-xs-12:nth-child(1){
+    margin-top: 100px;
+  }
+  #fullpage .section_four_news h4{
+    font-size: 14px;
+  }
+  #fullpage .section_four_news p{
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  #fullpage .section_five .col-md-5{
+    padding-left: 10vw;
+  }
+  #fullpage .footer_contact_us{
+    padding-right: 10vw;
+  }
+  #fullpage .section_five .footer_contact_us .footer_email_input{
+    width: 64%;
+  }
+  #fullpage .section_five .footer_contact_us .footer_submit_input{
+    width: 24%;
+  }
+  #fullpage .section_five img{
+    width: 124px;
+  }
+  #fullpage .footer_copyright .col-md-6 i{
+    margin-left: 10px;
+  }
+  #fullpage .footer_copyright .col-md-6{
+    float: none !important;
+  }
+  .hr_sections2,
+  .hr_sections{
+	display: block;
+  }
+  /* Home Page end */
+}
+@media(max-width: 768px){
+	.nation_building .home_content{
+	    top: 19vw;
+	}
+	.nation_building td{
+		border: 20px solid #000;
+	}
+	.nation_building .country_details{
+		bottom: -24vw;
+	}
+	.nation_building .country_details2{
+		bottom: -0.5vw;
+	}
+	.nation_building .home_content p{
+		font-size: 12px;
+	}
+	.nation_building .quote img{
+		width: 26px;
+	}
+	.nation_building .lesotho_details{
+		bottom: -12vw !important;
+	}
+
+	/* Home Page start */
+	#fullpage section .section_one_bg{
+    height: 89vh;
+    background: url('../img/mobile_home_bg.png') no-repeat;
+    background-size: cover;
+  }
+  #fullpage .home_title{
+    bottom: -67vh;
+  }
+  header{
+    display: none;
+  }
+  .mobile_menu{
+    display: block;
+    height: 60px;
+  }
+  .mobile_home_logo{
+    width: 150px;
+    margin-top: 5px;
+    margin-left: -60px;
+  }
+  #fullpage .section_two_details{
+    background: none;
+  }
+  #fullpage .section_two_bg{
+    height: 70vh;
+    margin-top: -20px;
+  }
+  #fullpage .section_two_title{
+    bottom: -65vh;
+    margin-left: 32px;
+  }
+  #fullpage .section_two_columns{
+    margin-top: 28vh;
+  }
+  #fullpage .section_two_columns{
+    padding-left: 16px;
+  }
+  #fullpage .section_two_columns .col-md-3 p:nth-child(1){
+    font-size: 14px;
+  }
+  #fullpage .section_two_columns .col-md-3 p:nth-child(2){
+    font-size: 16px;
+  }
+  #fullpage .section_two_columns .year{
+    display: none;
+  }
+  #fullpage .section_two_columns .year_mobile{
+    display: block;
+    bottom: 0;
+  }
+  #fullpage .section_two_columns .col-xs-12{
+    margin-top: 30px;
+  }
+  #fullpage .section_three_details{
+    background: none;
+  }
+  #fullpage .section_three_bg{
+    height: 60vh;
+    background: url('../img/home_section_three_bg.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #fullpage .section_three_title{
+    bottom: -65vh;
+    margin-left: 32px;
+  }
+  #fullpage .section_three_columns{
+    margin-top: 12vh;
+  }
+  #fullpage .section_three_columns{
+    padding-left: 16px;
+  }
+  #fullpage .section_three_columns .col-md-3 p:nth-child(1){
+    font-size: 14px;
+  }
+  #fullpage .section_three_columns .col-md-3 p:nth-child(2){
+    font-size: 16px;
+  }
+  #fullpage .section_three_columns .year{
+    display: none;
+  }
+  #fullpage .section_three_columns .year_mobile{
+    display: block;
+    bottom: 0;
+  }
+  #fullpage .section_three_columns .col-xs-12{
+    margin-top: 30px;
+  }
+  #fullpage .section_three_bg{
+    margin-top: 75vh;
+  }
+  #fullpage .section_four{
+    margin-top: 8vh;
+  }
+  .see_more_mobile{
+    display: none;
+  }
+  #fullpage .section_four_twitter{
+    width: 95%;
+    margin: 0 16px;
+    float: unset;
+  }
+  .small_twitter{
+    display: none !important;
+  }
+  .small2_twitter{
+    display: block;
+  }
+  #fullpage .section_four_news{
+    padding: 0;
+  }
+  #fullpage .section_four_news .col-md-4{
+    padding: 0;
+    margin-top: 6vh;
+  }
+  #fullpage .section_four_news h3{
+    font-size: 32px;
+    margin-top: 10vh;
+  }
+  #fullpage .section_four_news h4{
+    font-size: 18px;
+    margin-left: 32px;
+    margin-top: 30px;
+  }
+  #fullpage .section_four_news p{
+    margin-left: 32px;
+    font-size: 14px;
+  }
+  .footer_hidden_links{
+    display: none;
+  }
+  .footer_mobile_headline{
+    display: block;
+  }
+  .footer_desktop_headline{
+    display: none;
+  }
+  #fullpage .footer_contact_us{
+    padding-right: 16px;
+  }
+  #fullpage .section_five .footer_contact_us p{
+    font-size: 14px;
+  }
+  #fullpage .section_five .footer_contact_us .footer_email_input{
+    width: 72%;
+  }
+  .hr_sections{
+    margin-top: 84vh;
+    border: 1px solid #707070;
+  }
+  .mobile_see_more{
+    float: none !important;
+    top: 20px !important;
+    margin-left: 32px !important;
+  }
+  .hr_sections2{
+    border: 1px solid #707070;
+    margin-top: 60px;
+  }
+  .section_five .col-xs-12:nth-child(1){
+    margin-top: 40px;
+  }
+  .section_five .footer_copyright .col-md-5{
+    display: inline-block !important;
+    padding: 0 !important;
+    margin-top: 24px;
+  }
+  .section_five .footer_copyright{
+    text-align: center;
+  }
+  #fullpage .footer_copyright i{
+    margin-left: 0;
+  }
+  .footer_hr{
+    width: 95%;
+    border: 1px solid #707070;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    display: block;
+  }
+  #fullpage .footer_copyright .col-xs-12{
+    display: inline;
+  }
+  #fullpage .footer_copyright img{
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
+  .section_five .footer_copyright{
+    margin-bottom: 30px;
+  }
+  #fullpage .footer_last p{
+    margin-bottom: 20px;
+  }
+  .section_two_hr{
+    display: block;
+    width: 95%;
+    margin: 40px 0px;
+    border: 1px solid #707070;
+  }
+  .mobile_menu li a{
+    padding: 6vw 0 2vw 0;
+    font-size: 22px;
+  }
+  .mobile_menu .nav-icon{
+  	margin-top: 20px;
+  }
+  .mobile_menu .nav-icon div{
+  	width: 31px;
+  }
+	/* Home page end */
+}
+
+@media(max-width: 500px){
+	/* Home Page start */
+	.mobile_menu div.header{
+    padding: 0px;
+    height: 60px;
+  }
+  .mobile_menu{
+    height: 10px;
+  }
+  .mobile_home_logo{
+    margin-top: 10px;
+    width: 120px;
+  }
+  #fullpage section .section_one_bg{
+    height: 650px;
+  }
+  #fullpage .home_title h1{
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+  .home_temp_br{
+    display: none;
+  }
+  #fullpage .home_title p, #fullpage .home_title a{
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-right: 32px;
+  }
+  #fullpage .home_title{
+    bottom: -425px;
+  }
+  .mobile_menu .ul_menu{
+    top: 60px;
+  }
+  #fullpage .section_two_bg{
+    background: url('../img/home_section_two_mobile.png');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+  }
+  #fullpage .section_two_title,
+  #fullpage .section_three_title{
+    bottom: -474px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .section_two_hr{
+    width: 99%;
+    margin-top: 36px;
+  }
+  #fullpage .section_two_columns{
+    margin-top: 158px;
+    padding: 0 6px;
+  }
+  #fullpage .section_three_title a,
+  #fullpage .section_two_title a{
+    margin-left: 8px;
+  }
+  #fullpage .section_three_bg{
+    margin-top: 920px;
+    height: 450px;
+  }
+  #fullpage .section_four{
+    margin-top: 40px;
+  }
+  .hr_sections{
+    margin-top: 980px;
+  }
+  #fullpage .section_four_twitter{
+    margin: 0;
+    width: 100%;
+  }
+  .small2_twitter{
+    display: none;
+  }
+  .big_twitter{
+    display: block !important;
+  }
+  #fullpage .section_four_news h3{
+    font-size: 24px;
+    margin-top: 80px;
+  }
+  #fullpage .section_four_news h4,
+  #fullpage .section_four_news p{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  #fullpage .section_four_news p{
+    margin-bottom: 30px;
+  }
+  .mobile_see_more{
+    margin-left: 20px !important;
+    top: 0 !important;
+  }
+  .hr_sections2{
+    margin-top: 20px;
+  }
+  #fullpage .footer_contact_us{
+    padding-right: 6px;
+    padding-left: 6px;
+    text-align: center;
+  }
+  #fullpage .section_five .footer_contact_us h3{
+    font-size: 24px;
+    text-align: left;
+  }
+  #fullpage .section_five .footer_contact_us p{
+    text-align: left;
+  }
+  .section_five .col-xs-12:nth-child(1){
+    margin-top: 10px;
+  }
+  #fullpage .section_five .footer_contact_us .footer_email_input{
+    margin-top: 20px;
+    width: 100%;
+  }
+  #fullpage .section_five .footer_contact_us .footer_submit_input{
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  #fullpage .footer_copyright{
+    margin-top: 30px;
+  }
+  .footer_logo_mobile{
+    display: block;
+  }
+  #fullpage .footer_copyright img{
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  #fullpage .footer_copyright .col-md-6 i{
+    margin: 10px;
+  }
+  #fullpage .footer_copyright .col-xs-12{
+    padding: 0;
+  }
+  #fullpage .footer_last p{
+    font-size: 8px;
+  }
+  .footer_hr{
+    display: none;
+  }
+  .footer_img2{
+    margin-top: 60px !important;
+    margin-bottom: 20px !important;
+  }
+  #fullpage .section_five .col-md-5{
+    width: 100%;
+  }
+  .mobile_menu li a{
+    font-size: 18px;
+   padding: 6vw 0 2vw 0;
+  }
+  .menu_active{
+    border-bottom: 2px solid #fff;
+  }
+  .mobile_menu .inner_menu{
+    top: 13.5%;
+  }
+	/* Home page end */
+
+	/* Recognition start */ 
+	#recognition .text-desc 
+	{
+    	font-size: 16px;
+    	text-align: center;
+    	color: #F0F0F0;
+    	padding: 0;
+    	padding-top: 47px;
+    	margin-bottom: 25px;
+	}
+	#recognition .second
+	{
+		margin-top: 40px;
+	}
+	#recognition .see-more-mobile{
+	color: #BECE00;
+	font-weight: 100;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	}
+	#recognition .text-award {
+    font-size: 16px;
+    padding-right: 9vw;
+    color: #F0F0F0;
+    padding-top: 22px;
+    font-weight: normal;
+	}
+	#recognition .recognition-head-top {
+    padding: 0 15px;
+	}
+	#recognition .section1 {
+    margin-bottom: 55px;
+	}
+	#recognition .recognition-head-top 
+	{
+    	padding: 0 15px;
+	}
+	#recognition .quotes-img
+	{
+		width: 100% !important;
+	}
+	#recognition .text-desc-quotes
+	{
+		padding: 0 31px;
+    	padding-top: 40px;
+   	 	text-align: center;
+	}
+	#recognition .name
+	{
+		padding: 0;
+	}
+	#recognition .img-mobile
+	{
+		margin: 0 auto;
+    	display: block;
+    	margin-top: 25px;
+	}
+
+	#recognition .text-desc-quotes
+	{
+    	font-size: 16px;
+    	text-align: center;
+    	color: #F0F0F0;
+    	padding: 0 38px;
+    	padding-top: 47px;
+    	line-height: 26px;
+	}
+	#recognition .name-quotes
+	{
+		text-align: center;
+	}
+	.pagination 
+	{
+   	 	margin: 20px 1px;
+   	 	padding-left: 11vw;
+	}
+	#recognition .pagination>li>a, .pagination>li>span
+	{
+		    padding: 6px 18px;
+	}
+	#recognition .headline-awards2
+	{
+		margin-bottom: 30px;
+		font-size: 26px;
+	}
+	#recognition .select select {
+    font-size: 14px;
+    font-weight: normal;
+	}
+	#recognition .rec-dropdwon
+	{
+		padding: 0 15px;
+	}
+	.rec-quotes-mobile
+	{
+		position: absolute;
+    	top: 80px;
+    	color: black;
+    	padding: 20px;
+    	text-align: center;
+	}
+	.text-quotes-moble
+	{
+		font-size: 16px;
+    	line-height: 26px;
+    	font-family: 'Libre Baskerville', serif;
+	}
+	.name-quotes-mobile
+	{
+		font-size: 14px;
+    	color: #000000;
+	}
+	.rec-img-mobile
+	{
+		margin-top: 8px;
+    	margin-bottom: 13px;
+	}
+	/* Recognition end */
+}
+/* MEDIA QUERIES end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
