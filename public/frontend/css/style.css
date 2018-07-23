@@ -1,46 +1,78 @@
 /* RESET-GENERAL start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-body {
+body
+{
 	margin: 0;
 	padding: 0;
 	color: #fff;
 	background-color: #000 !important;
 }
-
-a {
+a
+{
 	text-decoration: none;
 }
-a:hover {
+a:hover 
+{
 	text-decoration: none;
 }
-
-ul, li {
+ul, li 
+{
 	list-style-type: none;
 }
-.row {
+.row
+{
     margin-right: 0;
     margin-left: 0;
 }
+.container
+{
+	padding-left: 0;
+	padding-right: 0;
+}
+ 
 /* RESET-GENERAL end
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
 /* HEADER start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-header{
+.desktop_header_space
+{
+	display: block;
+	height: 130px;
+}
+.small .menu
+{
+	margin-top: -10px;
+	height: 34px;
+}
+.small img
+{
+	width: 120px;
+	margin: 14px 0;
+}
+header
+{
+	position: fixed;
+    background: #000;
     top: 0;
     text-align: center;
     width: 100%;
     display: block;
+    z-index: 9999;
 }
-.mobile_menu{
+.mobile_menu
+{
 	display: none;
 }
-header img{
+header img
+{
 	width: 130px;
     margin: 20px 0;
+    transition: .2s;
 }
-header a{
+header a
+{
 	color: #8F8F8F;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -49,18 +81,23 @@ header a{
     font-size: 13px;
     transition: .4s;
 }
-header a:hover{
+header a:hover
+{
 	color: #fff;
 }
-header .menu{
+header .menu
+{
 	margin-top: 28px;
+    transition: .2s;
 	padding-bottom: 15px;
 }
 .hr_sections2,
-.hr_sections{
+.hr_sections
+{
 	display: none;
 }
-.mobile_menu .ul_menu {
+.mobile_menu .ul_menu
+{
   top: 75px;
   position: fixed;
   width: 100%;
@@ -75,22 +112,25 @@ header .menu{
   transition: transform .3s;
   transform-style: preserve-3d;
 }
-
-.mobile_menu .inner_menu {
+.mobile_menu .inner_menu
+{
   position: absolute;
   top: 12%;
   width: 100%;
   left: 0;
   height: 100%;
 }
-.mobile_menu .inner_menu li{
+.mobile_menu .inner_menu li
+{
 	text-transform: uppercase;
 }
-.mobile_menu .inner_menu li{
+.mobile_menu .inner_menu li
+{
 	width: 228px;
     margin: auto;
 }
-.mobile_menu li a {
+.mobile_menu li a 
+{
 	opacity: 1;
 	display: block;
 	color: #8F8F8F;
@@ -101,8 +141,8 @@ header .menu{
 	font-size: 24px;
 	margin: 0;
 }
-
-.mobile_menu div.header {
+.mobile_menu div.header
+{
     background: #000;
     padding: 10px;
     position: fixed;
@@ -111,32 +151,32 @@ header .menu{
     height: 75px;
     text-align: center;
 }
-
-.mobile_menu h1 {
+.mobile_menu h1
+{
   display: inline;
 }
-
-.mobile_menu h1 {
+.mobile_menu h1 
+{
   margin-left: 30px;
   color: white;
 }
-
-.mobile_menu .container {
+.mobile_menu .container
+{
   cursor: pointer;
 }
-
-.mobile_menu body {
+.mobile_menu body
+{
   margin: 0;
   padding: 0;
   background: black;
 }
-
-.mobile_menu .open {
+.mobile_menu .open
+{
   transform: rotate(360deg);
   left: 0;
 }
-
-.mobile_menu .nav-icon {
+.mobile_menu .nav-icon
+{
   height: 35px;
   width: 35px;
   position: relative;
@@ -144,8 +184,8 @@ header .menu{
   float: left;
   z-index: 1000;
 }
-
-.mobile_menu .nav-icon div {
+.mobile_menu .nav-icon div 
+{
   height: 2px;
   width: 35px;
   background: white;
@@ -158,9 +198,9 @@ header .menu{
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 .mobile_menu .nav-icon div::before,
-.mobile_menu .nav-icon div::after {
+.mobile_menu .nav-icon div::after 
+{
   content: "";
   height: 2px;
   width: 100%;
@@ -172,33 +212,40 @@ header .menu{
   transition-delay: 0s;
 }
 
-.mobile_menu .nav-icon div::before {
+.mobile_menu .nav-icon div::before 
+{
   top: -10px;
 }
 
-.mobile_menu .nav-icon div::after {
+.mobile_menu .nav-icon div::after
+{
   top: 10px;
 }
 
-.mobile_menu .cross.active .span::before {
+.mobile_menu .cross.active .span::before 
+{
   top: 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-.mobile_menu .cross.active .span::after {
+.mobile_menu .cross.active .span::after 
+{
   top: 0;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-.mobile_menu .cross.active .span {
+.mobile_menu .cross.active .span 
+{
   background: none;
 }
-.mobile_menu .nav-icon div::before, .mobile_menu .nav-icon div::after{
+.mobile_menu .nav-icon div::before, .mobile_menu .nav-icon div::after
+{
 	left: 0;
 }
-.menu_active{
+.menu_active
+{
 	border-bottom: 4px solid #fff;
 	color: #fff !important;
 }
@@ -208,52 +255,64 @@ header .menu{
 
 /* FOOTER start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.footer_logo_mobile{
+.footer_logo_mobile
+{
 	display: none;
 }
-.footer_hr{
+.footer_hr
+{
 	display: none;
 }
 footer{
 	text-align: left;
 	margin-top: 50px;
 }
-footer .col-md-5{
+footer .col-md-5
+{
 	padding-left: 16vw;
 }
-footer img{
+footer img
+{
 	width: 140px;
 	margin-bottom: 34px;
 }
-footer ul{
+footer ul
+{
 	padding-left: 0px;
 }
-footer li{
+footer li
+{
 	margin-bottom: 20px;
 }
-footer a{
+footer a
+{
 	color: #909090;
 	font-size: 16px;
 	font-weight: 400;
 	transition: .2s;
     font-family: 'Montserrat', sans-serif;
 }
-footer a:hover{
+footer a:hover
+{
 	color: #fff;
 }
-footer .footer_menu_active{
+footer .footer_menu_active
+{
 	color: #fff;
 }
-footer .footer_contact_us h3{
+footer .footer_contact_us h3
+{
     font-family: 'Libre Baskerville', serif;
     font-size: 30px;
 }
-footer .footer_contact_us p{
+footer .footer_contact_us p
+{
 	font-size: 12px;
 	margin-top: 20px;
 	color: #F0F0F0;
 }
-footer .footer_contact_us .footer_email_input{
+footer .footer_contact_us .footer_email_input
+{
 	width: 50%;
 	color: #8D8D8D;
 	background: #1C1C24;
@@ -261,7 +320,8 @@ footer .footer_contact_us .footer_email_input{
     padding: 10px;
     margin-top: 50px;
 }
-footer .footer_contact_us .footer_submit_input{
+footer .footer_contact_us .footer_submit_input
+{
 	width: 12%;
 	color: #BECE00;
 	background: #1C1C24;
@@ -270,47 +330,56 @@ footer .footer_contact_us .footer_submit_input{
     margin-top: 50px;
     margin-left: 20px;
 }
-footer .footer_contact_us .footer_submit_input:hover{
+footer .footer_contact_us .footer_submit_input:hover
+{
 	color: #000;
 }
 footer .footer_copyright{
 	margin-top: 50px;
 }
 footer .footer_copyright .col-md-5,
-footer .footer_copyright .col-md-6{
+footer .footer_copyright .col-md-6
+{
 	display: flex;
 }
-footer .footer_copyright p{
+footer .footer_copyright p
+{
 	color: #848484;
 	font-size: 10px;
 	margin-top: 5px;
 }
-footer .footer_copyright i{
+footer .footer_copyright i
+{
 	color: #000;
     background: #848484;
     padding: 5px;
     border-radius: 50%;
     margin-left: 40px;
 }
-footer .footer_copyright img{
+footer .footer_copyright img
+{
 	width: 100px;
 	margin-top: -5px;
 	margin-right: 10px;
 }
-footer .footer_copyright .col-md-6 i{
+footer .footer_copyright .col-md-6 i
+{
 	margin-left: 20px;
 }
-footer .footer_last{
+footer .footer_last
+{
 	text-align: center;
     position: relative;
     padding-bottom: 10px;
     margin-top: 100px;
 }
-footer .footer_last p{
+footer .footer_last p
+{
 	color: #848484;
 	font-size: 9px;
 }
-.footer_mobile_headline{
+.footer_mobile_headline
+{
   display: none;
 }
 /* FOOTER end
@@ -329,22 +398,26 @@ footer .footer_last p{
 
 /* SECTION'S INDICATOR - fullPage.js start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span{
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span
+{
 	background-color: #fff;
 	opacity: 1;
 }
-#fp-nav ul li a span, .fp-slidesNav ul li a span{
+#fp-nav ul li a span, .fp-slidesNav ul li a span
+{
 	background-color: #fff;
 	margin: -2px 0 0 -3px;
 	width: 6px;
 	height: 6px;
 	opacity: .6;
 }
-#fp-nav.right{
+#fp-nav.right
+{
 	left: 24px;
 	width: 30px;
 }
-#fullpage section{
+#fullpage section
+{
 	background-color: #000 !important;
 }
 /* SECTION'S INDICATOR - fullPage.js end
@@ -353,7 +426,8 @@ footer .footer_last p{
 
 /* SECTION ONE - fullPage.js start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-#fullpage section .section_one_bg{
+#fullpage section .section_one_bg
+{
 	height: 100%;
     margin-top: 294px;
     background: url(../img/section_one_bg.png) no-repeat;
@@ -361,17 +435,20 @@ footer .footer_last p{
     background-position: center;
     background-position-y: -60px;
 }
-#fullpage header{
+#fullpage header
+{
 	position: absolute;
     top: 0;
     text-align: center;
     width: 100%;
 }
-#fullpage header img{
+#fullpage header img
+{
 	width: 130px;
     margin: 20px 0;
 }
-#fullpage header a{
+#fullpage header a
+{
 	color: #8F8F8F;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -380,10 +457,12 @@ footer .footer_last p{
     font-size: 13px;
     transition: .25s;
 }
-#fullpage header a:hover{
+#fullpage header a:hover
+{
 	color: #fff;
 }
-#fullpage header .menu{
+#fullpage header .menu
+{
 	margin-top: 28px;
 	padding-bottom: 12px;
 }
@@ -391,24 +470,28 @@ footer .footer_last p{
 	border-bottom: 4px solid #fff;
 	color: #fff !important;
 }
-#fullpage .home_title{
+#fullpage .home_title
+{
 	position: absolute;
     bottom: 17vh;
     left: 7vw;
     text-align: left;
 }
-#fullpage .home_title h1{
+#fullpage .home_title h1
+{
     font-size: 2.6vw;
     font-weight: 600;
     line-height: 1.3;
     font-family: 'Libre Baskerville', serif;
 }
-#fullpage .home_title p{
+#fullpage .home_title p
+{
 	line-height: 1.6;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 1vw;
 }
-#fullpage .home_title a{
+#fullpage .home_title a
+{
 	text-transform: uppercase;
 	color: #BECE00;
 	font-size: .8vw;
@@ -416,10 +499,12 @@ footer .footer_last p{
     position: relative;
     transition: .25s;
 }
-#fullpage .home_title a:hover{
+#fullpage .home_title a:hover
+{
 	color: #d3e404;
 }
-#fullpage .home_title i{
+#fullpage .home_title i
+{
 	margin-left: 6px;
 } 
 /* SECTION ONE - fullPage.js end
@@ -428,41 +513,48 @@ footer .footer_last p{
 
 /* SECTION TWO - fullPage.js start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.section_two_hr{
+.section_two_hr
+{
   display: none;
 }
-#fullpage .section_two_bg{
+#fullpage .section_two_bg
+{
 	height: 100%;
     background: url(../img/section_two_bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-position-y: -100px;
 }
-#fullpage .section_two_title{
+#fullpage .section_two_title
+{
 	position: absolute;
     bottom: 33vh;
     left: 7vw;
     text-align: left;
 }
-#fullpage .section_two_title h1{
+#fullpage .section_two_title h1
+{
 	font-size: 2.6vw;
     font-weight: 600;
     line-height: 1.3;
     font-family: 'Libre Baskerville', serif;
 }
-#fullpage .section_two_details{
+#fullpage .section_two_details
+{
 	height: 250px;
     background: #000;
     bottom: 0;
     position: absolute;
     width: 100%;
 }
-#fullpage .section_two_title p{
+#fullpage .section_two_title p
+{
 	line-height: 1.6;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 1vw;
 }
-#fullpage .section_two_title a{
+#fullpage .section_two_title a
+{
 	text-transform: uppercase;
 	color: #BECE00;
 	font-size: .8vw;
@@ -470,32 +562,39 @@ footer .footer_last p{
     position: relative;
     transition: .25s;
 }
-#fullpage .section_two_title a:hover{
+#fullpage .section_two_title a:hover
+{
 	color: #d3e404;
 }
-#fullpage .section_two_title i{
+#fullpage .section_two_title i
+{
 	margin-left: 6px;
 } 
-#fullpage .section_two_columns{
+#fullpage .section_two_columns
+{
 	text-align:left;
 	padding: 60px 6vw;
 	overflow: auto;
 }
-#fullpage .section_two_columns .col-md-3 p:nth-child(1){
+#fullpage .section_two_columns .col-md-3 p:nth-child(1)
+{
 	color: #BECE00;
 	font-size: 12px;
 	text-transform: uppercase;
 }
-#fullpage .section_two_columns .col-md-3 p:nth-child(2){
+#fullpage .section_two_columns .col-md-3 p:nth-child(2)
+{
 	font-size: 15px;
 	font-weight: 500;
 }
-#fullpage .section_two_columns .col-md-3 .year{
+#fullpage .section_two_columns .col-md-3 .year
+{
 	position: relative;
     bottom: -3vw;
     color: #B6B7AE !important;
 }
-#fullpage .section_two_columns .year_mobile{
+#fullpage .section_two_columns .year_mobile
+{
 	position: relative;
     bottom: -3vw;
     color: #B6B7AE !important;
@@ -507,38 +606,44 @@ footer .footer_last p{
 
 /* SECTION THREE - fullPage.js start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-#fullpage .section_three_bg{
+#fullpage .section_three_bg
+{
 	height: 100%;
     background: url(../img/section_three_bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-position-y: -100px;
 }
-#fullpage .section_three_title{
+#fullpage .section_three_title
+{
 	position: absolute;
     bottom: 33vh;
     left: 7vw;
     text-align: left;
 }
-#fullpage .section_three_title h1{
+#fullpage .section_three_title h1
+{
 	font-size: 2.6vw;
     font-weight: 600;
     line-height: 1.3;
     font-family: 'Libre Baskerville', serif;
 }
-#fullpage .section_three_details{
+#fullpage .section_three_details
+{
 	height: 250px;
     background: #000;
     bottom: 0;
     position: absolute;
     width: 100%;
 }
-#fullpage .section_three_title p{
+#fullpage .section_three_title p
+{
 	line-height: 1.6;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 1vw;
 }
-#fullpage .section_three_title a{
+#fullpage .section_three_title a
+{
 	text-transform: uppercase;
 	color: #BECE00;
 	font-size: .8vw;
@@ -546,27 +651,33 @@ footer .footer_last p{
     position: relative;
     transition: .25s;
 }
-#fullpage .section_three_title a:hover{
+#fullpage .section_three_title a:hover
+{
 	color: #d3e404;
 }
-#fullpage .section_three_title i{
+#fullpage .section_three_title i
+{
 	margin-left: 6px;
 } 
-#fullpage .section_three_columns{
+#fullpage .section_three_columns
+{
 	text-align:left;
 	padding: 60px 6vw;
 	overflow: auto;
 }
-#fullpage .section_three_columns .col-md-3 p:nth-child(1){
+#fullpage .section_three_columns .col-md-3 p:nth-child(1)
+{
 	color: #BECE00;
 	font-size: 12px;
 	text-transform: uppercase;
 }
-#fullpage .section_three_columns .col-md-3 p:nth-child(2){
+#fullpage .section_three_columns .col-md-3 p:nth-child(2)
+{
 	font-size: 15px;
 	font-weight: 500;
 }
-#fullpage .section_three_columns .col-md-3 p:nth-child(3){
+#fullpage .section_three_columns .col-md-3 p:nth-child(3)
+{
 	position: relative;
     bottom: -3vw;
     color: #B6B7AE;
@@ -577,7 +688,8 @@ footer .footer_last p{
 
 /* SECTION FOUR - fullPage.js start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.small2_twitter{
+.small2_twitter
+{
   display: none;
 }
 #fullpage .section_four_twitter
@@ -585,15 +697,18 @@ footer .footer_last p{
 	width: 70%;
 	float: right;
 }
-#fullpage .section_four_news{
+#fullpage .section_four_news
+{
 	text-align: left;
 	padding-right: 8vw;
 }
-#fullpage .section_four_news h3{
+#fullpage .section_four_news h3
+{
 	font-weight: 400;
 	margin-top: 0;
 }
-#fullpage .section_four_news a{
+#fullpage .section_four_news a
+{
 	text-transform: uppercase;
 	float: right;
 	line-height: 4;
@@ -603,22 +718,27 @@ footer .footer_last p{
     position: relative;
     transition: .25s;
 }
-#fullpage .section_four_news a:hover{
+#fullpage .section_four_news a:hover
+{
 	color: #d3e404;
 }
-#fullpage .section_four_news i{
+#fullpage .section_four_news i
+{
 	margin-left: 6px;
 } 
-#fullpage .section_four_news h4{
+#fullpage .section_four_news h4
+{
 	line-height: 1.5;
 	letter-spacing: 1px;
     font-family: 'Libre Baskerville', serif;
     margin-top: 20px;
 } 
-#fullpage .section_four_news img{
+#fullpage .section_four_news img
+{
 	width: 100%;
 }
-#fullpage .section_four_news p{
+#fullpage .section_four_news p
+{
 	color: #747474;
 } 
 .big_twitter{
@@ -633,44 +753,55 @@ footer .footer_last p{
 
 /* SECTION FIVE - fullPage.js start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-#fullpage .section_five{
+#fullpage .section_five
+{
 	text-align: left;
 }
-#fullpage .section_five .col-md-5{
+#fullpage .section_five .col-md-5
+{
 	padding-left: 16vw;
 }
-#fullpage .section_five img{
+#fullpage .section_five img
+{
 	width: 140px;
 	margin-bottom: 34px;
 }
-#fullpage .section_five ul{
+#fullpage .section_five ul
+{
 	padding-left: 0;
 }
-#fullpage .section_five li{
+#fullpage .section_five li
+{
 	margin-bottom: 20px;
 }
-#fullpage .section_five a{
+#fullpage .section_five a
+{
 	color: #909090;
 	font-size: 16px;
 	font-weight: 400;
 	transition: .2s;
 }
-#fullpage .section_five a:hover{
+#fullpage .section_five a:hover
+{
 	color: #fff;
 }
-#fullpage .section_five .footer_menu_active{
+#fullpage .section_five .footer_menu_active
+{
 	color: #fff;
 }
-#fullpage .section_five .footer_contact_us h3{
+#fullpage .section_five .footer_contact_us h3
+{
     font-family: 'Libre Baskerville', serif;
     font-size: 30px;
 }
-#fullpage .section_five .footer_contact_us p{
+#fullpage .section_five .footer_contact_us p
+{
 	font-size: 12px;
 	margin-top: 20px;
 	color: #F0F0F0;
 }
-#fullpage .section_five .footer_contact_us .footer_email_input{
+#fullpage .section_five .footer_contact_us .footer_email_input
+{
 	width: 50%;
 	color: #8D8D8D;
 	background: #1C1C24;
@@ -679,7 +810,8 @@ footer .footer_last p{
     margin-top: 50px;
     border-radius: 0;
 }
-#fullpage .section_five .footer_contact_us .footer_submit_input{
+#fullpage .section_five .footer_contact_us .footer_submit_input
+{
 	width: 12%;
 	color: #BECE00;
 	background: #1C1C24;
@@ -689,34 +821,40 @@ footer .footer_last p{
     margin-left: 20px;
     border-radius: 0;
 }
-#fullpage .section_five .footer_contact_us .footer_submit_input:hover{
+#fullpage .section_five .footer_contact_us .footer_submit_input:hover
+{
 	color: #000;
 }
 #fullpage .footer_copyright{
 	margin-top: 50px;
 }
 #fullpage .footer_copyright .col-md-5,
-#fullpage .footer_copyright .col-md-6{
+#fullpage .footer_copyright .col-md-6
+{
 	display: flex;
 }
-#fullpage .footer_copyright p{
+#fullpage .footer_copyright p
+{
 	color: #848484;
 	font-size: 10px;
 	margin-top: 5px;
 }
-#fullpage .footer_copyright i{
+#fullpage .footer_copyright i
+{
 	color: #000;
     background: #848484;
     padding: 5px;
     border-radius: 50%;
     margin-left: 40px;
 }
-#fullpage .footer_copyright img{
+#fullpage .footer_copyright img
+{
 	width: 100px;
 	margin-top: -5px;
 	margin-right: 10px;
 }
-#fullpage .footer_copyright .col-md-6 i{
+#fullpage .footer_copyright .col-md-6 i
+{
 	margin-left: 20px;
 }
 #fullpage .footer_last{
@@ -731,6 +869,380 @@ footer .footer_last p{
 /* SECTION FIVE - fullPage.js end
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+
+/* PROFILE PAGE start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.profile_home_bg{
+	background: url('../img/temp.png');
+	background-position: center;
+	background-size: cover;
+	height: 650px;
+	margin-bottom: 80px;
+}
+.profile_content .profile_quote{
+	padding: 0 14%;
+	text-align: center;
+}
+.profile_content .profile_quote h1{
+	margin: 0;
+	font-family: 'Libre Baskerville', serif;
+	line-height: 1.3;
+	text-align: left;
+}
+.profile_content .profile_quote p{
+	padding: 5%;
+	padding-top: 40px;
+	padding-bottom: 14px;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 16px;
+	letter-spacing: .6;
+	line-height: 1.5;
+	color: #F0F0F0;
+	font-weight: 300;
+}
+.profile_content .profile_quote .profile_name{
+	color: #B6B7AE;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	padding-top: 14px;
+}
+.profile_content .profile_quote img{
+	margin-top: 0;
+}
+.profile_content{
+	padding-left: 10%;
+	text-align: center;
+}
+.profile_sidebar{
+	padding: 0 40px;
+	padding-right: 10%;
+}
+.profile_content .profile_one{
+	margin-top: 40px;
+	text-align: left;
+	font-family: 'Libre Franklin', sans-serif;
+	color: #F0F0F0;
+	padding: 0 8%;
+	margin-bottom: 40px;
+	line-height: 1.7;
+}
+.profile_content .profile_one a{
+	color: #BECE00;
+	padding-left: 10%;
+	transition: .2s;
+}
+.profile_content .profile_one a:hover{
+	color: #d3e404;
+}
+.profile_content .profile_one i{
+	padding-left: 6px;
+}
+.profile_content .profile_one h3{
+	font-family: 'Libre Baskerville', serif;
+	color: #F0F0F0;
+	margin-bottom: 20px;
+}
+.profile_img_8 img{
+	width: 100%;
+}
+.profile_content .text_left{
+	font-family: 'Libre Franklin', sans-serif;
+	color: #F0F0F0;
+	text-align: left;
+	line-height: 1.7;
+	padding-left: 6.5%;
+	float: left;
+}
+.profile_content .img_right{
+	padding-right: 6.5%;
+	float: right;
+}
+.profile_content .img_right img{
+	width: 100%;
+}
+.profile_content .text_right{
+	font-family: 'Libre Franklin', sans-serif;
+	color: #F0F0F0;
+	text-align: left;
+	line-height: 1.7;
+	padding-right: 6.5%;
+}
+.profile_content .text_right h3{
+	font-family: 'Libre Baskerville', serif;
+	color: #F0F0F0;
+	margin-bottom: 20px;
+}
+.profile_content .img_left{
+	padding-left: 6.5%;
+}
+.profile_content .img_left img{
+	width: 100%;
+}
+.profile_columns{
+	margin-bottom: 40px;
+}
+.profile_img_last{
+	padding: 0 8%;
+}
+.profile_content .profile_img_last{
+	margin-bottom: 140px;
+}
+.profile_content .profile_img_last a{
+	color: #BECE00;
+	position: relative;
+	top: -50px;
+	transition: .2s;
+}
+.profile_content .profile_img_last a:hover{
+	color: #d3e404;
+}
+.profile_content .profile_img_last i{
+	margin-left: 6px;
+}
+.profile_content .profile_img_last img{
+	width: 100%;
+}
+.profile_sidebar .awards{
+	overflow: auto;
+	margin: 40px 0;
+}
+.profile_sidebar .awards h3{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+.profile_sidebar .awards .awards_items{
+	text-align: center;
+	margin-top: 20px;
+}
+.profile_sidebar .awards .awards_items p{
+	text-align: left;
+	font-family: 'Libre Baskerville', serif;
+	margin-top: 20px;
+	color: #F0F0F0;
+}
+.profile_sidebar .awards .awards_items p:nth-child(3){
+	text-align: left;
+	margin-top: -2px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	color: #B6B7AE;
+	font-family: 'Montserrat', sans-serif;
+}
+.profile_sidebar .awards .awards_items a{
+	color: #BECE00;
+	transition: 0.2s;
+}
+.profile_sidebar .awards .see_all{
+	text-align: left;
+	padding: 0;
+	margin-top: 10px;
+}
+.profile_sidebar .awards .awards_items a:hover{
+	color: #d3e404;
+}
+.profile_sidebar .awards .awards_items i{
+	margin-left: 6px;
+}
+.profile_sidebar .milestone{
+	margin: 80px 0;
+}
+.profile_sidebar .milestone h3{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	margin-bottom: 40px;
+}
+.profile_sidebar .milestone .milestones_items p{
+	text-align: left;
+	font-family: 'Libre Baskerville', serif;
+	margin-top: 20px;
+	color: #F0F0F0;
+}
+.profile_sidebar .milestone div,
+.profile_sidebar .awards div{
+	padding: 0;
+}
+.profile_sidebar .milestone .milestones_items p:nth-child(2){
+	text-align: left;
+	margin-top: -2px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	color: #B6B7AE;
+	font-family: 'Montserrat', sans-serif;
+}
+.profile_sidebar .milestone .milestones_items a{
+	color: #BECE00;
+	transition: 0.2s;
+}
+.profile_sidebar .milestone .see_all{
+	text-align: left;
+	padding: 0;
+	margin-top: 20px;
+}
+.profile_sidebar .milestone .milestones_items a:hover{
+	color: #d3e404;
+}
+.profile_sidebar .milestone .milestones_items i{
+	margin-left: 6px;
+}
+.profile_img_last{
+	display: block;
+}
+.profile_img_last2{
+	display: none;
+}
+/* PROFILE PAGE end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Milestone page start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: #848484;
+    top: 20px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.4px;
+}
+
+/* container2 around content */
+.timeline .container2 {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline .left_year{
+  text-align: right;
+}
+.timeline .left_year h4{
+  margin-top: 0px;
+  color: #B6B7AE;
+}
+
+.timeline .right_year h4{
+  margin-top: 0px;
+  color: #B6B7AE;
+}
+
+/* The circles on the timeline */
+.timeline .left::after,
+.timeline .right::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    right: -4px;
+    background-color: white;
+    border: 4px solid white;
+    top: 15px;
+    z-index: 1;
+}
+
+.timeline .year::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    right: -7px;
+    background-color: white;
+    border: 4px solid white;
+    top: 15px;
+    z-index: 1;
+    transform: rotate(45deg);
+}
+
+.timeline .year2::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: -7px;
+    background-color: white;
+    border: 4px solid white;
+    top: 15px;
+    z-index: 1;
+    transform: rotate(45deg);
+}
+
+/* Place the container2 to the left */
+.timeline .left {
+    left: 0;
+}
+
+.timeline .left_year {
+    left: 0;
+}
+
+/* Place the container2 to the right */
+.timeline .right {
+    left: 50%;
+}
+
+.timeline .right_year {
+    left: 50%;
+}
+
+/* Fix the circle for container2s on the right side */
+.timeline .right::after {
+    left: -4px;
+}
+
+.timeline .right_year::after {
+    left: -4px;
+}
+
+/* The actual content */
+.timeline .left .content {
+  text-align: right;
+  padding-top: 0;
+  padding-right: 0;
+}
+
+.timeline .right .content {
+  text-align: left;
+  padding-left: 0;
+  padding-top: 0;
+}
+
+.timeline .content {
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 6px;
+}
+
+.timeline .content h3{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-top: 0;
+}
+
+.timeline .content p{
+  font-size: 12px;
+  color: #B6B7AE;
+}
+
+.timeline .content img{
+  max-width: 85%;
+  margin-top: 20px;
+}
+
+/* Milestone page end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* RECOGNITION start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -927,6 +1439,214 @@ footer .footer_last p{
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
+/* Foundation start
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.temp_btm{
+	margin-bottom: 140px;
+}
+.text_left{
+	float: left;
+}
+.img_right{
+	float: right;
+}
+.foundation_sidebar .quote a{
+	color: #BECE00;
+	transition: 0.2s;
+}
+.foundation_sidebar .quote .see_all{
+	text-align: left;
+	padding: 0;
+	margin-top: 40px;
+}
+.foundation_sidebar .quote a:hover{
+	color: #d3e404;
+}
+.foundation_sidebar .quote i{
+	margin-left: 6px;
+}
+.foundation_sidebar{
+	padding: 0 40px;
+	padding-right: 4%;
+}
+.quote{
+
+}
+.quote .milestones_items{
+	padding: 0;
+}
+.quote .milestones_items p{
+	text-align: left;
+	font-family: 'Libre Baskerville', serif;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	color: #F0F0F0;
+	font-size: 18px;
+}
+.quote .milestones_items p:nth-child(2){
+	text-align: left;
+	margin-top: -2px;
+	margin-bottom: 40px;
+	font-size: 12px;
+	color: #B6B7AE;
+	font-family: 'Montserrat', sans-serif;
+}
+.quote h3{
+	margin-top: 60px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 26px;
+	margin-bottom: 20px;
+}
+.foundation_sidebar .milestones a{
+	color: #BECE00;
+	transition: 0.2s;
+}
+.foundation_sidebar .milestones .see_all{
+	text-align: left;
+	padding: 0;
+	margin-top: 40px;
+}
+.foundation_sidebar .milestones a:hover{
+	color: #d3e404;
+}
+.foundation_sidebar .milestones i{
+	margin-left: 6px;
+}
+.foundation_sidebar{
+	padding: 0 40px;
+	padding-right: 4%;
+}
+.milestones{
+
+}
+.milestones .milestones_items{
+	padding: 0;
+}
+.milestones .milestones_items p{
+	text-align: left;
+	font-family: 'Libre Baskerville', serif;
+	margin-top: 20px;
+	color: #F0F0F0;
+	font-size: 18px;
+}
+.milestones .milestones_items p:nth-child(2){
+	text-align: left;
+	margin-top: -2px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	color: #B6B7AE;
+	font-family: 'Montserrat', sans-serif;
+}
+.milestones h3{
+	margin-top: 60px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 26px;
+	margin-bottom: 20px;
+}
+.foundation_home_bg{
+	background: url('../img/foundation_bg.png');
+	background-position: center;
+	background-size: cover;
+	height: 650px;
+	margin-bottom: 80px;
+}
+.foundation_home_bg img{
+	position: relative;
+    top: 562px;
+    left: 15%;
+    width: 170px;
+}
+.foundation_content .foundation_paragraphs{
+	margin-top: 40px;
+	padding: 0 16%;
+	text-align: center;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+.foundation_content .foundation_paragraphs h2{
+	margin: 0;
+	font-family: 'Libre Baskerville', serif;
+	line-height: 1.3;
+	text-align: left;
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+.foundation_content .foundation_paragraphs p{
+	color: #F0F0F0;
+    font-family: 'Libre Franklin', sans-serif;
+    line-height: 35px;
+    text-align: left;
+    font-size: 18px;
+}
+.foundation_content .foundation_img{
+	padding: 0 4%;
+	padding-left: 8%;
+}
+.foundation_content .foundation_img img{
+	width: 100%;
+}
+.foundation_content .text_left{
+	padding-left: 16%;
+}
+.foundation_content .text_left p{
+	color: #F0F0F0;
+	font-family: 'Libre Franklin', sans-serif;
+	line-height: 1.7;
+	text-align: left;
+	font-size: 18px;
+}
+.foundation_content .text_right{
+	padding-right: 16%;
+	text-align: center;
+}
+.foundation_content .text_right p{
+	color: #F0F0F0;
+	font-family: 'Libre Baskerville', serif;
+	line-height: 1.7;
+	text-align: center;
+	padding-top: 5vw;
+	font-size: 18px;
+}
+.foundation_content .text_right p:nth-child(3){
+	color: #B6B7AE;
+	font-size: 10px;
+	padding-top: 0;
+}
+.foundation_content .text_right img{
+	width: 30px;
+	margin: 20px 0;
+}
+.foundation_content .img_right{
+	padding-right: 16%;
+}
+.foundation_content .img_right img{
+	width: 100%;
+}
+.foundation_content .img_left{
+	padding-left: 16%;
+}
+.foundation_content .img_left img{
+	width: 100%;
+}
+.foundation_content .foundation_paragraphs .text2{
+	text-align: center;
+	padding: 0 15%;
+	margin-top: 40px;
+}
+.foundation_content .foundation_paragraphs img{
+	width: 30px;
+	margin: 20px 0;
+}
+.foundation_content .foundation_paragraphs p:nth-child(4){
+	color: #B6B7AE;
+	font-size: 10px;
+	padding-top: 0;
+	text-align: center;
+}
+
+/* Foundation end
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 /* NATION BUILDING start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .nation_building .country_details{
@@ -1062,7 +1782,7 @@ footer .footer_last p{
 }
 .nation_building .home_content{
     position: absolute;
-    top: 31vw;
+    top: 27vw;
     margin-left: 16vw;
 }
 .nation_building .home_content img{
@@ -1090,15 +1810,183 @@ footer .footer_last p{
 	margin-left: 10px;
 	font-size: 16px;
 }
+.nation_building .cards{
+		display: block;
+	}
+	.nation_building .small_cards{
+		display: none;
+	}
 /* NATION BUILDING end
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+/* FOR ALL COUNTRIES */
+
+#country-details .panel-heading {
+	  padding: 0;
+		border:0;
+	}
+	#country-details .panel-title>a, .panel-title>a:active{
+		display:block;
+		color: #FFFFFF;
+		padding: 0 15px;
+	 
+	}
+	#country-details .panel-heading  a:before {
+	   font-family: 'Glyphicons Halflings';
+	   content: "\e114";
+	   float: right;
+	   color: #BECE00;
+	   transition: all 0.5s;
+	}
+	#country-details .panel-heading.active a:before {
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		transform: rotate(180deg);
+	} 
+
+	#country-details .panel-default>.panel-heading
+	{
+		background-color: transparent;
+	}
+	#country-details .accordion-toggle
+	{
+		color: #FFFFFF !important;
+	}
+	#country-details .panel-body
+	{
+		padding: 0 15px;
+	}
+	#country-details .panel-group
+	{
+		margin-bottom: 0;
+	}
+	#country-details .panel-default>.panel-heading+.panel-collapse>.panel-body
+	{
+		border: none;
+
+	}
+
+	#country-details .panel
+	{
+		background-color: transparent;
+		border:none;
+	}
+
+	#country-details .country-details
+	{
+		background-color: #424245;
+		padding: 0 6px;
+		background-color: rgba(66,66,69, 0.5);
+		overflow: hidden;
+		border-radius: 6px;
+	}
+	#country-details .name-progress-bar
+	{
+		padding: 0;
+		margin-top: -14px;
+	}
+	#country-details .progress-bar
+	{
+		    background-color: #43CBFF;
+		    height: 20px;
+	}
+
+	#country-details .country-img
+	{
+		
+    	padding: 11px;
+    	padding-top: 34px;
+    	display: block;
+    	margin: 0 auto;
+    	width: 70%;
+	}
+
+	#country-details .country-flag
+	{
+		margin-top: 20px;
+		width: 45px;
+	}
+	#country-details .first-section
+	{
+		margin-top: 20px;
+	}
+	#country-details .country-description
+	{
+		font-size: 16px;
+    	color: #F0F0F0;
+    	margin-bottom: 40px;
+    	font-family: 'Libre Franklin', sans-serif;
+    	font-weight: bold;
+	}
+	#country-details .amount
+	{
+		color: #43CBFF;
+    	float: right;
+    	font-size: 16px;
+	}
+	#country-details hr
+	{
+		border-top: 1px solid #707070;
+	}
+	#country-details sup
+	{
+		margin-left: 6px;
+	}
+	#country-details .title-country-desc
+	{
+		font-weight: bold;
+    	font-size: 21px;
+    	margin-top: 9px;
+    	margin-bottom: 35px;
+    	font-family: 'Montserrat', sans-serif;
+	}
+
+	#country-details .country-description2
+	{
+		font-size: 16px;
+    	color: #F0F0F0;
+    	margin-bottom: 20px;
+    	font-family: 'Libre Franklin', sans-serif;
+    	font-weight: bold;
+	}
+
+	#country-details .country-description-progress
+	{
+		font-size: 16px;
+    	color: #F0F0F0;
+    	font-family: 'Libre Franklin', sans-serif;
+	}
+	#country-details .space-section
+	{
+		margin-bottom: 22px;
+	}
+	#country-details .site
+	{
+		font-size: 14px;
+		color: #BECE00;
+		margin-bottom: 10px;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	#country-details .progress
+	{
+		background-color: #848484;
+		height: 5px;
+		width: 100%;
+	}
+	#country-details .progress-amount
+	{
+		padding: 0;
+		margin-top: -11px;
+	}
+
+/* FOR ALL COUNTRIES END
 
 /* SWAZILAND start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .national-building-swaziland
 {
-	padding: 0 9vw;
+	padding: 0 7vw;
 }
 
 .national-building-swaziland .fa-angle-left 
@@ -1203,6 +2091,7 @@ footer .footer_last p{
     border-radius: 0;
     font-size: 16px;
     color: #000000;
+    border-color: transparent;
     font-family: 'Montserrat', sans-serif;
 }
 /* SWAZILAND end
@@ -1213,7 +2102,7 @@ footer .footer_last p{
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .national-building-south_africa
 {
-	padding: 0 9vw;
+	padding: 0 7vw;
 }
 
 .national-building-south_africa .fa-angle-left 
@@ -1315,6 +2204,7 @@ footer .footer_last p{
     margin-top: 24px;
     border-radius: 0;
     font-size: 16px;
+    border-color: transparent;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
 }
@@ -1326,7 +2216,7 @@ footer .footer_last p{
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .national-building-sierra_leone
 {
-	padding: 0 9vw;
+	padding: 0 7vw;
 }
 
 .national-building-sierra_leone .fa-angle-left 
@@ -1429,6 +2319,7 @@ footer .footer_last p{
     border-radius: 0;
     font-size: 16px;
     color: #000000;
+    border-color: transparent;
     font-family: 'Montserrat', sans-serif;
 }
 /* SIERRA LEONE end
@@ -1439,7 +2330,7 @@ footer .footer_last p{
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .national-building-malaysia
 {
-	padding: 0 9vw;
+	padding: 0 7vw;
 }
 
 .national-building-malaysia .fa-angle-left 
@@ -1498,7 +2389,7 @@ footer .footer_last p{
 }
 .national-building-malaysia .img-malaysia
 {
-	margin-top: 50px;
+	margin-top: 35px;
 }
 .transform-img-malaysia
 {
@@ -1543,6 +2434,7 @@ footer .footer_last p{
     border-radius: 0;
     font-size: 16px;
     color: #000000;
+    border-color: transparent;
     font-family: 'Montserrat', sans-serif;
 }
 /* MALAYSIA end
@@ -1553,7 +2445,7 @@ footer .footer_last p{
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .national-building-london
 {
-	padding: 0 9vw;
+	padding: 0 7vw;
 }
 
 .national-building-london .fa-angle-left 
@@ -1656,6 +2548,7 @@ footer .footer_last p{
     border-radius: 0;
     font-size: 16px;
     color: #000000;
+    border-color: transparent;
     font-family: 'Montserrat', sans-serif;
 }
 /* LONDON end
@@ -1666,7 +2559,7 @@ footer .footer_last p{
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .national-building-lesotho
 {
-	padding: 0 9vw;
+	padding: 0 7vw;
 }
 
 .national-building-lesotho .fa-angle-left 
@@ -1768,6 +2661,7 @@ footer .footer_last p{
     margin-top: 24px;
     border-radius: 0;
     font-size: 16px;
+    border-color: transparent;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
 }
@@ -1779,7 +2673,7 @@ footer .footer_last p{
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .national-building-cambodia
 {
-	padding: 0 9vw;
+	padding: 0 7vw;
 }
 
 .national-building-cambodia .fa-angle-left 
@@ -1882,6 +2776,7 @@ footer .footer_last p{
     border-radius: 0;
     font-size: 16px;
     color: #000000;
+    border-color: transparent;
     font-family: 'Montserrat', sans-serif;
 }
 /* CAMBODIA end
@@ -1892,7 +2787,7 @@ footer .footer_last p{
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .national-building-botswana
 {
-	padding: 0 9vw;
+	padding: 0 7vw;
 }
 
 .national-building-botswana .fa-angle-left 
@@ -1995,6 +2890,7 @@ footer .footer_last p{
     border-radius: 0;
     font-size: 16px;
     color: #000000;
+    border-color: transparent;
     font-family: 'Montserrat', sans-serif;
 }
 /* BOTSWANA end
@@ -2029,8 +2925,8 @@ footer .footer_last p{
 
 #media .publ-5
 {
-	padding: 0;
-	margin-top: 71px;
+	padding: 0 0 0 15px;
+	margin-top: 56px;
 }
 
 #media .blog-head-top
@@ -2116,6 +3012,7 @@ footer .footer_last p{
    	font-size: 16px;
    	font-family: 'Libre Baskerville', serif;
    	font-weight: bold;
+   	line-height: 25px;
 }
 
 #media .book-year
@@ -2187,8 +3084,6 @@ footer .footer_last p{
  	font-weight: bold;
  	font-family: 'Libre Franklin', sans-serif;
  }
-
-
 /* MEDIA end
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -2795,6 +3690,9 @@ footer .footer_last p{
 /* MEDIA QUERIES start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media(max-width: 1280px){
+	.nation_building{
+		padding: 0;
+	}
 	.nation_building .cards{
 		width: 100%;
     	margin: auto;
@@ -2817,6 +3715,19 @@ footer .footer_last p{
 	.nation_building .home_content{
 		margin-left: 8vw;
 	}
+	/* for all countries */
+	#country-details .amount
+	{
+		width: 100%;
+		margin-top: 10px
+		margin-bottom: 10px;
+
+	}
+	.progress-amount span
+{
+	margin-top: -10px;
+}
+	/* for all countries end */
 }
 @media(max-width: 1024px){
 	.nation_building .country_details{
@@ -2955,6 +3866,9 @@ footer .footer_last p{
   /* Home Page end */
 }
 @media(max-width: 768px){
+	.desktop_header_space{
+		height: 10px;
+	}
 	.nation_building .home_content{
 	    top: 19vw;
 	}
@@ -3006,11 +3920,11 @@ footer .footer_last p{
     margin-top: -20px;
   }
   #fullpage .section_two_title{
-    bottom: -65vh;
+    bottom: -39vh;
     margin-left: 32px;
   }
   #fullpage .section_two_columns{
-    margin-top: 28vh;
+    margin-top: 6vh;
   }
   #fullpage .section_two_columns{
     padding-left: 16px;
@@ -3036,12 +3950,12 @@ footer .footer_last p{
   }
   #fullpage .section_three_bg{
     height: 60vh;
-    background: url('../img/home_section_three_bg.png') no-repeat;
+    background: url('../img/home_ipad_2.png') no-repeat;
     background-position: center;
     background-size: cover;
   }
   #fullpage .section_three_title{
-    bottom: -65vh;
+    bottom: -36vh;
     margin-left: 32px;
   }
   #fullpage .section_three_columns{
@@ -3067,7 +3981,7 @@ footer .footer_last p{
     margin-top: 30px;
   }
   #fullpage .section_three_bg{
-    margin-top: 75vh;
+    margin-top: 28vh;
   }
   #fullpage .section_four{
     margin-top: 8vh;
@@ -3125,7 +4039,7 @@ footer .footer_last p{
     width: 72%;
   }
   .hr_sections{
-    margin-top: 84vh;
+    margin-top: 42vh;
     border: 1px solid #707070;
   }
   .mobile_see_more{
@@ -3171,12 +4085,6 @@ footer .footer_last p{
   #fullpage .footer_last p{
     margin-bottom: 20px;
   }
-  .section_two_hr{
-    display: block;
-    width: 95%;
-    margin: 40px 0px;
-    border: 1px solid #707070;
-  }
   .mobile_menu li a{
     padding: 6vw 0 2vw 0;
     font-size: 22px;
@@ -3187,11 +4095,188 @@ footer .footer_last p{
   .mobile_menu .nav-icon div{
   	width: 31px;
   }
+
+  #recognition .quotes-img
+  {
+  	display: block;
+    margin: 0 auto;
+  }
+  #recognition .text-desc-quotes {
+    font-size: 21px;
+    padding: 0 7vw;
+    color: #F0F0F0;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    margin-top: 42px;
+	}
+	#recognition .img-mobile
+	{
+	 display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+	}
+	#recognition .name-quotes
+	{
+		text-align: center;
+	}
+
 	/* Home page end */
+
+	/* REcognition page start */
+		.national-building-botswana,
+		.national-building-cambodia,
+		.national-building-lesotho, 
+		.national-building-malaysia, 
+		.national-building-swaziland, 
+		.national-building-sierra_leone,
+		.national-building-london,
+		.national-building-south_africa 
+
+		{
+    	    padding: 0;
+		}
+		.national-building-malaysia .quotes-country,
+		.national-building-botswana .quotes-country,
+		.national-building-cambodia .quotes-country,
+		.national-building-lesotho .quotes-country,
+		.national-building-swaziland .quotes-country,
+		.national-building-sierra_leone .quotes-country,
+		.national-building-london .quotes-country,
+		.national-building-south_africa .quotes-country 
+		{
+			font-size: 17px;
+    		text-align: center;
+    		padding: 50px 9vw;
+    		padding-bottom: 18px;
+    		line-height: 26px;
+		}
+		.national-building-malaysia .name-countries,
+		.national-building-botswana .name-countries,
+		.national-building-cambodia .name-countries,
+		.national-building-lesotho .name-countries,
+		.national-building-swaziland .name-countries,
+		.national-building-sierra_leone .name-countries,
+		.national-building-london .name-countries,
+		.national-building-south_africa .name-countries
+		{
+			padding: 0 15px;
+		}
+		.national-building-malaysia .quotes-all,
+		.national-building-botswana .quotes-all,
+		.national-building-cambodia .quotes-all,
+		.national-building-lesotho .quotes-all,
+		.national-building-swaziland .quotes-all,
+		.national-building-sierra_leone .quotes-all,
+		.national-building-london .quotes-all,
+		.national-building-south_africa .quotes-all
+		{
+			margin-right: 0;
+		}
+
+		.national-building-malaysia .text-countries,
+		.national-building-botswana .text-countries,
+		.national-building-cambodia .text-countries,
+		.national-building-lesotho .text-countries,
+		.national-building-swaziland .text-countries,
+		.national-building-sierra_leone .text-countries,
+		.national-building-london .text-countries,
+		.national-building-south_africa .text-countries
+		{
+			font-size: 17px;
+			padding-right: 0;
+			padding: 0 40px;
+    		line-height: 26px;
+    		margin-top: 25px;
+		}
+		.national-building-malaysia .text-headline,
+		.national-building-botswana .text-headline,
+		.national-building-cambodia .text-headline,
+		.national-building-lesotho .text-headline,
+		.national-building-swaziland .text-headline,
+		.national-building-sierra_leone .text-headline,
+		.national-building-london .text-headline,
+		.national-building-south_africa .text-headline
+		{
+			font-size: 22px;
+			padding: 0 40px;
+		}
+		.spacing-text
+		{
+			padding:0;
+		}
+		.mobile-space
+		{
+			padding:0;
+		}
+		.transform-img-malaysia .transform-text,
+		.transform-img-botswana .transform-text,
+		.transform-img-cambodia .transform-text,
+		.transform-img-lesotho .transform-text,
+		.transform-img-swaziland .transform-text,
+		.transform-img-sierra-leone .transform-text,
+		.transform-img-london .transform-text,
+		.transform-img-south-africa .transform-text
+		{
+			width: 100%;
+			left: 0;
+			bottom: -19vh;
+		}
+		.transform-img-malaysia .transform-text h1,
+		.transform-img-botswana .transform-text h1,
+		.transform-img-cambodia .transform-text h1,
+		.transform-img-lesotho .transform-text h1,
+		.transform-img-swaziland .transform-text h1,
+		.transform-img-sierra-leone .transform-text h1,
+		.transform-img-london .transform-text h1,
+		.transform-img-south-africa .transform-text h1
+		{
+			font-size: 24px;
+			text-align: center;
+		}
+		.transform-img-malaysia .transform-text p,
+		.transform-img-botswana .transform-text p,
+		.transform-img-cambodia .transform-text p,
+		.transform-img-lesotho .transform-text p,
+		.transform-img-swaziland .transform-text p,
+		.transform-img-sierra-leone .transform-text p,
+		.transform-img-london .transform-text p,
+		.transform-img-south-africa .transform-text p
+		{
+			font-size: 14px;
+			text-align: center;
+			line-height: 24px;
+			padding: 0 14vw;
+			margin-top: 28px;
+
+		}
+		.transform-img-malaysia .btn-default,
+		.transform-img-botswana .btn-default,
+		.transform-img-cambodia .btn-default,
+		.transform-img-lesotho .btn-default,
+		.transform-img-swaziland .btn-default,
+		.transform-img-sierra-leone .btn-default,
+		.transform-img-london .btn-default,
+		.transform-img-south-africa .btn-default
+		{
+			display: block;
+    		margin: 0 auto;
+    		margin-top: 28px;
+    		border-color: transparent;
+		}
+
+		#country-details .country-details
+		{
+			margin-top: 30px !important;
+		}
+
 }
 
 @media(max-width: 500px){
+	.desktop_header_space{
+		height: 50px;
+	}
 	/* Home Page start */
+	
 	.mobile_menu div.header{
     padding: 0px;
     height: 60px;
@@ -3230,11 +4315,23 @@ footer .footer_last p{
     background-position: center;
     height: 450px;
   }
+  #fullpage .section_three_bg{
+    height: 60vh;
+    background: url('../img/home_section_three_bg.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
   #fullpage .section_two_title,
   #fullpage .section_three_title{
     bottom: -474px;
     margin-left: 20px;
     margin-right: 20px;
+  }
+  .section_two_hr{
+    display: block;
+    width: 95%;
+    margin: 40px 0px;
+    border: 1px solid #707070;
   }
   .section_two_hr{
     width: 99%;
@@ -3471,6 +4568,450 @@ footer .footer_last p{
     	margin-bottom: 13px;
 	}
 	/* Recognition end */
+
+	/* Nation building start */
+	.nation_building .cards{
+		display: none;
+	}
+	.nation_building .small_cards{
+		display: block;
+	}
+	.nation_building .quote_mobile{
+		height: 450px;
+		padding: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.nation_building .quote_text p{
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+		color: #F0F0F0;
+		letter-spacing: .5px;
+	}
+	.nation_building .name{
+		color: #B6B7AE !important;
+	}
+	.nation_building .quote_text img{
+		padding: 20px;
+	}
+	.nation_building .home_bg{
+		background: url('../img/mobile_nation_building_1.png');
+		height: 684px;
+		background-size: cover;
+		background-position: center;
+	}
+	.nation_building .botswana_mobile{
+		background: url('../img/mobile_nation_building_2.png');
+		height: 450px;
+		background-size: cover;
+		background-position: center;
+	}
+	.nation_building .cambodia_mobile{
+		background: url('../img/mobile_nation_building_3.png');
+		height: 450px;
+		background-size: cover;
+		background-position: center;
+	}
+	.nation_building .lesotho_mobile{
+		background: url('../img/mobile_nation_building_4.png');
+		height: 450px;
+		background-size: cover;
+		background-position: center;
+	}
+	.nation_building .london_mobile{
+		background: url('../img/mobile_nation_building_5.png');
+		height: 450px;
+		background-size: cover;
+		background-position: center;
+	}
+	.nation_building .sierra_leone_mobile{
+		background: url('../img/mobile_nation_building_6.png');
+		height: 450px;
+		background-size: cover;
+		background-position: center;
+	}
+	.nation_building .south_africa_mobile{
+		background: url('../img/mobile_nation_building_7.png');
+		height: 450px;
+		background-size: cover;
+		background-position: center;
+	}
+	.nation_building .swaziland_mobile{
+		background: url('../img/mobile_nation_building_8.png');
+		height: 450px;
+		background-size: cover;
+		background-position: center;
+	}
+	.nation_building .home_content{
+		top: 122vw;
+	}
+	.nation_building .home_content{
+		margin: 0 20px;
+	}
+	.nation_building .country_details2{
+		bottom: -310px;
+	}
+	.national-building-botswana,
+	.national-building-cambodia,
+	.national-building-lesotho, 
+	.national-building-swaziland, 
+	.national-building-sierra_leone,
+	.national-building-london,
+	.national-building-south_africa 
+	{
+        padding: 0;
+	}
+	.national-building-malaysia .quotes-country,
+	.national-building-botswana .quotes-country,
+	.national-building-cambodia .quotes-country,
+	.national-building-lesotho .quotes-country,
+	.national-building-swaziland .quotes-country,
+	.national-building-sierra_leone .quotes-country,
+	.national-building-london .quotes-country,
+	.national-building-south_africa .quotes-country 
+	{
+		font-size: 16px;
+    	text-align: center;
+    	padding: 50px 0;
+    	padding-bottom: 18px;
+    	line-height: 26px;
+	}
+	.national-building-malaysia .name-countries,
+	.national-building-botswana .name-countries,
+	.national-building-cambodia .name-countries,
+	.national-building-lesotho .name-countries,
+	.national-building-swaziland .name-countries,
+	.national-building-sierra_leone .name-countries,
+	.national-building-london .name-countries,
+	.national-building-south_africa .name-countries
+	{
+		padding: 0 15px;
+	}
+	.national-building-malaysia .quotes-all,
+	.national-building-botswana .quotes-all,
+	.national-building-cambodia .quotes-all,
+	.national-building-lesotho .quotes-all,
+	.national-building-swaziland .quotes-all,
+	.national-building-sierra_leone .quotes-all,
+	.national-building-london .quotes-all,
+	.national-building-south_africa .quotes-all
+	{
+		margin-right: 0;
+	}
+	.national-building-malaysia .text-countries,
+	.national-building-botswana .text-countries,
+	.national-building-cambodia .text-countries,
+	.national-building-lesotho .text-countries,
+	.national-building-swaziland .text-countries,
+	.national-building-sierra_leone .text-countries,
+	.national-building-london .text-countries,
+	.national-building-south_africa .text-countries
+	{
+		font-size: 16px;
+		padding-right: 0;
+		padding: 0 20px;
+    	line-height: 26px;
+	}
+	.national-building-malaysia .text-headline,
+	.national-building-botswana .text-headline,
+	.national-building-cambodia .text-headline,
+	.national-building-lesotho .text-headline,
+	.national-building-swaziland .text-headline,
+	.national-building-sierra_leone .text-headline,
+	.national-building-london .text-headline,
+	.national-building-south_africa .text-headline
+	{
+		font-size: 22px;
+		padding: 0 20px;
+		margin-top: 50px;
+	}
+	.spacing-text
+	{
+		padding:0;
+	}
+	.mobile-space
+	{
+		padding:0;
+	}
+	.transform-img-malaysia .transform-text,
+	.transform-img-botswana .transform-text,
+	.transform-img-cambodia .transform-text,
+	.transform-img-lesotho .transform-text,
+	.transform-img-swaziland .transform-text,
+	.transform-img-sierra-leone .transform-text,
+	.transform-img-london .transform-text,
+	.transform-img-south-africa .transform-text
+	{
+		width: 100%;
+		left: 0;
+		bottom: -19vh;
+	}
+	.transform-img-malaysia .transform-text h1,
+	.transform-img-botswana .transform-text h1,
+	.transform-img-cambodia .transform-text h1,
+	.transform-img-lesotho .transform-text h1,
+	.transform-img-swaziland .transform-text h1,
+	.transform-img-sierra-leone .transform-text h1,
+	.transform-img-london .transform-text h1,
+	.transform-img-south-africa .transform-text h1
+	{
+		font-size: 24px;
+		text-align: center;
+	}
+	.transform-img-malaysia .transform-text p,
+	.transform-img-botswana .transform-text p,
+	.transform-img-cambodia .transform-text p,
+	.transform-img-lesotho .transform-text p,
+	.transform-img-swaziland .transform-text p,
+	.transform-img-sierra-leone .transform-text p,
+	.transform-img-london .transform-text p,
+	.transform-img-south-africa .transform-text p
+	{
+		font-size: 14px;
+		text-align: center;
+		line-height: 24px;
+		padding: 0 14vw;
+		margin-top: 28px;
+	}
+	.transform-img-malaysia .btn-default,
+	.transform-img-botswana .btn-default,
+	.transform-img-cambodia .btn-default,
+	.transform-img-lesotho .btn-default,
+	.transform-img-swaziland .btn-default,
+	.transform-img-sierra-leone .btn-default,
+	.transform-img-london .btn-default,
+	.transform-img-south-africa .btn-default
+	{
+		display: block;
+    	margin: 0 auto;
+    	margin-top: 28px;
+    	border-color: transparent;
+	}
+
+		/* for all countries */
+			#country-details
+	{
+		padding: 0
+	}
+	#country-details .country-flag
+	{
+		width: 36px;
+	}
+	#country-details .progress
+	{
+		background-color: #292929;
+	}
+	#country-details .country-details
+	{
+		overflow: hidden;
+		margin-top: 41px;
+    	margin-bottom: 40px;
+	}
+	#country-details .amount
+	{
+		width: 100%;
+		margin-top:10px;
+	}
+	#country-details .progress-amount
+	{
+		padding: 0 !important;
+		margin-top: -17px !important;
+	}
+	#country-details .country-description
+	{
+		font-size: 14px;
+	}
+	#country-details .bot
+	{
+		margin-bottom: 15px;
+    	margin-top: 60px;
+	}
+	#country-details .site
+	{
+	    margin-top: 112px;
+	}
+	#country-details .title-country-desc
+	{
+		margin: 0px;
+    	margin-top: 25px;
+   		 margin-bottom: 15px;
+   		 font-size: 18px;
+	}
+	#country-details .space-section
+	{
+		margin-bottom: 50px;
+	}
+	#country-details .country-description2
+	{
+		margin-bottom: 44px;
+	}
+	/* for all countries end */
+		/* Nation building end */
+
+
+	/* Profile page */
+	.profile_home_bg{
+		background-position: top;
+		height: 600px;
+	}
+	.profile_content .profile_quote,
+	.profile_content .profile_one,
+	.profile_content .text_left,
+	.profile_content .text_right,
+	.profile_content .profile_one a{
+		padding: 0 16px;
+	}		
+	.profile_content .profile_quote h1{
+		font-size: 24px;
+	}
+	.profile_content .profile_quote p{
+		padding-top: 30px;
+		font-size: 14px;
+	}
+	.profile_content .profile_quote img{
+		width: 30px;
+	}
+	.profile_content .profile_one a{
+		padding: 0;
+	}
+	.profile_img_last{
+		display: none;
+	}
+	.profile_img_last2{
+		display: block;
+		margin-left: -16px;
+		margin-right: -16px;
+	}
+	.profile_img_last2{
+		background: url('../img/profile_picture_nine.png');
+		background-position: center;
+		height: 300px;
+		background-size: cover;
+		text-align: center;
+	}
+	.profile_sidebar{
+		padding: 0 16px;
+		padding-top: 20px;
+		margin-top: 0px;
+	}
+	.profile_sidebar .milestone{
+		margin: 40px 0;
+		margin-bottom: 354px;
+	}
+	.profile_img_last2 a{
+		color: #BECE00;
+		position: relative;
+		top: 260px;
+		transition: .2s;
+	}
+	.profile_img_last2 a:hover{
+		color: #d3e404;
+	}
+	.profile_img_last2 i{
+		margin-left: 6px;
+	}
+	/* profile page end */
+
+	/* Milestone page start */
+
+  .timeline::after {
+    margin-left: -42.5%;
+  }
+  
+  /* Full-width container2s */
+  .timeline .container2 {
+    width: 92vw;
+    padding-right: 25px;
+    padding-left: 22px;
+    margin-left: -63px;
+  }
+  .timeline .left .content {
+    text-align: left;
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .timeline .left{
+    margin-left: 7.5%;
+  }
+  .timeline .right::after{
+    margin-left: 0;
+    right: auto;
+  }
+  .timeline .left::after{
+    margin-right: 100%;
+  }
+
+  /* Place the container2 to the right */
+  .timeline .right {
+      margin-left: -42.5%;
+  }
+
+  .timeline .right_year {
+      margin-left: -42.5%;
+  }
+
+  /* Milestone page end */
+
+  /* Foundation page */
+  .foundation_home_bg img{
+		display: none;
+	}
+	.foundation_home_bg{
+		background: url('../img/foundation_pic_1.png') no-repeat;
+		background-size: cover;
+		background-position: center;
+		margin-bottom: 0px;
+		height: 570px;
+	}
+	.foundation_content .foundation_paragraphs,
+	.foundation_content .text_left,
+	.foundation_content .text_right,
+	.foundation_content .foundation_paragraphs .text2{
+		padding: 0 1px;
+		margin-top: 20px;
+	}
+	.foundation_content .foundation_img,
+	.foundation_content .img_right,
+	.foundation_content .img_left{
+		padding: 0;
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+	/* Foundation page end */
+
+}
+@media(max-width: 401px){
+	.wrapper .img-responsive{
+		margin-top: 30px;
+	}
+	.rec-quotes-mobile{
+		top: 54px;
+	}
+	.desktop_header_space{
+		height: 20px;
+	}
+}
+@media(max-width: 320px){
+	.desktop_header_space{
+		height: 0px;
+	}
+	.wrapper .img-responsive{
+		margin-top: 48px;
+	}
+	.rec-quotes-mobile{
+		top: 40px;
+	}
+	.text-quotes-moble{
+		font-size: 14px;
+	}
+	.name-quotes-mobile{
+		font-size: 12px;
+	}
+	.rec-img-mobile{
+		width: 24px;
+	}
 }
 /* MEDIA QUERIES end
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

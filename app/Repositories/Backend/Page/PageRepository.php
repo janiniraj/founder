@@ -122,6 +122,12 @@ class PageRepository extends BaseRepository
         });
     }
 
+    /**
+     * Get Page By Slug
+     *
+     * @param $slug
+     * @return Model|null|object|static
+     */
     public function getPageBySlug($slug)
     {
         return $this->model->where('slug', $slug)->first();

@@ -42,14 +42,14 @@
                 </li>
             @endif
 
-            @can('Page Management')
+            @if($logged_in_user->isAdmin() || $logged_in_user->hasPermission('Page Management'))
                 <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('admin/pages*'), 'open') }}">
                     <a class="nav-link {{ active_class(Active::checkUriPattern('admin/pages')) }}" href="{{ route('admin.pages.index') }}">
                         <i class="icon-picture"></i>
                         {{ __('menus.backend.pages.management') }}
                     </a>
                 </li>
-            @endcan
+            @endif
 
             <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('admin/log-viewer*'), 'open') }}">
                 <a class="nav-link nav-dropdown-toggle {{ active_class(Active::checkUriPattern('admin/log-viewer*')) }}" href="#">

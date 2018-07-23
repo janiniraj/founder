@@ -16,7 +16,7 @@ class EditRequest extends FormRequest
      */
     public function authorize()
     {
-        return $this->user()->hasPermissionTo('Page Management');
+        return $this->user()->isAdmin() ? true : $this->user()->hasPermissionTo('Page Management');
     }
 
     /**
