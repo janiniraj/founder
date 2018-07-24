@@ -20,7 +20,9 @@ class PageController extends Controller
     }
 
     /**
-     * @return \Illuminate\View\View
+     * Home Page
+     *
+     * @return $this
      */
     public function index()
     {
@@ -36,5 +38,22 @@ class PageController extends Controller
         $content        = str_replace("[[footer]]", $footer, $content);
 
         return view('frontend.index')->with(['content' => $content]);
+    }
+
+    /**
+     * Show Page
+     *
+     * @param $slug
+     * @return $this
+     */
+    public function showPage($slug)
+    {
+        $pageData       = $this->page->getPageBySlug('home');
+        $content        = $pageData->content;
+
+        return view('frontend.page')->with([
+            'pageData' => $pageData,
+            'content' => $content
+        ]);
     }
 }
