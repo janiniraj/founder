@@ -46,6 +46,15 @@ return [
             'view'            => 'View Page',
         ],
 
+        'blogs' => [
+            'management'      => 'Blog Management',
+            'all'             => 'All Blogs',
+            'create'          => 'Create Blog',
+            'edit'            => 'Edit Blog',
+            'main'            => 'Blogs',
+            'view'            => 'View Blog',
+        ],
+
         'log-viewer' => [
             'main'      => 'Log Viewer',
             'dashboard' => 'Dashboard',

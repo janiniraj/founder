@@ -18,3 +18,11 @@ Route::group(['namespace' => 'Page'], function () {
     Route::post('pages/get', 'PageTableController')
         ->name('pages.get');
 });
+
+/**
+ *  Blog Management
+ */
+Route::group(['namespace' => 'Blog'], function () {
+    Route::resource('blogs', 'BlogController', ['except' =>
+        ['show']]);
+});

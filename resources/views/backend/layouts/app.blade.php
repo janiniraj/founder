@@ -20,6 +20,8 @@
     <!-- Otherwise apply the normal LTR layouts -->
     {{ style(mix('css/backend.css')) }}
 
+    {{ style('css/custom.css') }}
+
     @stack('after-styles')
 </head>
 

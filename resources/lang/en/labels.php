@@ -122,6 +122,24 @@ return [
                 'total'           => 'pages total|pages total'
             ],
         ],
+
+        'blogs' => [
+            'create'     => 'Create Blog',
+            'edit'       => 'Edit Blog',
+            'management' => 'Blog Management',
+            'title' => 'Blog',
+
+            'table' => [
+                'title'          => 'Blog',
+                'slug'           => 'Slug',
+                'content'        => 'Content',
+                'createdat'      => 'Created At',
+                'all'            => 'All',
+                'number_of_blogs' => 'Number of Blogs',
+                'sort'            => 'Sort',
+                'total'           => 'blogs total|blogs total'
+            ],
+        ],
     ],
 
     'frontend' => [

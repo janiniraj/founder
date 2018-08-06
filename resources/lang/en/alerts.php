@@ -40,6 +40,12 @@ return [
             'deleted' => 'The Page was successfully deleted.',
             'updated' => 'The Page was successfully updated.',
         ],
+
+        'blogs' => [
+            'created' => 'The Blog was successfully created.',
+            'deleted' => 'The Blog was successfully deleted.',
+            'updated' => 'The Blog was successfully updated.',
+        ],
     ],
 
     'frontend' => [

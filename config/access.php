@@ -97,4 +97,10 @@ return [
      * Makes it so social logins can not change passwords, etc.
      */
     'socialite_session_name' => 'socialite_provider',
+
+    /**
+     * Table Names
+     */
+    'page_table' => 'pages',
+    'blog_table' => 'blogs',
 ];

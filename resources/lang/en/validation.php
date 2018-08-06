@@ -192,6 +192,17 @@ return [
                 'content'                 => 'Content',
                 'language'                => 'Language',
             ],
+
+            'blogs' => [
+                'active'                  => 'Active',
+                'name'                    => 'Name',
+                'slug'                    => 'Slug',
+                'content'                 => 'Content',
+                'language'                => 'Language',
+                'excerpt'                 => 'Excerpt',
+                'meta'                    => 'Meta',
+                'image'                   => 'Image'
+            ],
         ],
 
         'frontend' => [
