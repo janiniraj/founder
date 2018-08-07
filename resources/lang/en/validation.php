@@ -203,6 +203,13 @@ return [
                 'meta'                    => 'Meta',
                 'image'                   => 'Image'
             ],
+
+            'awards' => [
+                'active'                  => 'Active',
+                'name'                    => 'Name',
+                'year'                    => 'Year',
+                'image'                   => 'Image'
+            ],
         ],
 
         'frontend' => [

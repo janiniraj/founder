@@ -55,6 +55,15 @@ return [
             'view'            => 'View Blog',
         ],
 
+        'awards' => [
+            'management'      => 'Award Management',
+            'all'             => 'All Awards',
+            'create'          => 'Create Award',
+            'edit'            => 'Edit Award',
+            'main'            => 'Awards',
+            'view'            => 'View Award',
+        ],
+
         'log-viewer' => [
             'main'      => 'Log Viewer',
             'dashboard' => 'Dashboard',

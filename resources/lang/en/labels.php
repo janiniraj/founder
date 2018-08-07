@@ -140,6 +140,23 @@ return [
                 'total'           => 'blogs total|blogs total'
             ],
         ],
+
+        'awards' => [
+            'create'     => 'Create Award',
+            'edit'       => 'Edit Award',
+            'management' => 'Award Management',
+            'title' => 'Award',
+
+            'table' => [
+                'title'          => 'Award',
+                'year'           => 'Year',
+                'createdat'      => 'Created At',
+                'all'            => 'All',
+                'number_of_blogs' => 'Number of Awards',
+                'sort'            => 'Sort',
+                'total'           => 'award total|awards total'
+            ],
+        ],
     ],
 
     'frontend' => [

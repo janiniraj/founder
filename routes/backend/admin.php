@@ -26,3 +26,11 @@ Route::group(['namespace' => 'Blog'], function () {
     Route::resource('blogs', 'BlogController', ['except' =>
         ['show']]);
 });
+
+/**
+ *  Award Management
+ */
+Route::group(['namespace' => 'Award'], function () {
+    Route::resource('awards', 'AwardController', ['except' =>
+        ['show']]);
+});

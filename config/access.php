@@ -103,4 +103,5 @@ return [
      */
     'page_table' => 'pages',
     'blog_table' => 'blogs',
+    'award_table' => 'awards',
 ];

@@ -46,6 +46,12 @@ return [
             'deleted' => 'The Blog was successfully deleted.',
             'updated' => 'The Blog was successfully updated.',
         ],
+
+        'awards' => [
+            'created' => 'The Award was successfully created.',
+            'deleted' => 'The Award was successfully deleted.',
+            'updated' => 'The Award was successfully updated.',
+        ],
     ],
 
     'frontend' => [

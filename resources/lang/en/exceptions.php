@@ -68,6 +68,14 @@ return [
             'update_error'      => 'There was a problem updating this Blog. Please try again.',
         ],
 
+        'awards' => [
+            'already_exists'    => 'That Award already exists. Please choose a different name.',
+            'create_error'      => 'There was a problem creating this Award. Please try again.',
+            'delete_error'      => 'There was a problem deleting this Award. Please try again.',
+            'not_found'         => 'That Award does not exist.',
+            'update_error'      => 'There was a problem updating this Award. Please try again.',
+        ],
+
     ],
 
     'frontend' => [
