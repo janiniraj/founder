@@ -27,4 +27,4 @@ output.txt
 .php_cs.cache
 coverage.xml
 /coverage
-/phpMyAdmin
+/public/phpMyAdmin
