@@ -48,7 +48,7 @@ class PageController extends Controller
      */
     public function showPage($slug)
     {
-        $pageData       = $this->page->getPageBySlug('home');
+        $pageData       = $this->page->getPageBySlug($slug);
         $content        = $pageData->content;
 
         return view('frontend.page')->with([

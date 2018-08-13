@@ -1,4 +1,4 @@
-@extends('frontend.layouts.main')
+@extends('frontend.layouts.master')
 
 @section('title', $pageData->name)
 

@@ -90,7 +90,7 @@
                 "emoticons template paste textcolor colorpicker textpattern"
             ],
             relative_urls: false,
-            height: 129,
+            height: 500,
             toolbar: [
                 "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media | code"],
             file_browser_callback : function(field_name, url, type, win) {
