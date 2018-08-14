@@ -151,4 +151,22 @@ class BlogRepository extends BaseRepository
     {
         return $this->model->where('slug', $slug)->first();
     }
+
+    /**
+     * Get Latest Blogs
+     *
+     * @param null $notIncludeSlug
+     * @return \Illuminate\Database\Eloquent\Collection|static[]
+     */
+    public function getLatestBlogs($notIncludeSlug = NULL)
+    {
+        $query = $this->model;
+
+        if($notIncludeSlug)
+        {
+            $query = $query->where('slug', '!=', $notIncludeSlug);
+        }
+
+        return $query->orderBy('id', 'DESC')->limit(3)->get();
+    }
 }

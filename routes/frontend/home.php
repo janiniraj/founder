@@ -33,3 +33,9 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
 });
 
 Route::get('/page/{slug}', 'PageController@showPage')->name('show-page');
+
+Route::group(['as' => 'blog.'], function () {
+    Route::get('blogs', 'BlogController@index')->name('index');
+    Route::get('blog/{slug}', 'BlogController@showBlog')->name('show-blog');
+});
+
