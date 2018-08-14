@@ -86,3 +86,14 @@ $(function(){
   });
   }
 });
+
+//Nation Building Scripts
+$('#nation_building_tab').addClass('menu_active');
+$('#nation_building_tab_mobile').addClass('menu_active');
+$('#nation_building_footer_tab').addClass('footer_menu_active');
+
+$(document).ready(function($) {
+    $(".clickable-row").click(function() {
+        window.location = $(this).data("href");
+    });
+})
