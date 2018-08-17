@@ -4,11 +4,11 @@
     </div>
     <div class="menu">
         <a href="#" class="menu_active">Home</a>
-        <a href="pages/profile.php">Profile</a>
-        <a href="pages/recognition.php">Recognition</a>
-        <a href="pages/nation_building.php">Nation building</a>
-        <a href="pages/foundation.php">Foundation</a>
-        <a href="pages/media.php">Media</a>
+        <a href="profile">Profile</a>
+        <a href="recognition">Recognition</a>
+        <a href="nation_building" id="nation_building_tab">Nation building</a>
+        <a href="foundation">Foundation</a>
+        <a href="media">Media</a>
     </div>
 </header>
 <div class="mobile_menu">
