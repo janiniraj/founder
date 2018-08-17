@@ -76,6 +76,14 @@ return [
             'update_error'      => 'There was a problem updating this Award. Please try again.',
         ],
 
+        'quotes' => [
+            'already_exists'    => 'That Quote already exists. Please choose a different name.',
+            'create_error'      => 'There was a problem creating this Quote. Please try again.',
+            'delete_error'      => 'There was a problem deleting this Quote. Please try again.',
+            'not_found'         => 'That Quote does not exist.',
+            'update_error'      => 'There was a problem updating this Quote. Please try again.',
+        ],
+
     ],
 
     'frontend' => [

@@ -64,6 +64,15 @@ return [
             'view'            => 'View Award',
         ],
 
+        'quotes' => [
+            'management'      => 'Quote Management',
+            'all'             => 'All Quotes',
+            'create'          => 'Create Quote',
+            'edit'            => 'Edit Quote',
+            'main'            => 'Quotes',
+            'view'            => 'View Quote',
+        ],
+
         'log-viewer' => [
             'main'      => 'Log Viewer',
             'dashboard' => 'Dashboard',

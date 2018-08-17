@@ -52,6 +52,12 @@ return [
             'deleted' => 'The Award was successfully deleted.',
             'updated' => 'The Award was successfully updated.',
         ],
+
+        'quotes' => [
+            'created' => 'The Quote was successfully created.',
+            'deleted' => 'The Quote was successfully deleted.',
+            'updated' => 'The Quote was successfully updated.',
+        ],
     ],
 
     'frontend' => [

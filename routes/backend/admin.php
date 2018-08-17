@@ -34,3 +34,11 @@ Route::group(['namespace' => 'Award'], function () {
     Route::resource('awards', 'AwardController', ['except' =>
         ['show']]);
 });
+
+/**
+ *  Quote Management
+ */
+Route::group(['namespace' => 'Quote'], function () {
+    Route::resource('quotes', 'QuoteController', ['except' =>
+        ['show']]);
+});

@@ -157,6 +157,24 @@ return [
                 'total'           => 'award total|awards total'
             ],
         ],
+
+        'quotes' => [
+            'create'     => 'Create Quote',
+            'edit'       => 'Edit Quote',
+            'management' => 'Quote Management',
+            'title' => 'Quote',
+
+            'table' => [
+                'title'          => 'Title',
+                'slug'           => 'Slug',
+                'content'        => 'Quote',
+                'createdat'      => 'Created At',
+                'all'            => 'All',
+                'number_of_blogs' => 'Number of Quotes',
+                'sort'            => 'Sort',
+                'total'           => 'quotes total|quotes total'
+            ],
+        ],
     ],
 
     'frontend' => [
