@@ -73,6 +73,15 @@ return [
             'view'            => 'View Quote',
         ],
 
+        'speeches' => [
+            'management'      => 'Speech Management',
+            'all'             => 'All Speeches',
+            'create'          => 'Create Speech',
+            'edit'            => 'Edit Speech',
+            'main'            => 'Speeches',
+            'view'            => 'View Speech',
+        ],
+
         'log-viewer' => [
             'main'      => 'Log Viewer',
             'dashboard' => 'Dashboard',

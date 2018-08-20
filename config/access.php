@@ -101,8 +101,9 @@ return [
     /**
      * Table Names
      */
-    'page_table' => 'pages',
-    'blog_table' => 'blogs',
-    'award_table' => 'awards',
-    'quote_table' => 'quotes'
+    'page_table'    => 'pages',
+    'blog_table'    => 'blogs',
+    'award_table'   => 'awards',
+    'quote_table'   => 'quotes',
+    'speech_table'  => 'speeches'
 ];

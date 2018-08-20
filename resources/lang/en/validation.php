@@ -221,6 +221,17 @@ return [
                 'position'                    => 'Position',
                 'image'                   => 'Image'
             ],
+
+            'speeches' => [
+                'active'                  => 'Active',
+                'name'                    => 'Name',
+                'slug'                    => 'Slug',
+                'content'                 => 'Content',
+                'language'                => 'Language',
+                'excerpt'                 => 'Excerpt',
+                'meta'                    => 'Meta',
+                'image'                   => 'Image'
+            ],
         ],
 
         'frontend' => [
