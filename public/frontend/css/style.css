@@ -1,23 +1,27 @@
 /* RESET-GENERAL start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+ 
 body
 {
-	margin: 0;
-	padding: 0;
-	color: #fff;
-	background-color: #000 !important;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background: #000000 !important;
+  text-rendering: optimizeLegibility;
+  background-blend-mode:normal !important;
+
 }
 a
 {
-	text-decoration: none;
+  text-decoration: none;
 }
 a:hover 
 {
-	text-decoration: none;
+  text-decoration: none;
 }
 ul, li 
 {
-	list-style-type: none;
+  list-style-type: none;
 }
 .row
 {
@@ -26,10 +30,15 @@ ul, li
 }
 .container
 {
-	padding-left: 0;
-	padding-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
- 
+.container-fluid 
+{
+    padding-right: 0; 
+      padding-left: 0; 
+}
+
 /* RESET-GENERAL end
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -38,22 +47,38 @@ ul, li
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .desktop_header_space
 {
-	display: block;
-	height: 130px;
+  display: block;
+  height: 130px;
 }
+
 .small .menu
 {
-	margin-top: -10px;
-	height: 34px;
+ 
+  height: 33.6px;
+   
 }
 .small img
 {
-	width: 120px;
-	margin: 14px 0;
+  width: 100px;
+  margin: 11px auto;
+
+  
+
 }
+.small #small{
+  float: left;
+   
+     width: 0;
+ 
+}
+header.small a
+{
+  padding: 13.4px 0vw;
+}
+ 
 header
 {
-	position: fixed;
+  position: fixed;
     background: #000;
     top: 0;
     text-align: center;
@@ -63,38 +88,43 @@ header
 }
 .mobile_menu
 {
-	display: none;
+  display: none;
 }
 header img
 {
-	width: 130px;
+  width: 130px;
     margin: 20px 0;
-    transition: .2s;
+    transition: .3s;
 }
 header a
 {
-	color: #8F8F8F;
+  color: #8F8F8F;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     margin: 0 2.5vw;
-    padding: 12px 1vw;
+    padding: 13px 1vw;
     font-size: 13px;
-    transition: .4s;
+    transition: .2s;
 }
 header a:hover
 {
-	color: #fff;
+  color: #fff;
+}
+header a:focus
+{
+  color: #8F8F8F;
+  text-decoration: none !important;
 }
 header .menu
 {
-	margin-top: 28px;
+  margin-top: 21px;
     transition: .2s;
-	padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 .hr_sections2,
 .hr_sections
 {
-	display: none;
+  display: none;
 }
 .mobile_menu .ul_menu
 {
@@ -122,24 +152,24 @@ header .menu
 }
 .mobile_menu .inner_menu li
 {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 .mobile_menu .inner_menu li
 {
-	width: 228px;
+  width: 228px;
     margin: auto;
 }
 .mobile_menu li a 
 {
-	opacity: 1;
-	display: block;
-	color: #8F8F8F;
-	text-decoration: none;
-	transition: all 0.5s linear;
-	text-align: center;
-	padding: 6vw 0 1vw 0;
-	font-size: 24px;
-	margin: 0;
+  opacity: 1;
+  display: block;
+  color: #8F8F8F;
+  text-decoration: none;
+  transition: all 0.5s linear;
+  text-align: center;
+  padding: 6vw 0 1vw 0;
+  font-size: 24px;
+  margin: 0;
 }
 .mobile_menu div.header
 {
@@ -211,43 +241,46 @@ header .menu
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
-
 .mobile_menu .nav-icon div::before 
 {
   top: -10px;
 }
-
 .mobile_menu .nav-icon div::after
 {
   top: 10px;
 }
-
 .mobile_menu .cross.active .span::before 
 {
   top: 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
 .mobile_menu .cross.active .span::after 
 {
   top: 0;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-
 .mobile_menu .cross.active .span 
 {
   background: none;
 }
 .mobile_menu .nav-icon div::before, .mobile_menu .nav-icon div::after
 {
-	left: 0;
+  left: 0;
 }
 .menu_active
 {
-	border-bottom: 4px solid #fff;
-	color: #fff !important;
+  border-bottom: 4px solid #fff;
+  color: #fff !important;
+}
+.mobile_menu .nav-icon div,
+.mobile_menu .nav-icon div:after,
+.mobile_menu .nav-icon div:before{
+  height: 4px
+}
+.mobile_menu .nav-icon div{
+  width: 35px;
 }
 /* HEADER end
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -257,48 +290,48 @@ header .menu
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .footer_logo_mobile
 {
-	display: none;
+  display: none;
 }
 .footer_hr
 {
-	display: none;
+  display: none;
 }
 footer{
-	text-align: left;
-	margin-top: 50px;
+  text-align: left;
+  margin-top: 50px;
 }
 footer .col-md-5
 {
-	padding-left: 16vw;
+  padding-left: 16vw;
 }
 footer img
 {
-	width: 140px;
-	margin-bottom: 34px;
+  width: 140px;
+  margin-bottom: 34px;
 }
 footer ul
 {
-	padding-left: 0px;
+  padding-left: 0px;
 }
 footer li
 {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 footer a
 {
-	color: #909090;
-	font-size: 16px;
-	font-weight: 400;
-	transition: .2s;
+  color: #909090;
+  font-size: 16px;
+  font-weight: 400;
+  transition: .2s;
     font-family: 'Montserrat', sans-serif;
 }
 footer a:hover
 {
-	color: #fff;
+  color: #fff;
 }
 footer .footer_menu_active
 {
-	color: #fff;
+  color: #fff;
 }
 footer .footer_contact_us h3
 {
@@ -307,50 +340,50 @@ footer .footer_contact_us h3
 }
 footer .footer_contact_us p
 {
-	font-size: 12px;
-	margin-top: 20px;
-	color: #F0F0F0;
+  font-size: 12px;
+  margin-top: 20px;
+  color: #F0F0F0;
 }
 footer .footer_contact_us .footer_email_input
 {
-	width: 50%;
-	color: #8D8D8D;
-	background: #1C1C24;
-	border: 1px solid #1C1C24;
+  width: 50%;
+  color: #8D8D8D;
+  background: #1C1C24;
+  border: 1px solid #1C1C24;
     padding: 10px;
     margin-top: 50px;
 }
 footer .footer_contact_us .footer_submit_input
 {
-	width: 12%;
-	color: #BECE00;
-	background: #1C1C24;
-	border: 1px solid #BECE00;
+  width: 12%;
+  color: #BECE00;
+  background: #1C1C24;
+  border: 1px solid #BECE00;
     padding: 10px;
     margin-top: 50px;
     margin-left: 20px;
 }
 footer .footer_contact_us .footer_submit_input:hover
 {
-	color: #000;
+  color: #000;
 }
 footer .footer_copyright{
-	margin-top: 50px;
+  margin-top: 50px;
 }
 footer .footer_copyright .col-md-5,
 footer .footer_copyright .col-md-6
 {
-	display: flex;
+  display: flex;
 }
 footer .footer_copyright p
 {
-	color: #848484;
-	font-size: 10px;
-	margin-top: 5px;
+  color: #848484;
+  font-size: 10px;
+  margin-top: 5px;
 }
 footer .footer_copyright i
 {
-	color: #000;
+  color: #000;
     background: #848484;
     padding: 5px;
     border-radius: 50%;
@@ -358,29 +391,56 @@ footer .footer_copyright i
 }
 footer .footer_copyright img
 {
-	width: 100px;
-	margin-top: -5px;
-	margin-right: 10px;
+  width: 100px;
+  margin-top: -5px;
+  margin-right: 10px;
 }
 footer .footer_copyright .col-md-6 i
 {
-	margin-left: 20px;
+  margin-left: 20px;
 }
 footer .footer_last
 {
-	text-align: center;
+  text-align: center;
     position: relative;
     padding-bottom: 10px;
     margin-top: 100px;
 }
 footer .footer_last p
 {
-	color: #848484;
-	font-size: 9px;
+  color: #848484;
+  font-size: 9px;
 }
 .footer_mobile_headline
 {
   display: none;
+}
+#fullpage .section_five .footer_contact_us p{
+    font-family: 'Libre Franklin', sans-serif;
+}
+.section_five .footer_contact_us p,
+.footer_copyright p,
+.footer_last p{
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+
+.footer_copyright img{
+  width: auto;
+}
+.footer_hr_top{
+  border-top: 1px solid #1f1f1f;
+  margin-bottom: 140px;
+  clear: both;
+}
+#fullpage .section_five .footer_contact_us .footer_submit_input{
+  text-transform: uppercase;
+  background: #000;
+  transition: .2s;
+}
+#fullpage .section_five .footer_contact_us .footer_submit_input:hover{
+  color: #000;
+  background: #BECE00;
 }
 /* FOOTER end
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -389,7 +449,7 @@ footer .footer_last p
 /* SECTION STYLES - fullPage.js start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #fullpage section { 
-	text-align: center;
+  text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
 /* SECTION STYLES - fullPage.js end
@@ -400,25 +460,25 @@ footer .footer_last p
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span
 {
-	background-color: #fff;
-	opacity: 1;
+  background-color: #fff;
+  opacity: 1;
 }
 #fp-nav ul li a span, .fp-slidesNav ul li a span
 {
-	background-color: #fff;
-	margin: -2px 0 0 -3px;
-	width: 6px;
-	height: 6px;
-	opacity: .6;
+  background-color: #fff;
+  margin: -2px 0 0 -3px;
+  width: 6px;
+  height: 6px;
+  opacity: .6;
 }
 #fp-nav.right
 {
-	left: 24px;
-	width: 30px;
+  left: 24px;
+  width: 30px;
 }
 #fullpage section
 {
-	background-color: #000 !important;
+  background-color: #000 !important;
 }
 /* SECTION'S INDICATOR - fullPage.js end
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -428,7 +488,7 @@ footer .footer_last p
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #fullpage section .section_one_bg
 {
-	height: 100%;
+  height: 100%;
     margin-top: 294px;
     background: url(../img/section_one_bg.png) no-repeat;
     background-size: cover;
@@ -437,19 +497,19 @@ footer .footer_last p
 }
 #fullpage header
 {
-	position: absolute;
+  position: absolute;
     top: 0;
     text-align: center;
     width: 100%;
 }
 #fullpage header img
 {
-	width: 130px;
+  width: 130px;
     margin: 20px 0;
 }
 #fullpage header a
 {
-	color: #8F8F8F;
+  color: #8F8F8F;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     margin: 0 2.5vw;
@@ -459,20 +519,20 @@ footer .footer_last p
 }
 #fullpage header a:hover
 {
-	color: #fff;
+  color: #fff;
 }
 #fullpage header .menu
 {
-	margin-top: 28px;
-	padding-bottom: 12px;
+  margin-top: 28px;
+  padding-bottom: 12px;
 }
 .menu_active{
-	border-bottom: 4px solid #fff;
-	color: #fff !important;
+  border-bottom: 4px solid #fff;
+  color: #fff !important;
 }
 #fullpage .home_title
 {
-	position: absolute;
+  position: absolute;
     bottom: 17vh;
     left: 7vw;
     text-align: left;
@@ -486,26 +546,26 @@ footer .footer_last p
 }
 #fullpage .home_title p
 {
-	line-height: 1.6;
+  line-height: 1.6;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 1vw;
 }
 #fullpage .home_title a
 {
-	text-transform: uppercase;
-	color: #BECE00;
-	font-size: .8vw;
-	top: 8px;
+  text-transform: uppercase;
+  color: #BECE00;
+  font-size: .8vw;
+  top: 8px;
     position: relative;
     transition: .25s;
 }
 #fullpage .home_title a:hover
 {
-	color: #d3e404;
+  color: #d3e404;
 }
 #fullpage .home_title i
 {
-	margin-left: 6px;
+  margin-left: 6px;
 } 
 /* SECTION ONE - fullPage.js end
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -519,7 +579,7 @@ footer .footer_last p
 }
 #fullpage .section_two_bg
 {
-	height: 100%;
+  height: 100%;
     background: url(../img/section_two_bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -527,21 +587,21 @@ footer .footer_last p
 }
 #fullpage .section_two_title
 {
-	position: absolute;
+  position: absolute;
     bottom: 33vh;
     left: 7vw;
     text-align: left;
 }
 #fullpage .section_two_title h1
 {
-	font-size: 2.6vw;
+  font-size: 2.6vw;
     font-weight: 600;
     line-height: 1.3;
     font-family: 'Libre Baskerville', serif;
 }
 #fullpage .section_two_details
 {
-	height: 250px;
+  height: 250px;
     background: #000;
     bottom: 0;
     position: absolute;
@@ -549,53 +609,54 @@ footer .footer_last p
 }
 #fullpage .section_two_title p
 {
-	line-height: 1.6;
+  line-height: 1.6;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 1vw;
 }
 #fullpage .section_two_title a
 {
-	text-transform: uppercase;
-	color: #BECE00;
-	font-size: .8vw;
-	top: 8px;
+  text-transform: uppercase;
+  color: #BECE00;
+  font-size: .8vw;
+  top: 8px;
     position: relative;
     transition: .25s;
 }
 #fullpage .section_two_title a:hover
 {
-	color: #d3e404;
+  color: #d3e404;
 }
 #fullpage .section_two_title i
 {
-	margin-left: 6px;
+  margin-left: 6px;
 } 
 #fullpage .section_two_columns
 {
-	text-align:left;
-	padding: 60px 6vw;
-	overflow: auto;
+  text-align:left;
+  padding: 60px 6vw;
+  overflow: auto;
 }
 #fullpage .section_two_columns .col-md-3 p:nth-child(1)
 {
-	color: #BECE00;
-	font-size: 12px;
-	text-transform: uppercase;
+  color: #BECE00;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 #fullpage .section_two_columns .col-md-3 p:nth-child(2)
 {
-	font-size: 15px;
-	font-weight: 500;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Libre Baskerville', serif;
 }
 #fullpage .section_two_columns .col-md-3 .year
 {
-	position: relative;
+  position: relative;
     bottom: -3vw;
     color: #B6B7AE !important;
 }
 #fullpage .section_two_columns .year_mobile
 {
-	position: relative;
+  position: relative;
     bottom: -3vw;
     color: #B6B7AE !important;
     display: none;
@@ -608,7 +669,7 @@ footer .footer_last p
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #fullpage .section_three_bg
 {
-	height: 100%;
+  height: 100%;
     background: url(../img/section_three_bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -616,21 +677,21 @@ footer .footer_last p
 }
 #fullpage .section_three_title
 {
-	position: absolute;
+  position: absolute;
     bottom: 33vh;
     left: 7vw;
     text-align: left;
 }
 #fullpage .section_three_title h1
 {
-	font-size: 2.6vw;
+  font-size: 2.6vw;
     font-weight: 600;
     line-height: 1.3;
     font-family: 'Libre Baskerville', serif;
 }
 #fullpage .section_three_details
 {
-	height: 250px;
+  height: 250px;
     background: #000;
     bottom: 0;
     position: absolute;
@@ -638,47 +699,47 @@ footer .footer_last p
 }
 #fullpage .section_three_title p
 {
-	line-height: 1.6;
+  line-height: 1.6;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 1vw;
 }
 #fullpage .section_three_title a
 {
-	text-transform: uppercase;
-	color: #BECE00;
-	font-size: .8vw;
-	top: 8px;
+  text-transform: uppercase;
+  color: #BECE00;
+  font-size: .8vw;
+  top: 8px;
     position: relative;
     transition: .25s;
 }
 #fullpage .section_three_title a:hover
 {
-	color: #d3e404;
+  color: #d3e404;
 }
 #fullpage .section_three_title i
 {
-	margin-left: 6px;
+  margin-left: 6px;
 } 
 #fullpage .section_three_columns
 {
-	text-align:left;
-	padding: 60px 6vw;
-	overflow: auto;
+  text-align:left;
+  padding: 60px 6vw;
+  overflow: auto;
 }
 #fullpage .section_three_columns .col-md-3 p:nth-child(1)
 {
-	color: #BECE00;
-	font-size: 12px;
-	text-transform: uppercase;
+  color: #BECE00;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 #fullpage .section_three_columns .col-md-3 p:nth-child(2)
 {
-	font-size: 15px;
-	font-weight: 500;
+  font-size: 15px;
+  font-weight: 500;
 }
 #fullpage .section_three_columns .col-md-3 p:nth-child(3)
 {
-	position: relative;
+  position: relative;
     bottom: -3vw;
     color: #B6B7AE;
 }
@@ -694,52 +755,52 @@ footer .footer_last p
 }
 #fullpage .section_four_twitter
 {
-	width: 70%;
-	float: right;
+  width: 70%;
+  float: right;
 }
 #fullpage .section_four_news
 {
-	text-align: left;
-	padding-right: 8vw;
+  text-align: left;
+  padding-right: 8vw;
 }
 #fullpage .section_four_news h3
 {
-	font-weight: 400;
-	margin-top: 0;
+  font-weight: 400;
+  margin-top: 0;
 }
 #fullpage .section_four_news a
 {
-	text-transform: uppercase;
-	float: right;
-	line-height: 4;
-	color: #BECE00;
-	font-size: 14px;
-	top: -16px;
+  text-transform: uppercase;
+  float: right;
+  line-height: 4;
+  color: #BECE00;
+  font-size: 14px;
+  top: -16px;
     position: relative;
     transition: .25s;
 }
 #fullpage .section_four_news a:hover
 {
-	color: #d3e404;
+  color: #d3e404;
 }
 #fullpage .section_four_news i
 {
-	margin-left: 6px;
+  margin-left: 6px;
 } 
 #fullpage .section_four_news h4
 {
-	line-height: 1.5;
-	letter-spacing: 1px;
+  line-height: 1.5;
+  letter-spacing: 1px;
     font-family: 'Libre Baskerville', serif;
     margin-top: 20px;
 } 
 #fullpage .section_four_news img
 {
-	width: 100%;
+  width: 100%;
 }
 #fullpage .section_four_news p
 {
-	color: #747474;
+  color: #747474;
 } 
 .big_twitter{
   display: block !important;
@@ -755,39 +816,39 @@ footer .footer_last p
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #fullpage .section_five
 {
-	text-align: left;
+  text-align: left;
 }
 #fullpage .section_five .col-md-5
 {
-	padding-left: 16vw;
+  padding-left: 16vw;
 }
 #fullpage .section_five img
 {
-	width: 140px;
-	margin-bottom: 34px;
+  width: 140px;
+  margin-bottom: 34px;
 }
 #fullpage .section_five ul
 {
-	padding-left: 0;
+  padding-left: 0;
 }
 #fullpage .section_five li
 {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 #fullpage .section_five a
 {
-	color: #909090;
-	font-size: 16px;
-	font-weight: 400;
-	transition: .2s;
+  color: #909090;
+  font-size: 16px;
+  font-weight: 400;
+  transition: .2s;
 }
 #fullpage .section_five a:hover
 {
-	color: #fff;
+  color: #fff;
 }
 #fullpage .section_five .footer_menu_active
 {
-	color: #fff;
+  color: #fff;
 }
 #fullpage .section_five .footer_contact_us h3
 {
@@ -796,26 +857,27 @@ footer .footer_last p
 }
 #fullpage .section_five .footer_contact_us p
 {
-	font-size: 12px;
-	margin-top: 20px;
-	color: #F0F0F0;
+  font-size: 12px;
+  margin-top: 20px;
+  color: #F0F0F0;
+  font-family: 'Libre Franklin', sans-serif;
 }
 #fullpage .section_five .footer_contact_us .footer_email_input
 {
-	width: 50%;
-	color: #8D8D8D;
-	background: #1C1C24;
-	border: 1px solid #1C1C24;
+  width: 50%;
+  color: #8D8D8D;
+  background: #1C1C24;
+  border: 1px solid #1C1C24;
     padding: 10px;
     margin-top: 50px;
     border-radius: 0;
 }
 #fullpage .section_five .footer_contact_us .footer_submit_input
 {
-	width: 12%;
-	color: #BECE00;
-	background: #1C1C24;
-	border: 1px solid #BECE00;
+  width: 12%;
+  color: #BECE00;
+  background: transparent;
+  border: 1px solid #BECE00;
     padding: 10px;
     margin-top: 50px;
     margin-left: 20px;
@@ -823,25 +885,25 @@ footer .footer_last p
 }
 #fullpage .section_five .footer_contact_us .footer_submit_input:hover
 {
-	color: #000;
+  color: #000;
 }
 #fullpage .footer_copyright{
-	margin-top: 50px;
+  margin-top: 50px;
 }
 #fullpage .footer_copyright .col-md-5,
 #fullpage .footer_copyright .col-md-6
 {
-	display: flex;
+  display: flex;
 }
 #fullpage .footer_copyright p
 {
-	color: #848484;
-	font-size: 10px;
-	margin-top: 5px;
+  color: #848484;
+  font-size: 10px;
+  margin-top: 5px;
 }
 #fullpage .footer_copyright i
 {
-	color: #000;
+  color: #000;
     background: #848484;
     padding: 5px;
     border-radius: 50%;
@@ -849,22 +911,58 @@ footer .footer_last p
 }
 #fullpage .footer_copyright img
 {
-	width: 100px;
-	margin-top: -5px;
-	margin-right: 10px;
+  width: auto;
+  margin-top: -5px;
+  margin-right: 10px;
 }
 #fullpage .footer_copyright .col-md-6 i
 {
-	margin-left: 20px;
+  margin-left: 20px;
 }
 #fullpage .footer_last{
-	text-align: center;
-	position: absolute;
+  text-align: center;
+  position: absolute;
     bottom: 10px;
 }
 #fullpage .footer_last p{
-	color: #848484;
-	font-size: 9px;
+  color: #848484;
+  font-size: 9px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+#fullpage .section_two_columns .col-md-3 p:nth-child(1){
+ font-family: 'Montserrat', sans-serif !important;
+}
+#fullpage .section_two_columns .col-md-3 .year{
+    font-family: 'Montserrat', sans-serif !important;
+}
+#fullpage .arrow_down_home{
+  height: 22px;
+  width: 22px;
+  transform: rotate(45deg);
+  border-bottom: 4px solid #848484;
+  border-right: 4px solid #848484;
+  margin: auto;
+  position: absolute;
+  bottom: 40px;
+  left: 49.5vw;
+  transition: .25s;
+}
+#fullpage .arrow_down_home:hover{
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+}
+#fullpage .section_five .footer_contact_us p,
+#fullpage .footer_copyright p,
+#fullpage .footer_last p{
+  font-family: 'Libre Franklin', sans-serif;
+}
+.mobile_menu .nav-icon div,
+.mobile_menu .nav-icon div:after,
+.mobile_menu .nav-icon div:before{
+  height: 4px
+}
+.mobile_menu .nav-icon div{
+  width: 35px;
 }
 /* SECTION FIVE - fullPage.js end
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -874,222 +972,274 @@ footer .footer_last p
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .profile_home_bg{
-	background: url('../img/temp.png');
-	background-position: center;
-	background-size: cover;
-	height: 650px;
-	margin-bottom: 80px;
+  background: url(../img/section_one_bg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 650px;
+  margin-bottom: 80px;
 }
 .profile_content .profile_quote{
-	padding: 0 14%;
-	text-align: center;
+  padding: 0 6vw;
+  text-align: center;
 }
 .profile_content .profile_quote h1{
-	margin: 0;
-	font-family: 'Libre Baskerville', serif;
-	line-height: 1.3;
-	text-align: left;
+  margin: 0;
+    font-family: 'Libre Baskerville', serif;
+    line-height: 73px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 57px;
 }
 .profile_content .profile_quote p{
-	padding: 5%;
-	padding-top: 40px;
-	padding-bottom: 14px;
-	font-family: 'Libre Baskerville', serif;
-	font-size: 16px;
-	letter-spacing: .6;
-	line-height: 1.5;
-	color: #F0F0F0;
-	font-weight: 300;
+  padding: 5%;
+  padding-top: 40px;
+  padding-bottom: 14px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 24px;
+  letter-spacing: .6;
+  line-height: 1.5;
+  color: #F0F0F0;
+  font-weight: 300;
 }
 .profile_content .profile_quote .profile_name{
-	color: #B6B7AE;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 12px;
-	padding-top: 14px;
+  color: #B6B7AE;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding-top: 14px;
 }
 .profile_content .profile_quote img{
-	margin-top: 0;
+  margin-top: 0;
 }
 .profile_content{
-	padding-left: 10%;
-	text-align: center;
+  padding-left: 10%;
+  text-align: center;
 }
 .profile_sidebar{
-	padding: 0 40px;
-	padding-right: 10%;
+  padding: 0 40px;
+  padding-right: 10%;
 }
 .profile_content .profile_one{
-	margin-top: 40px;
-	text-align: left;
-	font-family: 'Libre Franklin', sans-serif;
-	color: #F0F0F0;
-	padding: 0 8%;
-	margin-bottom: 40px;
-	line-height: 1.7;
+  margin-top: 40px;
+  text-align: left;
+  font-family: 'Libre Franklin', sans-serif;
+  color: #F0F0F0;
+  padding: 0 8%;
+  margin-bottom: 40px;
+  line-height: 35px;
+  font-size: 21px;
 }
 .profile_content .profile_one a{
-	color: #BECE00;
-	padding-left: 10%;
-	transition: .2s;
+  color: #BECE00;
+  padding-left: 2%;
+  transition: .2s;
 }
 .profile_content .profile_one a:hover{
-	color: #d3e404;
+  color: #d3e404;
 }
 .profile_content .profile_one i{
-	padding-left: 6px;
+  padding-left: 6px;
 }
 .profile_content .profile_one h3{
-	font-family: 'Libre Baskerville', serif;
-	color: #F0F0F0;
-	margin-bottom: 20px;
+  font-family: 'Libre Baskerville', serif;
+    color: #F0F0F0;
+    line-height: 56px;
+    font-size: 36px;
 }
 .profile_img_8 img{
-	width: 100%;
+  width: 100%;
 }
 .profile_content .text_left{
-	font-family: 'Libre Franklin', sans-serif;
-	color: #F0F0F0;
-	text-align: left;
-	line-height: 1.7;
-	padding-left: 6.5%;
-	float: left;
+  font-family: 'Libre Franklin', sans-serif;
+  color: #F0F0F0;
+  text-align: left;
+  line-height: 1.7;
+  padding-left: 8%;
+  font-size: 21px;
+ 
 }
 .profile_content .img_right{
-	padding-right: 6.5%;
-	float: right;
+   
+   padding: 0;
 }
 .profile_content .img_right img{
-	width: 100%;
+   
+    float: right;
+    margin-right: 10px;
+    clear: both;
+    width: 50%;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
 }
 .profile_content .text_right{
-	font-family: 'Libre Franklin', sans-serif;
-	color: #F0F0F0;
-	text-align: left;
-	line-height: 1.7;
-	padding-right: 6.5%;
+  font-family: 'Libre Franklin', sans-serif;
+  color: #F0F0F0;
+  text-align: left;
+  line-height: 35px;
+  padding-right: 6.5%;
+  font-size: 21px;
+  padding: 0 6.5%;
+}
+.profile_content .text_right-head{
+  font-family: 'Libre Baskerville', serif;
+    color: #F0F0F0;
+    line-height: 56px;
+    font-size: 36px;
+    padding-right: 103px; 
 }
 .profile_content .text_right h3{
-	font-family: 'Libre Baskerville', serif;
-	color: #F0F0F0;
-	margin-bottom: 20px;
+  font-family: 'Libre Baskerville', serif;
+  color: #F0F0F0;
+  margin-bottom: 25px;
 }
 .profile_content .img_left{
-	padding-left: 6.5%;
+   
 }
 .profile_content .img_left img{
-	width: 100%;
+  float: left;
+    margin-right: 50px;
+    clear: both;
+    width: 50%;
+    margin-bottom: 2vw
+
 }
 .profile_columns{
-	margin-bottom: 40px;
+  margin-bottom: 40px;
+  padding:0;
 }
 .profile_img_last{
-	padding: 0 8%;
+  padding: 0 8%;
 }
 .profile_content .profile_img_last{
-	margin-bottom: 140px;
+  margin-bottom: 140px;
 }
 .profile_content .profile_img_last a{
-	color: #BECE00;
-	position: relative;
-	top: -50px;
-	transition: .2s;
+  color: #BECE00;
+  position: relative;
+  top: -50px;
+  transition: .2s;
 }
 .profile_content .profile_img_last a:hover{
-	color: #d3e404;
+  color: #d3e404;
 }
 .profile_content .profile_img_last i{
-	margin-left: 6px;
+  margin-left: 6px;
 }
 .profile_content .profile_img_last img{
-	width: 100%;
+  width: 100%;
 }
 .profile_sidebar .awards{
-	overflow: auto;
-	margin: 40px 0;
+  overflow: auto;
+  margin: 40px 0;
 }
 .profile_sidebar .awards h3{
-	font-family: 'Montserrat', sans-serif;
-	font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
 }
 .profile_sidebar .awards .awards_items{
-	text-align: center;
-	margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 .profile_sidebar .awards .awards_items p{
-	text-align: left;
-	font-family: 'Libre Baskerville', serif;
-	margin-top: 20px;
-	color: #F0F0F0;
+  text-align: left;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 20px;
+  color: #F0F0F0;
 }
 .profile_sidebar .awards .awards_items p:nth-child(3){
-	text-align: left;
-	margin-top: -2px;
-	margin-bottom: 10px;
-	font-size: 12px;
-	color: #B6B7AE;
-	font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  margin-top: -2px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #B6B7AE;
+  font-family: 'Montserrat', sans-serif;
 }
 .profile_sidebar .awards .awards_items a{
-	color: #BECE00;
-	transition: 0.2s;
+  color: #BECE00;
+  transition: 0.2s;
 }
 .profile_sidebar .awards .see_all{
-	text-align: left;
-	padding: 0;
-	margin-top: 10px;
+  text-align: left;
+  padding: 0;
+  margin-top: 10px;
 }
 .profile_sidebar .awards .awards_items a:hover{
-	color: #d3e404;
+  color: #d3e404;
 }
 .profile_sidebar .awards .awards_items i{
-	margin-left: 6px;
+  margin-left: 6px;
 }
 .profile_sidebar .milestone{
-	margin: 80px 0;
+  margin: 80px 0;
 }
 .profile_sidebar .milestone h3{
-	font-family: 'Montserrat', sans-serif;
-	font-size: 18px;
-	margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  margin-bottom: 40px;
 }
 .profile_sidebar .milestone .milestones_items p{
-	text-align: left;
-	font-family: 'Libre Baskerville', serif;
-	margin-top: 20px;
-	color: #F0F0F0;
+  text-align: left;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 20px;
+  color: #F0F0F0;
 }
 .profile_sidebar .milestone div,
 .profile_sidebar .awards div{
-	padding: 0;
+  padding: 0;
 }
 .profile_sidebar .milestone .milestones_items p:nth-child(2){
-	text-align: left;
-	margin-top: -2px;
-	margin-bottom: 10px;
-	font-size: 12px;
-	color: #B6B7AE;
-	font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  margin-top: -2px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #B6B7AE;
+  font-family: 'Montserrat', sans-serif;
 }
 .profile_sidebar .milestone .milestones_items a{
-	color: #BECE00;
-	transition: 0.2s;
+  color: #BECE00;
+  transition: 0.2s;
 }
 .profile_sidebar .milestone .see_all{
-	text-align: left;
-	padding: 0;
-	margin-top: 20px;
+  text-align: left;
+  padding: 0;
+  margin-top: 20px;
 }
 .profile_sidebar .milestone .milestones_items a:hover{
-	color: #d3e404;
+  color: #d3e404;
 }
 .profile_sidebar .milestone .milestones_items i{
-	margin-left: 6px;
+  margin-left: 6px;
 }
 .profile_img_last{
-	display: block;
+  display: block;
 }
 .profile_img_last2{
-	display: none;
+  display: none;
+}
+.profile_awards_hr{
+  margin-top: -60px;
+  display: none;
+    border-top: 1px solid #707070;
+}
+.profile_content .profile_one p{
+  font-size: 19px;
+}
+
+.profile_content .profile_one a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+.profile_content .text_right-head{
+  text-align: left;
+}
+.profile_sidebar .awards h3,
+.profile_sidebar .milestone h3{
+  font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    color: #F0F0F0;
+    font-weight: 400;
+}
+.profile_sidebar .milestone .milestones_items p{
+  font-size: 16px;
 }
 /* PROFILE PAGE end
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -1097,6 +1247,113 @@ footer .footer_last p
 
 /* Milestone page start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#milestone hr{
+  clear: both;
+  margin-bottom: 50px;
+}
+
+#milestone .rec-dropdwon
+{
+  padding: 0 !important; 
+}
+#milestone .recognition-head-top
+{
+  padding:0;
+}
+
+#milestone .head
+{
+  padding: 0;
+}
+
+#milestone .fa-angle-left{
+  padding-right: 12px;
+}
+#milestone  .headline-awards{
+  color: #BECE00;
+  font-weight: 100;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 60px;
+}
+
+ #milestone .headline-awards2{
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: #F0F0F0;
+  margin-top: 38px;
+}
+
+#milestone .awards-total
+{
+  font-size: 18px;
+    font-style: italic;
+    margin-top: 47px;
+    float: right;
+    color: #BCBCBC;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#milestone .select 
+{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+#milestone  .select select 
+{
+    font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  width: 110px;
+  margin-top: 29px;
+  cursor: pointer;
+  padding: 12px 15px;
+  outline: 0;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  background: #000000;
+  color: #b6b7ae;
+  float: right;
+  appearance: none;
+  -webkit-appearance: none;
+    -moz-appearance: none;
+}
+#milestone  .select select::-ms-expand 
+{
+    display: none;
+}
+#milestone  .select select:hover,
+#milestone  .select select:focus {
+    color: #b6b7ae;
+    background: #000000;
+}
+#milestone .select select:disabled {
+     opacity: 0.5;
+     pointer-events: none;
+}
+#milestone .select_arrow 
+{
+    position: absolute;
+  top: 51px;
+    right: 20px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 5px 4px 0px 4px;
+    border-color: #97C3BC transparent transparent transparent;
+}
+
+#milestone .select select:disabled ~ .select_arrow 
+{
+    border-top-color: #CCCCCC;
+}
+ 
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
     position: relative;
@@ -1114,7 +1371,7 @@ footer .footer_last p
     top: 20px;
     bottom: 0;
     left: 50%;
-    margin-left: -1.4px;
+    margin-left: -1px;
 }
 
 /* container2 around content */
@@ -1143,8 +1400,8 @@ footer .footer_last p
 .timeline .right::after {
     content: '';
     position: absolute;
-    width: 4px;
-    height: 4px;
+    width: 5px;
+    height: 5px;
     right: -4px;
     background-color: white;
     border: 4px solid white;
@@ -1170,7 +1427,7 @@ footer .footer_last p
     position: absolute;
     width: 14px;
     height: 14px;
-    left: -7px;
+    left: -8px;
     background-color: white;
     border: 4px solid white;
     top: 15px;
@@ -1246,30 +1503,54 @@ footer .footer_last p
 
 /* RECOGNITION start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.wrapper .recognition-header-text
+{
+  right: 44vw;
+    position: absolute;
+    text-align: center;
+    top: 17vw;
+    left: 14vw;
+}
+.wrapper .header-quotes
+{
+  color: #212121;
+    line-height: 36px;
+    font-family: 'Libre Baskerville', serif;
+        margin-bottom: 19px;
+}
+.wrapper .name{
+    text-align: center;
+    margin-top: 20px;
+    color: #424245;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 66px;
+}
 #recognition .headline{
-	font-family: 'Montserrat', sans-serif;
-	font-size: 26px;
-	color: #F0F0F0;
-	font-weight: 700;
-	margin-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  color: #F0F0F0;
+  font-weight: 700;
+  margin-top: 60px;
 }
 #recognition .see-more{
-	float: right; 
-	color: #BECE00;
-	font-weight: 100;
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
+  float: right; 
+  color: #BECE00;
+  font-weight: 100;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 #recognition .text-desc{
-	font-size: 21px;
+  font-size: 21px;
+  line-height: 36px;
     text-align: center;
     color: #F0F0F0;
     padding: 40px;
+    padding-bottom: 17px;
     font-family: 'Libre Baskerville', serif;
 }
 #recognition .section1{
-	margin-top: 60px;
-	margin-bottom: 150px;
+  margin-top: 60px;
+  margin-bottom: 150px;
 }
 #recognition .name{
     text-align: center;
@@ -1279,44 +1560,46 @@ footer .footer_last p
     padding: 0 66px;
 }
 #recognition .text-award{
-	font-size: 18px;
+  font-size: 18px;
+  line-height: 28px;
     color: #F0F0F0;
     padding-top: 22px;
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
 }
 #recognition .text-year{
-	color: #B6B7AE;
-	font-size: 16px;
-	margin-bottom: 70px;
+  color: #B6B7AE;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 70px;
 }
 #recognition .fa-angle-right{
-	padding-left: 12px;
+  padding-left: 12px;
 }
 #recognition .fa-angle-left{
-	padding-right: 12px;
+  padding-right: 12px;
 }
 #recognition .headline-awards{
-	color: #BECE00;
-	font-weight: 100;
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
-	margin-top: 60px;
+  color: #BECE00;
+  font-weight: 100;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 60px;
 }
 #recognition .headline-awards2{
-	font-size: 36px;
-	font-weight: bold;
-	font-family: 'Montserrat', sans-serif;
-	color: #F0F0F0;
-	margin-top: 40px;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: #F0F0F0;
+  margin-top: 40px;
 }
 #recognition hr{
-	clear: both;
-	margin-bottom: 50px;
+  clear: both;
+  margin-bottom: 50px;
 }
 #recognition .awards-total
 {
-	font-size: 18px;
+  font-size: 18px;
     font-style: italic;
     margin-top: 47px;
     float: right;
@@ -1329,27 +1612,29 @@ footer .footer_last p
     padding: 6px 12px;
     margin-left: -1px;
     line-height: 1.42857143;
-    color: #707070 !important;
+    color: #707070;
+    transition: .2s;
     text-decoration: none;
     background-color: transparent;
     border:none;
 }
 .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
     z-index: 2;
-	background-color: transparent;
-	border-color: none;
+  background-color: transparent;
+  border-color: none;
     color: #F0F0F0 !important;
 }
 #recognition .pagination-next{
-	padding: 7px 11px;
+  padding: 7px 11px;
     border: 1px solid #7E7E7E;
     border-radius: 4px;
     margin-top: -4px;
 }
 #recognition .text-desc-quotes{
-	font-size: 21px;
-	color: #F0F0F0;
-	font-family: 'Libre Baskerville', serif;
+  font-size: 21px;
+  color: #F0F0F0;
+  line-height: 36px;
+  font-family: 'Libre Baskerville', serif;
 }
 #recognition .name-quotes{
     margin-top: 20px;
@@ -1357,17 +1642,19 @@ footer .footer_last p
     font-family: 'Montserrat', sans-serif;
 }
 #recognition .quotes-full{
-	padding: 0;
-	margin-bottom: 40px;
+  padding: 0;
+  margin-top: 20px;
+
+  margin-bottom: 40px;
 }
 
 #recognition .recognition-head-top
 {
-	padding: 0;
+  padding: 0;
 }
 #recognition .rec-dropdwon
 {
-	padding: 0;
+  padding: 0;
 }
 #recognition .select 
 {
@@ -1379,21 +1666,21 @@ footer .footer_last p
 #recognition .select select 
 {
     font-family: 'Montserrat', sans-serif;
-	font-size: 18px;
-	font-weight: bold;
-	display: inline-block;
-	width: 110px;
-	margin-top: 29px;
-	cursor: pointer;
-	padding: 12px 15px;
-	outline: 0;
-	border: 1px solid #707070;
-	border-radius: 5px;
-	background: #000000;
-	color: #b6b7ae;
-	float: right;
-	appearance: none;
-	-webkit-appearance: none;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  width: 110px;
+  margin-top: 29px;
+  cursor: pointer;
+  padding: 12px 15px;
+  outline: 0;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  background: #000000;
+  color: #b6b7ae;
+  float: right;
+  appearance: none;
+  -webkit-appearance: none;
     -moz-appearance: none;
 }
 #recognition  .select select::-ms-expand 
@@ -1412,7 +1699,7 @@ footer .footer_last p
 #recognition .select_arrow 
 {
     position: absolute;
-	top: 51px;
+  top: 51px;
     right: 20px;
     pointer-events: none;
     border-style: solid;
@@ -1434,7 +1721,12 @@ footer .footer_last p
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     }
-
+    .active_page_recognition{
+  color: #fff !important;
+}
+#recognition .pagination>li .active_page_recognition{
+  color: #fff !important;
+}
 /* RECOGNITION end
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -1442,206 +1734,234 @@ footer .footer_last p
 /* Foundation start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .temp_btm{
-	margin-bottom: 140px;
+  margin-bottom: 140px !important;
 }
-.text_left{
-	float: left;
+.foundation_content .foundation_paragraphs .quote-title
+{
+  text-align: center;
 }
 .img_right{
-	float: right;
+  float: right;
 }
 .foundation_sidebar .quote a{
-	color: #BECE00;
-	transition: 0.2s;
+  color: #BECE00;
+  transition: 0.2s;
 }
 .foundation_sidebar .quote .see_all{
-	text-align: left;
-	padding: 0;
-	margin-top: 40px;
+  text-align: left;
+  padding: 0;
+  margin-top: 40px;
 }
 .foundation_sidebar .quote a:hover{
-	color: #d3e404;
+  color: #d3e404;
 }
 .foundation_sidebar .quote i{
-	margin-left: 6px;
+  margin-left: 6px;
 }
 .foundation_sidebar{
-	padding: 0 40px;
-	padding-right: 4%;
+  padding: 0 40px;
+  padding-right: 4%;
 }
 .quote{
 
 }
 .quote .milestones_items{
-	padding: 0;
+  padding: 0;
 }
 .quote .milestones_items p{
-	text-align: left;
-	font-family: 'Libre Baskerville', serif;
-	margin-top: 20px;
-	margin-bottom: 40px;
-	color: #F0F0F0;
-	font-size: 18px;
+  text-align: left;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #FFFFFF;
+  line-height: 30px;
+  font-size: 18px;
 }
-.quote .milestones_items p:nth-child(2){
-	text-align: left;
-	margin-top: -2px;
-	margin-bottom: 40px;
-	font-size: 12px;
-	color: #B6B7AE;
-	font-family: 'Montserrat', sans-serif;
+
+.quote .milestones_items .name{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 12px;
+  color: #B6B7AE;
+  font-size: 16px;
+  font-style: normal;
 }
+
+
 .quote h3{
-	margin-top: 60px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 26px;
-	margin-bottom: 20px;
+  margin-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  margin-bottom: 20px;
 }
 .foundation_sidebar .milestones a{
-	color: #BECE00;
-	transition: 0.2s;
+  color: #BECE00;
+  transition: 0.2s;
 }
 .foundation_sidebar .milestones .see_all{
-	text-align: left;
-	padding: 0;
-	margin-top: 40px;
+  text-align: left;
+  padding: 0;
+  margin-top: 40px;
 }
 .foundation_sidebar .milestones a:hover{
-	color: #d3e404;
+  color: #d3e404;
 }
 .foundation_sidebar .milestones i{
-	margin-left: 6px;
+  margin-left: 6px;
 }
 .foundation_sidebar{
-	padding: 0 40px;
-	padding-right: 4%;
+  padding: 0 40px;
+  padding-right: 10%;
 }
 .milestones{
 
 }
 .milestones .milestones_items{
-	padding: 0;
+  padding: 0;
 }
 .milestones .milestones_items p{
-	text-align: left;
-	font-family: 'Libre Baskerville', serif;
-	margin-top: 20px;
-	color: #F0F0F0;
-	font-size: 18px;
+  text-align: left;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 20px;
+  color: #F0F0F0;
+  font-size: 18px;
 }
 .milestones .milestones_items p:nth-child(2){
-	text-align: left;
-	margin-top: -2px;
-	margin-bottom: 10px;
-	font-size: 12px;
-	color: #B6B7AE;
-	font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  margin-top: -2px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #B6B7AE;
+  font-family: 'Montserrat', sans-serif;
 }
 .milestones h3{
-	margin-top: 60px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 26px;
-	margin-bottom: 20px;
+  margin-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  margin-bottom: 20px;
 }
 .foundation_home_bg{
-	background: url('../img/foundation_bg.png');
-	background-position: center;
-	background-size: cover;
-	height: 650px;
-	margin-bottom: 80px;
+  background: url('../img/foundation_bg.png');
+  background-position: center;
+  background-size: cover;
+  height: 650px;
+  margin-bottom: 80px;
 }
 .foundation_home_bg img{
-	position: relative;
+  position: relative;
     top: 562px;
     left: 15%;
     width: 170px;
 }
 .foundation_content .foundation_paragraphs{
-	margin-top: 40px;
-	padding: 0 16%;
-	text-align: center;
-	margin-bottom: 20px;
-	display: inline-block;
+  margin-top: 40px;
+  padding: 0 16%;
+  text-align: center;
+  margin-bottom: 20px;
+  display: inline-block;
 }
 .foundation_content .foundation_paragraphs h2{
-	margin: 0;
-	font-family: 'Libre Baskerville', serif;
-	line-height: 1.3;
-	text-align: left;
-	font-size: 36px;
-	margin-bottom: 20px;
+  margin: 0;
+  font-family: 'Libre Baskerville', serif;
+  line-height: 1.3;
+  text-align: left;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 .foundation_content .foundation_paragraphs p{
-	color: #F0F0F0;
+  color: #F0F0F0;
     font-family: 'Libre Franklin', sans-serif;
     line-height: 35px;
     text-align: left;
-    font-size: 18px;
+    font-size: 21px;
 }
 .foundation_content .foundation_img{
-	padding: 0 4%;
-	padding-left: 8%;
+  padding: 0 4%;
+  padding-left: 8%;
 }
 .foundation_content .foundation_img img{
-	width: 100%;
+  width: 100%;
 }
 .foundation_content .text_left{
-	padding-left: 16%;
+  padding-left: 16%;
+  color: #F0F0F0;
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 1.7;
+  text-align: left;
+  font-size: 21px;
+
+
 }
 .foundation_content .text_left p{
-	color: #F0F0F0;
-	font-family: 'Libre Franklin', sans-serif;
-	line-height: 1.7;
-	text-align: left;
-	font-size: 18px;
+  color: #F0F0F0;
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 1.7;
+  text-align: left;
+  font-size: 18px;
 }
 .foundation_content .text_right{
-	padding-right: 16%;
-	text-align: center;
+  padding-right: 16%;
+  text-align: center;
 }
 .foundation_content .text_right p{
-	color: #F0F0F0;
-	font-family: 'Libre Baskerville', serif;
-	line-height: 1.7;
-	text-align: center;
-	padding-top: 5vw;
-	font-size: 18px;
+  color: #F0F0F0;
+  font-family: 'Libre Baskerville', serif;
+  line-height: 1.7;
+  text-align: center;
+  padding-top: 7vw;
+  font-size: 24px;
+  margin-bottom: 0;
 }
 .foundation_content .text_right p:nth-child(3){
-	color: #B6B7AE;
-	font-size: 10px;
-	padding-top: 0;
+  color: #B6B7AE;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 0;
 }
 .foundation_content .text_right img{
-	width: 30px;
-	margin: 20px 0;
+  width: 30px;
+  margin: 20px 0;
 }
 .foundation_content .img_right{
-	padding-right: 16%;
+  
+  padding: 0 4%;
+    float: right;
+    margin-right: 10px;
+    clear: both;
+    width: 50%;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
 }
 .foundation_content .img_right img{
-	width: 100%;
+  width: 100%;
 }
 .foundation_content .img_left{
-	padding-left: 16%;
+  padding-left: 8%;
 }
 .foundation_content .img_left img{
-	width: 100%;
+  width: 100%;
 }
 .foundation_content .foundation_paragraphs .text2{
-	text-align: center;
-	padding: 0 15%;
-	margin-top: 40px;
-}
+  text-align: center;
+  padding: 0 11%;
+  margin-top: 40px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}s
 .foundation_content .foundation_paragraphs img{
-	width: 30px;
-	margin: 20px 0;
+  width: 30px;
+  margin: 20px 0;
 }
 .foundation_content .foundation_paragraphs p:nth-child(4){
-	color: #B6B7AE;
-	font-size: 10px;
-	padding-top: 0;
-	text-align: center;
+  color: #B6B7AE;
+  font-size: 16px;
+  padding-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 20px;
 }
 
 /* Foundation end
@@ -1650,135 +1970,147 @@ footer .footer_last p
 /* NATION BUILDING start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .nation_building .country_details{
-	width: 0;
-	bottom: -15vw;
-	position: relative;
-	width: 130px;
-	margin-right: -130px;
+  width: 0;
+  bottom: -15vw;
+  position: relative;
+  width: 130px;
+  margin-right: -130px;
 }
+.clickable-row
+  {
+    transition: .5s;
+    cursor: pointer;
+  }
+  .clickable-row:hover
+  {
+    filter: brightness(.8);
+  }
 .nation_building .country_details img{
-	width: 34px;
+  width: 34px;
 }
 .nation_building .country_details a{
-	font-family: 'Libre Franklin', sans-serif;
-	color: #BECE00;
-	top: 1.7vw;
-	font-size: 14px;
-	position: relative;
-	transition: .2s;
+  font-family: 'Montserrat', sans-serif;
+  color: #BECE00;
+  top: 1.7vw;
+  font-size: 14px;
+  position: relative;
+  transition: .2s;
 }
 .nation_building .country_details a:hover{
-	color: #d3e404;
+  color: #d3e404;
 }
 .nation_building .country_details a i{
-	margin-left: 10px;
-	font-size: 16px;
+  margin-left: 10px;
+  font-size: 16px;
 }
 
 .nation_building .country_details2{
-	width: 0;
-	bottom: -3.5vw;
-	position: relative;
-	width: 237px;
-	margin-right: -237px;
+  width: 0;
+  bottom: -3.5vw;
+  position: relative;
+  width: 237px;
+  margin-right: -237px;
 }
 .nation_building .country_details2 img{
-	width: 34px;
+  width: 34px;
 }
 .nation_building .country_details2 a{
-	font-family: 'Libre Franklin', sans-serif;
-	color: #BECE00;
-	top: 1.7vw;
-	font-size: 14px;
-	position: relative;
-	transition: .2s;
+  font-family: 'Montserrat', sans-serif;
+  color: #BECE00;
+  top: 1.7vw;
+  font-size: 14px;
+  position: relative;
+  transition: .2s;
 }
 .nation_building .country_details2 a:hover{
-	color: #d3e404;
+  color: #d3e404;
 }
 .nation_building .country_details2 a i{
-	margin-left: 10px;
-	font-size: 16px;
+  margin-left: 10px;
+  font-size: 16px;
 }
 .nation_building table{
-	width: 100%;
+  width: 100%;
 }
 .nation_building tr{
-	height: 10vw;
+  height: 10vw;
 }
 .nation_building td{
-	border: 50px solid #000;
-	padding: 0 20px;
+  border: 50px solid #000;
+  padding: 0 20px;
 }
 .nation_building .cards{
-	width: 78%;
-	margin: auto;
+  width: 78%;
+  margin: auto;
 }
 .nation_building .botswana{
-	background: url('../img/botswana_card.png') no-repeat;
-	background-size: cover;
-	height: 46vw;
+  background: url('../img/botswana_card.png') no-repeat;
+  background-size: cover;
+  height: 46vw;
 }
 .nation_building .cambodia{
-	background: url('../img/cambodia_card.png') no-repeat;
-	background-size: cover;
-	height: 23vw;
+  background: url('../img/cambodia_card.png') no-repeat;
+  background-size: cover;
+  height: 23vw;
 }
 .nation_building .quote_text p{
-	font-size: 0.95vw;
+  font-size: 19px;
+  font-family: 'Libre Baskerville', serif;
+  line-height: 26px;
 }
 .nation_building .quote .name{
-	font-size: 12px;
-	color: #B6B7AE;
-	margin-top: 20px;
-	font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+    color: #B6B7AE;
+    margin-top: 20px;
+    line-height: 26px;
+    font-family: 'Montserrat', sans-serif;
 }
 .nation_building .quote img{
-	width: 30px;
-	margin-top: 10px;
+  width: 30px;
+  margin-top: 10px;
 }
 .nation_building .quote{
-	padding: 0;
-	width: 24.35vw;
-	height: 23vw;
-	text-align: center;
-	line-height: 1.7;
+  padding: 0;
+  width: 24.35vw;
+  height: 23vw;
+  text-align: center;
+  line-height: 1.7;
     letter-spacing: 1.5px;
     color: #F0F0F0;
     font-family: 'Libre Baskerville', serif;
 }
 .nation_building .london{
-	background: url('../img/london_card.png') no-repeat;
-	background-size: cover;
-	height: 46vw;
+  background: url('../img/london_card.png') no-repeat;
+  background-size: cover;
+  height: 46vw;
 }
 .nation_building .lesotho{
-	background: url('../img/lesotho_card.png') no-repeat;
-	background-size: cover;
-	height: 23vw;
+  background: url('../img/lesotho_card.png') no-repeat;
+  background-size: cover;
+  height: 23vw;
 }
 .nation_building .swaziland{
-	background: url('../img/swaziland_card.png') no-repeat;
-	background-size: cover;
-	height: 46vw;
+  background: url('../img/swaziland_card.png') no-repeat;
+  background-size: cover;
+  height: 46vw;
 }
 .nation_building .sierra_leone{
-	background: url('../img/sierra_leone_card.png') no-repeat;
-	background-size: cover;
-	height: 23vw;
+  background: url('../img/sierra_leone_card.png') no-repeat;
+  background-size: cover;
+  height: 23vw;
 }
 .nation_building .south_africa{
-	background: url('../img/south_africa_card.png') no-repeat;
-	background-size: cover;
-	height: 23vw;
+  background: url('../img/south_africa_card.png') no-repeat;
+  background-size: cover;
+  height: 23vw;
 }
 
 .nation_building .home_bg{
-	background: url('../img/section_two_bg.jpg') no-repeat;
-	background-size: cover;
-	height: 40vw;
-	width: 100%;
-	background-position-y: -6vw;
+  background: url('../img/section_two_bg.jpg') no-repeat;
+  background-size: cover;
+  height: 40vw;
+  width: 100%;
+  background-position-y: -6vw;
 }
 .nation_building .home_content{
     position: absolute;
@@ -1793,192 +2125,198 @@ footer .footer_last p
     margin-top: 15px;
 }
 .nation_building .home_content p{
-	line-height: 1.5;
+  line-height: 1.5;
     letter-spacing: 1px;
-	font-family: 'Libre Franklin', sans-serif;
-	margin-bottom: 26px;
+  font-family: 'Libre Franklin', sans-serif;
+  margin-bottom: 26px;
 }
 .nation_building .home_content a{
-	font-family: 'Libre Franklin', sans-serif;
-	color: #BECE00;
-	transition: .2s;
+  color: #BECE00;
+  transition: .2s;
+  font-family: 'Montserrat', sans-serif;
 }
 .nation_building .home_content a:hover{
-	color: #d3e404;
+  color: #d3e404;
 }
 .nation_building .home_content a i{
-	margin-left: 10px;
-	font-size: 16px;
+  margin-left: 10px;
+  font-size: 16px;
 }
 .nation_building .cards{
-		display: block;
-	}
-	.nation_building .small_cards{
-		display: none;
-	}
+    display: block;
+  }
+  .nation_building .small_cards{
+    display: none;
+  }
 /* NATION BUILDING end
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* FOR ALL COUNTRIES */
 
-#country-details .panel-heading {
-	  padding: 0;
-		border:0;
-	}
-	#country-details .panel-title>a, .panel-title>a:active{
-		display:block;
-		color: #FFFFFF;
-		padding: 0 15px;
-	 
-	}
-	#country-details .panel-heading  a:before {
-	   font-family: 'Glyphicons Halflings';
-	   content: "\e114";
-	   float: right;
-	   color: #BECE00;
-	   transition: all 0.5s;
-	}
-	#country-details .panel-heading.active a:before {
-		-webkit-transform: rotate(180deg);
-		-moz-transform: rotate(180deg);
-		transform: rotate(180deg);
-	} 
+#country-details .panel-heading 
+{
+    padding: 0;
+  border:0;
+}
+#country-details .panel-title>a, .panel-title>a:active
+{
+  display:block;
+  color: #FFFFFF;
+  padding: 0 15px; 
+}
+.dropdown_countries
+{
+   width: 12px;
+   height: 12px;
+   border-bottom: 3px solid #BECE00;
+   transform: rotate(45deg);
+   float: right;
+   border-right: 3px solid #BECE00;
+   transition: .3s;
+   margin-top: -4px;
+}
+#country-details .panel-heading.active .dropdown_countries 
+{
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  transform: rotate(225deg);
+    margin-top: 4px;
+}
+#country-details .panel-default>.panel-heading
+{
+  background-color: transparent;
+}
+  #country-details .accordion-toggle
+  {
+    color: #FFFFFF !important;
+  }
+  #country-details .panel-body
+  {
+    padding: 0 15px;
+  }
+  #country-details .panel-group
+  {
+    margin-bottom: 0;
+  }
+  #country-details .panel-default>.panel-heading+.panel-collapse>.panel-body
+  {
+    border: none;
 
-	#country-details .panel-default>.panel-heading
-	{
-		background-color: transparent;
-	}
-	#country-details .accordion-toggle
-	{
-		color: #FFFFFF !important;
-	}
-	#country-details .panel-body
-	{
-		padding: 0 15px;
-	}
-	#country-details .panel-group
-	{
-		margin-bottom: 0;
-	}
-	#country-details .panel-default>.panel-heading+.panel-collapse>.panel-body
-	{
-		border: none;
+  }
 
-	}
+  #country-details .panel
+  {
+    background-color: transparent;
+    border:none;
+  }
 
-	#country-details .panel
-	{
-		background-color: transparent;
-		border:none;
-	}
+  #country-details .country-details
+  {
+    background-color: #424245;
+    padding: 0 6px;
+    background-color: rgba(66,66,69, 0.5);
+    overflow: hidden;
+    border-radius: 6px;
+  }
+  #country-details .name-progress-bar
+  {
+    padding: 0;
+    margin-top: -14px;
+  }
+  #country-details .progress-bar
+  {
+        background-color: #43CBFF;
+        height: 20px;
+  }
 
-	#country-details .country-details
-	{
-		background-color: #424245;
-		padding: 0 6px;
-		background-color: rgba(66,66,69, 0.5);
-		overflow: hidden;
-		border-radius: 6px;
-	}
-	#country-details .name-progress-bar
-	{
-		padding: 0;
-		margin-top: -14px;
-	}
-	#country-details .progress-bar
-	{
-		    background-color: #43CBFF;
-		    height: 20px;
-	}
+  #country-details .country-img
+  {
+    
+      padding: 11px;
+      padding-top: 34px;
+      display: block;
+      margin: 0 auto;
+      width: 70%;
+  }
 
-	#country-details .country-img
-	{
-		
-    	padding: 11px;
-    	padding-top: 34px;
-    	display: block;
-    	margin: 0 auto;
-    	width: 70%;
-	}
+  #country-details .country-flag
+  {
+    margin-top: 20px;
+    width: 45px;
+  }
+  #country-details .first-section
+  {
+    margin-top: 20px;
+  }
+  #country-details .country-description
+  {
+    font-size: 16px;
+      color: #F0F0F0;
+      margin-bottom: 40px;
+      font-family: 'Libre Franklin', sans-serif;
+      font-weight: bold;
+  }
+  #country-details .amount
+  {
+    color: #43CBFF;
+      float: right;
+      font-size: 16px;
+  }
+  #country-details hr
+  {
+    border-top: 1px solid #707070;
+  }
+  #country-details sup
+  {
+    margin-left: 6px;
+  }
+  #country-details .title-country-desc
+  {
+    font-weight: 600;
+      font-size: 19px;
+      margin-top: 9px;
+      margin-bottom: 35px;
+      font-family: 'Montserrat', sans-serif;
+  }
 
-	#country-details .country-flag
-	{
-		margin-top: 20px;
-		width: 45px;
-	}
-	#country-details .first-section
-	{
-		margin-top: 20px;
-	}
-	#country-details .country-description
-	{
-		font-size: 16px;
-    	color: #F0F0F0;
-    	margin-bottom: 40px;
-    	font-family: 'Libre Franklin', sans-serif;
-    	font-weight: bold;
-	}
-	#country-details .amount
-	{
-		color: #43CBFF;
-    	float: right;
-    	font-size: 16px;
-	}
-	#country-details hr
-	{
-		border-top: 1px solid #707070;
-	}
-	#country-details sup
-	{
-		margin-left: 6px;
-	}
-	#country-details .title-country-desc
-	{
-		font-weight: bold;
-    	font-size: 21px;
-    	margin-top: 9px;
-    	margin-bottom: 35px;
-    	font-family: 'Montserrat', sans-serif;
-	}
+  #country-details .country-description2
+  {
+    font-size: 16px;
+      color: #F0F0F0;
+      margin-bottom: 20px;
+      font-family: 'Libre Franklin', sans-serif;
+      font-weight: 400;
+  }
 
-	#country-details .country-description2
-	{
-		font-size: 16px;
-    	color: #F0F0F0;
-    	margin-bottom: 20px;
-    	font-family: 'Libre Franklin', sans-serif;
-    	font-weight: bold;
-	}
+  #country-details .country-description-progress
+  {
+    font-size: 16px;
+      color: #F0F0F0;
+      font-family: 'Libre Franklin', sans-serif;
+  }
+  #country-details .space-section
+  {
+    margin-bottom: 22px;
+  }
+  #country-details .site
+  {
+    font-size: 14px;
+    color: #BECE00;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
 
-	#country-details .country-description-progress
-	{
-		font-size: 16px;
-    	color: #F0F0F0;
-    	font-family: 'Libre Franklin', sans-serif;
-	}
-	#country-details .space-section
-	{
-		margin-bottom: 22px;
-	}
-	#country-details .site
-	{
-		font-size: 14px;
-		color: #BECE00;
-		margin-bottom: 10px;
-		font-family: 'Montserrat', sans-serif;
-	}
-
-	#country-details .progress
-	{
-		background-color: #848484;
-		height: 5px;
-		width: 100%;
-	}
-	#country-details .progress-amount
-	{
-		padding: 0;
-		margin-top: -11px;
-	}
+  #country-details .progress
+  {
+    background-color: #848484;
+    height: 5px;
+    width: 100%;
+  }
+  #country-details .progress-amount
+  {
+    padding: 0;
+    margin-top: -11px;
+  }
 
 /* FOR ALL COUNTRIES END
 
@@ -1986,7 +2324,7 @@ footer .footer_last p
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .national-building-swaziland
 {
-	padding: 0 7vw;
+  padding: 0 7vw;
 }
 
 .national-building-swaziland .fa-angle-left 
@@ -1996,34 +2334,34 @@ footer .footer_last p
 
 .national-building-swaziland .quotes-all
 {
-	margin-right: 9vw;
+  margin-right: 9vw;
 }
 
 .national-building-swaziland .back-countries
 {
-	color: #BECE00;
-	font-weight: 100;
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
-	margin-top: 60px;
+  color: #BECE00;
+  font-weight: 100;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 60px;
 }
 
 .national-building-swaziland .headline-countries
 {
-	font-family: 'Libre Baskerville', serif;
+  font-family: 'Libre Baskerville', serif;
 }
 .national-building-swaziland .quotes-country
 {
-	font-family: 'Libre Baskerville', serif;
-	font-size: 24px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 24px;
     text-align: center;
-    padding: 108px 41px;
+    padding: 65px 41px;
     padding-bottom: 10px;
 }
 
 .national-building-swaziland .name-countries
 {
-	text-align: center;
+  text-align: center;
     margin-top: 20px;
     color: #B6B7AE;
     font-family: 'Montserrat', sans-serif;
@@ -2031,35 +2369,36 @@ footer .footer_last p
 }
 .national-building-swaziland .text-countries
 {
-	font-size: 21px;
-   	margin-top: 55px;
-   	font-family: 'Libre Franklin', sans-serif;
-   	padding-right: 6vw;
+  font-size: 21px;
+    margin-top: 55px;
+    font-family: 'Libre Franklin', sans-serif;
+    padding-right: 6vw;
 }
 
 .national-building-swaziland .text-headline
 {
-	font-size: 36px;
-	font-family: 'Libre Baskerville', serif;
-	margin-top: 33px;
+  font-size: 36px;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 33px;
 }
 .national-building-swaziland .img-malaysia
 {
-	margin-top: 50px;
+  margin-top: 50px;
 }
 
 .transform-img-swaziland
 {
-	background: url(../img/transform_swaziland.png) no-repeat;
-	height: 500px;
-	background-size: cover;
+  background: url(../img/transform_swaziland.png) no-repeat;
+  height: 500px;
+  background-size: cover;
     background-position: center;
     margin-top: 90px;
+    margin-bottom: -20px;
 }
 
 .transform-img-swaziland .transform-text
 {
-	position: relative;
+  position: relative;
     bottom: -15vh;
     left: 7.5vw;
     width: 45%;
@@ -2068,18 +2407,18 @@ footer .footer_last p
 
 .transform-img-swaziland .transform-text h1
 {
-	font-family: 'Libre Baskerville', serif;
-	font-size: 36px;
-	color: #FFFFFF;
-	margin-bottom: 20px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
 }
 
 .transform-img-swaziland .transform-text p
 {
-	font-size: 19px;
-	font-family: 'Libre Franklin', sans-serif;
-	line-height: 35px;
-	color: #F0F0F0;
+  font-size: 19px;
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 35px;
+  color: #F0F0F0;
 
 }
 
@@ -2102,7 +2441,7 @@ footer .footer_last p
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .national-building-south_africa
 {
-	padding: 0 7vw;
+  padding: 0 7vw;
 }
 
 .national-building-south_africa .fa-angle-left 
@@ -2112,34 +2451,34 @@ footer .footer_last p
 
 .national-building-south_africa .quotes-all
 {
-	margin-right: 9vw;
+  margin-right: 9vw;
 }
 
 .national-building-south_africa .back-countries
 {
-	color: #BECE00;
-	font-weight: 100;
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
-	margin-top: 60px;
+  color: #BECE00;
+  font-weight: 100;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 60px;
 }
 
 .national-building-south_africa .headline-countries
 {
-	font-family: 'Libre Baskerville', serif;
+  font-family: 'Libre Baskerville', serif;
 }
 .national-building-south_africa .quotes-country
 {
-	font-family: 'Libre Baskerville', serif;
-	font-size: 24px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 24px;
     text-align: center;
-    padding: 108px 41px;
+    padding: 65px 41px;
     padding-bottom: 10px;
 }
 
 .national-building-south_africa .name-countries
 {
-	text-align: center;
+  text-align: center;
     margin-top: 20px;
     color: #B6B7AE;
     font-family: 'Montserrat', sans-serif;
@@ -2147,33 +2486,34 @@ footer .footer_last p
 }
 .national-building-south_africa .text-countries
 {
-	font-size: 21px;
-   	margin-top: 55px;
-   	font-family: 'Libre Franklin', sans-serif;
-   	padding-right: 6vw;
+  font-size: 21px;
+    margin-top: 55px;
+    font-family: 'Libre Franklin', sans-serif;
+    padding-right: 6vw;
 }
 
 .national-building-south_africa .text-headline
 {
-	font-size: 36px;
-	font-family: 'Libre Baskerville', serif;
-	margin-top: 33px;
+  font-size: 36px;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 33px;
 }
 .national-building-south_africa .img-malaysia
 {
-	margin-top: 50px;
+  margin-top: 50px;
 }
 .transform-img-south-africa
 {
-	background: url(../img/transform_south_africa.png) no-repeat;
-	height: 500px;
-	background-size: cover;
+  background: url(../img/transform_south_africa.png) no-repeat;
+  height: 500px;
+  background-size: cover;
     background-position: center;
     margin-top: 90px;
+    margin-bottom: -20px;
 }
 .transform-img-south-africa .transform-text
 {
-	position: relative;
+  position: relative;
     bottom: -15vh;
     left: 7.5vw;
     width: 45%;
@@ -2182,18 +2522,18 @@ footer .footer_last p
 
 .transform-img-south-africa .transform-text h1
 {
-	font-family: 'Libre Baskerville', serif;
-	font-size: 36px;
-	color: #FFFFFF;
-	margin-bottom: 20px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
 }
 
 .transform-img-south-africa .transform-text p
 {
-	font-size: 19px;
-	font-family: 'Libre Franklin', sans-serif;
-	line-height: 35px;
-	color: #F0F0F0;
+  font-size: 19px;
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 35px;
+  color: #F0F0F0;
 
 }
 
@@ -2216,7 +2556,7 @@ footer .footer_last p
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .national-building-sierra_leone
 {
-	padding: 0 7vw;
+  padding: 0 7vw;
 }
 
 .national-building-sierra_leone .fa-angle-left 
@@ -2226,34 +2566,34 @@ footer .footer_last p
 
 .national-building-sierra_leone .quotes-all
 {
-	margin-right: 9vw;
+  margin-right: 9vw;
 }
 
 .national-building-sierra_leone .back-countries
 {
-	color: #BECE00;
-	font-weight: 100;
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
-	margin-top: 60px;
+  color: #BECE00;
+  font-weight: 100;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 60px;
 }
 
 .national-building-sierra_leone .headline-countries
 {
-	font-family: 'Libre Baskerville', serif;
+  font-family: 'Libre Baskerville', serif;
 }
 .national-building-sierra_leone .quotes-country
 {
-	font-family: 'Libre Baskerville', serif;
-	font-size: 24px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 24px;
     text-align: center;
-    padding: 108px 41px;
+    padding: 65px 41px;
     padding-bottom: 10px;
 }
 
 .national-building-sierra_leone .name-countries
 {
-	text-align: center;
+  text-align: center;
     margin-top: 20px;
     color: #B6B7AE;
     font-family: 'Montserrat', sans-serif;
@@ -2261,33 +2601,34 @@ footer .footer_last p
 }
 .national-building-sierra_leone .text-countries
 {
-	font-size: 21px;
-   	margin-top: 55px;
-   	font-family: 'Libre Franklin', sans-serif;
-   	padding-right: 6vw;
+  font-size: 21px;
+    margin-top: 55px;
+    font-family: 'Libre Franklin', sans-serif;
+    padding-right: 6vw;
 }
 
 .national-building-sierra_leone .text-headline
 {
-	font-size: 36px;
-	font-family: 'Libre Baskerville', serif;
-	margin-top: 33px;
+  font-size: 36px;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 33px;
 }
 .national-building-sierra_leone .img-malaysia
 {
-	margin-top: 50px;
+  margin-top: 50px;
 }
 .transform-img-sierra-leone
 {
-	background: url(../img/transform_sierra_leone.png) no-repeat;
-	height: 500px;
-	background-size: cover;
+  background: url(../img/transform_sierra_leone.png) no-repeat;
+  height: 500px;
+  background-size: cover;
     background-position: center;
     margin-top: 90px;
+    margin-bottom: -20px;
 }
 .transform-img-sierra-leone .transform-text
 {
-	position: relative;
+  position: relative;
     bottom: -15vh;
     left: 7.5vw;
     width: 45%;
@@ -2296,18 +2637,18 @@ footer .footer_last p
 
 .transform-img-sierra-leone .transform-text h1
 {
-	font-family: 'Libre Baskerville', serif;
-	font-size: 36px;
-	color: #FFFFFF;
-	margin-bottom: 20px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
 }
 
 .transform-img-sierra-leone .transform-text p
 {
-	font-size: 19px;
-	font-family: 'Libre Franklin', sans-serif;
-	line-height: 35px;
-	color: #F0F0F0;
+  font-size: 19px;
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 35px;
+  color: #F0F0F0;
 
 }
 
@@ -2330,7 +2671,7 @@ footer .footer_last p
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .national-building-malaysia
 {
-	padding: 0 7vw;
+  padding: 0 7vw;
 }
 
 .national-building-malaysia .fa-angle-left 
@@ -2340,34 +2681,34 @@ footer .footer_last p
 
 .national-building-malaysia .quotes-all
 {
-	margin-right: 9vw;
+  margin-right: 9vw;
 }
 
 .national-building-malaysia .back-countries
 {
-	color: #BECE00;
-	font-weight: 100;
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
-	margin-top: 60px;
+  color: #BECE00;
+  font-weight: 100;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 60px;
 }
 
 .national-building-malaysia .headline-countries
 {
-	font-family: 'Libre Baskerville', serif;
+  font-family: 'Libre Baskerville', serif;
 }
 .national-building-malaysia .quotes-country
 {
-	font-family: 'Libre Baskerville', serif;
-	font-size: 24px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 24px;
     text-align: center;
-    padding: 108px 41px;
+    padding: 65px 41px;
     padding-bottom: 10px;
 }
 
 .national-building-malaysia .name-countries
 {
-	text-align: center;
+  text-align: center;
     margin-top: 20px;
     color: #B6B7AE;
     font-family: 'Montserrat', sans-serif;
@@ -2375,34 +2716,35 @@ footer .footer_last p
 }
 .national-building-malaysia .text-countries
 {
-	font-size: 21px;
-   	margin-top: 55px;
-   	font-family: 'Libre Franklin', sans-serif;
-   	padding-right: 6vw;
+  font-size: 21px;
+    margin-top: 55px;
+    font-family: 'Libre Franklin', sans-serif;
+    padding-right: 6vw;
 }
 
 .national-building-malaysia .text-headline
 {
-	font-size: 36px;
-	font-family: 'Libre Baskerville', serif;
-	margin-top: 33px;
+  font-size: 36px;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 33px;
 }
 .national-building-malaysia .img-malaysia
 {
-	margin-top: 35px;
+  margin-top: 35px;
 }
 .transform-img-malaysia
 {
-	background: url(../img/transform_malaysia.png) no-repeat;
-	height: 500px;
-	background-size: cover;
+  background: url(../img/transform_malaysia.png) no-repeat;
+  height: 500px;
+  background-size: cover;
     background-position: center;
     margin-top: 90px;
+    margin-bottom: -20px;
 }
 
 .transform-img-malaysia .transform-text
 {
-	position: relative;
+  position: relative;
     bottom: -15vh;
     left: 7.5vw;
     width: 45%;
@@ -2411,18 +2753,18 @@ footer .footer_last p
 
 .transform-img-malaysia .transform-text h1
 {
-	font-family: 'Libre Baskerville', serif;
-	font-size: 36px;
-	color: #FFFFFF;
-	margin-bottom: 20px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
 }
 
 .transform-img-malaysia .transform-text p
 {
-	font-size: 19px;
-	font-family: 'Libre Franklin', sans-serif;
-	line-height: 35px;
-	color: #F0F0F0;
+  font-size: 19px;
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 35px;
+  color: #F0F0F0;
 
 }
 
@@ -2445,7 +2787,7 @@ footer .footer_last p
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .national-building-london
 {
-	padding: 0 7vw;
+  padding: 0 7vw;
 }
 
 .national-building-london .fa-angle-left 
@@ -2455,34 +2797,34 @@ footer .footer_last p
 
 .national-building-london .quotes-all
 {
-	margin-right: 9vw;
+  margin-right: 9vw;
 }
 
 .national-building-london .back-countries
 {
-	color: #BECE00;
-	font-weight: 100;
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
-	margin-top: 60px;
+  color: #BECE00;
+  font-weight: 100;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 60px;
 }
 
 .national-building-london .headline-countries
 {
-	font-family: 'Libre Baskerville', serif;
+  font-family: 'Libre Baskerville', serif;
 }
 .national-building-london .quotes-country
 {
-	font-family: 'Libre Baskerville', serif;
-	font-size: 24px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 24px;
     text-align: center;
-    padding: 108px 41px;
+    padding: 65px 41px;
     padding-bottom: 10px;
 }
 
 .national-building-london .name-countries
 {
-	text-align: center;
+  text-align: center;
     margin-top: 20px;
     color: #B6B7AE;
     font-family: 'Montserrat', sans-serif;
@@ -2490,33 +2832,34 @@ footer .footer_last p
 }
 .national-building-london .text-countries
 {
-	font-size: 21px;
-   	margin-top: 55px;
-   	font-family: 'Libre Franklin', sans-serif;
-   	padding-right: 6vw;
+  font-size: 21px;
+    margin-top: 55px;
+    font-family: 'Libre Franklin', sans-serif;
+    padding-right: 6vw;
 }
 
 .national-building-london .text-headline
 {
-	font-size: 36px;
-	font-family: 'Libre Baskerville', serif;
-	margin-top: 33px;
+  font-size: 36px;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 33px;
 }
 .national-building-london .img-malaysia
 {
-	margin-top: 50px;
+  margin-top: 50px;
 }
 .transform-img-london
 {
-	background: url(../img/transform_london.png) no-repeat;
-	height: 500px;
-	background-size: cover;
+  background: url(../img/transform_london.png) no-repeat;
+  height: 500px;
+  background-size: cover;
     background-position: center;
     margin-top: 90px;
+    margin-bottom: -20px;
 }
 .transform-img-london .transform-text
 {
-	position: relative;
+  position: relative;
     bottom: -15vh;
     left: 7.5vw;
     width: 45%;
@@ -2525,18 +2868,18 @@ footer .footer_last p
 
 .transform-img-london .transform-text h1
 {
-	font-family: 'Libre Baskerville', serif;
-	font-size: 36px;
-	color: #FFFFFF;
-	margin-bottom: 20px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
 }
 
 .transform-img-london .transform-text p
 {
-	font-size: 19px;
-	font-family: 'Libre Franklin', sans-serif;
-	line-height: 35px;
-	color: #F0F0F0;
+  font-size: 19px;
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 35px;
+  color: #F0F0F0;
 
 }
 
@@ -2559,7 +2902,7 @@ footer .footer_last p
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .national-building-lesotho
 {
-	padding: 0 7vw;
+  padding: 0 7vw;
 }
 
 .national-building-lesotho .fa-angle-left 
@@ -2569,34 +2912,34 @@ footer .footer_last p
 
 .national-building-lesotho .quotes-all
 {
-	margin-right: 9vw;
+  margin-right: 9vw;
 }
 
 .national-building-lesotho .back-countries
 {
-	color: #BECE00;
-	font-weight: 100;
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
-	margin-top: 60px;
+  color: #BECE00;
+  font-weight: 100;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 60px;
 }
 
 .national-building-lesotho .headline-countries
 {
-	font-family: 'Libre Baskerville', serif;
+  font-family: 'Libre Baskerville', serif;
 }
 .national-building-lesotho .quotes-country
 {
-	font-family: 'Libre Baskerville', serif;
-	font-size: 24px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 24px;
     text-align: center;
-    padding: 108px 41px;
+    padding: 65px 41px;
     padding-bottom: 10px;
 }
 
 .national-building-lesotho .name-countries
 {
-	text-align: center;
+  text-align: center;
     margin-top: 20px;
     color: #B6B7AE;
     font-family: 'Montserrat', sans-serif;
@@ -2604,33 +2947,34 @@ footer .footer_last p
 }
 .national-building-lesotho .text-countries
 {
-	font-size: 21px;
-   	margin-top: 55px;
-   	font-family: 'Libre Franklin', sans-serif;
-   	padding-right: 6vw;
+  font-size: 21px;
+    margin-top: 55px;
+    font-family: 'Libre Franklin', sans-serif;
+    padding-right: 6vw;
 }
 
 .national-building-lesotho .text-headline
 {
-	font-size: 36px;
-	font-family: 'Libre Baskerville', serif;
-	margin-top: 33px;
+  font-size: 36px;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 33px;
 }
 .national-building-lesotho .img-malaysia
 {
-	margin-top: 50px;
+  margin-top: 50px;
 }
 .transform-img-lesotho
 {
-	background: url(../img/transform_lesotho.png) no-repeat;
-	height: 500px;
-	background-size: cover;
+  background: url(../img/transform_lesotho.png) no-repeat;
+  height: 500px;
+  background-size: cover;
     background-position: center;
     margin-top: 90px;
+    margin-bottom: -20px;
 }
 .transform-img-lesotho .transform-text
 {
-	position: relative;
+  position: relative;
     bottom: -15vh;
     left: 7.5vw;
     width: 45%;
@@ -2639,18 +2983,18 @@ footer .footer_last p
 
 .transform-img-lesotho .transform-text h1
 {
-	font-family: 'Libre Baskerville', serif;
-	font-size: 36px;
-	color: #FFFFFF;
-	margin-bottom: 20px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
 }
 
 .transform-img-lesotho .transform-text p
 {
-	font-size: 19px;
-	font-family: 'Libre Franklin', sans-serif;
-	line-height: 35px;
-	color: #F0F0F0;
+  font-size: 19px;
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 35px;
+  color: #F0F0F0;
 
 }
 
@@ -2673,7 +3017,7 @@ footer .footer_last p
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .national-building-cambodia
 {
-	padding: 0 7vw;
+  padding: 0 7vw;
 }
 
 .national-building-cambodia .fa-angle-left 
@@ -2683,34 +3027,36 @@ footer .footer_last p
 
 .national-building-cambodia .quotes-all
 {
-	margin-right: 9vw;
+  margin-right: 9vw;
 }
 
 .national-building-cambodia .back-countries
 {
-	color: #BECE00;
-	font-weight: 100;
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
-	margin-top: 60px;
+  color: #BECE00;
+  font-weight: 100;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 60px;
 }
 
 .national-building-cambodia .headline-countries
 {
-	font-family: 'Libre Baskerville', serif;
+  font-family: 'Libre Baskerville', serif;
 }
 .national-building-cambodia .quotes-country
 {
-	font-family: 'Libre Baskerville', serif;
-	font-size: 24px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 24px;
     text-align: center;
-    padding: 108px 41px;
+    padding: 65px 41px;
     padding-bottom: 10px;
+    line-height: 36px;
 }
+
 
 .national-building-cambodia .name-countries
 {
-	text-align: center;
+  text-align: center;
     margin-top: 20px;
     color: #B6B7AE;
     font-family: 'Montserrat', sans-serif;
@@ -2718,56 +3064,53 @@ footer .footer_last p
 }
 .national-building-cambodia .text-countries
 {
-	font-size: 21px;
-   	margin-top: 55px;
-   	font-family: 'Libre Franklin', sans-serif;
-   	padding-right: 6vw;
+  font-size: 21px;
+    margin-top: 55px;
+    font-family: 'Libre Franklin', sans-serif;
+    padding-right: 6vw;
 }
 
 .national-building-cambodia .text-headline
 {
-	font-size: 36px;
-	font-family: 'Libre Baskerville', serif;
-	margin-top: 33px;
+  font-size: 36px;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 33px;
 }
 .national-building-cambodia .img-malaysia
 {
-	margin-top: 50px;
+  margin-top: 50px;
 }
 .transform-img-cambodia
 {
-	background: url(../img/transform_cambodia.png) no-repeat;
-	height: 500px;
-	background-size: cover;
+  background: url(../img/transform_cambodia.png) no-repeat;
+  height: 500px;
+  background-size: cover;
     background-position: center;
     margin-top: 90px;
+    margin-bottom: -20px;
 }
 .transform-img-cambodia .transform-text
 {
-	position: relative;
+  position: relative;
     bottom: -15vh;
     left: 7.5vw;
     width: 45%;
     text-align: left;
 }
-
 .transform-img-cambodia .transform-text h1
 {
-	font-family: 'Libre Baskerville', serif;
-	font-size: 36px;
-	color: #FFFFFF;
-	margin-bottom: 20px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
 }
-
 .transform-img-cambodia .transform-text p
 {
-	font-size: 19px;
-	font-family: 'Libre Franklin', sans-serif;
-	line-height: 35px;
-	color: #F0F0F0;
-
+  font-size: 19px;
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 35px;
+  color: #F0F0F0;
 }
-
 .transform-img-cambodia .btn-default {
     background-color: #BECE00;
     border-color: #ccc;
@@ -2782,12 +3125,11 @@ footer .footer_last p
 /* CAMBODIA end
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-
 /* BOTSWANA start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .national-building-botswana
 {
-	padding: 0 7vw;
+  padding: 0 7vw;
 }
 
 .national-building-botswana .fa-angle-left 
@@ -2797,34 +3139,34 @@ footer .footer_last p
 
 .national-building-botswana .quotes-all
 {
-	margin-right: 9vw;
+  margin-right: 9vw;
 }
 
 .national-building-botswana .back-countries
 {
-	color: #BECE00;
-	font-weight: 100;
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
-	margin-top: 60px;
+  color: #BECE00;
+  font-weight: 100;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 60px;
 }
 
 .national-building-botswana .headline-countries
 {
-	font-family: 'Libre Baskerville', serif;
+  font-family: 'Libre Baskerville', serif;
 }
 .national-building-botswana .quotes-country
 {
-	font-family: 'Libre Baskerville', serif;
-	font-size: 24px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 24px;
     text-align: center;
-    padding: 108px 41px;
+    padding: 65px 41px;
     padding-bottom: 10px;
 }
 
 .national-building-botswana .name-countries
 {
-	text-align: center;
+  text-align: center;
     margin-top: 20px;
     color: #B6B7AE;
     font-family: 'Montserrat', sans-serif;
@@ -2832,33 +3174,34 @@ footer .footer_last p
 }
 .national-building-botswana .text-countries
 {
-	font-size: 21px;
-   	margin-top: 55px;
-   	font-family: 'Libre Franklin', sans-serif;
-   	padding-right: 6vw;
+  font-size: 21px;
+    margin-top: 55px;
+    font-family: 'Libre Franklin', sans-serif;
+    padding-right: 6vw;
 }
 
 .national-building-botswana .text-headline
 {
-	font-size: 36px;
-	font-family: 'Libre Baskerville', serif;
-	margin-top: 33px;
+  font-size: 36px;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 33px;
 }
 .national-building-botswana .img-malaysia
 {
-	margin-top: 50px;
+  margin-top: 50px;
 }
 .transform-img-botswana
 {
-	background: url(../img/transform_botswana.png) no-repeat;
-	height: 500px;
-	background-size: cover;
+  background: url(../img/transform_botswana.png) no-repeat;
+  height: 500px;
+  background-size: cover;
     background-position: center;
     margin-top: 90px;
+    margin-bottom: -20px;
 }
 .transform-img-botswana .transform-text
 {
-	position: relative;
+  position: relative;
     bottom: -15vh;
     left: 7.5vw;
     width: 45%;
@@ -2867,18 +3210,18 @@ footer .footer_last p
 
 .transform-img-botswana .transform-text h1
 {
-	font-family: 'Libre Baskerville', serif;
-	font-size: 36px;
-	color: #FFFFFF;
-	margin-bottom: 20px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
 }
 
 .transform-img-botswana .transform-text p
 {
-	font-size: 19px;
-	font-family: 'Libre Franklin', sans-serif;
-	line-height: 35px;
-	color: #F0F0F0;
+  font-size: 19px;
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 35px;
+  color: #F0F0F0;
 
 }
 
@@ -2902,94 +3245,94 @@ footer .footer_last p
 
 #media .top-head
 {
-	padding: 0;
+  padding: 0;
 }
 
 #media .publ-1
 {
-	padding: 0;
-	margin-top: 40px;
+  padding: 0;
+  margin-top: 40px;
 }
 #media .publ-2
 {
-	padding: 0;
+  padding: 0;
 }
 #media .publ-3
 {
-	padding: 0;
+  padding: 0;
 }
 #media .publ-4
 {
-	padding: 0;
+  padding: 0;
 }
 
 #media .publ-5
 {
-	padding: 0 0 0 15px;
-	margin-top: 56px;
+  padding: 0 0 0 15px;
+  margin-top: 56px;
 }
 
 #media .blog-head-top
 {
-	padding: 0;
-	margin-top: 120px;
+  padding: 0;
+  margin-top: 120px;
 }
 #media .speech-head-top
 {
-	padding: 0;
-	margin-top: 120px;
+  padding: 0;
+  margin-top: 120px;
 }
 #media .blog-1
 {
-	padding: 0;
-	margin-top: 40px;
+  padding: 0;
+  margin-top: 40px;
 }
 #media .blog-2
 {
-	padding: 0;
+  padding: 0;
 }
 #media .blog-3
 {
-	padding: 0;
+  padding: 0;
 }
 #media .blog-4
 {
-	padding: 0;
+  padding: 0;
 }
  
 #media .speech-1
 {
-	padding: 0;
+  padding: 0;
 }
 #media .speech-2
 {
-	padding: 0;
+  padding: 0;
 }
 #media .speech-3
 {
-	padding: 0;
+  padding: 0;
 }
 #media .headline-media
 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 26px;
-	color: #F0F0F0;
-	font-weight: 700;
-	margin-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  color: #F0F0F0;
+  font-weight: 700;
+  margin-top: 60px;
 }
 
 #media .see-more-media
 {
-	float: right; 
-	color: #BECE00;
-	font-weight: 100;
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
+  float: right; 
+  color: #BECE00;
+  font-weight: 100;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #media .fa-angle-right
 {
-	padding-left: 12px;
+  padding-left: 12px;
 }
 
 #media .btn-default 
@@ -2998,6 +3341,8 @@ footer .footer_last p
     background-color: transparent;
     border-color: #BECE00;
     color: #BECE00;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
 
 }
 
@@ -3009,81 +3354,165 @@ footer .footer_last p
 }
 #media .book-small
 {
-   	font-size: 16px;
-   	font-family: 'Libre Baskerville', serif;
-   	font-weight: bold;
-   	line-height: 25px;
+    font-size: 16px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    line-height: 25px;
 }
 
 #media .book-year
  {
- 	font-size: 16px;
- 	font-family: 'Montserrat', sans-serif;
- 	color: #B6B7AE;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: #B6B7AE;
  }
  #media .book-desc
  {
- 	color: #F0F0F0;
- 	font-family: 'Libre Franklin', sans-serif;
- 	font-size: 16px;
- 	padding-right: 1vw;
+  color: #F0F0F0 !important;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+  padding-right: 1vw;
  }
  #media .blog-read
  {
- 	color: #BECE00;
- 	font-size: 16px;
- 	margin-top: 21px;
- 	font-family: 'Montserrat', sans-serif;
+  color: #BECE00;
+  font-size: 16px;
+  margin-top: 21px;
+  font-family: 'Montserrat', sans-serif;
  }
  #media .blog-title
  {
- 	font-size: 21px;
- 	font-family: 'Libre Baskerville', serif;
- 	font-weight: bold;
- 	line-height: 30px;
- 	color: #F0F0F0;
+  font-size: 21px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
+  line-height: 30px;
+  color: #F0F0F0;
  }
 
  #media .blog-small
  {
- 	font-size: 18px;
- 	font-family: 'Libre Baskerville', serif;
- 	font-weight: bold;
- 	line-height: 27px;
- 	color: #F0F0F0;
+  font-size: 18px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
+  line-height: 27px;
+  color: #F0F0F0;
  }
 
  #media .blog-year
  {
- 	font-size: 16px;
- 	font-family: 'Montserrat', sans-serif;
- 	color: #B6B7AE;
- 	margin-bottom: 24px;
- 	margin-top: 16px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: #B6B7AE;
+  margin-bottom: 24px;
+  margin-top: 16px;
  }
 
  #media .blog-desc
  {
- 	color: #F0F0F0;
- 	font-family: 'Libre Franklin', sans-serif;
- 	font-size: 16px;
- 	padding-right: 1vw;
- 	line-height: 30px;
+  color: #F0F0F0;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+  padding-right: 1vw;
+  line-height: 30px;
  }
 
  #media .speech_big_title
  {
- 	font-size: 32px;
- 	font-weight: bold;
- 	font-family: 'Libre Baskerville', serif;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Libre Baskerville', serif;
  }
  #media .speech_name
  {
- 	color: #747474;
- 	font-size: 18px;
- 	font-weight: bold;
- 	font-family: 'Libre Franklin', sans-serif;
+  color: #747474;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Libre Franklin', sans-serif;
  }
+
+ #media .see-more-media{
+  margin-top: 5px;
+}
+.desktop_books{
+  display: block;
+}
+.mobile_books{
+  display: none;
+}
+.mobile_slider {
+  display: flex;
+  overflow: hidden;
+  counter-reset: count;
+  padding: 0;
+  margin-top: 18px;
+}
+
+.mobile_slider .slider {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  height: auto;
+}
+.mobile_slider .slider:before, .mobile_slider .slider:after {
+  content: '';
+  flex: 1 0 auto;
+  display: inline-block;
+}
+.mobile_slider .slider:after {
+  width: 10px;
+}
+
+.mobile_slider .item {
+  width: 100%;
+  margin-right: 18px;
+  margin-top: 14px;
+  counter-increment: count;
+  align-items: center;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+.speeches_mobile .slider .item .col-xs-12{
+  width: 220px !important;
+}
+.mobile_slider .item:last-child{
+  margin-right: 0;
+}
+.mobile_slider .item img{
+  height: 200px;
+}
+.mobile_slider .item h5{
+  line-height: 1.4;
+}
+.mobile_slider .item h5:nth-child(2){
+  color: #B6B7AE;
+}
+#media .mobile_see_all{
+  display: none;
+}
+#media .btn-default{
+  text-transform: uppercase;
+}
+#media .book-year,
+#media .blog-year{
+  font-weight: 300;
+
+}
+#media{
+  margin-bottom: 140px
+}
+.fa-angle-right:before{
+  position: relative;
+  top: 1.5px;
+  font-size: 20px;
+}
+#media .headline-media{
+  font-family: sans-serif;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
 /* MEDIA end
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -3092,38 +3521,38 @@ footer .footer_last p
 
 #media-publication .headline-media
 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 26px;
-	color: #F0F0F0;
-	font-weight: 700;
-	margin-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  color: #F0F0F0;
+  font-weight: 700;
+  margin-top: 60px;
 }
 #media-publication .main
 {
-	padding: 0 !important;
+  padding: 0 !important;
 }
 #media-publication .headline-media-back{
  color: #BECE00;
-	font-weight: 100;
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
-	margin-top: 60px;
+  font-weight: 100;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 60px;
 }
 
 #media-publication .fa-angle-left{
-	padding-right: 12px;
+  padding-right: 12px;
 }
 
 #media-publication .see-more-media{
-	float: right; 
-	color: #BECE00;
-	font-weight: 100;
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
+  float: right; 
+  color: #BECE00;
+  font-weight: 100;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #media-publication .fa-angle-right{
-	padding-left: 12px;
+  padding-left: 12px;
 }
 
 #media-publication .btn-default {
@@ -3131,68 +3560,96 @@ footer .footer_last p
     background-color: transparent;
     border-color: #BECE00;
     color: #BECE00;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
 
     }
 
     #media-publication .book-title-media
     {
-    	font-size: 24px;
-    	font-family: 'Libre Baskerville', serif;
-    	font-weight: bold;
-    	margin-top: 0;
-    	line-height: 34px;
+      font-size: 24px;
+      font-family: 'Libre Baskerville', serif;
+      font-weight: bold;
+      margin-top: 0;
+      line-height: 34px;
     }
     #media-publication .book-small-media
     {
-    	font-size: 21px;
-    	font-family: 'Libre Baskerville', serif;
-    	font-weight: bold;
-    	line-height: 29px;
-    	padding-right: 1vw;
+      font-size: 21px;
+      font-family: 'Libre Baskerville', serif;
+      font-weight: bold;
+      line-height: 29px;
+      padding-right: 1vw;
     }
 
     #media-publication .book-year-media
     {
-    	font-size: 16px;
-    	font-family: 'Montserrat', sans-serif;
-    	color: #737373;
-    	margin: 30px 0px;
-    	margin-bottom: 23px;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      color: #B6B7AE;
+      margin: 30px 0px;
+      margin-bottom: 23px;
+
     }
     #media-publication .book-year-media-small
     {
-    	font-size: 16px;
-    	font-family: 'Montserrat', sans-serif;
-    	color: #737373;
-    	margin-bottom: 23px;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      color: #737373;
+      margin-bottom: 23px;
     }
     #media-publication .book-desc-media
     {
-    	color: #F0F0F0;
-    	font-family: 'Libre Franklin', sans-serif;
-    	font-size: 16px;
-    	padding-right: 15vw;
-    	line-height: 26px;
-    	margin-bottom: 37px;
+      color: #F0F0F0;
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 16px;
+      padding-right: 15vw;
+      line-height: 26px;
+      margin-bottom: 37px;
  
     }
     #media-publication hr
     {
-    	border-top: 1px solid #707070;
-    	    margin: 50px 0;
+      border-top: 1px solid #707070;
+          margin: 50px 0;
     }
 
     #media-publication .all-book
-	{
-	margin-bottom: 40px !important;
-	padding: 0 !important;
-	}
+  {
+  margin-bottom: 40px !important;
+  padding: 0 !important;
+  }
 
 #media .book-space
 {
-	padding: 0 !important;
+  padding: 0 !important;
 }
 
+#media-publication .carousel-inner>.item>a>img, #media-publication .carousel-inner>.item>img, #media-publication .img-responsive, #media-publication .thumbnail a>img, #media-publication .thumbnail>img
+{
+  width: 97%;
+}
+#media-publication .book-title-media{
+  width: 370px;
+}
+#media-publication .book-desc-media-small{
+  display: none;
+  color: #F0F0F0;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+    padding-right: 15vw;
+    line-height: 26px;
+    margin-bottom: 37px;
+}
+#media-publication .headline-media{
+  margin-top: 30px;
+}
+#media-publication .all-book{
+  cursor: pointer;
+}
+#media-publication .preview_hr{
+  margin: 50px 14px;
+}
 /* PUBLICATION end
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -3202,88 +3659,88 @@ footer .footer_last p
 
 #media-blog .blog-page-head-top
 {
-	padding: 0;
+  padding: 0;
 }
 #media-blog .blog-page-head
 {
-	padding: 0;
+  padding: 0;
 }
 #media-blog .blog-page-1
 {
-	padding: 0;
+  padding: 0;
 }
 #media-blog .blog-page-2
 {
-	padding: 0;
+  padding: 0;
 }
 #media-blog .blog-page-3
 {
-	padding: 0;
+  padding: 0;
 }
 #media-blog .blog-page-4
 {
-	padding: 0;
+  padding: 0;
 }
 #media-blog .blog-page-5
 {
-	padding: 0;
+  padding: 0;
 }
 #media-blog .blog-page-6
 {
-	padding: 0;
+  padding: 0;
 }
 #media-blog .blog-page-7
 
 {
-	padding: 0;
+  padding: 0;
 }
 #media-blog .blog-page-1
 {
-	padding: 0;
-	margin-top: 40px;
+  padding: 0;
+  margin-top: 40px;
 }
 
 #media-blog .second-part
 {
-	padding: 0;
-	margin-top: 40px;
+  padding: 0;
+  margin-top: 40px;
 }
 
 #media-blog .blog-page-8
 {
-	padding: 0;
-	margin-top: 36px;
+  padding: 0;
+  margin-top: 36px;
 }
 #media-blog .headline-media
 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 26px;
-	color: #F0F0F0;
-	font-weight: 700;
-	margin-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  color: #F0F0F0;
+  font-weight: 700;
+  margin-top: 60px;
 }
 #media-blog .headline-media-back{
  color: #BECE00;
-	font-weight: 100;
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
-	margin-top: 60px;
+  font-weight: 100;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 60px;
 }
 
 #media-blog .fa-angle-left{
-	padding-right: 12px;
+  padding-right: 12px;
 }
 
 #media-blog .see-more-media{
-	float: right; 
-	color: #BECE00;
-	font-weight: 100;
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
+  float: right; 
+  color: #BECE00;
+  font-weight: 100;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #media-blog .fa-angle-right{
-	padding-left: 12px;
+  padding-left: 12px;
 }
 
 #media-blog .btn-default {
@@ -3291,130 +3748,163 @@ footer .footer_last p
     background-color: transparent;
     border-color: #BECE00;
     color: #BECE00;
-
+    padding: 12px 25px;
+    border-radius: 0px;
     }
 
 
     #media-blog .blog-read
     {
-    	color: #BECE00;
-    	font-size: 16px;
-    	margin-top: 35px;
-    	font-family: 'Montserrat', sans-serif;
+      color: #BECE00;
+      font-size: 16px;
+      margin-top: 35px;
+      font-family: 'Montserrat', sans-serif;
     }
     #media-blog .blog-title
     {
-    	font-size: 21px;
-    	font-family: 'Libre Baskerville', serif;
-    	font-weight: bold;
-    	line-height: 30px;
-    	color: #F0F0F0;s
+      font-size: 21px;
+      font-family: 'Libre Baskerville', serif;
+      font-weight: bold;
+      line-height: 30px;
+      color: #F0F0F0;s
     }
 
     #media-blog .blog-small
     {
-    	font-size: 18px;
-    	font-family: 'Libre Baskerville', serif;
-    	font-weight: bold;
-    	line-height: 27px;
-    	color: #F0F0F0;
+      font-size: 18px;
+      font-family: 'Libre Baskerville', serif;
+      font-weight: bold;
+      line-height: 27px;
+      color: #F0F0F0;
     }
 
     #media-blog .blog-year
     {
-    	font-size: 16px;
-    	font-family: 'Montserrat', sans-serif;
-    	color: #B6B7AE;
-    	margin-bottom: 24px;
-    	margin-top: 16px;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      color: #B6B7AE;
+      margin-bottom: 24px;
+      margin-top: 16px;
 
     }
 
      #media-blog .book-year
     {
-    	font-size: 16px;
-    	font-family: 'Montserrat', sans-serif;
-    	color: #747474;
-    	 
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      color: #747474;
+       
  
     }
 
     #media-blog .blog-desc
     {
-    	color: #F0F0F0;
-    	font-family: 'Libre Franklin', sans-serif;
-    	font-size: 16px;
-    	padding-right: 1vw;
-    	line-height: 30px;
+      color: #F0F0F0;
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 16px;
+      padding-right: 1vw;
+      line-height: 30px;
     }
 
 
     /* BLOG content*/
-	#media-blog-content .blog-cont-1
-	{
-		padding: 0;
-	}
-	#media-blog-content .blog-cont-2
-	{
-		padding: 0;
-	}
-	#media-blog-content .blog-cont-4
-	{
-		padding: 0;
-	}
-	#media-blog-content .blog-cont-3
-	{
-		padding: 0;
-		padding-right: 2vw;
-	}
-		 #media-blog-content .headline-media
-	{
-		font-family: 'Montserrat', sans-serif;
-		font-size: 26px;
-		color: #F0F0F0;
-		font-weight: 700;
-		margin-top: 60px;
-	}
-	#media-blog-content .headline-media-back
-	{
-	 color: #BECE00;
-		font-weight: 100;
-		font-size: 16px;
-		font-family: 'Montserrat', sans-serif;
-		margin-top: 60px;
-	}
-	
-	#media-blog-content .fa-angle-left
-	{
-		padding-right: 12px;
-	}
-	
-	#media-blog-content .blog-year 
-	{
-	    font-size: 16px;
-	    font-family: 'Montserrat', sans-serif;
-	    color: #B6B7AE;
-	    margin-bottom: 24px;
-	    margin-top: 16px;
-	} 
-	
-	#media-blog-content .blog-content-text
-	{
-		font-size: 21px;
-	    line-height: 35px;
-	    color: #F0F0F0;
-	    margin-top: 30px;
-	    font-family: 'Libre Franklin', sans-serif;
-	}
-	
-	#media-blog-content .blog-title
-	{
-		color: #F0F0F0;
-		font-size:21px;
-		font-family: 'Libre Baskerville', serif;
-		line-height: 30px;
-	}
+  #media-blog-content .blog-cont-1
+  {
+    padding: 0;
+  }
+  #media-blog-content .blog-cont-2
+  {
+    padding: 0;
+    margin-bottom: 100px;
+  }
+  #media-blog-content .blog-cont-4
+  {
+    padding: 0;
+  }
+  #media-blog-content .blog-cont-3
+  {
+    padding: 0;
+    padding-right: 2vw;
+  }
+     #media-blog-content .headline-media
+  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    color: #F0F0F0;
+    font-weight: 700;
+    margin-top: 60px;
+  }
+  #media-blog-content .headline-media-back
+  {
+   color: #BECE00;
+    font-weight: 100;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 60px;
+  }
+  
+  #media-blog-content .fa-angle-left
+  {
+    padding-right: 12px;
+  }
+  
+  #media-blog-content .blog-year 
+  {
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      color: #B6B7AE;
+      margin-bottom: 24px;
+      margin-top: 16px;
+  } 
+  
+  #media-blog-content .blog-content-text
+  {
+    font-size: 21px;
+      line-height: 35px;
+      color: #F0F0F0;
+      margin-top: 30px;
+      font-family: 'Libre Franklin', sans-serif;
+  }
+  #media-blog-content .mobile_slider
+  {
+    display: none;
+  }
+  #media-blog-content .blog-title
+  {
+    color: #F0F0F0;
+    font-size:21px;
+    font-family: 'Libre Baskerville', serif;
+    line-height: 30px;
+  }
 
+  #media-blog .mobile_slider{
+  display: none;
+}
+#media-blog .desktop_small_blog{
+  display: block;
+}
+#media-blog .blog-title{
+  transition: .25s;
+}
+#media-blog .blog-title:hover{
+  color: #ddd;
+}
+#media-blog .img-responsive{
+  transition: .25s;
+}
+#media-blog .img-responsive:hover{
+  filter: brightness(.9);
+}
+#media-blog .blog-year{
+  color: #747474;
+}
+.mobile_slider .item h5:nth-child(1){
+  color: #F0F0F0;
+    font-family: 'Libre Baskerville', serif;
+}
+.blog-cont-head{
+    font-family: 'Libre Baskerville', serif;  
+}
     /* BLOG content end
 
 
@@ -3426,262 +3916,274 @@ footer .footer_last p
 /* SPEECH start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-	#media-speech .speech-page-head-top
-	{
-		padding: 0;
-	}
-	#media-speech .speech-page-1
-	{
-		padding: 0;
-	}
-	#media-speech .speech-page-2
-	{
-		padding: 0;
-	}
-	#media-speech .speech-page-3
-	{
-		padding: 0;
-	}
-	#media-speech .speech-page-4
-	{
-		padding: 0;
-	}
-	#media-speech .speech-page-6{
-		padding: 0;
-	}
-	#media-speech .speech-page-7
-	{
-		padding: 0;
-	}
-	#media-speech .speech-page-8
-	{
-		padding: 0;
-	}
-	#media-speech .speech-page-9
-	{
-		padding: 0;
-	}
-	#media-speech .speech-page-10
-	{
-		padding: 0;
-	}
-	#media-speech .speech-page-5
-	{
-		margin-top: 48px;
-		padding: 0 30px;"
-	}
-	
-	#media-speech .speech_big_title_2 
-	{
-		margin-top: 48px;
-		padding: 0 30px;
-		padding-left: 0;
-	}
-	#media-speech .headline-media
-	{
-		font-family: 'Montserrat', sans-serif;
-		font-size: 26px;
-		color: #F0F0F0;
-		font-weight: 700;
-		margin-top: 60px;
-	}
-	
-	#media-speech .see-more-media{
-		float: right; 
-		color: #BECE00;
-		font-weight: 100;
-		font-size: 16px;
-		font-family: 'Montserrat', sans-serif;
-	}
-	
-	#media-speech .fa-angle-right{
-		padding-left: 12px;
-	}
-	
-	#media-speech .btn-default {
-    	color: #333;
-    	background-color: transparent;
-    	border-color: #BECE00;
-    	color: #BECE00;
+  #media-speech .speech-page-head-top
+  {
+    padding: 0;
+  }
+  #media-speech .speech-page-1
+  {
+    padding: 0;
+  }
+  #media-speech .speech-page-2
+  {
+    padding: 0;
+  }
+  #media-speech .speech-page-3
+  {
+    padding: 0;
+  }
+  #media-speech .speech-page-4
+  {
+    padding: 0;
+  }
+  #media-speech .speech-page-6{
+    padding: 0;
+  }
+  #media-speech .speech-page-7
+  {
+    padding: 0;
+  }
+  #media-speech .speech-page-8
+  {
+    padding: 0;
+  }
+  #media-speech .speech-page-9
+  {
+    padding: 0;
+  }
+  #media-speech .speech-page-10
+  {
+    padding: 0;
+  }
+  #media-speech .speech-page-5
+  {
+    margin-top: 48px;
+    padding: 0;
+  }
+  
+  #media-speech .speech_big_title_2 
+  {
+    margin-top: 48px;
+    padding: 0 30px;
+    padding-left: 0;
+  }
+  #media-speech .headline-media
+  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    color: #F0F0F0;
+    font-weight: 700;
+    margin-top: 60px;
+  }
+  
+  #media-speech .see-more-media{
+    float: right; 
+    color: #BECE00;
+    font-weight: 100;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  #media-speech .fa-angle-right{
+    padding-left: 12px;
+  }
+  
+  #media-speech .btn-default {
+      color: #333;
+      background-color: transparent;
+      border-color: #BECE00;
+      color: #BECE00;
+      padding: 12px 25px;
+      border-radius: 0px;
 
     }
 
     #media-speech .book-title
     {
-    	font-size: 19px;
-    	font-family: 'Libre Baskerville', serif;
-    	font-weight: bold;
+      font-size: 19px;
+      font-family: 'Libre Baskerville', serif;
+      font-weight: bold;
     }
     #media-speech .book-small
     {
-    	font-size: 16px;
-    	font-family: 'Libre Baskerville', serif;
-    	font-weight: bold;
+      font-size: 16px;
+      font-family: 'Libre Baskerville', serif;
+      font-weight: bold;
     }
 
     #media-speech .book-year
     {
-    	font-size: 16px;
-    	font-family: 'Montserrat', sans-serif;
-    	color: #B6B7AE;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      color: #B6B7AE;
     }
     #media-speech .book-desc
     {
-    	color: #F0F0F0;
-    	font-family: 'Libre Franklin', sans-serif;
-    	font-size: 16px;
-    	padding-right: 1vw;
+      color: #F0F0F0;
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 16px;
+      padding-right: 1vw;
  
     }
     #media-speech .blog-read
     {
-    	color: #BECE00;
-    	font-size: 16px;
-    	margin-top: 35px;
-    	font-family: 'Montserrat', sans-serif;
+      color: #BECE00;
+      font-size: 16px;
+      margin-top: 35px;
+      font-family: 'Montserrat', sans-serif;
     }
     #media-speech .blog-title
     {
-    	font-size: 21px;
-    	font-family: 'Libre Baskerville', serif;
-    	font-weight: bold;
-    	line-height: 30px;
-    	color: #F0F0F0;
+      font-size: 21px;
+      font-family: 'Libre Baskerville', serif;
+      font-weight: bold;
+      line-height: 30px;
+      color: #F0F0F0;
     }
 
     #media-speech .blog-small
     {
-    	font-size: 18px;
-    	font-family: 'Libre Baskerville', serif;
-    	font-weight: bold;
-    	line-height: 27px;
-    	color: #F0F0F0;
+      font-size: 18px;
+      font-family: 'Libre Baskerville', serif;
+      font-weight: bold;
+      line-height: 27px;
+      color: #F0F0F0;
     }
 
     #media-speech .blog-year
     {
-    	font-size: 16px;
-    	font-family: 'Montserrat', sans-serif;
-    	color: #B6B7AE;
-    	margin-bottom: 24px;
-    	margin-top: 16px;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      color: #B6B7AE;
+      margin-bottom: 24px;
+      margin-top: 16px;
     }
 
     #media-speech .blog-desc
     {
-    	color: #F0F0F0;
-    	font-family: 'Libre Franklin', sans-serif;
-    	font-size: 16px;
-    	padding-right: 1vw;
-    	line-height: 30px;
+      color: #F0F0F0;
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 16px;
+      padding-right: 1vw;
+      line-height: 30px;
     }
 
     #media-speech .speech_big_title
     {
-    	font-size: 32px;
-    	font-weight: bold;
-    	font-family: 'Libre Baskerville', serif;
+      font-size: 32px;
+      font-weight: bold;
+      font-family: 'Libre Baskerville', serif;
     }
     #media-speech .speech_name
     {
-    	color: #747474;
-    	font-size: 18px;
-    	font-weight: bold;
-    	font-family: 'Libre Franklin', sans-serif;
+      color: #747474;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: 'Libre Franklin', sans-serif;
 
     }
 
-	 #media-speech .headline-media-back
-	 {
-	 	color: #BECE00;
-		font-weight: 100;
-		font-size: 16px;
-		font-family: 'Montserrat', sans-serif;
-		margin-top: 60px;
-	}
+   #media-speech .headline-media-back
+   {
+    color: #BECE00;
+    font-weight: 100;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 60px;
+  }
 
-	#media-speech .fa-angle-left
-	{
-		padding-right: 12px;
-	}
+  #media-speech .fa-angle-left
+  {
+    padding-right: 12px;
+  }
 
-	/* SPEECH content */
+  /* SPEECH content */
 
-	#media-speech-content .speech-cont-head-top
-	{
-		padding: 0;
-	}
-	#media-speech-content .speech-cont-page-1
-	{
-		padding: 0;
-	}
-	#media-speech-content .speech-cont-page-2
-	{
-		padding: 0;
-		padding-right: 2vw;
-	}
-	#media-speech-content .speech-cont-page-3
-	{
-		padding: 0;
-	}
-	#media-speech-content .speech-cont-page-4
-	{
-		padding: 0;
-	}
-	#media-speech-content .headline-media-back
-	{
-		 color: #BECE00;
-		font-weight: 100;
-		font-size: 16px;
-		font-family: 'Montserrat', sans-serif;
-		margin-top: 60px;
-	}
-	
-	#media-speech-content .fa-angle-left
-	{
-		padding-right: 12px;
-	}
-	
-	 #media-speech-content .blog-year
-	 {
-	 	font-size: 16px;
-	 	font-family: 'Montserrat', sans-serif;
-	 	color: #B6B7AE;
-	 	margin-bottom: 24px;
-	 	margin-top: 16px;
-	 }
-	
-	  #media-speech-content .book-year
-	 {
-	 	font-size: 16px;
-	 	font-family: 'Montserrat', sans-serif;
-	 	color: #747474;
-	 }
-	#media-speech-content .speech-headline
-	{
-		font-size: 36px;
-		font-family: 'Libre Baskerville', serif;
-		color: #ffffff;
-	}
-	
-	#media-speech-content .speech-content-text
-	{
-		font-size: 19px;
-	    line-height: 35px;
-	    color: #F0F0F0;
-	    margin-top: 30px;
-	    font-family: 'Libre Franklin', sans-serif;
-	}
-	
-	#media-speech-content .speech-content-title
-	{
-		font-size: 18px;
-		font-family: 'Libre Baskerville', serif;
-	    font-weight: bold;
-	    line-height: 27px;
-	    color: #F0F0F0;
-	}
-	/* SPEECH content  end*/
+  #media-speech-content .speech-cont-head-top
+  {
+    padding: 0;
+  }
+  #media-speech-content .speech-cont-page-1
+  {
+    padding: 0;
+  }
+  #media-speech-content .speech-cont-page-2
+  {
+    padding: 0;
+    padding-right: 2vw;
+  }
+  #media-speech-content .speech-cont-page-3
+  {
+    padding: 0;
+  }
+  #media-speech-content .speech-cont-page-4
+  {
+    padding: 0;
+  }
+  #media-speech-content .headline-media-back
+  {
+     color: #BECE00;
+    font-weight: 100;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 60px;
+  }
+  
+  #media-speech-content .fa-angle-left
+  {
+    padding-right: 12px;
+  }
+  
+   #media-speech-content .blog-year
+   {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #B6B7AE;
+    margin-bottom: 24px;
+    margin-top: 16px;
+   }
+  
+    #media-speech-content .book-year
+   {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #747474;
+   }
+  #media-speech-content .speech-headline
+  {
+    font-size: 36px;
+    font-family: 'Libre Baskerville', serif;
+    color: #ffffff;
+  }
+  
+  #media-speech-content .speech-content-text
+  {
+    font-size: 19px;
+      line-height: 35px;
+      color: #F0F0F0;
+      margin-top: 30px;
+      font-family: 'Libre Franklin', sans-serif;
+  }
+  
+  #media-speech-content .speech-content-title
+  {
+    font-size: 18px;
+    font-family: 'Libre Baskerville', serif;
+      font-weight: bold;
+      line-height: 27px;
+      color: #F0F0F0;
+  }
+  #media-speech-content{
+    padding: 0 15px;
+  }
+  /* SPEECH content  end*/
+
+  #media-speech .desktop_speeches{
+  display: block;
+}
+  #media-speech .mobile_slider{
+  display: none;
+}
 
 /* SPEECH end
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -3689,62 +4191,170 @@ footer .footer_last p
 
 /* MEDIA QUERIES start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media(max-width: 1280px){
-	.nation_building{
-		padding: 0;
-	}
-	.nation_building .cards{
-		width: 100%;
-    	margin: auto;
-	}
-	.nation_building .quote_text p{
-		font-size: 11px;
-	}
-	.nation_building .country_details{
-		bottom: -14vw;
-	}
-	.nation_building .country_details2{
-		bottom: -2.5vw;
-	}
-	.nation_building .lesotho_details{
-		bottom: -14vw !important;
-	}
-	.nation_building .quote .name{
-		font-size: 10px;
-	}
-	.nation_building .home_content{
-		margin-left: 8vw;
-	}
-	/* for all countries */
-	#country-details .amount
-	{
-		width: 100%;
-		margin-top: 10px
-		margin-bottom: 10px;
+@media only screen (max-width: 1780px) {
+  .text_left,
+  .img_right{
+    float: none;
+  }
+  .foundation_content .text_right
+  {
+    width: 100%;
+  }
+  .foundation_content .text_right
+  .foundation_content .foundation_paragraphs .text2{
+    padding: 0 10%;
+  }
+  .foundation_content .img_left img
+  {
+    width: 80%;
+  }
+  .foundation_content .img_left
+  {
+    width: 100%;
+    padding-left: 16%;
+  }
+  .foundation_content .text_right
+  {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .foundation_content .text_right p
+  {
+    padding: 0 13vw;
+    color: #F0F0F0;
+      font-family: 'Libre Baskerville', serif;
+      line-height: 1.7;
+      text-align: center;
+      padding-top: 5vw;
+      font-size: 21px;
+  }
+}
 
-	}
-	.progress-amount span
+
+@media(max-width: 1280px){
+  .wrapper .recognition-header-text
+  {
+    right: 44vw;
+      position: absolute;
+      text-align: center;
+      top: 17vw;
+      left: 14vw;
+  }
+  .wrapper .header-quotes
+  {
+    color: #212121;
+      line-height: 26px;
+      font-family: 'Libre Baskerville', serif;
+      margin-bottom: 19px;
+      font-size: 20px;
+  }
+  .wrapper .name
+  {
+    font-size: 14px;
+  }
+  .nation_building{
+    padding: 0;
+  }
+  .nation_building .cards{
+    width: 100%;
+      margin: auto;
+  }
+  .nation_building .quote_text p{
+    font-size: 11px;
+  }
+  .nation_building .country_details{
+    bottom: -14vw;
+  }
+  .nation_building .country_details2{
+    bottom: -2.5vw;
+  }
+  .nation_building .lesotho_details{
+    bottom: -14vw !important;
+  }
+  .nation_building .quote .name{
+    font-size: 10px;
+  }
+  .nation_building .home_content{
+    margin-left: 8vw;
+  }
+  #country-details .country-description2
+  {
+    margin-bottom: 36px;
+  }
+  /* for all countries */
+  #country-details .amount
+  {
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 10px;
+
+  }
+  .progress-amount span
 {
-	margin-top: -10px;
+  margin-top: -10px;
 }
-	/* for all countries end */
+  /* for all countries end */
 }
+@media(max-width: 1280px) and (max-width: 1025){
+  #fullpage .section_two_title,
+  #fullpage .section_three_title{
+    bottom: 25vh;
+  }
+  #fullpage .home_title{
+    bottom: 13vh;
+  }
+}
+
+@media(min-width: 1200px){
+  #fullpage .home_title h1,
+  #fullpage .section_two_title h1,
+  #fullpage .section_three_title h1{
+    font-weight: 500;
+    font-size: 48px;
+  }
+  #fullpage .home_title p,
+  #fullpage .section_two_title p,
+  #fullpage .section_three_title p{
+    font-size: 16px;
+  }
+  #fullpage .home_title a,
+  #fullpage .section_two_title a,
+  #fullpage .section_three_title{
+    font-size: 14px;
+  }
+}
+
+
+ 
+
 @media(max-width: 1024px){
-	.nation_building .country_details{
-		bottom: -19.5vw;
-	}
-	.nation_building .lesotho_details{
-		bottom: -13.5vw !important;
-	}
-	.nation_building h1{
-		font-size: 30px;
-	}
-	.nation_building .country_details2 a,
-	.nation_building .country_details a{
-		top: 0.7vw;
-	}
-	/* Home Page  start */
-	.big_twitter{
+  .wrapper .recognition-header-text
+  {
+    top: 18vw;
+  }
+  .wrapper .header-quotes
+  {
+    font-size: 16px !important;
+      line-height: 23px !important;
+  }
+  .wrapper .name {
+    font-size: 12px;
+    }
+  .nation_building .country_details{
+    bottom: -19.5vw;
+  }
+  .nation_building .lesotho_details{
+    bottom: -13.5vw !important;
+  }
+  .nation_building h1{
+    font-size: 30px;
+  }
+  .nation_building .country_details2 a,
+  .nation_building .country_details a{
+    top: 0.7vw;
+  }
+  /* Home Page  start */
+  .big_twitter{
     display: none !important;
   }
   .small_twitter{
@@ -3861,38 +4471,109 @@ footer .footer_last p
   }
   .hr_sections2,
   .hr_sections{
-	display: block;
+  display: block;
   }
   /* Home Page end */
+  #recognition .quotes-img
+  {
+    width: 94% !important;
+  }
+    #fullpage .arrow_down_home{
+    bottom: 30px;
+    height: 20px;
+    width: 20px;
+  }
+  #fullpage .home_title{
+    bottom: -35vw;
+  }
+  
 }
-@media(max-width: 768px){
-	.desktop_header_space{
-		height: 10px;
-	}
-	.nation_building .home_content{
-	    top: 19vw;
-	}
-	.nation_building td{
-		border: 20px solid #000;
-	}
-	.nation_building .country_details{
-		bottom: -24vw;
-	}
-	.nation_building .country_details2{
-		bottom: -0.5vw;
-	}
-	.nation_building .home_content p{
-		font-size: 12px;
-	}
-	.nation_building .quote img{
-		width: 26px;
-	}
-	.nation_building .lesotho_details{
-		bottom: -12vw !important;
-	}
+@media only screen  (max-width: 991px) {
+  .foundation_content .foundation_img{
+    padding: 0 4%;
+  }
+  .temp_btm{
+    margin-bottom: 80px;
+  }
+}
+/* ----- Landscape for iphone X ------- */
+@media (max-width: 812px)
+  {
+    #recognition .quotes-img
+      {
+        width: auto !important;
+        margin-bottom: 10px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+      #recognition .text-desc-quotes
+      {
+        text-align: center;
+      }
+      #recognition .img-mobile
+      {
+        display: block;
+        margin: 0 auto;
+      }
 
-	/* Home Page start */
-	#fullpage section .section_one_bg{
+  }
+/* ----- Landscape for iphone X end------- */
+
+
+
+@media(max-width: 768px){
+  .wrapper .recognition-header-text
+  {
+    top: 13vw;
+  }
+  .wrapper .header-quotes
+  {
+    line-height: 17px !important;
+      font-size: 12px !important;
+  }
+  .wrapper .name
+  {
+    font-size: 9px;
+  }
+  .wrapper .rec-img-mobile
+  {
+    width: 25px;
+  }
+  #media-blog-content .blog_content_desktop,
+  #media-speech-content .speech_content_desktop{
+    display: none;
+  }
+  #media-speech-content .mobile_slider .slider .item .col-xs-12 h5:first-child{
+    width: 210px;
+  }
+  .desktop_header_space{
+    height: 10px;
+  }
+  .nation_building .home_content{
+      top: 19vw;
+  }
+  .nation_building td{
+    border: 20px solid #000;
+  }
+  .nation_building .country_details{
+    bottom: -24vw;
+  }
+  .nation_building .country_details2{
+    bottom: -0.5vw;
+  }
+  .nation_building .home_content p{
+    font-size: 12px;
+  }
+  .nation_building .quote img{
+    width: 26px;
+  }
+  .nation_building .lesotho_details{
+    bottom: -12vw !important;
+  }
+
+  /* Home Page start */
+  #fullpage section .section_one_bg{
     height: 89vh;
     background: url('../img/mobile_home_bg.png') no-repeat;
     background-size: cover;
@@ -4090,15 +4771,15 @@ footer .footer_last p
     font-size: 22px;
   }
   .mobile_menu .nav-icon{
-  	margin-top: 20px;
+    margin-top: 20px;
   }
   .mobile_menu .nav-icon div{
-  	width: 31px;
+    width: 31px;
   }
 
   #recognition .quotes-img
   {
-  	display: block;
+    display: block;
     margin: 0 auto;
   }
   #recognition .text-desc-quotes {
@@ -4108,176 +4789,496 @@ footer .footer_last p
     font-family: 'Libre Baskerville', serif;
     text-align: center;
     margin-top: 42px;
-	}
-	#recognition .img-mobile
-	{
-	 display: block;
+  }
+  #recognition .img-mobile
+  {
+   display: block;
     margin: 0 auto;
     margin-top: 25px;
-	}
-	#recognition .name-quotes
-	{
-		text-align: center;
-	}
+  }
+  #recognition .name-quotes
+  {
+    text-align: center;
+  }
+  #recognition .quotes-img
+  {
+    width: auto !important;
+  }
 
-	/* Home page end */
+  /* Home page end */
 
-	/* REcognition page start */
-		.national-building-botswana,
-		.national-building-cambodia,
-		.national-building-lesotho, 
-		.national-building-malaysia, 
-		.national-building-swaziland, 
-		.national-building-sierra_leone,
-		.national-building-london,
-		.national-building-south_africa 
+  /* REcognition page start */
+  .national-building-botswana,
+  .national-building-cambodia,
+  .national-building-lesotho, 
+  .national-building-malaysia, 
+  .national-building-swaziland, 
+  .national-building-sierra_leone,
+  .national-building-london,
+  .national-building-south_africa 
+  {
+        padding: 0;
+  }
 
-		{
-    	    padding: 0;
-		}
-		.national-building-malaysia .quotes-country,
-		.national-building-botswana .quotes-country,
-		.national-building-cambodia .quotes-country,
-		.national-building-lesotho .quotes-country,
-		.national-building-swaziland .quotes-country,
-		.national-building-sierra_leone .quotes-country,
-		.national-building-london .quotes-country,
-		.national-building-south_africa .quotes-country 
-		{
-			font-size: 17px;
-    		text-align: center;
-    		padding: 50px 9vw;
-    		padding-bottom: 18px;
-    		line-height: 26px;
-		}
-		.national-building-malaysia .name-countries,
-		.national-building-botswana .name-countries,
-		.national-building-cambodia .name-countries,
-		.national-building-lesotho .name-countries,
-		.national-building-swaziland .name-countries,
-		.national-building-sierra_leone .name-countries,
-		.national-building-london .name-countries,
-		.national-building-south_africa .name-countries
-		{
-			padding: 0 15px;
-		}
-		.national-building-malaysia .quotes-all,
-		.national-building-botswana .quotes-all,
-		.national-building-cambodia .quotes-all,
-		.national-building-lesotho .quotes-all,
-		.national-building-swaziland .quotes-all,
-		.national-building-sierra_leone .quotes-all,
-		.national-building-london .quotes-all,
-		.national-building-south_africa .quotes-all
-		{
-			margin-right: 0;
-		}
+  .national-building-malaysia .quotes-country,
+  .national-building-botswana .quotes-country,
+  .national-building-cambodia .quotes-country,
+  .national-building-lesotho .quotes-country,
+  .national-building-swaziland .quotes-country,
+  .national-building-sierra_leone .quotes-country,
+  .national-building-london .quotes-country,
+  .national-building-south_africa .quotes-country 
+  {
+    font-size: 17px;
+      text-align: center;
+      padding: 50px 9vw;
+      padding-bottom: 18px;
+      line-height: 26px;
+  }
 
-		.national-building-malaysia .text-countries,
-		.national-building-botswana .text-countries,
-		.national-building-cambodia .text-countries,
-		.national-building-lesotho .text-countries,
-		.national-building-swaziland .text-countries,
-		.national-building-sierra_leone .text-countries,
-		.national-building-london .text-countries,
-		.national-building-south_africa .text-countries
-		{
-			font-size: 17px;
-			padding-right: 0;
-			padding: 0 40px;
-    		line-height: 26px;
-    		margin-top: 25px;
-		}
-		.national-building-malaysia .text-headline,
-		.national-building-botswana .text-headline,
-		.national-building-cambodia .text-headline,
-		.national-building-lesotho .text-headline,
-		.national-building-swaziland .text-headline,
-		.national-building-sierra_leone .text-headline,
-		.national-building-london .text-headline,
-		.national-building-south_africa .text-headline
-		{
-			font-size: 22px;
-			padding: 0 40px;
-		}
-		.spacing-text
-		{
-			padding:0;
-		}
-		.mobile-space
-		{
-			padding:0;
-		}
-		.transform-img-malaysia .transform-text,
-		.transform-img-botswana .transform-text,
-		.transform-img-cambodia .transform-text,
-		.transform-img-lesotho .transform-text,
-		.transform-img-swaziland .transform-text,
-		.transform-img-sierra-leone .transform-text,
-		.transform-img-london .transform-text,
-		.transform-img-south-africa .transform-text
-		{
-			width: 100%;
-			left: 0;
-			bottom: -19vh;
-		}
-		.transform-img-malaysia .transform-text h1,
-		.transform-img-botswana .transform-text h1,
-		.transform-img-cambodia .transform-text h1,
-		.transform-img-lesotho .transform-text h1,
-		.transform-img-swaziland .transform-text h1,
-		.transform-img-sierra-leone .transform-text h1,
-		.transform-img-london .transform-text h1,
-		.transform-img-south-africa .transform-text h1
-		{
-			font-size: 24px;
-			text-align: center;
-		}
-		.transform-img-malaysia .transform-text p,
-		.transform-img-botswana .transform-text p,
-		.transform-img-cambodia .transform-text p,
-		.transform-img-lesotho .transform-text p,
-		.transform-img-swaziland .transform-text p,
-		.transform-img-sierra-leone .transform-text p,
-		.transform-img-london .transform-text p,
-		.transform-img-south-africa .transform-text p
-		{
-			font-size: 14px;
-			text-align: center;
-			line-height: 24px;
-			padding: 0 14vw;
-			margin-top: 28px;
+  .national-building-malaysia .name-countries,
+  .national-building-botswana .name-countries,
+  .national-building-cambodia .name-countries,
+  .national-building-lesotho .name-countries,
+  .national-building-swaziland .name-countries,
+  .national-building-sierra_leone .name-countries,
+  .national-building-london .name-countries,
+  .national-building-south_africa .name-countries
+  {
+    padding: 0 15px;
+  }
 
-		}
-		.transform-img-malaysia .btn-default,
-		.transform-img-botswana .btn-default,
-		.transform-img-cambodia .btn-default,
-		.transform-img-lesotho .btn-default,
-		.transform-img-swaziland .btn-default,
-		.transform-img-sierra-leone .btn-default,
-		.transform-img-london .btn-default,
-		.transform-img-south-africa .btn-default
-		{
-			display: block;
-    		margin: 0 auto;
-    		margin-top: 28px;
-    		border-color: transparent;
-		}
+  .national-building-malaysia .quotes-all,
+  .national-building-botswana .quotes-all,
+  .national-building-cambodia .quotes-all,
+  .national-building-lesotho .quotes-all,
+  .national-building-swaziland .quotes-all,
+  .national-building-sierra_leone .quotes-all,
+  .national-building-london .quotes-all,
+  .national-building-south_africa .quotes-all
+  {
+    margin-right: 0;
+  }
 
-		#country-details .country-details
-		{
-			margin-top: 30px !important;
-		}
+  .national-building-malaysia .text-countries,
+  .national-building-botswana .text-countries,
+  .national-building-cambodia .text-countries,
+  .national-building-lesotho .text-countries,
+  .national-building-swaziland .text-countries,
+  .national-building-sierra_leone .text-countries,
+  .national-building-london .text-countries,
+  .national-building-south_africa .text-countries
+  {
+    font-size: 17px;
+    padding-right: 0;
+    padding: 0 40px;
+      line-height: 26px;
+      margin-top: 25px;
+  }
 
+  .national-building-malaysia .text-headline,
+  .national-building-botswana .text-headline,
+  .national-building-cambodia .text-headline,
+  .national-building-lesotho .text-headline,
+  .national-building-swaziland .text-headline,
+  .national-building-sierra_leone .text-headline,
+  .national-building-london .text-headline,
+  .national-building-south_africa .text-headline
+  {
+    font-size: 22px;
+    padding: 0 40px;
+  }
+
+  .spacing-text
+  {
+    padding:0;
+  }
+  .mobile-space
+  {
+    padding:0;
+  }
+
+  .transform-img-malaysia .transform-text,
+  .transform-img-botswana .transform-text,
+  .transform-img-cambodia .transform-text,
+  .transform-img-lesotho .transform-text,
+  .transform-img-swaziland .transform-text,
+  .transform-img-sierra-leone .transform-text,
+  .transform-img-london .transform-text,
+  .transform-img-south-africa .transform-text
+  {
+    width: 100%;
+    left: 0;
+    bottom: -19vh;
+  }
+
+  .transform-img-malaysia .transform-text h1,
+  .transform-img-botswana .transform-text h1,
+  .transform-img-cambodia .transform-text h1,
+  .transform-img-lesotho .transform-text h1,
+  .transform-img-swaziland .transform-text h1,
+  .transform-img-sierra-leone .transform-text h1,
+  .transform-img-london .transform-text h1,
+  .transform-img-south-africa .transform-text h1
+  {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .transform-img-malaysia .transform-text p,
+  .transform-img-botswana .transform-text p,
+  .transform-img-cambodia .transform-text p,
+  .transform-img-lesotho .transform-text p,
+  .transform-img-swaziland .transform-text p,
+  .transform-img-sierra-leone .transform-text p,
+  .transform-img-london .transform-text p,
+  .transform-img-south-africa .transform-text p
+  {
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+    padding: 0 14vw;
+    margin-top: 28px;
+  }
+
+  .transform-img-malaysia .btn-default,
+  .transform-img-botswana .btn-default,
+  .transform-img-cambodia .btn-default,
+  .transform-img-lesotho .btn-default,
+  .transform-img-swaziland .btn-default,
+  .transform-img-sierra-leone .btn-default,
+  .transform-img-london .btn-default,
+  .transform-img-south-africa .btn-default
+  {
+    display: block;
+      margin: 0 auto;
+      margin-top: 28px;
+      border-color: transparent;
+  }
+
+  #country-details .country-details
+  {
+    margin-top: 30px !important;
+  }
+
+  /* foundatio page */
+  .foundation_content .foundation_paragraphs
+  {
+    padding: 0 5vw;
+  }
+   .foundation_content .foundation_img
+  {
+    padding: 0 !important;
+  }
+  .foundation_content .img_right
+  {
+    padding: 0 !important;
+  }
+  .foundation_content .text_left
+  {
+    padding: 0 5vw !important;
+  }
+  .foundation_content .foundation_paragraphs p
+  {
+    line-height: 35px;
+    font-size: 18px;
+  }
+  .foundation_content .text_left p
+  {
+      line-height: 35px;
+      font-size: 18px;  
+  }
+  .foundation_content .text_right p
+  {
+    line-height: 35px;
+      font-size: 18px;
+      padding-left: 7vw;
+      padding-right: 7vw;
+  }
+   .foundation_content .img_left
+   {
+    padding: 0 !important;
+   }
+   .text_right
+   {
+    padding: 0 5vw !important;
+   }
+   .foundation_content .text_right p:nth-child(3)
+   {
+    font-family: 'Montserrat', sans-serif;
+    color: #B6B7AE;
+      font-size: 14px;
+      padding-top: 0;
+      line-height: 18px;
+      padding: 0 14vw;
+   }
+   .foundation_content .text_right p:nth-child(4)
+   {
+    font-size: 14px;
+   }
+   .foundation_content .foundation_paragraphs h2
+   {
+    font-size: 32px;
+    padding: 0; 
+   }
+   .foundation_content .foundation_paragraphs .text2 
+   {
+    padding: 0 5vw !important;
+    font-size: 22px;
+    font-family: 'Libre Baskerville', serif;
+    margin-top: 31px;
+  }
+  .spacing-responsive
+  {
+    padding: 0;
+  }
+  .foundation_content .img_left img
+  {
+    width: 100% !important;
+  }
+  .profile_content .profile_quote h1
+  {
+    padding-left: 5vw;
+      padding-right: 16vw;
+        line-height: 65px;
+        font-size: 40px;
+  }
+  .profile_content .profile_quote p
+  {
+    font-size: 22px;
+    padding-right:  7%;
+  }
+  .profile_content .text_right-head
+  {
+    font-size: 28px;
+      padding-right: 6vw;
+  }
+  .profile_content .profile_quote, .profile_content .profile_one, .profile_content .text_left, .profile_content .text_right, .profile_content .profile_one a
+  {
+    padding: 0 50px !important;
+  }
+
+  /* BLOG */
+  #media-blog .second-part .col-md-4,
+  #media-blog .second-part .col-md-4 .col-md-12,
+  #media-blog .second-part .col-md-4 .col-md-12 *{
+    padding: 0;
+  }
+  #media-blog .second-part .col-md-4 .col-md-12{
+    margin-top: 60px;
+  }
+  #media-blog .blog-page-8 div:nth-child(2){
+    padding: 0;
+  }
+  #media-blog .blog-page-8 div .blog-desc,
+  #media-blog .blog-page-8 div .blog-read{
+    padding: 0;
+  }
+  #media-blog .image_ipad_div{
+    height: 300px;
+    overflow:hidden;
+  }
+  #media-blog .image_ipad_div img{
+    margin-top: -150px;
+    width: 100%;
+  }
+  #media-blog .desktop_small_blog{
+    display: none;
+  }
+  #media-blog .mobile_slider{
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin-bottom: 24px;
+  }
+  #media-blog .blog-page-3{
+    margin: 0 -15px;
+  }
+  #media-blog .blog-title,
+  #media-blog .blog-year,
+  #media-blog .blog-desc,
+  #media-blog .blog-read{
+    padding: 0 15px;
+  }
+  #media-blog .blog-page-4 .col-md-6,
+  #media-blog .blog-page-4 .col-md-12{
+    width: 100%;
+    padding: 0;
+  }
+  #media-blog .blog-page-4 .col-md-12 .col-md-6 h5{
+    padding: 0 15px;
+  }
+  #media-blog .blog-page-4{
+    margin: 0 -15px;
+  }
+  #media-blog .img-responsive{
+    padding: 0 14px;
+  }
+  #media-blog .headline-media{
+    margin-top: 40px;
+    font-weight: 400;
+  }
+  #media-blog .blog-read{
+    margin-bottom: 24px;
+    margin-top: 14px;
+  }
+  #media-blog .blog-page-8 .img-responsive,
+  #media-blog .blog-page-8 .blog-title,
+  #media-blog .blog-page-8 .blog-desc
+  #media-blog .blog-read{
+    padding: 0 !important;
+  }
+  #media-blog-content .mobile_slider
+  {
+    display: block;
+  }
+  #media-blog-content .blog-cont-3
+  {
+    padding-right: 0;
+  }
+  #media-blog-content .blog-content-text
+  {
+    padding: 0 24px;
+  }
+  #media-blog-content .headline-media-back
+  {
+    padding: 0 24px;
+  }
+  .blog-cont-head
+  {
+    padding: 0 24px;
+  }
+  #media-blog-content .blog-year
+    {
+      padding: 0 24px;
+    }
+    .mobile-foundation-pic
+    {
+      margin:0 -9px;
+    }
+  /* BLOG END */
+
+  /* MEDIA */
+  .desktop_books{
+    display: none;
+  }
+  .mobile_books{
+    display: block;
+  }
+  .book-desc{
+    margin-top: 20px;
+  }
+  #media .blog-head-top,
+  #media .speech-head-top
+  {
+    margin-top: 40px;
+  }
+  #media .headline-media
+  {
+    margin-bottom: 24px;
+    margin-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .speeches_mobile .book-desc
+  {
+    margin-top: 14px;
+    color: #848484 !important;
+  }
+  .speeches_mobile .book-year{
+    margin-top: 20px;
+  }
+  #media .book-title{
+    letter-spacing: .5px;
+  }
+  .mobile_slider .slider .item .col-xs-12 h5:first-child{
+    font-size: 16px;
+  }
+  /* MEDIA END */
+
+  /* SPEECH */
+  #media-speech,
+  #media-blog{
+    padding: 0 15px;
+  }
+  #media-speech .speech-page-5 img,
+  #media-speech .speech_big_title_2 img{
+    margin-top: 10px;
+  }
+  #media-speech .speech-page-2 .col-md-8{
+    padding: 0;
+  }
+  #media-speech .desktop_speeches{
+    display: none;
+  }
+  #media-speech .mobile_slider{
+    display: block;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 2;
+  }
+  #media-speech .mobile_slider .item h5{
+    width: 250px;
+  }
+  #media-speech .speech-page-5{
+    margin-top: -30px;
+    text-align: center;
+  }
+  #media-speech .speech-page-12{
+    padding: 0;
+    margin-top: 60px;
+  }
+  #media-speech .speech_big_title_2{
+    text-align: center;
+    overflow: hidden;
+    padding: 0 30px;
+  }
+  #media-speech .desktop_speech_br{
+    display: none;
+  }
+  .mobile_slider .item h5:first-child{
+    font-size: 18px;
+      font-family: 'Libre Baskerville', serif;
+  }
+  #media-speech .blog-desc{
+    color: #848484;
+  }
+  #media-speech .book-year{
+    font-weight: 400;
+  }
+  /* speech end */
+  /* Publication */
+    #media-publication .book-title-media{
+    width: 320px;
+  }
+  #media-publication .book-desc-media{
+    padding-right: 3vw;
+  }
+  #media-publication hr{
+    margin: 50px 14px;
+  }
+  /* Publication end */
+
+   #fullpage .arrow_down_home{
+     bottom: 80px ;
+  }
+   #fullpage .home_title{
+     bottom: -62vh ;
+  }
 }
 
 @media(max-width: 500px){
-	.desktop_header_space{
-		height: 50px;
-	}
-	/* Home Page start */
-	
-	.mobile_menu div.header{
+  #media-blog-content .blog-cont-2{
+    margin-top: 30px;
+  }
+  #media-blog-content .headline-media-back{
+    margin-top: 40px;
+  }
+  .desktop_header_space{
+    height: 50px;
+  }
+  /* Home Page start */
+  
+  .mobile_menu div.header{
     padding: 0px;
     height: 60px;
   }
@@ -4448,473 +5449,585 @@ footer .footer_last p
   .mobile_menu .inner_menu{
     top: 13.5%;
   }
-	/* Home page end */
+    #fullpage .arrow_down_home{
+    bottom: -430px;
+    left: 0;
+    position: relative;
+  }
+  #fullpage .home_title{
+    bottom: -410px;
+  }
+  /* Home page end */
 
-	/* Recognition start */ 
-	#recognition .text-desc 
-	{
-    	font-size: 16px;
-    	text-align: center;
-    	color: #F0F0F0;
-    	padding: 0;
-    	padding-top: 47px;
-    	margin-bottom: 25px;
-	}
-	#recognition .second
-	{
-		margin-top: 40px;
-	}
-	#recognition .see-more-mobile{
-	color: #BECE00;
-	font-weight: 100;
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
-	}
-	#recognition .text-award {
+  /* Recognition start */ 
+  #recognition .text-desc 
+  {
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #F0F0F0;
+      padding: 0;
+      padding-top: 47px;
+      margin-bottom: 25px;
+  }
+  #recognition .second
+  {
+    margin-top: 60px;
+  }
+  #recognition .see-more-mobile{
+  color: #BECE00;
+  font-weight: 100;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  }
+  #recognition .text-award {
     font-size: 16px;
     padding-right: 9vw;
     color: #F0F0F0;
     padding-top: 22px;
     font-weight: normal;
-	}
-	#recognition .recognition-head-top {
+    line-height: 26px;
+  }
+  #recognition .recognition-head-top {
     padding: 0 15px;
-	}
-	#recognition .section1 {
+  }
+  #recognition .section1 {
     margin-bottom: 55px;
-	}
-	#recognition .recognition-head-top 
-	{
-    	padding: 0 15px;
-	}
-	#recognition .quotes-img
-	{
-		width: 100% !important;
-	}
-	#recognition .text-desc-quotes
-	{
-		padding: 0 31px;
-    	padding-top: 40px;
-   	 	text-align: center;
-	}
-	#recognition .name
-	{
-		padding: 0;
-	}
-	#recognition .img-mobile
-	{
-		margin: 0 auto;
-    	display: block;
-    	margin-top: 25px;
-	}
+  }
+  #recognition .recognition-head-top 
+  {
+      padding: 0 15px;
+  }
+  #recognition .quotes-img
+  {
+    width: 100% !important;
+  }
+  #recognition .text-desc-quotes
+  {
+    padding: 0 31px;
+      padding-top: 40px;
+      text-align: center;
+  }
+  #recognition .name
+  {
+    padding: 0;
+  }
+  #recognition .img-mobile
+  {
+    margin: 0 auto;
+      display: block;
+      margin-top: 25px;
+  }
 
-	#recognition .text-desc-quotes
-	{
-    	font-size: 16px;
-    	text-align: center;
-    	color: #F0F0F0;
-    	padding: 0 38px;
-    	padding-top: 47px;
-    	line-height: 26px;
-	}
-	#recognition .name-quotes
-	{
-		text-align: center;
-	}
-	.pagination 
-	{
-   	 	margin: 20px 1px;
-   	 	padding-left: 11vw;
-	}
-	#recognition .pagination>li>a, .pagination>li>span
-	{
-		    padding: 6px 18px;
-	}
-	#recognition .headline-awards2
-	{
-		margin-bottom: 30px;
-		font-size: 26px;
-	}
-	#recognition .select select {
+  #recognition .text-desc-quotes
+  {
+      font-size: 16px;
+      text-align: center;
+      color: #F0F0F0;
+      padding: 0 38px;
+      padding-top: 4px;
+      line-height: 26px;
+  }
+  #recognition .name-quotes
+  {
+    text-align: center;
+  }
+  .pagination 
+  {
+      margin: 20px 1px;
+      padding-left: 11vw;
+  }
+  #recognition .pagination>li>a, .pagination>li>span
+  {
+        padding: 6px 18px;
+  }
+  #recognition .headline-awards2
+  {
+    margin-bottom: 30px;
+    font-size: 26px;
+  }
+  #recognition .select select {
     font-size: 14px;
     font-weight: normal;
-	}
-	#recognition .rec-dropdwon
-	{
-		padding: 0 15px;
-	}
-	.rec-quotes-mobile
-	{
-		position: absolute;
-    	top: 80px;
-    	color: black;
-    	padding: 20px;
-    	text-align: center;
-	}
-	.text-quotes-moble
-	{
-		font-size: 16px;
-    	line-height: 26px;
-    	font-family: 'Libre Baskerville', serif;
-	}
-	.name-quotes-mobile
-	{
-		font-size: 14px;
-    	color: #000000;
-	}
-	.rec-img-mobile
-	{
-		margin-top: 8px;
-    	margin-bottom: 13px;
-	}
-	/* Recognition end */
+  }
+  #recognition .rec-dropdwon
+  {
+    padding: 0 15px;
+  }
+  .rec-quotes-mobile
+  {
+    position: absolute;
+      top: 80px;
+      color: black;
+      padding: 20px;
+      text-align: center;
+  }
+  .text-quotes-moble
+  {
+    font-size: 16px;
+      line-height: 26px;
+      font-family: 'Libre Baskerville', serif;
+  }
+  .name-quotes-mobile
+  {
+    font-size: 14px;
+      color: #000000;
+  }
+  .rec-img-mobile
+  {
+    margin-top: 8px;
+      margin-bottom: 13px;
+  }
 
-	/* Nation building start */
-	.nation_building .cards{
-		display: none;
-	}
-	.nation_building .small_cards{
-		display: block;
-	}
-	.nation_building .quote_mobile{
-		height: 450px;
-		padding: 20px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
-	.nation_building .quote_text p{
-		font-size: 16px;
-		font-family: 'Montserrat', sans-serif;
-		color: #F0F0F0;
-		letter-spacing: .5px;
-	}
-	.nation_building .name{
-		color: #B6B7AE !important;
-	}
-	.nation_building .quote_text img{
-		padding: 20px;
-	}
-	.nation_building .home_bg{
-		background: url('../img/mobile_nation_building_1.png');
-		height: 684px;
-		background-size: cover;
-		background-position: center;
-	}
-	.nation_building .botswana_mobile{
-		background: url('../img/mobile_nation_building_2.png');
-		height: 450px;
-		background-size: cover;
-		background-position: center;
-	}
-	.nation_building .cambodia_mobile{
-		background: url('../img/mobile_nation_building_3.png');
-		height: 450px;
-		background-size: cover;
-		background-position: center;
-	}
-	.nation_building .lesotho_mobile{
-		background: url('../img/mobile_nation_building_4.png');
-		height: 450px;
-		background-size: cover;
-		background-position: center;
-	}
-	.nation_building .london_mobile{
-		background: url('../img/mobile_nation_building_5.png');
-		height: 450px;
-		background-size: cover;
-		background-position: center;
-	}
-	.nation_building .sierra_leone_mobile{
-		background: url('../img/mobile_nation_building_6.png');
-		height: 450px;
-		background-size: cover;
-		background-position: center;
-	}
-	.nation_building .south_africa_mobile{
-		background: url('../img/mobile_nation_building_7.png');
-		height: 450px;
-		background-size: cover;
-		background-position: center;
-	}
-	.nation_building .swaziland_mobile{
-		background: url('../img/mobile_nation_building_8.png');
-		height: 450px;
-		background-size: cover;
-		background-position: center;
-	}
-	.nation_building .home_content{
-		top: 122vw;
-	}
-	.nation_building .home_content{
-		margin: 0 20px;
-	}
-	.nation_building .country_details2{
-		bottom: -310px;
-	}
-	.national-building-botswana,
-	.national-building-cambodia,
-	.national-building-lesotho, 
-	.national-building-swaziland, 
-	.national-building-sierra_leone,
-	.national-building-london,
-	.national-building-south_africa 
-	{
+  /* Recognition end */
+
+  /* Nation building start */
+  .nation_building .cards{
+    display: none;
+  }
+  .nation_building .small_cards{
+    display: block;
+  }
+  .nation_building .quote_mobile{
+    height: 450px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .nation_building .quote_text p{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #F0F0F0;
+    letter-spacing: .5px;
+  }
+  .nation_building .name{
+    color: #B6B7AE !important;
+  }
+  .nation_building .quote_text img{
+    padding: 20px; 
+  }
+  .nation_building .home_bg{
+    background: url('../img/mobile_nation_building_1.png');
+    height: 684px;
+    background-size: cover;
+    background-position: center;
+  }
+  .nation_building .botswana_mobile{
+    background: url('../img/mobile_nation_building_2.png');
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+  }
+  .nation_building .cambodia_mobile{
+    background: url('../img/mobile_nation_building_3.png');
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+  }
+  .nation_building .lesotho_mobile{
+    background: url('../img/mobile_nation_building_4.png');
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+  }
+  .nation_building .london_mobile{
+    background: url('../img/mobile_nation_building_5.png');
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+  }
+  .nation_building .sierra_leone_mobile{
+    background: url('../img/mobile_nation_building_6.png');
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+  }
+  .nation_building .south_africa_mobile{
+    background: url('../img/mobile_nation_building_7.png');
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+  }
+  .nation_building .swaziland_mobile{
+    background: url('../img/mobile_nation_building_8.png');
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+  }
+  .nation_building .home_content{
+    top: 122vw;
+  }
+  .nation_building .home_content{
+    margin: 0 20px;
+  }
+  .nation_building .country_details2{
+    bottom: -310px;
+  }
+  .national-building-botswana,
+  .national-building-cambodia,
+  .national-building-lesotho, 
+  .national-building-swaziland, 
+  .national-building-sierra_leone,
+  .national-building-london,
+  .national-building-south_africa 
+  {
         padding: 0;
-	}
-	.national-building-malaysia .quotes-country,
-	.national-building-botswana .quotes-country,
-	.national-building-cambodia .quotes-country,
-	.national-building-lesotho .quotes-country,
-	.national-building-swaziland .quotes-country,
-	.national-building-sierra_leone .quotes-country,
-	.national-building-london .quotes-country,
-	.national-building-south_africa .quotes-country 
-	{
-		font-size: 16px;
-    	text-align: center;
-    	padding: 50px 0;
-    	padding-bottom: 18px;
-    	line-height: 26px;
-	}
-	.national-building-malaysia .name-countries,
-	.national-building-botswana .name-countries,
-	.national-building-cambodia .name-countries,
-	.national-building-lesotho .name-countries,
-	.national-building-swaziland .name-countries,
-	.national-building-sierra_leone .name-countries,
-	.national-building-london .name-countries,
-	.national-building-south_africa .name-countries
-	{
-		padding: 0 15px;
-	}
-	.national-building-malaysia .quotes-all,
-	.national-building-botswana .quotes-all,
-	.national-building-cambodia .quotes-all,
-	.national-building-lesotho .quotes-all,
-	.national-building-swaziland .quotes-all,
-	.national-building-sierra_leone .quotes-all,
-	.national-building-london .quotes-all,
-	.national-building-south_africa .quotes-all
-	{
-		margin-right: 0;
-	}
-	.national-building-malaysia .text-countries,
-	.national-building-botswana .text-countries,
-	.national-building-cambodia .text-countries,
-	.national-building-lesotho .text-countries,
-	.national-building-swaziland .text-countries,
-	.national-building-sierra_leone .text-countries,
-	.national-building-london .text-countries,
-	.national-building-south_africa .text-countries
-	{
-		font-size: 16px;
-		padding-right: 0;
-		padding: 0 20px;
-    	line-height: 26px;
-	}
-	.national-building-malaysia .text-headline,
-	.national-building-botswana .text-headline,
-	.national-building-cambodia .text-headline,
-	.national-building-lesotho .text-headline,
-	.national-building-swaziland .text-headline,
-	.national-building-sierra_leone .text-headline,
-	.national-building-london .text-headline,
-	.national-building-south_africa .text-headline
-	{
-		font-size: 22px;
-		padding: 0 20px;
-		margin-top: 50px;
-	}
-	.spacing-text
-	{
-		padding:0;
-	}
-	.mobile-space
-	{
-		padding:0;
-	}
-	.transform-img-malaysia .transform-text,
-	.transform-img-botswana .transform-text,
-	.transform-img-cambodia .transform-text,
-	.transform-img-lesotho .transform-text,
-	.transform-img-swaziland .transform-text,
-	.transform-img-sierra-leone .transform-text,
-	.transform-img-london .transform-text,
-	.transform-img-south-africa .transform-text
-	{
-		width: 100%;
-		left: 0;
-		bottom: -19vh;
-	}
-	.transform-img-malaysia .transform-text h1,
-	.transform-img-botswana .transform-text h1,
-	.transform-img-cambodia .transform-text h1,
-	.transform-img-lesotho .transform-text h1,
-	.transform-img-swaziland .transform-text h1,
-	.transform-img-sierra-leone .transform-text h1,
-	.transform-img-london .transform-text h1,
-	.transform-img-south-africa .transform-text h1
-	{
-		font-size: 24px;
-		text-align: center;
-	}
-	.transform-img-malaysia .transform-text p,
-	.transform-img-botswana .transform-text p,
-	.transform-img-cambodia .transform-text p,
-	.transform-img-lesotho .transform-text p,
-	.transform-img-swaziland .transform-text p,
-	.transform-img-sierra-leone .transform-text p,
-	.transform-img-london .transform-text p,
-	.transform-img-south-africa .transform-text p
-	{
-		font-size: 14px;
-		text-align: center;
-		line-height: 24px;
-		padding: 0 14vw;
-		margin-top: 28px;
-	}
-	.transform-img-malaysia .btn-default,
-	.transform-img-botswana .btn-default,
-	.transform-img-cambodia .btn-default,
-	.transform-img-lesotho .btn-default,
-	.transform-img-swaziland .btn-default,
-	.transform-img-sierra-leone .btn-default,
-	.transform-img-london .btn-default,
-	.transform-img-south-africa .btn-default
-	{
-		display: block;
-    	margin: 0 auto;
-    	margin-top: 28px;
-    	border-color: transparent;
-	}
+  }
+  .national-building-malaysia .quotes-country,
+  .national-building-botswana .quotes-country,
+  .national-building-cambodia .quotes-country,
+  .national-building-lesotho .quotes-country,
+  .national-building-swaziland .quotes-country,
+  .national-building-sierra_leone .quotes-country,
+  .national-building-london .quotes-country,
+  .national-building-south_africa .quotes-country 
+  {
+    font-size: 16px;
+      text-align: center;
+      padding: 50px 0;
+      padding-bottom: 18px;
+      line-height: 26px;
+  }
+  .national-building-malaysia .name-countries,
+  .national-building-botswana .name-countries,
+  .national-building-cambodia .name-countries,
+  .national-building-lesotho .name-countries,
+  .national-building-swaziland .name-countries,
+  .national-building-sierra_leone .name-countries,
+  .national-building-london .name-countries,
+  .national-building-south_africa .name-countries
+  {
+    padding: 0 15px;
+  }
+  .national-building-malaysia .quotes-all,
+  .national-building-botswana .quotes-all,
+  .national-building-cambodia .quotes-all,
+  .national-building-lesotho .quotes-all,
+  .national-building-swaziland .quotes-all,
+  .national-building-sierra_leone .quotes-all,
+  .national-building-london .quotes-all,
+  .national-building-south_africa .quotes-all
+  {
+    margin-right: 0;
+  }
+  .national-building-malaysia .text-countries,
+  .national-building-botswana .text-countries,
+  .national-building-cambodia .text-countries,
+  .national-building-lesotho .text-countries,
+  .national-building-swaziland .text-countries,
+  .national-building-sierra_leone .text-countries,
+  .national-building-london .text-countries,
+  .national-building-south_africa .text-countries
+  {
+    font-size: 16px;
+    padding-right: 0;
+    padding: 0 20px;
+      line-height: 26px;
+  }
+  .national-building-malaysia .text-headline,
+  .national-building-botswana .text-headline,
+  .national-building-cambodia .text-headline,
+  .national-building-lesotho .text-headline,
+  .national-building-swaziland .text-headline,
+  .national-building-sierra_leone .text-headline,
+  .national-building-london .text-headline,
+  .national-building-south_africa .text-headline
+  {
+    font-size: 22px;
+    padding: 0 20px;
+    margin-top: 50px;
+  }
+  .spacing-text
+  {
+    padding:0;
+  }
+  .mobile-space
+  {
+    padding:0;
+  }
+  .transform-img-malaysia .transform-text,
+  .transform-img-botswana .transform-text,
+  .transform-img-cambodia .transform-text,
+  .transform-img-lesotho .transform-text,
+  .transform-img-swaziland .transform-text,
+  .transform-img-sierra-leone .transform-text,
+  .transform-img-london .transform-text,
+  .transform-img-south-africa .transform-text
+  {
+    width: 100%;
+    left: 0;
+    bottom: -19vh;
+  }
+  .transform-img-malaysia .transform-text h1,
+  .transform-img-botswana .transform-text h1,
+  .transform-img-cambodia .transform-text h1,
+  .transform-img-lesotho .transform-text h1,
+  .transform-img-swaziland .transform-text h1,
+  .transform-img-sierra-leone .transform-text h1,
+  .transform-img-london .transform-text h1,
+  .transform-img-south-africa .transform-text h1
+  {
+    font-size: 24px;
+    text-align: center;
+  }
+  .transform-img-malaysia .transform-text p,
+  .transform-img-botswana .transform-text p,
+  .transform-img-cambodia .transform-text p,
+  .transform-img-lesotho .transform-text p,
+  .transform-img-swaziland .transform-text p,
+  .transform-img-sierra-leone .transform-text p,
+  .transform-img-london .transform-text p,
+  .transform-img-south-africa .transform-text p
+  {
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+    padding: 0 14vw;
+    margin-top: 28px;
+  }
+  .transform-img-malaysia .btn-default,
+  .transform-img-botswana .btn-default,
+  .transform-img-cambodia .btn-default,
+  .transform-img-lesotho .btn-default,
+  .transform-img-swaziland .btn-default,
+  .transform-img-sierra-leone .btn-default,
+  .transform-img-london .btn-default,
+  .transform-img-south-africa .btn-default
+  {
+    display: block;
+      margin: 0 auto;
+      margin-top: 28px;
+      border-color: transparent;
+  }
 
-		/* for all countries */
-			#country-details
-	{
-		padding: 0
-	}
-	#country-details .country-flag
-	{
-		width: 36px;
-	}
-	#country-details .progress
-	{
-		background-color: #292929;
-	}
-	#country-details .country-details
-	{
-		overflow: hidden;
-		margin-top: 41px;
-    	margin-bottom: 40px;
-	}
-	#country-details .amount
-	{
-		width: 100%;
-		margin-top:10px;
-	}
-	#country-details .progress-amount
-	{
-		padding: 0 !important;
-		margin-top: -17px !important;
-	}
-	#country-details .country-description
-	{
-		font-size: 14px;
-	}
-	#country-details .bot
-	{
-		margin-bottom: 15px;
-    	margin-top: 60px;
-	}
-	#country-details .site
-	{
-	    margin-top: 112px;
-	}
-	#country-details .title-country-desc
-	{
-		margin: 0px;
-    	margin-top: 25px;
-   		 margin-bottom: 15px;
-   		 font-size: 18px;
-	}
-	#country-details .space-section
-	{
-		margin-bottom: 50px;
-	}
-	#country-details .country-description2
-	{
-		margin-bottom: 44px;
-	}
-	/* for all countries end */
-		/* Nation building end */
+    /* for all countries */
+  #country-details
+  {
+    padding: 0
+  }
+  #country-details .country-flag
+  {
+    width: 36px;
+  }
+  #country-details .progress
+  {
+    background-color: #292929;
+  }
+  #country-details .country-details
+  {
+    overflow: hidden;
+    margin-top: 41px;
+      margin-bottom: 40px;
+  }
+  #country-details .amount
+  {
+    width: 100%;
+    margin-top:10px;
+  }
+  #country-details .progress-amount
+  {
+    padding: 0 !important;
+    margin-top: -17px !important;
+  }
+  #country-details .country-description
+  {
+    font-size: 14px;
+  }
+  #country-details .bot
+  {
+    margin-bottom: 15px;
+      margin-top: 60px;
+  }
+  #country-details .site
+  {
+      margin-top: 112px;
+  }
+  #country-details .title-country-desc
+  {
+    margin: 0px;
+      margin-top: 25px;
+      margin-bottom: 15px;
+      font-size: 18px;
+  }
+  #country-details .space-section
+  {
+    margin-bottom: 50px;
+  }
+  #country-details .country-description2
+  {
+    margin-bottom: 44px;
+  }
+  /* for all countries end */
+    /* Nation building end */
 
 
-	/* Profile page */
-	.profile_home_bg{
-		background-position: top;
-		height: 600px;
-	}
-	.profile_content .profile_quote,
-	.profile_content .profile_one,
-	.profile_content .text_left,
-	.profile_content .text_right,
-	.profile_content .profile_one a{
-		padding: 0 16px;
-	}		
-	.profile_content .profile_quote h1{
-		font-size: 24px;
-	}
-	.profile_content .profile_quote p{
-		padding-top: 30px;
-		font-size: 14px;
-	}
-	.profile_content .profile_quote img{
-		width: 30px;
-	}
-	.profile_content .profile_one a{
-		padding: 0;
-	}
-	.profile_img_last{
-		display: none;
-	}
-	.profile_img_last2{
-		display: block;
-		margin-left: -16px;
-		margin-right: -16px;
-	}
-	.profile_img_last2{
-		background: url('../img/profile_picture_nine.png');
-		background-position: center;
-		height: 300px;
-		background-size: cover;
-		text-align: center;
-	}
-	.profile_sidebar{
-		padding: 0 16px;
-		padding-top: 20px;
-		margin-top: 0px;
-	}
-	.profile_sidebar .milestone{
-		margin: 40px 0;
-		margin-bottom: 354px;
-	}
-	.profile_img_last2 a{
-		color: #BECE00;
-		position: relative;
-		top: 260px;
-		transition: .2s;
-	}
-	.profile_img_last2 a:hover{
-		color: #d3e404;
-	}
-	.profile_img_last2 i{
-		margin-left: 6px;
-	}
-	/* profile page end */
+  /* Profile page */
+  .profile_home_bg{
+    background-position: top;
+    height: 600px;
+  }
+  .profile_content .profile_quote,
+  .profile_content .profile_one,
+  .profile_content .text_left,
+  .profile_content .text_right,
+  .profile_content .profile_one a{
+    padding: 0 16px;
+  }   
+  .profile_content .profile_quote h1{
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .profile_content .profile_quote p{
+    padding-top: 30px;
+    font-size: 16px;
+    padding: 24px 0;
+      line-height: 26px;
+  }
+  .profile_content .profile_quote img{
+    width: 30px;
+  }
+  .profile_content .profile_one a{
+    padding: 0;
+  }
+  .profile_img_last{
+    display: none;
+  }
+  .profile_img_last2{
+    display: block;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+  .profile_img_last2{
+    background: url('../img/profile_picture_nine.png');
+    background-position: center;
+    height: 300px;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+  }
+  .profile_sidebar{
+    padding: 0 16px;
+    padding-top: 20px;
+    margin-top: 0px;
+  }
+  .profile_sidebar .milestone{
+    margin: 40px 0;
+    margin-bottom: 354px;
+  }
+  .profile_img_last2 a{
+    color: #BECE00;
+    position: relative;
+    top: 260px;
+    transition: .2s;
+  }
+  .profile_img_last2 a:hover{
+    color: #d3e404;
+  }
+  .profile_img_last2 i{
+    margin-left: 6px;
+  }
+  .profile_content .profile_quote .profile_name
+  {
+    font-size: 14px;
+  }
+  .profile_content .profile_one
+  {
+    padding: 0 24px;
+      font-size: 16px;
+      line-height: 26px;
+  }
+  .profile_sidebar
+  {
+    padding-right: 0 !important;
+  }
+  .profile_content .text_left
+  {
+     padding: 0 24px;
+      font-size: 16px;
+      line-height: 26px;
+  }
+  .profile_content .img_right img
+  {
+    float: none;
+    display: block;
+      width: 100%;
+      margin: 0;
+  }
+  .profile_content .img_left img
+  {
+    float: none;
+    display: block;
+      width: 100%;
+      margin: 0;
+  }
+  .profile_content .text_right
+  {
+    font-size: 16px;
+      line-height: 56px;
+      padding: 0 24px !important;
+  }
+  .profile_content .text_right-head 
+  {
+      line-height: 56px;
+      font-size: 22px;
+      padding-right: 2vw;
+      text-align: left;
+      padding: 0 24px;
+      margin-top: 58px;
+  }
+  .profile_content .profile_one h3 
+  {
+      line-height: 26px;
+      font-size: 22px;
+  }
+  .text_right
+  {
+    line-height: 26px !important;
+  }
+  .profile_home_bg
+  {
+    margin-bottom: 0;
+  }
+  .profile_content .profile_quote
+  {
+    padding: 0 18px !important;
+  }
+  .profile_awards_hr{
+    display: block !important;
+  }
+  .profile_sidebar .milestone h3{
+    margin-bottom: 22px !important;
+  }
+  .profile_sidebar .awards h3,
+  .profile_sidebar .milestone h3{
+    font-size: 26px !important;
+  }
+  .profile_sidebar iframe{
+    display: none !important;
+  }
+  .profile_content .profile_quote h1{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  /* profile page end */
 
-	/* Milestone page start */
+  /* Milestone page start */
+
+  #milestone .headline-awards2
+  {
+    margin-bottom: 30px;
+    font-size: 26px;
+  }
+  #milestone .select select {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  #milestone .rec-dropdwon
+  {
+    padding: 0 15px;
+  }
 
   .timeline::after {
     margin-left: -42.5%;
@@ -4955,63 +6068,396 @@ footer .footer_last p
   /* Milestone page end */
 
   /* Foundation page */
-  .foundation_home_bg img{
-		display: none;
-	}
-	.foundation_home_bg{
-		background: url('../img/foundation_pic_1.png') no-repeat;
-		background-size: cover;
-		background-position: center;
-		margin-bottom: 0px;
-		height: 570px;
-	}
-	.foundation_content .foundation_paragraphs,
-	.foundation_content .text_left,
-	.foundation_content .text_right,
-	.foundation_content .foundation_paragraphs .text2{
-		padding: 0 1px;
-		margin-top: 20px;
-	}
-	.foundation_content .foundation_img,
-	.foundation_content .img_right,
-	.foundation_content .img_left{
-		padding: 0;
-		margin-right: -15px;
-		margin-left: -15px;
-	}
-	/* Foundation page end */
+  .foundation_content
+  {
+    margin-bottom: 5vw !important;
+  }
 
+  .foundation_home_bg img{
+    display: none;
+  }
+  .foundation_home_bg{
+    background: url('../img/foundation_pic_1.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0px;
+    height: 570px;
+  }
+  .foundation_content .foundation_paragraphs,
+  .foundation_content .text_left,
+  .foundation_content .text_right,
+  .foundation_content .foundation_paragraphs .text2{
+    padding: 0 1px;
+    margin-top: 20px;
+  }
+  .foundation_content .foundation_img,
+  .foundation_content .img_right,
+  .foundation_content .img_left{
+    padding: 0;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .foundation_content .foundation_img
+  {
+    padding: 0 !important;
+  }
+  .foundation_content .img_right
+  {
+    padding: 0 !important;
+    margin: 0;
+      float: none;
+      width: 100%;
+  }
+  .foundation_content .text_left
+  {
+    padding: 0 2vw !important;
+    font-size: 16px;
+  }
+  .foundation_content .foundation_paragraphs p
+  {
+    line-height: 26px;
+        font-size: 16px;
+  }
+  .foundation_content .text_left p
+  {
+    line-height: 26px;
+        font-size: 16px;
+  }
+  .foundation_content .text_right p
+  {
+    line-height: 26px !important;
+    padding: 0 !important;
+    padding-top: 5vw !important;
+    font-size: 16px !important;
+
+  }
+   .foundation_content .img_left
+   {
+    padding: 0 !important;
+   }
+   .text_right
+   {
+    padding: 0 2vw !important;
+   }
+   .foundation_content .text_right p:nth-child(3)
+   {
+    font-family: 'Montserrat', sans-serif;
+    color: #B6B7AE;
+      font-size: 14px !important;
+      padding-top: 0;
+      line-height: 18px;
+      padding: 0 14vw !important;
+   }
+   .foundation_content .foundation_paragraphs p:nth-child(4)
+   {
+    font-family: 'Montserrat', sans-serif;
+    color: #B6B7AE;
+      font-size: 14px;
+      padding-top: 0;
+      line-height: 18px;
+      padding: 0 14vw;
+   }
+   
+   .foundation_content .foundation_paragraphs h2
+   {
+    font-size: 22px;
+    padding: 0 2vw; 
+   }
+   .foundation_content .foundation_paragraphs .text2 {
+      padding: 0 2vw !important;
+      font-size: 16px;
+      margin-top: 31px;
+  }
+
+  .spacing-responsive
+  {
+    padding: 0 24px;
+  }
+  .profile_content .text_left,
+  .profile_content .profile_one
+  {
+    padding: 0 24px !important;
+  }
+  .profile_content .profile_one a {
+    padding: 0 23px !important;
+  }
+  .profile_content .profile_quote h1 {
+    padding-left: 4vw;
+    padding-right: 3vw;
+  }
+
+  /* Foundation page end */
+
+  /* BLOG */
+  #media-blog .carousel-inner>.item>a>img,
+  #media-blog  .carousel-inner>.item>img,
+  #media-blog  .img-responsive,
+  #media-blog  .thumbnail a>img,
+  #media-blog .thumbnail>img{
+    width: 100%;
+  }
+  #media-blog .carousel-inner>.item>a>img,
+  #media-blog .carousel-inner>.item>img,
+  #media-blog .img-responsive,
+  #media-blog .thumbnail a>img,
+  #media-blog .thumbnail>img{
+    padding: 0;
+  }
+  #media-blog .blog-page-4 .col-md-12 .col-md-6:nth-child(2){
+    padding: 0 15px;
+  }
+  #media-blog .blog-page-4 .col-md-12 .col-md-6:nth-child(2){
+    padding: 0;
+  }
+  #media-blog .ipad-page-4{
+    margin-top: 420px;
+  }
+  #media-blog .image_mobile_div{
+    height: auto;
+    margin: 0 -15px;
+  }
+  #media-blog .blog-page-8 div:first-child{
+    padding: 0;
+  }
+  #media-blog .blog-page-8{
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  #media-blog .blog-page-8 .blog-title,
+  #media-blog .blog-page-8 .book-year,
+  #media-blog .blog-page-8 .blog-desc,
+  #media-blog .blog-page-8 .blog-read{
+    padding: 0 15px !important;
+  }
+  #media-blog .btn-default{
+  padding: 8px 16px;
+}
+#media-blog-content .blog-content-text
+{
+  padding: 0;
+}
+  /* Blog end */
+
+  /* MEDIA */
+  .mobile_books .main_books .col-md-12{
+    padding-right: 0;
+  }
+  .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+    width: 100%;
+  }
+  #media .see-more-media{
+    display: none;
+  }
+  #media .headline-media{
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 28px;
+  }
+  #media .book-title{
+    margin-top: 40px;
+  }
+  #media .book-year{
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  #media .book-desc{
+    margin-top: 14px;
+    margin-bottom: 16px;
+  }
+  #media .mobile_slider{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #media .mobile_see_all{
+    display: block;
+    color: #BECE00;
+    font-weight: 300;
+    letter-spacing: 1;
+    top: 20px;
+    position: relative;
+  }
+  #media{
+    padding: 0 16px;
+  }
+  #media .blog-head-top, 
+  #media .speech-head-top,
+  #media .headline-media{
+    margin-top: 20px;
+  }
+  #media .headline-media
+  {
+    font-weight: bold;
+  }
+  #media .col-md-12 .col-sm-7{
+    padding-left: 0 !important;
+    margin-left: -15px;
+  }
+  .media_footer .footer_contact_us{
+    padding: 0 !important;
+  }
+  #media .top-head{
+    margin-top: 50px;
+  }
+  #media-blog .headline-media-back{
+    margin-top: 40px;
+  }
+  #media-blog-content{
+    padding: 0 24px;
+  }
+  /* MEDIA END */
+
+  /* SPEECH */
+  #media-speech .headline-media{
+    font-weight: 500;
+    margin-top: 40px;
+  }
+  #media-speech .headline-media-back{
+    margin-top: 40px;
+  }
+  #media-speech .speech_big_title{
+    text-align: left;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  #media-speech .speech_name,
+  #media-speech .book-year{
+    text-align: left;
+  }
+  #media-speech .speech_big_title_2{
+    padding-left: 0;
+  }
+  /* SPEECH end */
+
+  /* PUBLICATION */
+  #media-publication .book-desc-media-small{
+    display: block;
+  }
+  #media-publication{
+    padding: 0;
+  }
+  #media-publication .books_preview{
+    display: none;
+  }
+  #media-publication .preview_hr{
+    display: none;
+  }
+  #media-publication .book-desc-media-small{
+    margin-bottom: 26px;
+  }
+  #media-publication .all-book{
+    margin-bottom: 50px !important;
+  }
+  #media-publication .headline-media{
+    font-size: 26px;
+      font-weight: 400 !important;
+      margin-bottom: 28px;
+  }
+  #media-publication .book-small-media{
+    margin-top: 20px;
+  }
+  #media-publication .carousel-inner>.item>a>img, #media-publication .carousel-inner>.item>img, #media-publication .img-responsive, #media-publication .thumbnail a>img, #media-publication .thumbnail>img{
+    width: 100%;
+  }
+  #media-publication .book-year-media-small{
+    margin-bottom: 14px;
+  }
+  #media-blog-content .blog-content-text
+  {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  #media-speech-content .speech-content-text
+  {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  #media-speech-content .speech-headline
+  {
+    font-size: 21px;
+    line-height: 30px;
+  }
+  .foundation_content .foundation_img
+  {
+    margin: 0 -24px;
+  }
+  .mobile-foundation-pic
+  {
+    margin: 0 -24px !important;
+  }
+  .img_left
+  {
+    margin: 0 !important;
+  }
+  #media-blog-content .blog-cont-3
+  {
+    padding-right: 0;
+  }
+  #media-speech-content
+  {
+    padding: 0 24px;
+  }
+  .blog-cont-head
+  {
+    font-size: 21px;
+    line-height: 29px;
+  }
+  .blog-cont-head
+  {
+    padding: 0;
+  }
+  #media-blog-content .blog-year
+  {
+    padding: 0;
+  }
+  #media-blog-content .headline-media-back
+  {
+    padding: 0;
+  }
+  /* publication end */
 }
 @media(max-width: 401px){
-	.wrapper .img-responsive{
-		margin-top: 30px;
-	}
-	.rec-quotes-mobile{
-		top: 54px;
-	}
-	.desktop_header_space{
-		height: 20px;
-	}
+  .wrapper .img-responsive
+  {
+    margin-top: 30px;
+  }
+  .rec-quotes-mobile
+  {
+    top: 54px;
+  }
+  .desktop_header_space
+  {
+    height: 20px;
+  }
 }
-@media(max-width: 320px){
-	.desktop_header_space{
-		height: 0px;
-	}
-	.wrapper .img-responsive{
-		margin-top: 48px;
-	}
-	.rec-quotes-mobile{
-		top: 40px;
-	}
-	.text-quotes-moble{
-		font-size: 14px;
-	}
-	.name-quotes-mobile{
-		font-size: 12px;
-	}
-	.rec-img-mobile{
-		width: 24px;
-	}
+@media(max-width: 320px)
+{
+  .desktop_header_space
+  {
+    height: 0px;
+  }
+  .wrapper .img-responsive
+  {
+    margin-top: 48px;
+  }
+  .rec-quotes-mobile
+  {
+    top: 40px;
+  }
+  .text-quotes-moble
+  {
+    font-size: 14px;
+  }
+  .name-quotes-mobile
+  {
+    font-size: 12px;
+  }
+  .rec-img-mobile
+  {
+    width: 24px;
+  }
 }
 /* MEDIA QUERIES end
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+

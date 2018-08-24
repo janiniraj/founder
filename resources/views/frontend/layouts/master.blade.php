@@ -58,20 +58,91 @@
             $(this).siblings('.panel-heading').removeClass('active');
         });
     </script>
-
-    <!-- Nation Building Scripts  START -->
+    
+    <!-- PAGES SCRIPTS -->
     <script>
+      // MENU active script
+      var current_href = window.location.pathname;
+      var current_page = current_href.substring(current_href.lastIndexOf('/') + 1);
+
+      if(current_page == 'media.php' || current_page == 'blog.php' || current_page == 'blog_content.php' || current_page == 'publication.php'
+                          || current_page == 'speech.php' || current_page == 'speech_content.php'){
+        $('#media_page_tab').addClass('menu_active');
+        $('#media_page_tab_mobile').addClass('menu_active');
+        $('#media_footer_tab').addClass('footer_menu_active');
+      }
+      if(current_page == 'nation_building.php'  || current_page == 'malaysia.php'  
+                          || current_page == 'botswana.php'  || current_page == 'cambodia.php'  || current_page == 'london.php'  || current_page == 'lesotho.php'  || current_page == 'sierra_leone.php'  || current_page == 'south_africa.php' || current_page == 'swaziland.php'){
         $('#nation_building_tab').addClass('menu_active');
         $('#nation_building_tab_mobile').addClass('menu_active');
         $('#nation_building_footer_tab').addClass('footer_menu_active');
+      }
+      if(current_page == 'foundation.php'){
+        $('#foundation_page_tab').addClass('menu_active');
+        $('#foundation_page_tab_mobile').addClass('menu_active');
+        $('#foundation_footer_tab').addClass('footer_menu_active');
+      }
+      if(current_page == 'profile.php' || current_page == 'milestones.php'){
+        $('#profile_page_tab').addClass('menu_active');
+        $('#profile_page_tab_mobile').addClass('menu_active');
+        $('#profile_footer_tab').addClass('footer_menu_active');
+      }
+      if(current_page == 'recognition.php' || current_page == 'recognition-awards.php' || current_page == 'recognition-quotes.php'){
+        $('#recognition_page_tab').addClass('menu_active');
+        $('#recognition_page_tab_mobile').addClass('menu_active');
+        $('#recognition_footer_tab').addClass('footer_menu_active');
+      }
 
-        $(document).ready(function($) {
-            $(".clickable-row").click(function() {
-                window.location = $(this).data("href");
-            });
-        })
+      // BLOG PAGE script
+      if($(window).width() > 1025) {
+        var txt= $('.blog-desc').text();
+        $(".blog-desc").text(function(index, currentText) {
+          return currentText.substr(0, 250) + "...";
+        });
+      }
+      else if($(window).width() > 769) {
+        $(".blog-desc").text(function(index, currentText) {
+          return currentText.substr(0, 70) + "...";
+        });
+      }
+      else if($(window).width() > 500) {
+        $(".blog-desc").text(function(index, currentText) {
+          return currentText.substr(0, 250) + "...";
+        });
+      }
+
+      // NATION BUILDING PAGE script
+      jQuery(document).ready(function($) {
+          $(".clickable-row").click(function() {
+              window.location = $(this).data("href");
+          });
+      })
+
+      // PUBLICATION PAGE script
+      // Change content of preview from clicked div
+      $(document).ready(function(){
+        $(".all-book").on('click', function(){
+          var src = $(this).find('img').attr('mainimage');
+          $('.publication-main-image').attr('src', src);
+
+          var headline = $(this).find('.book-small-media').text();
+            $(".book-title-media").html(headline);
+
+            var year = $(this).find('.book-year-media-small').text();
+            $(".book-year-media").html(year);
+
+            var description = $(this).find('.book-desc-media-small').text();
+            $(".book-desc-media").html(description);
+        });
+      });
+
+      $(document).ready(function() {
+        if (window.matchMedia('(max-width: 500px)').matches) {
+          var mobile_src = $('.book-space').find('img').attr('mainimage');
+          $('.book-space>img').attr('src', mobile_src);
+        }
+      });
     </script>
-    <!-- Nation Building Scripts  END -->
 
     @stack('after-scripts')
 </body>

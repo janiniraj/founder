@@ -59,7 +59,6 @@ if (window.matchMedia('(min-width: 1025px)').matches){
   });
 }
 
-
 // MENU MOBILE
 $(document).ready(function(){
   $(".nav-icon").click(function(){
@@ -86,14 +85,3 @@ $(function(){
   });
   }
 });
-
-//Nation Building Scripts
-$('#nation_building_tab').addClass('menu_active');
-$('#nation_building_tab_mobile').addClass('menu_active');
-$('#nation_building_footer_tab').addClass('footer_menu_active');
-
-$(document).ready(function($) {
-    $(".clickable-row").click(function() {
-        window.location = $(this).data("href");
-    });
-})
