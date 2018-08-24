@@ -45,6 +45,10 @@ ul, li
 
 /* HEADER start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+a.activeMenuItem {
+  border-bottom: 4px solid #fff;
+   color: #fff !important;
+}
 .desktop_header_space
 {
   display: block;
@@ -490,7 +494,7 @@ footer .footer_last p
 {
   height: 100%;
     margin-top: 294px;
-    background: url(../img/section_one_bg.png) no-repeat;
+    background: url(../img/section_one_bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-position-y: -60px;
@@ -972,7 +976,7 @@ footer .footer_last p
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .profile_home_bg{
-  background: url(../img/section_one_bg.png) no-repeat;
+  background: url(../img/section_one_bg.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   height: 650px;
@@ -1843,7 +1847,7 @@ footer .footer_last p
   margin-bottom: 20px;
 }
 .foundation_home_bg{
-  background: url('../img/foundation_bg.png');
+  background: url('../img/foundation_bg.jpg');
   background-position: center;
   background-size: cover;
   height: 650px;
@@ -2044,12 +2048,12 @@ footer .footer_last p
   margin: auto;
 }
 .nation_building .botswana{
-  background: url('../img/botswana_card.png') no-repeat;
+  background: url('../img/botswana_card.jpg') no-repeat;
   background-size: cover;
   height: 46vw;
 }
 .nation_building .cambodia{
-  background: url('../img/cambodia_card.png') no-repeat;
+  background: url('../img/cambodia_card.jpg') no-repeat;
   background-size: cover;
   height: 23vw;
 }
@@ -2080,27 +2084,27 @@ footer .footer_last p
     font-family: 'Libre Baskerville', serif;
 }
 .nation_building .london{
-  background: url('../img/london_card.png') no-repeat;
+  background: url('../img/london_card.jpg') no-repeat;
   background-size: cover;
   height: 46vw;
 }
 .nation_building .lesotho{
-  background: url('../img/lesotho_card.png') no-repeat;
+  background: url('../img/lesotho_card.jpg') no-repeat;
   background-size: cover;
   height: 23vw;
 }
 .nation_building .swaziland{
-  background: url('../img/swaziland_card.png') no-repeat;
+  background: url('../img/swaziland_card.jpg') no-repeat;
   background-size: cover;
   height: 46vw;
 }
 .nation_building .sierra_leone{
-  background: url('../img/sierra_leone_card.png') no-repeat;
+  background: url('../img/sierra_leone_card.jpg') no-repeat;
   background-size: cover;
   height: 23vw;
 }
 .nation_building .south_africa{
-  background: url('../img/south_africa_card.png') no-repeat;
+  background: url('../img/south_africa_card.jpg') no-repeat;
   background-size: cover;
   height: 23vw;
 }
@@ -2113,8 +2117,8 @@ footer .footer_last p
   background-position-y: -6vw;
 }
 .nation_building .home_content{
-    position: absolute;
-    top: 27vw;
+    position: relative;
+    top: 19vw;
     margin-left: 16vw;
 }
 .nation_building .home_content img{
@@ -2166,14 +2170,17 @@ footer .footer_last p
 }
 .dropdown_countries
 {
-   width: 12px;
-   height: 12px;
-   border-bottom: 3px solid #BECE00;
-   transform: rotate(45deg);
-   float: right;
-   border-right: 3px solid #BECE00;
-   transition: .3s;
-   margin-top: -4px;
+  width: 12px;
+  height: 12px;
+  border-bottom: 3px solid #BECE00;
+  transform: rotate(45deg);
+  float: right;
+  border-right: 3px solid #BECE00;
+  transition: .3s;
+  margin-top: -4px;
+  top: -32px;
+  right: 16px;
+  position: relative;
 }
 #country-details .panel-heading.active .dropdown_countries 
 {
@@ -2388,7 +2395,7 @@ footer .footer_last p
 
 .transform-img-swaziland
 {
-  background: url(../img/transform_swaziland.png) no-repeat;
+  background: url(../img/transform_swaziland.jpg) no-repeat;
   height: 500px;
   background-size: cover;
     background-position: center;
@@ -2504,7 +2511,7 @@ footer .footer_last p
 }
 .transform-img-south-africa
 {
-  background: url(../img/transform_south_africa.png) no-repeat;
+  background: url(../img/transform_south_africa.jpg) no-repeat;
   height: 500px;
   background-size: cover;
     background-position: center;
@@ -2619,7 +2626,7 @@ footer .footer_last p
 }
 .transform-img-sierra-leone
 {
-  background: url(../img/transform_sierra_leone.png) no-repeat;
+  background: url(../img/transform_sierra_leone.jpg) no-repeat;
   height: 500px;
   background-size: cover;
     background-position: center;
@@ -2734,7 +2741,7 @@ footer .footer_last p
 }
 .transform-img-malaysia
 {
-  background: url(../img/transform_malaysia.png) no-repeat;
+  background: url(../img/transform_malaysia.jpg) no-repeat;
   height: 500px;
   background-size: cover;
     background-position: center;
@@ -2850,7 +2857,7 @@ footer .footer_last p
 }
 .transform-img-london
 {
-  background: url(../img/transform_london.png) no-repeat;
+  background: url(../img/transform_london.jpg) no-repeat;
   height: 500px;
   background-size: cover;
     background-position: center;
@@ -2965,7 +2972,7 @@ footer .footer_last p
 }
 .transform-img-lesotho
 {
-  background: url(../img/transform_lesotho.png) no-repeat;
+  background: url(../img/transform_lesotho.jpg) no-repeat;
   height: 500px;
   background-size: cover;
     background-position: center;
@@ -3082,7 +3089,7 @@ footer .footer_last p
 }
 .transform-img-cambodia
 {
-  background: url(../img/transform_cambodia.png) no-repeat;
+  background: url(../img/transform_cambodia.jpg) no-repeat;
   height: 500px;
   background-size: cover;
     background-position: center;
@@ -3192,7 +3199,7 @@ footer .footer_last p
 }
 .transform-img-botswana
 {
-  background: url(../img/transform_botswana.png) no-repeat;
+  background: url(../img/transform_botswana.jpg) no-repeat;
   height: 500px;
   background-size: cover;
     background-position: center;
@@ -4575,7 +4582,7 @@ footer .footer_last p
   /* Home Page start */
   #fullpage section .section_one_bg{
     height: 89vh;
-    background: url('../img/mobile_home_bg.png') no-repeat;
+    background: url('../img/mobile_home_bg.jpg') no-repeat;
     background-size: cover;
   }
   #fullpage .home_title{
@@ -4631,7 +4638,7 @@ footer .footer_last p
   }
   #fullpage .section_three_bg{
     height: 60vh;
-    background: url('../img/home_ipad_2.png') no-repeat;
+    background: url('../img/home_ipad_2.jpg') no-repeat;
     background-position: center;
     background-size: cover;
   }
@@ -5311,14 +5318,14 @@ footer .footer_last p
     top: 60px;
   }
   #fullpage .section_two_bg{
-    background: url('../img/home_section_two_mobile.png');
+    background: url('../img/home_section_two_mobile.jpg');
     background-size: cover;
     background-position: center;
     height: 450px;
   }
   #fullpage .section_three_bg{
     height: 60vh;
-    background: url('../img/home_section_three_bg.png') no-repeat;
+    background: url('../img/home_section_three_bg.jpg') no-repeat;
     background-position: center;
     background-size: cover;
   }
@@ -5609,49 +5616,49 @@ footer .footer_last p
     padding: 20px; 
   }
   .nation_building .home_bg{
-    background: url('../img/mobile_nation_building_1.png');
+    background: url('../img/mobile_nation_building_1.jpg');
     height: 684px;
     background-size: cover;
     background-position: center;
   }
   .nation_building .botswana_mobile{
-    background: url('../img/mobile_nation_building_2.png');
+    background: url('../img/mobile_nation_building_2.jpg');
     height: 450px;
     background-size: cover;
     background-position: center;
   }
   .nation_building .cambodia_mobile{
-    background: url('../img/mobile_nation_building_3.png');
+    background: url('../img/mobile_nation_building_3.jpg');
     height: 450px;
     background-size: cover;
     background-position: center;
   }
   .nation_building .lesotho_mobile{
-    background: url('../img/mobile_nation_building_4.png');
+    background: url('../img/mobile_nation_building_4.jpg');
     height: 450px;
     background-size: cover;
     background-position: center;
   }
   .nation_building .london_mobile{
-    background: url('../img/mobile_nation_building_5.png');
+    background: url('../img/mobile_nation_building_5.jpg');
     height: 450px;
     background-size: cover;
     background-position: center;
   }
   .nation_building .sierra_leone_mobile{
-    background: url('../img/mobile_nation_building_6.png');
+    background: url('../img/mobile_nation_building_6.jpg');
     height: 450px;
     background-size: cover;
     background-position: center;
   }
   .nation_building .south_africa_mobile{
-    background: url('../img/mobile_nation_building_7.png');
+    background: url('../img/mobile_nation_building_7.jpg');
     height: 450px;
     background-size: cover;
     background-position: center;
   }
   .nation_building .swaziland_mobile{
-    background: url('../img/mobile_nation_building_8.png');
+    background: url('../img/mobile_nation_building_8.jpg');
     height: 450px;
     background-size: cover;
     background-position: center;
@@ -5900,7 +5907,7 @@ footer .footer_last p
     margin-right: -16px;
   }
   .profile_img_last2{
-    background: url('../img/profile_picture_nine.png');
+    background: url('../img/profile_picture_nine.jpg');
     background-position: center;
     height: 300px;
     background-size: cover;
@@ -6077,7 +6084,7 @@ footer .footer_last p
     display: none;
   }
   .foundation_home_bg{
-    background: url('../img/foundation_pic_1.png') no-repeat;
+    background: url('../img/foundation_pic_1.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     margin-bottom: 0px;
