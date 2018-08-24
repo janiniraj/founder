@@ -14,96 +14,40 @@
                 <h2 class="headline-media">BLOG</h2>
             </div>
 
-
-            <div class="col-md-12 blog-page-1">
-                <div class="col-md-4 blog-page-2">
-                    <a href="blog_content.php">
-                        <div class="col-md-12 blog-page-3">
-                            <img src="../img/blog_big.png" class="img-responsive">
-                            <h3 class="blog-title">English readiness – Are young Malaysians equipped for the globalised world?</h3>
-                            <h5 class="blog-year">5 Sep 2015</h5>
-                            <p class="blog-desc">As the lingua franca of the world, English, is the most widely spoken language in the world other than Mandarin and China, as the world’s most populous nation aspires to become the world’s largest English-speaking nation.</p>
-                            <h5 class="blog-read">READ <i class="fas fa-angle-right"></i></h5>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-8 blog-page-4">
-
-                    <div class="col-md-12"  style="margin-top: 60px;">
-                        <a href="blog_content.php">
-                            <div class="col-md-6">
-                                <img src="../img/blog_small.png" class="img-responsive">
-                                <a href="blog_content.php"><h5 class="blog-title">English readiness – Are young Malaysians equipped for the globalised world?</h5></a>
-                                <h5 class="blog-year">5 Sep 2015</h5>
-                            </div>
-                        </a>
-                        <a href="blog_content.php">
-                            <div class="col-md-6">
-                                <img src="../img/blog_small.png" class="img-responsive">
-                                <a href="blog_content.php"><h5 class="blog-title">English readiness – Are young Malaysians equipped for the globalised world?</h5></a>
-                                <h5 class="book-year">5 Sep 2015</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 second-part">
-
-
-                <div class="col-md-8 blog-page-5">
-                    <div class="col-md-12 blog-page-6">
-
-                        <div class="col-md-12 blog-page-7">
+            <div class="col-md-12">
+                @php $i = 0; @endphp
+                @foreach($blogs as $blogData)
+                    @if(in_array($i, [0,1,5,6]))
+                        <div class="col-md-6">
                             <a href="blog_content.php">
                                 <div class="col-md-6" style="padding-left: 0;">
-                                    <img src="../img/blog_small.png" class="img-responsive">
-                                    <a href="blog_content.php"><h5 class="blog-small">English readiness – Are young Malaysians equipped for the globalised world?</h5></a>
-                                    <h5 class="blog-year">5 Sep 2015</h5>
-                                </div>
-                            </a>
-                            <a href="blog_content.php">
-                                <div class="col-md-6">
-                                    <img src="../img/blog_small.png" class="img-responsive">
-                                    <a href="blog_content.php"><h3 class="blog-title">English readiness – Are young Malaysians equipped for the globalised world?</h3></a>
-                                    <h5 class="book-year">5 Sep 2015</h5>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-12 blog-page-8">
-                            <a href="blog_content.php">
-                                <div class="col-md-6" style="padding-left: 0;">
-                                    <img src="../img/blog_medium.png" class="img-responsive">
+                                    <img src="{{ url('/').'/img/blogs/thumbnail/'.$blogData->image }}" class="img-responsive">
                                 </div>
                                 <div class="col-md-6" style="margin-top: 10px;">
-                                    <h3 class="blog-title">English readiness – Are young Malaysians equipped for the globalised world?</h3>
-                                    <h5 class="book-year">5 Sep 2015</h5>
-                                    <p class="blog-desc" style="padding-right: 0px;">As the lingua franca of the world, English, is the most widely spoken language in the world other than Mandarin and China, as the world’s most populous nation aspires to become the world’s largest English-speaking nation.</p>
+                                    <h3 class="blog-title">{{ $blogData->name }}</h3>
+                                    <h5 class="book-year">{{ date('d M Y', strtotime($blogData->created_at)) }}</h5>
+                                    <p class="blog-desc" style="padding-right: 0px;">{{ $blogData->excerpt }}</p>
                                     <h5 class="blog-read">READ <i class="fas fa-angle-right"></i></h5>
                                 </div>
                             </a>
                         </div>
-                    </div>
-
-
-                </div>
-
-                <div class="col-md-4" >
-                    <a href="blog_content.php">
-                        <div class="col-md-12">
-                            <img src="../img/blog_big.png" class="img-responsive">
-                            <h3 class="blog-title">English readiness – Are young Malaysians equipped for the globalised world?</h3>
-                            <h5 class="blog-year">5 Sep 2015</h5>
-                            <p class="blog-desc">As the lingua franca of the world, English, is the most widely spoken language in the world other than Mandarin and China, as the world’s most populous nation aspires to become the world’s largest English-speaking nation.</p>
-                            <h5 class="blog-read">READ <i class="fas fa-angle-right"></i></h5>
+                    @else
+                        <div class="col-md-4">
+                            <a href="blog_content.php">
+                                <div class="col-md-12 blog-page-3">
+                                    <img src="{{ url('/').'/img/blogs/thumbnail/'.$blogData->image }}" class="img-responsive">
+                                    <h3 class="blog-title">{{ $blogData->name }}</h3>
+                                    <h5 class="blog-year">{{ date('d M Y', strtotime($blogData->created_at)) }}</h5>
+                                    <p class="blog-desc">{{ $blogData->excerpt }}</p>
+                                    <h5 class="blog-read">READ <i class="fas fa-angle-right"></i></h5>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
+                    @endif
+                    @php $i++; @endphp
+                @endforeach
             </div>
+
         </div>
 
         <div class="col-md-12" style="margin-top: 50px;">
