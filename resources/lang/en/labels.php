@@ -157,6 +157,42 @@ return [
                 'total'           => 'award total|awards total'
             ],
         ],
+
+        'quotes' => [
+            'create'     => 'Create Quote',
+            'edit'       => 'Edit Quote',
+            'management' => 'Quote Management',
+            'title' => 'Quote',
+
+            'table' => [
+                'title'          => 'Title',
+                'slug'           => 'Slug',
+                'content'        => 'Quote',
+                'createdat'      => 'Created At',
+                'all'            => 'All',
+                'number_of_blogs' => 'Number of Quotes',
+                'sort'            => 'Sort',
+                'total'           => 'quotes total|quotes total'
+            ],
+        ],
+
+        'speeches' => [
+            'create'     => 'Create Speech',
+            'edit'       => 'Edit Speech',
+            'management' => 'Speech Management',
+            'title' => 'Speech',
+
+            'table' => [
+                'title'          => 'Speech',
+                'slug'           => 'Slug',
+                'content'        => 'Content',
+                'createdat'      => 'Created At',
+                'all'            => 'All',
+                'number_of_blogs' => 'Number of Speeches',
+                'sort'            => 'Sort',
+                'total'           => 'speeches total|speeches total'
+            ],
+        ],
     ],
 
     'frontend' => [

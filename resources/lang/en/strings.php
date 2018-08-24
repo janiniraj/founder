@@ -41,6 +41,14 @@ return [
             'title'   => 'Award Management',
         ],
 
+        'quotes' => [
+            'title'   => 'Quote Management',
+        ],
+
+        'speeches' => [
+            'title'   => 'Speech Management',
+        ],
+
         'general' => [
             'all_rights_reserved' => 'All Rights Reserved.',
             'are_you_sure'        => 'Are you sure you want to do this?',

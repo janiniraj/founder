@@ -210,6 +210,28 @@ return [
                 'year'                    => 'Year',
                 'image'                   => 'Image'
             ],
+
+            'quotes' => [
+                'active'                  => 'Active',
+                'name'                    => 'Name',
+                'slug'                    => 'Slug',
+                'content'                 => 'Content',
+                'language'                => 'Language',
+                'excerpt'                 => 'Excerpt',
+                'position'                    => 'Position',
+                'image'                   => 'Image'
+            ],
+
+            'speeches' => [
+                'active'                  => 'Active',
+                'name'                    => 'Name',
+                'slug'                    => 'Slug',
+                'content'                 => 'Content',
+                'language'                => 'Language',
+                'excerpt'                 => 'Excerpt',
+                'meta'                    => 'Meta',
+                'image'                   => 'Image'
+            ],
         ],
 
         'frontend' => [

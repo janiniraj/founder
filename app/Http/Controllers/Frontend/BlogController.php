@@ -26,9 +26,9 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blogData       = $this->blog->paginate();
+        $blogs       = $this->blog->paginate();
 
-        return view('frontend.blog')->with(['blogData' => $blogData]);
+        return view('frontend.blogs')->with(['blogs' => $blogs]);
     }
 
     /**

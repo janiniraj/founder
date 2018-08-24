@@ -65,6 +65,20 @@
                 </a>
             </li>
 
+            <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('admin/quotes*'), 'open') }}">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/quotes')) }}" href="{{ route('admin.quotes.index') }}">
+                    <i class="icon-picture"></i>
+                    {{ __('menus.backend.quotes.management') }}
+                </a>
+            </li>
+
+            <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('admin/speeches*'), 'open') }}">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/speeches')) }}" href="{{ route('admin.speeches.index') }}">
+                    <i class="icon-picture"></i>
+                    {{ __('menus.backend.speeches.management') }}
+                </a>
+            </li>
+
             <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('admin/log-viewer*'), 'open') }}">
                 <a class="nav-link nav-dropdown-toggle {{ active_class(Active::checkUriPattern('admin/log-viewer*')) }}" href="#">
                     <i class="icon-list"></i> {{ __('menus.backend.log-viewer.main') }}

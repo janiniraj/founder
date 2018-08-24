@@ -34,3 +34,19 @@ Route::group(['namespace' => 'Award'], function () {
     Route::resource('awards', 'AwardController', ['except' =>
         ['show']]);
 });
+
+/**
+ *  Quote Management
+ */
+Route::group(['namespace' => 'Quote'], function () {
+    Route::resource('quotes', 'QuoteController', ['except' =>
+        ['show']]);
+});
+
+/**
+ *  Speech Management
+ */
+Route::group(['namespace' => 'Speech'], function () {
+    Route::resource('speeches', 'SpeechController', ['except' =>
+        ['show']]);
+});
