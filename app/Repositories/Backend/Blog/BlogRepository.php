@@ -93,7 +93,7 @@ class BlogRepository extends BaseRepository
             throw new GeneralException(trans('exceptions.backend.blogs.already_exists'));
         }
 
-        if($input['image'])
+        if(isset($input['image']) && $input['image'])
         {
             $fileUpload = new FileUploads();
             $fileUpload->setBasePath('blogs');
