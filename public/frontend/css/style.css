@@ -47,7 +47,7 @@ ul, li
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a.activeMenuItem {
   border-bottom: 4px solid #fff;
-   color: #fff !important;
+  color: #fff !important;
 }
 .desktop_header_space
 {
@@ -5274,6 +5274,12 @@ footer .footer_last p
 }
 
 @media(max-width: 500px){
+  .profile_content{
+    padding-left: 15px;
+  }
+  .profile_img_8{
+    margin: 0 -15px;
+  }
   #media-blog-content .blog-cont-2{
     margin-top: 30px;
   }
@@ -5872,7 +5878,7 @@ footer .footer_last p
 
   /* Profile page */
   .profile_home_bg{
-    background-position: top;
+    background-position: -40em;
     height: 600px;
   }
   .profile_content .profile_quote,
@@ -5959,15 +5965,16 @@ footer .footer_last p
   {
     float: none;
     display: block;
-      width: 100%;
-      margin: 0;
+    width: 100vw;
+    margin: 0 -15px;
+    margin-bottom: 30px;
   }
   .profile_content .img_left img
   {
     float: none;
     display: block;
-      width: 100%;
-      margin: 0;
+    width: 100vw;
+    margin: 0 -30px;
   }
   .profile_content .text_right
   {
@@ -5995,7 +6002,7 @@ footer .footer_last p
   }
   .profile_home_bg
   {
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
   .profile_content .profile_quote
   {
@@ -6184,7 +6191,7 @@ footer .footer_last p
   .profile_content .text_left,
   .profile_content .profile_one
   {
-    padding: 0 24px !important;
+    padding: 0 11px !important;
   }
   .profile_content .profile_one a {
     padding: 0 23px !important;
