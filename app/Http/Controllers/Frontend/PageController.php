@@ -3,6 +3,7 @@
 use App\Http\Controllers\Controller;
 use App\Repositories\Backend\Page\PageRepository;
 use View;
+use App\Repositories\Backend\Blog\BlogRepository;
 
 /**
  * Class PageController.
@@ -13,10 +14,12 @@ class PageController extends Controller
      * PageController constructor.
      *
      * @param PageRepository $pageRepository
+     * @param BlogRepository $blogRepository
      */
-    public function __construct(PageRepository $pageRepository)
+    public function __construct(PageRepository $pageRepository, BlogRepository $blogRepository)
     {
         $this->page = $pageRepository;
+        $this->blog = $blogRepository;
     }
 
     /**
@@ -50,6 +53,15 @@ class PageController extends Controller
     {
         $pageData       = $this->page->getPageBySlug($slug);
         $content        = $pageData->content;
+
+        if(strpos('[[latestblogs]]', $content))
+        {
+            $blogs              = $this->blog->getLatestBlogs(null, 4);
+            $blogView           = View::make('frontend.includes.latestblog')->with(['blogs' => $blogs]);
+            $blogViewContent    = (string)$blogView;
+            $content = str_replace("[[latestblogs]]", $blogViewContent, $content);
+
+        }
 
         return view('frontend.page')->with([
             'pageData' => $pageData,
