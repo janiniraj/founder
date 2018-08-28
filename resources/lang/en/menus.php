@@ -82,6 +82,15 @@ return [
             'view'            => 'View Speech',
         ],
 
+        'news' => [
+            'management'      => 'News Management',
+            'all'             => 'All News',
+            'create'          => 'Create News',
+            'edit'            => 'Edit News',
+            'main'            => 'News',
+            'view'            => 'View News',
+        ],
+
         'log-viewer' => [
             'main'      => 'Log Viewer',
             'dashboard' => 'Dashboard',

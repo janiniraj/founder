@@ -50,3 +50,11 @@ Route::group(['namespace' => 'Speech'], function () {
     Route::resource('speeches', 'SpeechController', ['except' =>
         ['show']]);
 });
+
+/**
+ *  News Management
+ */
+Route::group(['namespace' => 'News'], function () {
+    Route::resource('news', 'NewsController', ['except' =>
+        ['show']]);
+});

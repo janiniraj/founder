@@ -193,6 +193,24 @@ return [
                 'total'           => 'speeches total|speeches total'
             ],
         ],
+
+        'news' => [
+            'create'     => 'Create News',
+            'edit'       => 'Edit News',
+            'management' => 'News Management',
+            'title' => 'News',
+
+            'table' => [
+                'title'          => 'News',
+                'slug'           => 'Slug',
+                'content'        => 'Content',
+                'createdat'      => 'Created At',
+                'all'            => 'All',
+                'number_of_news' => 'Number of News',
+                'sort'            => 'Sort',
+                'total'           => 'News total|news total'
+            ],
+        ],
     ],
 
     'frontend' => [
