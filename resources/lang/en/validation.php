@@ -243,6 +243,16 @@ return [
                 'image'                   => 'Image'
             ],
 
+            'publications' => [
+                'active'                  => 'Active',
+                'name'                    => 'Name',
+                'year'                    => 'Year',
+                'content'                 => 'Content',
+                'language'                => 'Language',
+                'excerpt'                 => 'Excerpt',
+                'image'                   => 'Image',
+                'url'                     => 'URL'
+            ],
         ],
 
         'frontend' => [

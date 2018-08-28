@@ -211,6 +211,24 @@ return [
                 'total'           => 'News total|news total'
             ],
         ],
+
+        'publications' => [
+            'create'     => 'Create Publication',
+            'edit'       => 'Edit Publication',
+            'management' => 'Publication Management',
+            'title' => 'Publication',
+
+            'table' => [
+                'title'          => 'Publication',
+                'slug'           => 'Slug',
+                'content'        => 'Content',
+                'createdat'      => 'Created At',
+                'all'            => 'All',
+                'number_of_news' => 'Number of Publication',
+                'sort'            => 'Sort',
+                'total'           => 'Publication total|publication total'
+            ],
+        ],
     ],
 
     'frontend' => [

@@ -70,6 +70,12 @@ return [
             'deleted' => 'The News was successfully deleted.',
             'updated' => 'The News was successfully updated.',
         ],
+
+        'publications' => [
+            'created' => 'The Publication was successfully created.',
+            'deleted' => 'The Publication was successfully deleted.',
+            'updated' => 'The Publication was successfully updated.',
+        ],
     ],
 
     'frontend' => [

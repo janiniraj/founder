@@ -86,6 +86,13 @@
                 </a>
             </li>
 
+            <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('admin/publications*'), 'open') }}">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/publications')) }}" href="{{ route('admin.publications.index') }}">
+                    <i class="icon-picture"></i>
+                    {{ __('menus.backend.publications.management') }}
+                </a>
+            </li>
+
             <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('admin/log-viewer*'), 'open') }}">
                 <a class="nav-link nav-dropdown-toggle {{ active_class(Active::checkUriPattern('admin/log-viewer*')) }}" href="#">
                     <i class="icon-list"></i> {{ __('menus.backend.log-viewer.main') }}
