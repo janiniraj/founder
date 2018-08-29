@@ -116,10 +116,18 @@ class PageController extends Controller
 
         if(strpos($content, '[[mediaspeeches]]') !== false)
         {
-            $publications              = $this->publication->getLatestpublications(6);
-            $publicationView           = View::make('frontend.includes.mediapublications')->with(['publications' => $publications]);
-            $publicationViewContent    = (string)$publicationView;
-            $content = str_replace("[[mediapublications]]", $publicationViewContent, $content);
+            $speeches              = $this->speech->getLatestSpeeches(null, 4);
+            $speechView            = View::make('frontend.includes.mediaspeeches')->with(['speeches' => $speeches]);
+            $speechViewContent     = (string)$speechView;
+            $content = str_replace("[[mediaspeeches]]", $speechViewContent, $content);
+        }
+
+        if(strpos($content, '[[mediablogs]]') !== false)
+        {
+            $blogs              = $this->blog->getLatestBlogs(null, 4);
+            $blogView           = View::make('frontend.includes.mediablogs')->with(['blogs' => $blogs]);
+            $blogViewContent    = (string)$blogView;
+            $content = str_replace("[[mediablogs]]", $blogViewContent, $content);
         }
 
         return view('frontend.page')->with([
@@ -162,19 +170,6 @@ class PageController extends Controller
 
         return view('frontend.publications')->with([
             'publications' => $publications
-        ]);
-    }
-
-    /**
-     * @param int $limit
-     * @return $this
-     */
-    public function speeches($limit = 10)
-    {
-        $speeches = $this->speech->getActivePaginated($limit);
-
-        return view('frontend.speeches')->with([
-            'speeches' => $speeches
         ]);
     }
 }
