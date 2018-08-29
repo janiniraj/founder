@@ -67,34 +67,6 @@
       var current_href = window.location.pathname;
       var current_page = current_href.substring(current_href.lastIndexOf('/') + 1);
 
-      if(current_page == 'media.php' || current_page == 'blog.php' || current_page == 'blog_content.php' || current_page == 'publication.php'
-                          || current_page == 'speech.php' || current_page == 'speech_content.php'){
-        $('#media_page_tab').addClass('menu_active');
-        $('#media_page_tab_mobile').addClass('menu_active');
-        $('#media_footer_tab').addClass('footer_menu_active');
-      }
-      if(current_page == 'nation_building.php'  || current_page == 'malaysia.php'  
-                          || current_page == 'botswana.php'  || current_page == 'cambodia.php'  || current_page == 'london.php'  || current_page == 'lesotho.php'  || current_page == 'sierra_leone.php'  || current_page == 'south_africa.php' || current_page == 'swaziland.php'){
-        $('#nation_building_tab').addClass('menu_active');
-        $('#nation_building_tab_mobile').addClass('menu_active');
-        $('#nation_building_footer_tab').addClass('footer_menu_active');
-      }
-      if(current_page == 'foundation.php'){
-        $('#foundation_page_tab').addClass('menu_active');
-        $('#foundation_page_tab_mobile').addClass('menu_active');
-        $('#foundation_footer_tab').addClass('footer_menu_active');
-      }
-      if(current_page == 'profile.php' || current_page == 'milestones.php'){
-        $('#profile_page_tab').addClass('menu_active');
-        $('#profile_page_tab_mobile').addClass('menu_active');
-        $('#profile_footer_tab').addClass('footer_menu_active');
-      }
-      if(current_page == 'recognition.php' || current_page == 'recognition-awards.php' || current_page == 'recognition-quotes.php'){
-        $('#recognition_page_tab').addClass('menu_active');
-        $('#recognition_page_tab_mobile').addClass('menu_active');
-        $('#recognition_footer_tab').addClass('footer_menu_active');
-      }
-
       // BLOG PAGE script
       if($(window).width() > 1025) {
         var txt= $('.blog-desc').text();

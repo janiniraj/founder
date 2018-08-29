@@ -145,18 +145,12 @@ class PublicationRepository extends BaseRepository
     /**
      * Get Latest Publications
      *
-     * @param null $notIncludeSlug
      * @param int $limit
      * @return \Illuminate\Database\Eloquent\Collection|static[]
      */
-    public function getLatestPublications($notIncludeSlug = NULL, $limit = 3)
+    public function getLatestPublications($limit = 3)
     {
         $query = $this->model;
-
-        if($notIncludeSlug)
-        {
-            $query = $query->where('slug', '!=', $notIncludeSlug);
-        }
 
         return $query->orderBy('id', 'DESC')->limit($limit)->get();
     }

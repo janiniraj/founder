@@ -4,6 +4,11 @@ use App\Http\Controllers\Controller;
 use App\Repositories\Backend\Page\PageRepository;
 use View;
 use App\Repositories\Backend\Blog\BlogRepository;
+use App\Repositories\Backend\News\NewsRepository;
+use App\Repositories\Backend\Award\AwardRepository;
+use App\Repositories\Backend\Quote\QuoteRepository;
+use App\Repositories\Backend\Publication\PublicationRepository;
+use App\Repositories\Backend\Speech\SpeechRepository;
 
 /**
  * Class PageController.
@@ -12,14 +17,23 @@ class PageController extends Controller
 {
     /**
      * PageController constructor.
-     *
      * @param PageRepository $pageRepository
      * @param BlogRepository $blogRepository
+     * @param NewsRepository $newsRepository
+     * @param AwardRepository $awardRepository
+     * @param QuoteRepository $quoteRepository
+     * @param PublicationRepository $publicationRepository
+     * @param SpeechRepository $speechRepository
      */
-    public function __construct(PageRepository $pageRepository, BlogRepository $blogRepository)
+    public function __construct(PageRepository $pageRepository, BlogRepository $blogRepository, NewsRepository $newsRepository, AwardRepository $awardRepository, QuoteRepository $quoteRepository, PublicationRepository $publicationRepository, SpeechRepository $speechRepository)
     {
-        $this->page = $pageRepository;
-        $this->blog = $blogRepository;
+        $this->page         = $pageRepository;
+        $this->blog         = $blogRepository;
+        $this->news         = $newsRepository;
+        $this->awards       = $awardRepository;
+        $this->quotes       = $quoteRepository;
+        $this->publication  = $publicationRepository;
+        $this->speech       = $speechRepository;
     }
 
     /**
@@ -40,6 +54,12 @@ class PageController extends Controller
         $footer         = (string) $footerView;
         $content        = str_replace("[[footer]]", $footer, $content);
 
+        $news           = $this->news->getLatestNews(null, 3);
+
+        $latestNewsView = View::make('frontend.includes.latestnews')->with(['latestnews' => $news]);
+        $latestNews     = (string) $latestNewsView;
+        $content        = str_replace("[[latestnews]]", $latestNews, $content);
+
         return view('frontend.index')->with(['content' => $content]);
     }
 
@@ -54,18 +74,107 @@ class PageController extends Controller
         $pageData       = $this->page->getPageBySlug($slug);
         $content        = $pageData->content;
 
-        if(strpos('[[latestblogs]]', $content))
+        if(strpos($content, '[[latestblogs]]') !== false)
         {
             $blogs              = $this->blog->getLatestBlogs(null, 4);
             $blogView           = View::make('frontend.includes.latestblog')->with(['blogs' => $blogs]);
             $blogViewContent    = (string)$blogView;
             $content = str_replace("[[latestblogs]]", $blogViewContent, $content);
+        }
 
+        if(strpos($content, '[[latestawards]]') !== false)
+        {
+            $awards              = $this->awards->getLatestAwards(7);
+            $awardView           = View::make('frontend.includes.latestawards')->with(['awards' => $awards]);
+            $awardViewContent    = (string)$awardView;
+            $content = str_replace("[[latestawards]]", $awardViewContent, $content);
+        }
+
+        if(strpos($content, '[[latestquotes]]') !== false)
+        {
+            $quotes              = $this->quotes->getLatestQuotes(2);
+            $quoteView           = View::make('frontend.includes.latestquotes')->with(['quotes' => $quotes]);
+            $quoteViewContent    = (string)$quoteView;
+            $content = str_replace("[[latestquotes]]", $quoteViewContent, $content);
+        }
+
+        if(strpos($content, '[[mediablogs]]') !== false)
+        {
+            $blogs              = $this->blog->getLatestBlogs(null, 4);
+            $blogView           = View::make('frontend.includes.mediablogs')->with(['blogs' => $blogs]);
+            $blogViewContent    = (string)$blogView;
+            $content = str_replace("[[latestblogs]]", $blogViewContent, $content);
+        }
+
+        if(strpos($content, '[[mediapublications]]') !== false)
+        {
+            $publications              = $this->publication->getLatestpublications(6);
+            $publicationView           = View::make('frontend.includes.mediapublications')->with(['publications' => $publications]);
+            $publicationViewContent    = (string)$publicationView;
+            $content = str_replace("[[mediapublications]]", $publicationViewContent, $content);
+        }
+
+        if(strpos($content, '[[mediaspeeches]]') !== false)
+        {
+            $publications              = $this->publication->getLatestpublications(6);
+            $publicationView           = View::make('frontend.includes.mediapublications')->with(['publications' => $publications]);
+            $publicationViewContent    = (string)$publicationView;
+            $content = str_replace("[[mediapublications]]", $publicationViewContent, $content);
         }
 
         return view('frontend.page')->with([
             'pageData' => $pageData,
             'content' => $content
+        ]);
+    }
+
+    /**
+     * @return $this
+     */
+    public function awards()
+    {
+        $awards = $this->awards->all();
+
+        return view('frontend.recognition-awards')->with([
+            'awards' => $awards
+        ]);
+    }
+
+    /**
+     * @param int $limit
+     * @return $this
+     */
+    public function quotes($limit = 1)
+    {
+        $quotes = $this->quotes->getActivePaginated($limit);
+
+        return view('frontend.recognition-quotes')->with([
+            'quotes' => $quotes
+        ]);
+    }
+
+    /**
+     * @return $this
+     */
+    public function publications()
+    {
+        $publications = $this->publication->all();
+
+        return view('frontend.publications')->with([
+            'publications' => $publications
+        ]);
+    }
+
+    /**
+     * @param int $limit
+     * @return $this
+     */
+    public function speeches($limit = 10)
+    {
+        $speeches = $this->speech->getActivePaginated($limit);
+
+        return view('frontend.speeches')->with([
+            'speeches' => $speeches
         ]);
     }
 }

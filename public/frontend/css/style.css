@@ -974,7 +974,13 @@ footer .footer_last p
 
 /* PROFILE PAGE start
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+.pagination>.active>span,
+.pagination>.disabled>span,
+.pagination>.active>span:hover,
+.pagination>.disabled>span:hover{
+  background-color: unset;
+  background: unset;
+}
 .profile_home_bg{
   background: url(../img/section_one_bg.jpg) no-repeat;
   background-position: center;

@@ -128,4 +128,15 @@ class QuoteRepository extends BaseRepository
             throw new GeneralException(trans('exceptions.backend.quotes.delete_error'));
         });
     }
+
+    /**
+     * Get Latest Quotes
+     *
+     * @param int $limit
+     * @return \Illuminate\Database\Eloquent\Collection|static[]
+     */
+    public function getLatestQuotes($limit = 3)
+    {
+        return $this->model->orderBy('id', 'DESC')->limit($limit)->get();
+    }
 }

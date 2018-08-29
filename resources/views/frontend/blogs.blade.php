@@ -19,7 +19,7 @@
                 @foreach($blogs as $blogData)
                     @if(in_array($i, [0,1,5,6]))
                         <div class="col-md-6">
-                            <a href="blog_content.php">
+                            <a href="{{ route('frontend.blog.show', $blogData->slug) }}">
                                 <div class="col-md-6" style="padding-left: 0;">
                                     <img src="{{ url('/').'/img/blogs/thumbnail/'.$blogData->image }}" class="img-responsive">
                                 </div>
@@ -33,7 +33,7 @@
                         </div>
                     @else
                         <div class="col-md-4">
-                            <a href="blog_content.php">
+                            <a href="{{ route('frontend.blog.show', $blogData->slug) }}">
                                 <div class="col-md-12 blog-page-3">
                                     <img src="{{ url('/').'/img/blogs/thumbnail/'.$blogData->image }}" class="img-responsive">
                                     <h3 class="blog-title">{{ $blogData->name }}</h3>
