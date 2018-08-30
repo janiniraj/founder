@@ -6,7 +6,7 @@
     <div class="container" id="media-blog-content">
         <div class="row">
             <div class="col-md-12 blog-cont-1">
-                <a href="blog.php"><h2 class="headline-media-back"><i class="fas fa-angle-left"></i>BLOG</h2></a>
+                <a href="{{ route('frontend.show-page', 'media') }}"><h2 class="headline-media-back"><i class="fas fa-angle-left"></i>HOME</h2></a>
             </div>
 
             <div class="col-md-12 blog-cont-2">

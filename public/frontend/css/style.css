@@ -13,10 +13,12 @@ body
 }
 a
 {
+  color: unset;
   text-decoration: none;
 }
 a:hover 
 {
+  color: unset;
   text-decoration: none;
 }
 ul, li 
@@ -2699,11 +2701,16 @@ footer .footer_last p
 
 .national-building-malaysia .back-countries
 {
-  color: #BECE00;
+  color: #BECE00 !important;
   font-weight: 100;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   margin-top: 60px;
+  transition: .25s;
+}
+
+.national-building-malaysia .back-countries:hover{
+  color: #cbd732 !important;
 }
 
 .national-building-malaysia .headline-countries

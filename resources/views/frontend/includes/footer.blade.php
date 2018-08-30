@@ -3,12 +3,12 @@
     <div class="col-md-5 footer_hidden_links">
       <img src="{{url('/')}}/frontend/img/footer_logo.png"><br>
       <ul>
-        <li><a href="../index.php">HOME</a><br></li>
-        <li><a id="profile_footer_tab" href="profile.php">PROFILE</a><br></li>
-        <li><a id="recognition_footer_tab" href="recognition.php">RECOGNITION</a><br></li>
-        <li><a id="nation_building_footer_tab" href="nation_building.php">NATION BUILDING</a><br></li>
-        <li><a id="foundation_footer_tab" href="foundation.php">FOUNDATION</a><br></li>
-        <li><a id="media_footer_tab" href="media.php">MEDIA</a></li>
+        <li><a href="{{ url('/') }}">HOME</a><br></li>
+        <li><a id="profile_footer_tab" href="{{ route('frontend.show-page', 'profile') }}">PROFILE</a><br></li>
+        <li><a id="recognition_footer_tab" href="{{ route('frontend.show-page', 'recognition') }}">RECOGNITION</a><br></li>
+        <li><a id="nation_building_footer_tab" href="{{ route('frontend.show-page', 'nation_building') }}">NATION BUILDING</a><br></li>
+        <li><a id="foundation_footer_tab" href="{{ route('frontend.show-page', 'foundation') }}">FOUNDATION</a><br></li>
+        <li><a id="media_footer_tab" href="{{ route('frontend.show-page', 'media') }}">MEDIA</a></li>
       </ul>
     </div>
     <div class="col-md-7 footer_contact_us">
