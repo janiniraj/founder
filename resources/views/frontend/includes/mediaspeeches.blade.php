@@ -10,12 +10,14 @@
         <div class="col-md-4 speech-2">
             @foreach($speeches as $key => $single)
                 @if($key == 0)
-                    <div class="col-md-12 speech-3">
-                        <h3 class="blog-title">{{ $single->name }}</h3>
-                        <p class="blog-desc">{{ $single->excerpt }}</p>
-                        <h5 class="book-year">{{ date('d M Y', strtotime($single->created_at)) }}</h5>
-                        <h5 class="blog-read">READ <i class="fas fa-angle-right"></i></h5>
-                    </div>
+                    <a href="{{ route('frontend.speech.show', $single->slug) }}">
+                        <div class="col-md-12 speech-3">
+                            <h3 class="blog-title">{{ $single->name }}</h3>
+                            <p class="blog-desc">{{ $single->excerpt }}</p>
+                            <h5 class="book-year">{{ date('d M Y', strtotime($single->created_at)) }}</h5>
+                            <h5 class="blog-read">READ <i class="fas fa-angle-right"></i></h5>
+                        </div>
+                    </a>
                 @endif
             @endforeach
         </div>
@@ -24,10 +26,12 @@
             <div class="col-md-12">
                 @foreach($speeches as $key => $single)
                     @if($key == 1 || $key == 2)
-                        <div class="col-md-6">
-                            <h3 class="blog-title">{{ $single->name }}</h3>
-                            <h5 class="book-year">{{ date('d M Y', strtotime($single->created_at)) }}</h5>
-                        </div>
+                        <a href="{{ route('frontend.speech.show', $single->slug) }}">
+                            <div class="col-md-6">
+                                <h3 class="blog-title">{{ $single->name }}</h3>
+                                <h5 class="book-year">{{ date('d M Y', strtotime($single->created_at)) }}</h5>
+                            </div>
+                        </a>
                     @endif
                 @endforeach
             </div>
@@ -35,9 +39,11 @@
             <div class="col-md-12" style="margin-top: 48px;padding: 0 30px;">
                 @foreach($speeches as $key => $single)
                     @if($key == 3)
-                        <h1 class="speech_big_title">“{{ $single->name }}”</h1>
-                        <h3 class="speech_name">{{ $single->excerpt }}</h3>
-                        <h5 class="book-year">{{ date('d M Y', strtotime($single->created_at)) }}</h5>
+                        <a href="{{ route('frontend.speech.show', $single->slug) }}">
+                            <h1 class="speech_big_title">“{{ $single->name }}”</h1>
+                            <h3 class="speech_name">{{ $single->excerpt }}</h3>
+                            <h5 class="book-year">{{ date('d M Y', strtotime($single->created_at)) }}</h5>
+                        </a>
                     @endif
                 @endforeach
             </div>
@@ -49,11 +55,13 @@
             <div class="col-md-12">
                 @foreach($speeches as $key => $single)
                     @if($key == 0)
-                        <div class="col-xs-12" style="margin-top: -18px; padding-left: 0; margin-left: -15px;">
-                            <h3 class="book-title" style="line-height: 1.5;">{{ $single->name }}</h3>
-                            <p class="book-desc">{{ $single->excerpt }}</p>
-                            <h5 class="book-year">{{ date('d M Y', strtotime($single->created_at)) }}</h5>
-                        </div>
+                        <a href="{{ route('frontend.speech.show', $single->slug) }}">
+                            <div class="col-xs-12" style="margin-top: -18px; padding-left: 0; margin-left: -15px;">
+                                <h3 class="book-title" style="line-height: 1.5;">{{ $single->name }}</h3>
+                                <p class="book-desc">{{ $single->excerpt }}</p>
+                                <h5 class="book-year">{{ date('d M Y', strtotime($single->created_at)) }}</h5>
+                            </div>
+                        </a>
                     @endif
                 @endforeach
             </div>
@@ -63,10 +71,12 @@
                 @foreach($speeches as $key => $single)
                     @if($key != 0)
                         <div class="item">
-                            <div class="col-xs-12" style="padding: 0;">
-                                <h5>{{ $single->name }}</h5>
-                                <h5>{{ $single->excerpt }}</h5>
-                            </div>
+                            <a href="{{ route('frontend.speech.show', $single->slug) }}">
+                                <div class="col-xs-12" style="padding: 0;">
+                                    <h5>{{ $single->name }}</h5>
+                                    <h5>{{ $single->excerpt }}</h5>
+                                </div>
+                            </a>
                         </div>
                     @endif
                 @endforeach

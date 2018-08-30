@@ -1,6 +1,6 @@
 <header>
   <div id="small">
-    <a href="#"><img src="{{url('/')}}/frontend/img/logo.png"></a>
+    <a href="{{ route('frontend.index') }}"><img src="{{url('/')}}/frontend/img/logo.png"></a>
   </div>
   <div class="menu">
     <a href="{{url('/')}}" id="home_page_tab">Home</a>

@@ -40,7 +40,7 @@
                             </a>
                             <h5 class="book-year">{{ date('d M Y', strtotime($blogData->created_at)) }}</h5>
                             <p class="blog-desc" style="padding-right: 0px;">{{ $blogData->excerpt }}</p>
-                            <h5 class="blog-read">READ <i class="fas fa-angle-right"></i></h5>
+                            <a href="{{ route('frontend.blog.show', $blogData->slug) }}"><h5 class="blog-read">READ <i class="fas fa-angle-right"></i></h5></a>
                         </div>
                     @endif
                 @endforeach

@@ -1,6 +1,6 @@
 <header class="app-header navbar">
     <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">☰</button>
-    <a class="navbar-brand" href="#"><img src="http://founder.limkokwing.net/graphics/founder/hd_logo.jpg" style="
+    <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ url('/') }}/graphics/founder/hd_logo.jpg" style="
     max-height: 100%;
 "></a>
     <button class="navbar-toggler sidebar-minimizer d-md-down-none" type="button">☰</button>

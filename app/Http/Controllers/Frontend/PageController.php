@@ -98,14 +98,6 @@ class PageController extends Controller
             $content = str_replace("[[latestquotes]]", $quoteViewContent, $content);
         }
 
-        if(strpos($content, '[[mediablogs]]') !== false)
-        {
-            $blogs              = $this->blog->getLatestBlogs(null, 4);
-            $blogView           = View::make('frontend.includes.mediablogs')->with(['blogs' => $blogs]);
-            $blogViewContent    = (string)$blogView;
-            $content = str_replace("[[latestblogs]]", $blogViewContent, $content);
-        }
-
         if(strpos($content, '[[mediapublications]]') !== false)
         {
             $publications              = $this->publication->getLatestpublications(6);
