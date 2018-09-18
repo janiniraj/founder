@@ -38,7 +38,7 @@ return [
         ],
 
         'pages' => [
-            'management'      => 'Page Management',
+            'management'      => 'Pages',
             'all'             => 'All Pages',
             'create'          => 'Create Page',
             'edit'            => 'Edit Page',
@@ -47,7 +47,7 @@ return [
         ],
 
         'blogs' => [
-            'management'      => 'Blog Management',
+            'management'      => 'Blogs',
             'all'             => 'All Blogs',
             'create'          => 'Create Blog',
             'edit'            => 'Edit Blog',
@@ -56,7 +56,7 @@ return [
         ],
 
         'awards' => [
-            'management'      => 'Award Management',
+            'management'      => 'Awards',
             'all'             => 'All Awards',
             'create'          => 'Create Award',
             'edit'            => 'Edit Award',
@@ -65,7 +65,7 @@ return [
         ],
 
         'quotes' => [
-            'management'      => 'Quote Management',
+            'management'      => 'Quotes',
             'all'             => 'All Quotes',
             'create'          => 'Create Quote',
             'edit'            => 'Edit Quote',
@@ -74,12 +74,30 @@ return [
         ],
 
         'speeches' => [
-            'management'      => 'Speech Management',
+            'management'      => 'Speeches',
             'all'             => 'All Speeches',
             'create'          => 'Create Speech',
             'edit'            => 'Edit Speech',
             'main'            => 'Speeches',
             'view'            => 'View Speech',
+        ],
+
+        'news' => [
+            'management'      => 'News',
+            'all'             => 'All News',
+            'create'          => 'Create News',
+            'edit'            => 'Edit News',
+            'main'            => 'News',
+            'view'            => 'View News',
+        ],
+
+        'publications' => [
+            'management'      => 'Publications',
+            'all'             => 'All Publication',
+            'create'          => 'Create Publication',
+            'edit'            => 'Edit Publication',
+            'main'            => 'Publication',
+            'view'            => 'View Publication',
         ],
 
         'log-viewer' => [

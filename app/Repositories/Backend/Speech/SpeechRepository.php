@@ -137,12 +137,13 @@ class SpeechRepository extends BaseRepository
     }
 
     /**
-     * Get Latest Speechs
+     * Get Latest Speeches
      *
      * @param null $notIncludeSlug
+     * @param int $limit
      * @return \Illuminate\Database\Eloquent\Collection|static[]
      */
-    public function getLatestSpeechs($notIncludeSlug = NULL)
+    public function getLatestSpeeches($notIncludeSlug = NULL, $limit = 3)
     {
         $query = $this->model;
 
@@ -151,6 +152,6 @@ class SpeechRepository extends BaseRepository
             $query = $query->where('slug', '!=', $notIncludeSlug);
         }
 
-        return $query->orderBy('id', 'DESC')->limit(3)->get();
+        return $query->orderBy('id', 'DESC')->limit($limit)->get();
     }
 }

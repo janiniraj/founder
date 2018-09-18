@@ -36,6 +36,21 @@ Route::get('/page/{slug}', 'PageController@showPage')->name('show-page');
 
 Route::group(['as' => 'blog.'], function () {
     Route::get('blogs', 'BlogController@index')->name('index');
-    Route::get('blog/{slug}', 'BlogController@showBlog')->name('show-blog');
+    Route::get('blog/{slug}', 'BlogController@show')->name('show');
 });
 
+Route::group(['as' => 'news.'], function () {
+    //Route::get('news', 'NewsController@index')->name('index');
+    Route::get('news/{slug}', 'NewsController@show')->name('show');
+});
+
+Route::get('recognition-awards', 'PageController@awards')->name('recognition-awards');
+
+Route::get('recognition-quotes/{limit?}', 'PageController@quotes')->name('recognition-quotes');
+
+Route::get('publications', 'PageController@publications')->name('publications');
+
+Route::group(['as' => 'speech.'], function () {
+    Route::get('speeches', 'SpeechController@index')->name('index');
+    Route::get('speech/{slug}', 'SpeechController@show')->name('show');
+});

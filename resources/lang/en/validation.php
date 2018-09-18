@@ -232,6 +232,27 @@ return [
                 'meta'                    => 'Meta',
                 'image'                   => 'Image'
             ],
+
+            'news' => [
+                'active'                  => 'Active',
+                'name'                    => 'Name',
+                'slug'                    => 'Slug',
+                'content'                 => 'Content',
+                'language'                => 'Language',
+                'excerpt'                 => 'Excerpt',
+                'image'                   => 'Image'
+            ],
+
+            'publications' => [
+                'active'                  => 'Active',
+                'name'                    => 'Name',
+                'year'                    => 'Year',
+                'content'                 => 'Content',
+                'language'                => 'Language',
+                'excerpt'                 => 'Excerpt',
+                'image'                   => 'Image',
+                'url'                     => 'URL'
+            ],
         ],
 
         'frontend' => [

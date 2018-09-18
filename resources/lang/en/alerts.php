@@ -64,6 +64,18 @@ return [
             'deleted' => 'The Speech was successfully deleted.',
             'updated' => 'The Speech was successfully updated.',
         ],
+
+        'news' => [
+            'created' => 'The News was successfully created.',
+            'deleted' => 'The News was successfully deleted.',
+            'updated' => 'The News was successfully updated.',
+        ],
+
+        'publications' => [
+            'created' => 'The Publication was successfully created.',
+            'deleted' => 'The Publication was successfully deleted.',
+            'updated' => 'The Publication was successfully updated.',
+        ],
     ],
 
     'frontend' => [

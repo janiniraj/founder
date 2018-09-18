@@ -10,7 +10,7 @@
                     <strong>{{ __('strings.backend.dashboard.welcome') }} {{ $logged_in_user->name }}!</strong>
                 </div><!--card-header-->
                 <div class="card-block">
-                    {!! __('strings.backend.welcome') !!}
+                    Admin Panel for the <a target="_blank" href="{{ url('/') }}">Limkokwing Founder</a>.
                 </div><!--card-block-->
             </div><!--card-->
         </div><!--col-->

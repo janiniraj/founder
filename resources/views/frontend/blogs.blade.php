@@ -6,7 +6,7 @@
     <div class="container" id="media-blog">
         <div class="row">
             <div class="col-md-12 blog-page-head-top">
-                <a href="media.php"><h2 class="headline-media-back"><i class="fas fa-angle-left"></i>MEDIA</h2></a>
+                <a href="{{ route('frontend.show-page', 'media') }}"><h2 class="headline-media-back"><i class="fas fa-angle-left"></i>MEDIA</h2></a>
             </div>
 
 
@@ -14,26 +14,26 @@
                 <h2 class="headline-media">BLOG</h2>
             </div>
 
-            <div class="col-md-12">
+            <div class="col-md-12 blog-all">
                 @php $i = 0; @endphp
                 @foreach($blogs as $blogData)
-                    @if(in_array($i, [0,1,5,6]))
-                        <div class="col-md-6">
-                            <a href="blog_content.php">
+                    @if(in_array($i, [3,4,8,9]))
+                        <div class="col-md-6 dynamic-blog-6">
+                            <a href="{{ route('frontend.blog.show', $blogData->slug) }}">
                                 <div class="col-md-6" style="padding-left: 0;">
                                     <img src="{{ url('/').'/img/blogs/thumbnail/'.$blogData->image }}" class="img-responsive">
                                 </div>
                                 <div class="col-md-6" style="margin-top: 10px;">
                                     <h3 class="blog-title">{{ $blogData->name }}</h3>
                                     <h5 class="book-year">{{ date('d M Y', strtotime($blogData->created_at)) }}</h5>
-                                    <p class="blog-desc" style="padding-right: 0px;">{{ $blogData->excerpt }}</p>
+                                   <!-- <p class="blog-desc" style="padding-right: 0px;">{{ $blogData->excerpt }}</p> -->
                                     <h5 class="blog-read">READ <i class="fas fa-angle-right"></i></h5>
                                 </div>
                             </a>
                         </div>
                     @else
-                        <div class="col-md-4">
-                            <a href="blog_content.php">
+                        <div class="col-md-4 dynamic-blog-4">
+                            <a href="{{ route('frontend.blog.show', $blogData->slug) }}">
                                 <div class="col-md-12 blog-page-3">
                                     <img src="{{ url('/').'/img/blogs/thumbnail/'.$blogData->image }}" class="img-responsive">
                                     <h3 class="blog-title">{{ $blogData->name }}</h3>

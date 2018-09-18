@@ -1,6 +1,6 @@
 <header>
   <div id="small">
-    <a href="#"><img src="{{url('/')}}/frontend/img/logo.png"></a>
+    <a href="{{ route('frontend.index') }}"><img src="{{url('/')}}/frontend/img/logo.png"></a>
   </div>
   <div class="menu">
     <a href="{{url('/')}}" id="home_page_tab">Home</a>
@@ -18,8 +18,8 @@
       <div class="nav-icon cross">
         <div class="span"></div>
       </div>
-      <img class="mobile_home_logo" src="{{url('/')}}/frontend/img/logo.png">
-      <ul class="ul_menu">    
+       <a href="{{ route('frontend.index') }}"><img class="mobile_home_logo" src="{{url('/')}}/frontend/img/logo.png"></a>
+      <ul class="ul_menu menu">    
         <div class="inner_menu">
           <li><a id="home_page_tab_mobile" href="{{url('/')}}">Home</a></li>
           <li><a id="profile_page_tab_mobile" href="{{url('/')}}/page/profile">Profile</a></li>
@@ -32,3 +32,5 @@
     </div>
   </div>
 </div>
+
+ 

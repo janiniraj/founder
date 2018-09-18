@@ -156,9 +156,10 @@ class BlogRepository extends BaseRepository
      * Get Latest Blogs
      *
      * @param null $notIncludeSlug
+     * @param int $limit
      * @return \Illuminate\Database\Eloquent\Collection|static[]
      */
-    public function getLatestBlogs($notIncludeSlug = NULL)
+    public function getLatestBlogs($notIncludeSlug = NULL, $limit = 3)
     {
         $query = $this->model;
 
@@ -167,6 +168,6 @@ class BlogRepository extends BaseRepository
             $query = $query->where('slug', '!=', $notIncludeSlug);
         }
 
-        return $query->orderBy('id', 'DESC')->limit(3)->get();
+        return $query->orderBy('id', 'DESC')->limit($limit)->get();
     }
 }

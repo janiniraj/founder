@@ -90,6 +90,7 @@
                 "insertdatetime media nonbreaking save table contextmenu directionality",
                 "emoticons template paste textcolor colorpicker textpattern"
             ],
+            valid_elements: "*[*]",
             relative_urls: false,
             height: 129,
             toolbar: [

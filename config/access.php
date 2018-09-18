@@ -105,5 +105,6 @@ return [
     'blog_table'    => 'blogs',
     'award_table'   => 'awards',
     'quote_table'   => 'quotes',
-    'speech_table'  => 'speeches'
+    'speech_table'  => 'speeches',
+    'news_table'  => 'news'
 ];

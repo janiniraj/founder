@@ -37,7 +37,7 @@ class BlogController extends Controller
      * @param $slug
      * @return $this
      */
-    public function showBlog($slug)
+    public function show($slug)
     {
         $blogData       = $this->blog->getBlogBySlug($slug);
         $content        = $blogData->content;

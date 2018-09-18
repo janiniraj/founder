@@ -137,4 +137,15 @@ class AwardRepository extends BaseRepository
     {
         return $this->model->where('slug', $slug)->first();
     }
+
+    /**
+     * Get Latest Awards
+     *
+     * @param int $limit
+     * @return \Illuminate\Database\Eloquent\Collection|static[]
+     */
+    public function getLatestAwards($limit = 3)
+    {
+        return $this->model->orderBy('id', 'DESC')->limit($limit)->get();
+    }
 }

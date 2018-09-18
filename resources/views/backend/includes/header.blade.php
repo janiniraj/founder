@@ -1,6 +1,6 @@
 <header class="app-header navbar">
     <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">☰</button>
-    <a class="navbar-brand" href="#"><img src="http://founder.limkokwing.net/graphics/founder/hd_logo.jpg" style="
+    <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ url('/') }}/graphics/founder/hd_logo.jpg" style="
     max-height: 100%;
 "></a>
     <button class="navbar-toggler sidebar-minimizer d-md-down-none" type="button">☰</button>
@@ -26,15 +26,7 @@
     </ul>
 
     <ul class="nav navbar-nav ml-auto">
-        <li class="nav-item d-md-down-none">
-            <a class="nav-link" href="#"><i class="icon-bell"></i><span class="badge badge-pill badge-info">0</span></a>
-        </li>
-        <li class="nav-item d-md-down-none">
-            <a class="nav-link" href="#"><i class="icon-list"></i></a>
-        </li>
-        <li class="nav-item d-md-down-none">
-            <a class="nav-link" href="#"><i class="icon-location-pin"></i></a>
-        </li>
+
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                 <img src="{{ $logged_in_user->picture }}" class="img-avatar" alt="{{ $logged_in_user->email }}">
@@ -42,21 +34,9 @@
             </a>
 
             <div class="dropdown-menu dropdown-menu-right">
-                <div class="dropdown-header text-center">
-                    <strong>Heading</strong>
-                </div>
-                <a class="dropdown-item" href="#"><i class="fas fa-link"></i> Link<span class="badge badge-primary">0</span></a>
-                <a class="dropdown-item" href="#"><i class="fas fa-link"></i> Link</a>
-
-                <div class="dropdown-header text-center">
-                    <strong>Heading</strong>
-                </div>
-                <a class="dropdown-item" href="#"><i class="fas fa-link"></i> Link</a>
-                <a class="dropdown-item" href="#"><i class="fas fa-link"></i> Link</a>
                 <a class="dropdown-item" href="{{ route('frontend.auth.logout') }}"><i class="fas fa-lock"></i> {{ __('navs.general.logout') }}</a>
             </div>
         </li>
     </ul>
-
-    <button class="navbar-toggler aside-menu-toggler" type="button">☰</button>
+    <ul></ul>
 </header>
