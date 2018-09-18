@@ -4612,7 +4612,7 @@ footer
     width: 94% !important;
   }
     #fullpage .arrow_down_home{
-    bottom: 188px;
+    bottom: 165px;
     height: 20px;
     width: 20px;
   }
@@ -5533,7 +5533,7 @@ footer
   /* Publication end */
 
    #fullpage .arrow_down_home{
-     bottom: 80px ;
+     bottom: 44px ;
   }
    #fullpage .home_title{
      bottom: -62vh ;
