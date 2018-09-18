@@ -3,6 +3,10 @@
 @section('title', 'Recognition Awards')
 
 @section('content')
+
+<div class="wrapper">
+    <img src="/photos/shares/img/pic6.jpg" class="img-responsive hidden-xs" />
+</div> 
     <div class="container" id="recognition">
         <div class="row">
             <div class="col-md-12 recognition-head-top">

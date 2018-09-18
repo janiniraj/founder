@@ -74,9 +74,10 @@
                             <h3 class="book-title" style="line-height: 1.5;">{{ $blogData->name }}</h3>
                             <h5 class="book-year">{{ date('d M Y', strtotime($blogData->created_at)) }}</h5>
                             <p class="book-desc">{{ $blogData->excerpt }}</p>
-                            <a href="{{ route('frontend.blog.show', $blogData->slug) }}" class="mobile_see_all" style="top: 18px;">READ <i class="fa fa-angle-right"></i></a>
-                            <hr class="mobile_books" style="margin-top: 40px;border-color: #454545;">
+                            <a href="{{ route('frontend.blog.show', $blogData->slug) }}"><h5 class="blog-read">READ <i class="fas fa-angle-right"></i></h5></a>
+                            
                         </div>
+                        <hr class="mobile_books" style="margin-top: 40px;border-color: #454545;clear: both;">
                     @endif
                 @endforeach
             </div>
@@ -84,7 +85,7 @@
         <div class="mobile_slider col-xs-12">
             <div class="slider">
                 @foreach($blogs as $key => $blogData)
-                    @if($key == 0)
+                    @if($key != 0)
                         <div class="item">
                             <div class="col-xs-12" style="padding: 0;">
                                 <img src="{{ url('/').'/img/blogs/thumbnail/'.$blogData->image }}">

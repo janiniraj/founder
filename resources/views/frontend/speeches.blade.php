@@ -29,7 +29,6 @@
                 @endforeach
             </div>
         </div>
-
         <div class="col-md-12">
             {!! $speeches->render() !!}
         </div>

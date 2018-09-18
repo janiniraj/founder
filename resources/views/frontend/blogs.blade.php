@@ -14,11 +14,11 @@
                 <h2 class="headline-media">BLOG</h2>
             </div>
 
-            <div class="col-md-12">
+            <div class="col-md-12 blog-all">
                 @php $i = 0; @endphp
                 @foreach($blogs as $blogData)
                     @if(in_array($i, [3,4,8,9]))
-                        <div class="col-md-6" style="height: 320px;">
+                        <div class="col-md-6 dynamic-blog-6">
                             <a href="{{ route('frontend.blog.show', $blogData->slug) }}">
                                 <div class="col-md-6" style="padding-left: 0;">
                                     <img src="{{ url('/').'/img/blogs/thumbnail/'.$blogData->image }}" class="img-responsive">
@@ -32,7 +32,7 @@
                             </a>
                         </div>
                     @else
-                        <div class="col-md-4" style="height: 800px;">
+                        <div class="col-md-4 dynamic-blog-4">
                             <a href="{{ route('frontend.blog.show', $blogData->slug) }}">
                                 <div class="col-md-12 blog-page-3">
                                     <img src="{{ url('/').'/img/blogs/thumbnail/'.$blogData->image }}" class="img-responsive">

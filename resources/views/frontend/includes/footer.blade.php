@@ -1,3 +1,4 @@
+<hr class="footer_hr_top">
 <div class="section_five">
   <div class="col-xs-12">
     <div class="col-md-5 footer_hidden_links">
@@ -17,8 +18,7 @@
         <form  action="">
          <input type="email" class="footer_email_input" name="email" placeholder="Email" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
          <button type="submit" class="footer_submit_input">Send</button>    
-      </form>
-
+        </form>
     </div>
   </div>
   <div class="col-xs-12 footer_copyright">
@@ -28,7 +28,7 @@
     </div>
     <hr class="footer_hr">
     <div class="col-xs-12 col-md-6" style="float: right;">
-      <img src="{{url('/')}}/frontend/img/logo_lkw_footer.png" class="footer_img2" class="footer_img2">
+     <a href="https://www.limkokwing.net/"><img src="{{url('/')}}/frontend/img/logo_lkw_footer.png" class="footer_img2" class="footer_img2"></a>
       <p>Limkokwing University social media</p>
       <span><i class="fab fa-twitter"></i></span>
       <span><i class="fab fa-facebook"></i></span>

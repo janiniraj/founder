@@ -6,7 +6,7 @@
     <div class="col-md-12 section1">
         @foreach($quotes as $single)
             <div class="col-md-6">
-                <img src="{{ url('/').'/img/quotes/'.$single->image }}" class="center-block">
+                <img src="{{ url('/').'/img/quotes/'.$single->image }}" class="center-block recognition-quotes-img">
                 <p class="text-desc">“{{ $single->content }}”</p>
                 <img src="{{ url('/')}}/photos/shares/img/icon.png" class="center-block">
                 <p class="name">{{ $single->name }} <br>{{ $single->position }}</p>

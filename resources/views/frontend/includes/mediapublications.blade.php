@@ -23,7 +23,7 @@
                 @foreach($publications as $key => $single)
                     @if($key == 1)
                         <div class="col-md-5">
-                            <img src="{{ url('/').'/img/publications/'.$single->image }}" class="img-responsive">
+                            <img src="{{ url('/').'/img/publications/'.$single->image }}" class="img-responsive book-media-big">
                         </div>
                         <div class="col-md-7" style="padding-left: 0;">
                             <h3 class="book-title">{{ $single->name }}</h3>
@@ -41,7 +41,7 @@
                         @php continue; @endphp
                     @endif
                     <div class="col-md-3">
-                        <img src="{{ url('/').'/img/publications/'.$single->image }}" class="img-responsive">
+                        <img src="{{ url('/').'/img/publications/'.$single->image }}" class="img-responsive book-media-small">
                         <h5 class="book-small">{{ $single->name }}</h5>
                         <h5 class="book-year">{{ $single->year }}</h5>
                         <a download href="{{ $single->url }}" class="btn btn-default">Download</a>
@@ -58,7 +58,7 @@
                 @foreach($publications as $key => $single)
                     @if($key == 0)
                         <div class="col-sm-5" style="padding: 0; margin-left: -15px;">
-                            <img src="{{ url('/').'/img/publications/'.$single->image }}" class="img-responsive">
+                            <img src="{{ url('/').'/img/publications/'.$single->image }}" class="img-responsive media-publication-book">
                         </div>
                         <div class="col-sm-7" style="margin-top: -18px; padding-left: 0; margin-left: -10px;">
                             <h3 class="book-title">{{ $single->name }}</h3>
@@ -71,7 +71,7 @@
             </div>
         </div>
 
-        <hr class="mobile_books" style="margin-top: 40px;border-color: #454545;">
+        <hr class="mobile_books" style="margin-top: 40px;border-color: #454545; clear: both;">
 
         <div class="mobile_slider col-xs-12">
             <div class="slider">

@@ -1,3 +1,5 @@
+// MENU ACTIVE SCRIPT
+//Nation Building
 var nationalBuildings = [
     '/cambodia',
     '/malaysia',
@@ -16,6 +18,9 @@ $.each(nationalBuildings, function(){
     }
 });
 
+
+
+//header
 $(".menu a").each(function() {
     var urlHref= $(this).attr('href');
     if(urlHref.indexOf(window.location.pathname) > -1)
@@ -23,3 +28,18 @@ $(".menu a").each(function() {
         $(this).addClass('activeMenuItem');
     }
 });
+
+//footer
+$(".section_five a").each(function() {
+    var urlHref= $(this).attr('href');
+    if(urlHref.indexOf(window.location.pathname) > -1)
+    {
+        $(this).addClass('footer_menu_active');
+    }
+});
+
+// MENU ACTIVE SCRIPT END
+
+
+
+

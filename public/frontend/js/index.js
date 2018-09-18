@@ -89,3 +89,89 @@ $(function(){
   });
   }
 });
+
+
+
+
+
+//MENU SCRIPT
+$(document).on("scroll", function() {
+
+    if($(document).scrollTop()>50) {
+            $("header").addClass("small");
+        } else {
+            $("header").removeClass("small");
+        }
+
+});
+
+
+
+//SCRIPT
+$('.panel-collapse').on('show.bs.collapse', function () {
+    $(this).siblings('.panel-heading').addClass('active');
+});
+
+$('.panel-collapse').on('hide.bs.collapse', function () {
+    $(this).siblings('.panel-heading').removeClass('active');
+});
+
+    
+
+
+// MENU active script
+
+var current_href = window.location.pathname;
+var current_page = current_href.substring(current_href.lastIndexOf('/') + 1);
+
+
+// BLOG PAGE script
+if($(window).width() > 1025) {
+  var txt= $('.blog-desc').text();
+  $(".blog-desc").text(function(index, currentText) {
+    return currentText.substr(0, 250) + "...";
+  });
+}
+else if($(window).width() > 769) {
+  $(".blog-desc").text(function(index, currentText) {
+    return currentText.substr(0, 70) + "...";
+  });
+}
+else if($(window).width() > 500) {
+  $(".blog-desc").text(function(index, currentText) {
+    return currentText.substr(0, 250) + "...";
+  });
+}
+
+
+  // NATION BUILDING PAGE script
+  jQuery(document).ready(function($) {
+      $(".clickable-row").click(function() {
+          window.location = $(this).data("href");
+      });
+  })
+
+// PUBLICATION PAGE script
+// Change content of preview from clicked div
+$(document).ready(function(){
+  $(".all-book").on('click', function(){
+    var src = $(this).find('img').attr('mainimage');
+    $('.publication-main-image').attr('src', src);
+
+    var headline = $(this).find('.book-small-media').text();
+      $(".book-title-media").html(headline);
+
+      var year = $(this).find('.book-year-media-small').text();
+      $(".book-year-media").html(year);
+
+      var description = $(this).find('.book-desc-media-small').text();
+      $(".book-desc-media").html(description);
+  });
+});
+
+$(document).ready(function() {
+  if (window.matchMedia('(max-width: 500px)').matches) {
+    var mobile_src = $('.book-space').find('img').attr('mainimage');
+    $('.book-space>img').attr('src', mobile_src);
+  }
+});
