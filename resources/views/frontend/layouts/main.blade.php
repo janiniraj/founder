@@ -21,6 +21,7 @@
 
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
         @stack('after-styles')
     </head>
 
@@ -30,6 +31,34 @@
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
         <script  src="{{ url('/')  }}/frontend/js/index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(".email-subscribe-form").on("submit", function(e) {
+                    e.preventDefault();
+                    var url = $(this).attr("action");
+                    $.ajax({
+                        type: "POST",
+                        url: url,
+                        data: $(".email-subscribe-form").serialize(),
+                        headers: {
+                            'X-CSRF-TOKEN': "{{ csrf_token() }}"
+                        },
+                        success: function(data) {
+                            if(data.success == true)
+                            {
+                                swal(
+                                    'Thank You',
+                                    data.message,
+                                    'success'
+                                );
+                                $(".email-subscribe-form input[type='email']").val("");
+                            }
+                        }
+                    });
+                });
+            });
+        </script>
         @stack('after-scripts')
     </body>
 </html>

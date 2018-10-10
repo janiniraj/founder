@@ -15,10 +15,10 @@
     <div class="col-md-7 footer_contact_us">
         <h3>Contact Us</h3>
         <p>We welcome your enquiries, feedback, opinions and suggestions. Please share them with us here.</p>
-        <form  action="">
-         <input type="email" class="footer_email_input" name="email" placeholder="Email" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
-         <button type="submit" class="footer_submit_input">Send</button>    
-        </form>
+        {{ html()->form('POST', route('frontend.email-subscription'))->class('email-subscribe-form')->open() }}
+            <input type="email" class="footer_email_input" name="email" placeholder="Email" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+            <button type="submit" class="footer_submit_input">Send</button>
+        {{ html()->form()->close() }}
     </div>
   </div>
   <div class="col-xs-12 footer_copyright">

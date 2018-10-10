@@ -39,6 +39,15 @@
 
     <script src="{{ url('/')  }}/frontend/js/custom.js"></script>
 
+    <script>
+        $(document).ready(function(){
+            $(".email-subscribe-form").on("submit", function(e) {
+                e.preventDefault();
+                dd("dfdf");
+            });
+        });
+    </script>
+
     @stack('after-scripts')
 </body>
 </html>

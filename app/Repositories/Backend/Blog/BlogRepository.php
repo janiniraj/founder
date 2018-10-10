@@ -159,7 +159,7 @@ class BlogRepository extends BaseRepository
      * @param int $limit
      * @return \Illuminate\Database\Eloquent\Collection|static[]
      */
-    public function getLatestBlogs($notIncludeSlug = NULL, $limit = 3)
+    public function bgetLatestBlogs($notIncludeSlug = NULL, $limit = 3)
     {
         $query = $this->model;
 

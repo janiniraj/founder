@@ -54,3 +54,5 @@ Route::group(['as' => 'speech.'], function () {
     Route::get('speeches', 'SpeechController@index')->name('index');
     Route::get('speech/{slug}', 'SpeechController@show')->name('show');
 });
+
+Route::post('email-subscription', 'PageController@emailSubscription')->name('email-subscription');

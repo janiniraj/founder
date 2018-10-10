@@ -106,5 +106,6 @@ return [
     'award_table'   => 'awards',
     'quote_table'   => 'quotes',
     'speech_table'  => 'speeches',
-    'news_table'  => 'news'
+    'news_table'  => 'news',
+    'email_subscriber_table' => 'email_subscribers'
 ];

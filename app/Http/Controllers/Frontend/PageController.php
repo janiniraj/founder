@@ -9,6 +9,9 @@ use App\Repositories\Backend\Award\AwardRepository;
 use App\Repositories\Backend\Quote\QuoteRepository;
 use App\Repositories\Backend\Publication\PublicationRepository;
 use App\Repositories\Backend\Speech\SpeechRepository;
+use Illuminate\Http\Request;
+use App\Repositories\Backend\EmailSubscriber\EmailSubscriberRepository;
+use Response;
 
 /**
  * Class PageController.
@@ -25,7 +28,7 @@ class PageController extends Controller
      * @param PublicationRepository $publicationRepository
      * @param SpeechRepository $speechRepository
      */
-    public function __construct(PageRepository $pageRepository, BlogRepository $blogRepository, NewsRepository $newsRepository, AwardRepository $awardRepository, QuoteRepository $quoteRepository, PublicationRepository $publicationRepository, SpeechRepository $speechRepository)
+    public function __construct(PageRepository $pageRepository, BlogRepository $blogRepository, NewsRepository $newsRepository, AwardRepository $awardRepository, QuoteRepository $quoteRepository, PublicationRepository $publicationRepository, SpeechRepository $speechRepository, EmailSubscriberRepository $emailSubscriberRepository)
     {
         $this->page         = $pageRepository;
         $this->blog         = $blogRepository;
@@ -34,6 +37,8 @@ class PageController extends Controller
         $this->quotes       = $quoteRepository;
         $this->publication  = $publicationRepository;
         $this->speech       = $speechRepository;
+
+        $this->emailSubscriberRepository = $emailSubscriberRepository;
     }
 
     /**
@@ -163,5 +168,25 @@ class PageController extends Controller
         return view('frontend.publications')->with([
             'publications' => $publications
         ]);
+    }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function emailSubscription(Request $request)
+    {
+        $postData = $request->all();
+
+        if($this->emailSubscriberRepository->getRecordByEmail($postData['email']))
+        {
+            return response()->json(['success' => true, "message" => 'You have already subscribed.']);
+        }
+        else
+        {
+            $this->emailSubscriberRepository->create($postData);
+
+            return response()->json(['success' => true, "message" => 'We will be in touch with you shortly.']);
+        }
     }
 }
